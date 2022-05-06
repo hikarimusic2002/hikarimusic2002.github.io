@@ -1,5 +1,4 @@
 ---
-layout: archive
 title: "Mathematical Methods for Physicists"
 permalink: /solutions/math_physics_ch1
 author_profile: true
