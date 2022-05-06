@@ -11,7 +11,7 @@ redirect_from:
 
 ## Physics
 
-* Mathematical Methods for Physicists
+* [Mathematical Methods for Physicists](https://doi.org/10.1016/C2009-0-30629-7)
   * Chapter 1
 
 ## Mathematics
