@@ -11,7 +11,7 @@ redirect_from:
 
 ## Physics
 
-### [Mathematical Methods for Physicists](https://doi.org/10.1016/C2009-0-30629-7)
+### [Mathematical Methods for Physicists](https://www.amazon.com/Mathematical-Methods-Physicists-Comprehensive-Guide/dp/0123846544)
   * [Chapter 1: Mathematical Preliminaries](https://hikarimusic2002.github.io/solutions/math_physics/ch1)
 
 ## Mathematics
