@@ -249,7 +249,7 @@ $$
 
 $$
 \begin{aligned}
-\sum_{n=0}^\infty \frac{1}{(2n+1)^3}+\sum_{n=1}^\infty\frac{1}{(2n)^3}=\sum_{n=1}^\infty\frac{1}{n^3}\\
+\sum_{n=0}^\infty \frac{1}{(2n+1)^3}+\sum_{n=1}^\infty\frac{1}{(2n)^3} &=\sum_{n=1}^\infty\frac{1}{n^3}\\
 \lambda(3) &= \sum_{n=1}^\infty\frac{1}{n^3}-\sum_{n=1}^\infty\frac{1}{(2n)^3}=\frac{7}{8}\sum_{n=1}^\infty\frac{1}{n^3}=\frac{7}{8}\zeta(3)\\
 \lambda(3) &= 1.051800
 \end{aligned}
@@ -367,7 +367,7 @@ $|\frac{1}{n^x}|\leq\frac{1}{n^a}$. $\sum_n \frac{1}{n^a}$ is a convergent serie
 
 ## 1.2.2
 
-The series converges when $\vert x\vert <1$ and diverges when $\vert x\vert \geq1$. If it uniformly converges in the interval $[a,b]$, then $-1<a<b<1$. For $x\in [a,b]$ and $-1<a<b<1$, let $c=\max(\vert a\vert ,\vert b\vert )$, then $vert x^n\vert \leq x^c$. Because $c<1$, so $\sum_{n=0}^\infty x^c$ converges, so by Weietress M test, $\sum_{n=0}^\infty x^n$ uniformly converges in the range $[a,b]$ if $-1<a<b<1$. 
+The series converges when $\vert x\vert <1$ and diverges when $\vert x\vert \geq1$. If it uniformly converges in the interval $[a,b]$, then $-1<a<b<1$. For $x\in [a,b]$ and $-1<a<b<1$, let $c=\max(\vert a\vert ,\vert b\vert )$, then $\vert x^n\vert \leq x^c$. Because $c<1$, so $\sum_{n=0}^\infty x^c$ converges, so by Weietress M test, $\sum_{n=0}^\infty x^n$ uniformly converges in the range $[a,b]$ if $-1<a<b<1$. 
 
 --------------
 
@@ -381,7 +381,7 @@ The series converges when $\vert x\vert <1$ and diverges when $\vert x\vert \geq
 
 ## 1.2.4
 
-For $x\in[a,b]$, $\vert a_n\cos nx+b_n\sin nx\vert \leq\vert a_n\vert +\vert b_n\vert$. $\sum\vert a_n\vert $ and $\sum\vert b_n\vert$ converges, so $\sum(\vert a_n\vert +\vert b_n\vert )$ converges, so $\sum(a_n\cos nx+b_n\sin nx)$ is uniformly convergent by Weierstrass M test in the range $[a,b]$ for any $a<b$.
+For $x\in[a,b]$, we have $\vert a_n\cos nx+b_n\sin nx\vert \leq\vert a_n\vert +\vert b_n\vert$. Since $\sum\vert a_n\vert $ and $\sum\vert b_n\vert$ converges, $\sum(\vert a_n\vert +\vert b_n\vert )$ converges, so $\sum(a_n\cos nx+b_n\sin nx)$ is uniformly convergent by Weierstrass M test in the range $[a,b]$ for any $a<b$.
 
 --------------
 
@@ -624,7 +624,6 @@ For $-a\leq x\leq a$ ($a>0$), the integrated series converges by Leibniz criteri
 ### 1.3.4
 
 (a) $x=\sinh{y}=\frac{e^y-e^{-y}}{2}=y+\frac{y^3}{6}+\frac{y^5}{120}+\cdots$. Because x in terms of y has only terms of odd orders, y in terms of x can only has terms of odd orders too. Let $y=a_1x+a_3x^3+a_5x^5+\cdots$, substituting into $x=y+\frac{y^3}{6}+\frac{y^5}{120}+\cdots$, obtaining $x=a_1x+(a_3+\frac{a_1^3}{6})x^3+(a_5+\frac{a_1^2a_3}{2}+\frac{a_1^5}{120})x^5+\cdots$, so $a_1=1$, $a_3=-\frac{1}{6}$, $a_5=\frac{3}{40}$. Therefore  $\sinh^{-1}x=x-\frac{x^3}{6}+\frac{3x^5}{40}+\cdots$.
-\medskip
 
 (b) 
 
@@ -746,13 +745,13 @@ $$
 
 ### 1.3.13
 
-The first series converges for $|x|<1$, and the second series converges for $|x^{-1}|<1$, that is, $|x|>1$. The ranges of convergence of the two series do not overlap, so when adding together to get $\sum_{n=-\infty}^\infty x^n$, nowhere can the series converge.
+The first series converges for $\vert x\vert <1$, and the second series converges for $\vert x^{-1}\vert <1$, that is, $\vert x\vert >1$. The ranges of convergence of the two series do not overlap, so when adding together to get $\sum_{n=-\infty}^\infty x^n$, nowhere can the series converge.
 
 --------------
 
 ### 1.3.14
 
-(a) By binomial theorem, when $|x|<1$,
+(a) By binomial theorem, when $\vert x\vert <1$,
 
 $$
 \begin{aligned}
@@ -788,7 +787,7 @@ When $-a<t<a$ and $0<a<1$, the series $\sum_{n=0}^\infty (-1)^n t^{2n}$ is unifo
 
 $$\
 \begin{aligned}
-frac{2+2\varepsilon}{1+2\varepsilon} &=2(1+\varepsilon)(1-2\varepsilon+4\varepsilon^2-\cdots)=2-2\varepsilon+4\varepsilon^2-\cdots\\
+\frac{2+2\varepsilon}{1+2\varepsilon} &=2(1+\varepsilon)(1-2\varepsilon+4\varepsilon^2-\cdots)=2-2\varepsilon+4\varepsilon^2-\cdots\\
 \frac{\ln(1+2\varepsilon)}{\varepsilon} &=\frac{2\varepsilon-\frac{4\varepsilon^2}{2}+\frac{8\varepsilon^3}{3}-\cdots}{\varepsilon}=2-2\varepsilon+\frac{8}{3}\varepsilon^2-\cdots\\
 \lim_{n\to\infty}f(\varepsilon) &=\lim_{n\to\infty}\frac{(1+\varepsilon)}{\varepsilon^2}\left(\frac{4}{3}\varepsilon^2+\cdots\right)=\frac{4}{3}
 \end{aligned}
@@ -842,7 +841,17 @@ which is the same with (a).
 
 ### 1.4.1
 
-If the equation holds for $n=k-1$, then  $\sum_{j=1}^{k-1}j^4=\frac{k-1}{30}(2k-1)(k)(3k^2-3k-1)=\frac{k^5}{5}-\frac{k^4}{2}+\frac{k^3}{3}-\frac{k}{30}$, and $\sum_{j=1}^{k}j^4=\sum_{j=1}^{k-1}j^4+k^4=\frac{k^5}{5}+\frac{k^4}{2}+\frac{k^3}{3}-\frac{k}{30}=\frac{k}{30}(2k+1)(k+1)(3k^2+3k-1)$. $\sum_{j=1}^1j^4=1=\frac{1}{30}(2+1)(1+1)(3+3-1)$. The equation holds for $n=1$, and if it holds for $n=k-1$ then it will holds for $n=k$, so the equation holds for all positive integers by mathematical induction.
+If the equation holds for $n=k-1$, then  
+
+$$
+\begin{aligned}
+\sum_{j=1}^{k-1}j^4 &=\frac{k-1}{30}(2k-1)(k)(3k^2-3k-1)=\frac{k^5}{5}-\frac{k^4}{2}+\frac{k^3}{3}-\frac{k}{30}\\
+\sum_{j=1}^{k}j^4 &=\sum_{j=1}^{k-1}j^4+k^4=\frac{k^5}{5}+\frac{k^4}{2}+\frac{k^3}{3}-\frac{k}{30}=\frac{k}{30}(2k+1)(k+1)(3k^2+3k-1)\\
+\sum_{j=1}^1 j^4 &=1=\frac{1}{30}(2+1)(1+1)(3+3-1)
+\end{aligned}
+$$
+
+The equation holds for $n=1$, and if it holds for $n=k-1$ then it will holds for $n=k$, so the equation holds for all positive integers by mathematical induction.
 
 --------------
 
@@ -942,7 +951,25 @@ $$
 
 ### 1.5.5
 
-Let $\arctan{x}=\sum_{n=0}^\infty(-1)^n c_n x^n$, then from $n=0$, $c_n=0, -\frac{1}{1}, 0, \frac{1}{3}, 0, -\frac{1}{5}, \cdots$, which means there are only odd terms. $a_n=\sum_{j=0}^n(-1)^j\binom{n}{j}c_{n-j}$, when n is odd, $a_n=\sum_{j=0,2,4,\cdots,n-1}\binom{n}{j}c_{n-j}=\sum_{k=1,3,5,\cdots,n}\binom{n}{k}c_k=-\binom{n}{1}\frac{1}{1}+\binom{n}{3}\frac{1}{3}-\binom{n}{5}\frac{1}{5}+\cdots$; when n is even, $a_n=\sum_{j=1,3,5,\cdots,n-1}(-1)\binom{n}{j}c_{n-j}=\sum_{k=1,3,5,\cdots,n-1}(-1)\binom{n}{k}c_k=\binom{n}{1}\frac{1}{1}-\binom{n}{3}\frac{1}{3}+\binom{n}{5}\frac{1}{5}-\cdots$. The numerical verification of $\arctan{(1)}$ and $\arctan{(3^{-1/2})}$ is straightforward by using Eq. (1.87).
+Let $\arctan{x}=\sum_{n=0}^\infty(-1)^n c_n x^n$, then from $n=0$, $c_n=0, -\frac{1}{1}, 0, \frac{1}{3}, 0, -\frac{1}{5}, \cdots$, which means there are only odd terms. $a_n=\sum_{j=0}^n(-1)^j\binom{n}{j}c_{n-j}$.
+
+When n is odd,
+
+$$
+\begin{aligned}
+a_n=\sum_{j=0,2,4,\cdots,n-1}\binom{n}{j}c_{n-j}=\sum_{k=1,3,5,\cdots,n}\binom{n}{k}c_k=-\binom{n}{1}\frac{1}{1}+\binom{n}{3}\frac{1}{3}-\binom{n}{5}\frac{1}{5}+\cdots
+\end{aligned}
+$$
+
+When n is even, 
+
+$$
+\begin{aligned}
+a_n=\sum_{j=1,3,5,\cdots,n-1}(-1)\binom{n}{j}c_{n-j}=\sum_{k=1,3,5,\cdots,n-1}(-1)\binom{n}{k}c_k=\binom{n}{1}\frac{1}{1}-\binom{n}{3}\frac{1}{3}+\binom{n}{5}\frac{1}{5}-\cdots
+\end{aligned}
+$$
+
+The numerical verification of $\arctan{(1)}$ and $\arctan{(3^{-1/2})}$ is straightforward by using Eq. (1.87).
 
 ## 1.6 Some Important Series
 
@@ -1027,7 +1054,7 @@ $(1+t-2,1+2t-1,1+3t-3)\cdot(1,2,3)=0$, so $t=\frac{1}{2}$, and the nearest point
 
 ### 1.7.9
 
-Let the position vector of three vertices of the triangle be $\mathbf{A}, \mathbf{B}, \mathbf{C}$. Let the median from \textbf{C} and the median from \textbf{B} intersect at point \textbf{X}. Then $\mathbf{X}-\mathbf{B}=m(\frac{\mathbf{A}}{2}+\frac{\mathbf{C}}{2}-\mathbf{B})$,  $\mathbf{X}-\mathbf{C}=m(\frac{\mathbf{A}}{2}+\frac{\mathbf{B}}{2}-\mathbf{C})$. Solve for $m,n$ obtaining $m=n=\frac{2}{3}$, and $\mathbf{X}=\frac{\mathbf{A}}{3}+\frac{\mathbf{B}}{3}+\frac{\mathbf{C}}{3}$. $\mathbf{X}-\mathbf{A}=\frac{-2\mathbf{A}}{3}+\frac{\mathbf{B}}{3}+\frac{\mathbf{C}}{3}=\frac{2}{3}(-\mathbf{A}+\frac{\mathbf{B}}{2}+\frac{\mathbf{C}}{2})$. Therefore, the three medians intersect at one point, and the distances from this point to three vertices are $2/3$ of the median's length.
+Let the position vector of three vertices of the triangle be $\mathbf{A}, \mathbf{B}, \mathbf{C}$. Let the median from $\mathbf{C}$ and the median from $\mathbf{B}$ intersect at point $\mathbf{X}$. Then $\mathbf{X}-\mathbf{B}=m(\frac{\mathbf{A}}{2}+\frac{\mathbf{C}}{2}-\mathbf{B})$,  $\mathbf{X}-\mathbf{C}=m(\frac{\mathbf{A}}{2}+\frac{\mathbf{B}}{2}-\mathbf{C})$. Solve for $m,n$ obtaining $m=n=\frac{2}{3}$, and $\mathbf{X}=\frac{\mathbf{A}}{3}+\frac{\mathbf{B}}{3}+\frac{\mathbf{C}}{3}$. $\mathbf{X}-\mathbf{A}=\frac{-2\mathbf{A}}{3}+\frac{\mathbf{B}}{3}+\frac{\mathbf{C}}{3}=\frac{2}{3}(-\mathbf{A}+\frac{\mathbf{B}}{2}+\frac{\mathbf{C}}{2})$. Therefore, the three medians intersect at one point, and the distances from this point to three vertices are $2/3$ of the median's length.
 
 --------------
 
@@ -1045,7 +1072,7 @@ $\mathbf{Q}=-2\mathbf{P}$, so $\mathbf{Q}$ and $\mathbf{P}$ are anti-parallel. $
 
 ### 1.8.1
 
-$x+iy=re^{i\theta}$ where $r=\sqrt{x^2+y^2}$ and  $\theta=\tan^{-1}\frac{y}{x}$
+$x+iy=re^{i\theta}$ where $r=\sqrt{x^2+y^2}$ and  $\theta=\tan^{-1}\frac{y}{x}$, and
 
 $$
 \begin{aligned}
@@ -1221,7 +1248,7 @@ $$
 $$
 \begin{aligned}
 \frac{1}{\sqrt{2}}+\frac{1}{\sqrt{2}}i
-\begin{aligned}
+\end{aligned}
 $$
 
 --------------
@@ -1339,7 +1366,15 @@ $$
 \end{aligned}
 $$
 
-where the expansion is valid for all positive x because $e^{-2x}<1$ for all positive x. $\tan^{-1}1=\frac{\pi}{4}=\int_0^1\frac{1}{1+x^2}dx=\int_0^1(1-x^2+x^4-\cdots) dx=1-\frac{1}{3}+\frac{1}{5}-\cdots$, so 
+where the expansion is valid for all positive x because $e^{-2x}<1$ for all positive x. 
+
+$$
+\begin{aligned}
+\tan^{-1}1=\frac{\pi}{4}=\int_0^1\frac{1}{1+x^2}dx=\int_0^1(1-x^2+x^4-\cdots) dx=1-\frac{1}{3}+\frac{1}{5}-\cdots
+\end{aligned}
+$$
+
+so 
 
 $$
 \begin{aligned}
