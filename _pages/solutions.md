@@ -13,7 +13,7 @@ redirect_from:
 
 ## Mathematics
 
-* [Principles of Mathematical Analysis]
-  * Chapter 1
+### [Principles of Mathematical Analysis](https://www.amazon.co.jp/-/en/Walter-Rudin/dp/0070856133/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=)
+  * [Chapter 1: The Real and Complex Number Systems]
 
 ## Programming
