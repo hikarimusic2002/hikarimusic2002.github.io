@@ -20,4 +20,4 @@ redirect_from:
 
 * Chapter 1
 
-## Programing
+## Programming
