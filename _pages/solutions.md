@@ -1,13 +1,10 @@
 ---
-layout: archive
 title: "Solutions"
 permalink: /solutions/
 author_profile: true
 redirect_from:
   - /resume
 ---
-
-{% include base_path %}
 
 ## Physics
 
