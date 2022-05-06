@@ -12,7 +12,7 @@ redirect_from:
 ## Physics
 
 ### _[Mathematical Methods for Physicists](https://doi.org/10.1016/C2009-0-30629-7)_
-  * Chapter 1
+  * [Chapter 1: Mathematical Preliminaries]
 
 ## Mathematics
 
