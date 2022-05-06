@@ -435,7 +435,7 @@ $$
 
 Expand $\sin{x}$ and $\cos{x}$ for 4 terms, and perform long division.
 
-![image tooltip here](/files/math_physics_ch1_pic1.png)
+![long_division](/files/math_physics_ch1_pic1.png){: width="250"}
 
 So $\cot{x}=\frac{1}{x}-\frac{x}{3}-\frac{x^3}{45}-\frac{2x^5}{945}+\cdots$.
 
