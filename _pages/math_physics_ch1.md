@@ -33,7 +33,11 @@ Let $b_n''=\frac{2b_n}{K}$, then $\lim_{n\to\infty}\frac{b_n''}{a_n}=2$, so for 
 
 ### 1.1.3
 
-$$\int_2^\infty\frac{1}{x(\ln x)^2}dx=-\left[\frac{1}{\ln x}\right]_2^\infty=\frac{1}{\ln 2}$$
+$$
+\begin{aligned}
+\int_2^\infty\frac{1}{x(\ln x)^2}dx=-\left[\frac{1}{\ln x}\right]_2^\infty=\frac{1}{\ln 2}
+\end{aligned}
+$$
 
 so by Cauchy integral test $\sum_{n=2}^\infty \frac{1}{n(\ln n)^2}$ converges.
 
@@ -41,7 +45,11 @@ so by Cauchy integral test $\sum_{n=2}^\infty \frac{1}{n(\ln n)^2}$ converges.
 
 ### 1.1.4
 
-$$\frac{u_n}{u_{n+1}}=1+\frac{(a_1-b_1)n+(a_0-b_0)}{n^2+b_1n+b_0}=1+\frac{a_1-b_1}{n}+\frac{B(n)}{n^2}$$
+$$
+\begin{aligned}
+\frac{u_n}{u_{n+1}}=1+\frac{(a_1-b_1)n+(a_0-b_0)}{n^2+b_1n+b_0}=1+\frac{a_1-b_1}{n}+\frac{B(n)}{n^2}
+\end{aligned}
+$$
 
 where $B(n)$ is bounded for large n (it can be verified by binomial theorem, that each term in $B(n)$ has negative or zero power of n). By Gauss' test, $\sum_{n=1}^\infty u_n$ converges if $a_1-b_1>1$ and diverges if $a_1-b_1\leq 1$. 
 
@@ -71,7 +79,11 @@ $\sum_{n=1}^\infty \frac{1}{4n^2}$ converges by integral test, so $\sum_{n=1}^\i
 
 (d) $\ln \frac{n+1}{n}=\ln (n+1)-\ln n$, so 
 
-$$\sum_{n=1}^\infty \ln (1+\frac{1}{n})=(\ln2-\ln1)+(\ln3-\ln2)+\cdots=\lim_{n\to\infty} \ln n$$
+$$
+\begin{aligned}
+\sum_{n=1}^\infty \ln (1+\frac{1}{n})=(\ln2-\ln1)+(\ln3-\ln2)+\cdots=\lim_{n\to\infty} \ln n
+\end{aligned}
+$$
 
 is infinite, which means $\sum_{n=1}^\infty \ln (1+\frac{1}{n})$ diverges.
 
@@ -80,10 +92,16 @@ is infinite, which means $\sum_{n=1}^\infty \ln (1+\frac{1}{n})$ diverges.
 $\lim_{n\to\infty}n^{\frac{1}{n}}=1$ implies for sufficiently large $n$, $0=1-1<n^{\frac{1}{n}}<1+1=2$, so $\frac{1}{n^{\frac{1}{n}}}>\frac{1}{2}$, and $\frac{1}{n\cdot n^{\frac{1}{n}}}>\frac{1}{2n}$. Since $\sum_{n=1}^\infty \frac{1}{2n}$ diverges by integral test, $\sum_{n=1}^\infty \frac{1}{n\cdot n^{\frac{1}{n}}}$ diverges by comparison test.
 
 --------------
+
 ### 1.1.7
+
 If $a_1\geq a_2\geq a_3 \geq \cdots \geq 0$, then $\sum_{n=1}^\infty a_n$ converges if and only if $\sum_{k=1}^\infty2^ka_{2k}$ converges.
 
-$$\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}=2^{(1-p)k}\frac{1}{k^q}\frac{1}{(\ln2)^q}$$. 
+$$
+\begin{aligned}
+\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}=2^{(1-p)k}\frac{1}{k^q}\frac{1}{(\ln2)^q}
+\end{aligned}
+$$ 
 
 If $p>1$, then $\sum_{k=1}^\infty \frac{1}{(2^{p-1})^k}\frac{1}{(\ln 2)^q}$ converges by ratio test, so $\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}$ converges, and $\sum_{n=2}^\infty \frac{1}{n^p(\ln n)^q}$ converges. 
 
@@ -95,23 +113,19 @@ Therefore, if $p>1$, or $p=1$ and $q>1$, wh have $\sum_{n=2}^\infty \frac{1}{n^p
 
 ### 1.1.8
 
-$$\gamma=\lim_{n\to\infty}(\sum_{m=1}^n\frac{1}{m}-\ln n)=\sum_{m=1}^{1000}\frac{1}{m}+\lim_{n\to\infty}(\sum_{m=1001}^n\frac{1}{m}-\ln n)$$
-
-$$\lim_{n\to\infty}n=\sum_{m=1001}^\infty\ln \frac{m}{m-1}-\ln 1000$$
-
-$$\gamma=\sum_{m=1}^{1000}\frac{1}{m}-\ln{1000}+\sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})$$
-
-$$\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx\geq\sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\geq \int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx+(\frac{1}{1001}-\ln\frac{1001}{1000})$$
-
-$$\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx=\left[\ln\frac{x}{x-1}+x\ln\frac{x-1}{x}\right]_{1001}^\infty=-0.000\,499\,667$$
-
-$$\frac{1}{1001}-\ln\frac{1001}{1000}=-0.000\,000\,499$$
-
-$$\sum_{m=1}^{1000}\frac{1}{m}-\ln1000=0.577\,714\,7$$
-
-$$0.577\,715-0.000\,499>\gamma>0.577\,714-0.000\,500-0.000\,001$$
-
-$$0.577\,213<\gamma<0.577\,216$$
+$$
+\begin{aligned}
+\gamma &= \lim_{n\to\infty}(\sum_{m=1}^n\frac{1}{m}-\ln n)=\sum_{m=1}^{1000}\frac{1}{m}+\lim_{n\to\infty}(\sum_{m=1001}^n\frac{1}{m}-\ln n)\\
+\lim_{n\to\infty}n &= \sum_{m=1001}^\infty\ln \frac{m}{m-1}-\ln 1000\\
+\gamma &= \sum_{m=1}^{1000}\frac{1}{m}-\ln{1000}+\sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\\
+\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx &\geq \sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\geq \int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx+(\frac{1}{1001}-\ln\frac{1001}{1000})\\
+\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx &= \left[\ln\frac{x}{x-1}+x\ln\frac{x-1}{x}\right]_{1001}^\infty=-0.000\,499\,667\\
+\frac{1}{1001}-\ln\frac{1001}{1000} &= -0.000\,000\,499\\
+\sum_{m=1}^{1000}\frac{1}{m}-\ln1000 &= 0.577\,714\,7\\
+0.577\,715-0.000\,499 &> \gamma>0.577\,714-0.000\,500-0.000\,001\\
+0.577\,213 &< \gamma<0.577\,216
+\end{aligned}
+$$ 
 
 --------------
 
@@ -119,21 +133,31 @@ $$0.577\,213<\gamma<0.577\,216$$
 
 The number in each shell is proportional to $r^2$, but the solid angle of each shell is proportional to $\frac{1}{r^2}$, so the total solid angle occupied by stars in each shell is the same. Let it be $\omega_0$.
 
-If the solid angle occupied by stars from shell 1 to n is $a_n$, then $a_{n+1}=a_n+a-a_n\cdot \frac{a}{4\pi}$, where $a_n\cdot \frac{a}{4\pi}$ is the solid angle of stars in shell $n+1$ that is blocked by stars in shell 1 to n. So $a_{n+1}-4\pi=(a_n-4\pi)(1-\frac{a}{4\pi})$, and $a_n=(a-4\pi)(1-\frac{a}{4\pi})^{n-1}+4\pi$. $1-\frac{a}{4\pi}<1$, which means $\lim_{n\to\infty}a_n=4\pi$.
+If the solid angle occupied by stars from shell 1 to n is $a_n$, then $a_{n+1}=a_n+a-a_n\cdot \frac{a}{4\pi}$, where $a_n\cdot \frac{a}{4\pi}$ is the solid angle of stars in shell $n+1$ that is blocked by stars in shell 1 to n. So $a_{n+1}-4\pi=(a_n-4\pi)(1-\frac{a}{4\pi})$, and $a_n=(a-4\pi)(1-\frac{a}{4\pi})^{n-1}+4\pi$. Therefore, $1-\frac{a}{4\pi}<1$, which means $\lim_{n\to\infty}a_n=4\pi$.
 
 --------------
+
 ### 1.1.10
 
-$$\frac{u_n}{u_{n+1}}=\left (\frac{2n+2}{2n+1} \right)^2=1+\frac{4n+3}{4n^2+4n+1}=1+\frac{1}{n}+\frac{B(n)}{n^2}$$
+$$
+\begin{aligned}
+\frac{u_n}{u_{n+1}}=\left (\frac{2n+2}{2n+1} \right)^2=1+\frac{4n+3}{4n^2+4n+1}=1+\frac{1}{n}+\frac{B(n)}{n^2}
+\end{aligned}
+$$
 
 where B(n) is bound for large n. By Gauss' test, 
 
-$$\sum_{n=1}^\infty\left[\frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}\right]^2$$ 
+$$
+\begin{aligned}\sum_{n=1}^\infty\left[\frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}\right]^2
+\end{aligned}
+$$ 
 
 converges.
 
 --------------
+
 ### 1.1.11
+
 (a) $\frac{\ln n}{n}$ is monotonically decreasing, and $\lim_{n\to\infty}\frac{\ln n}{n}=0$, so the series converges by  Leibniz criterion. $\frac{\ln n}{n}\geq \frac{1}{n}$ when $n\geq 3$, and $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so $\sum_{n=1}^\infty\frac{\ln n}{n}$ diverges by comparison test, so the series is not absolutely convergent.
 
 (b)  The series $\frac{1}{1}-\frac{1}{3}+\frac{1}{5}-\cdots$ converges by Leibniz criterion, and so does the series  $\frac{1}{2}-\frac{1}{4}+\frac{1}{6}-\cdots$. So the series  $\frac{1}{1}+\frac{1}{2}-\frac{1}{3}-\frac{1}{4}+\frac{1}{5}+\frac{1}{6}\cdots$ is the sum of two convergent series, and is therefore convergent.
@@ -142,29 +166,51 @@ $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so the series is not a
 (c) 
 Combine adjacent terms with same sign to form a new series 
 
-$$sum_{n=1}^\infty a_n=(1)-(\frac{1}{2}+\frac{1}{3})+(\frac{1}{4}+\frac{1}{5}+\frac{1}{6})-(\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\frac{1}{10})+\cdots$$
+$$
+\begin{aligned}
+sum_{n=1}^\infty a_n=(1)-(\frac{1}{2}+\frac{1}{3})+(\frac{1}{4}+\frac{1}{5}+\frac{1}{6})-(\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\frac{1}{10})+\cdots
+\end{aligned}
+$$
 
 where 
 
-$$a_n=\frac{1}{\frac{n^2-n}{2}+1}+\frac{1}{\frac{n^2-n}{2}+2}+\cdots+\frac{1}{\frac{n^2-n}{2}+n}$$
-
-$$a_{n+1}=\frac{1}{\frac{n^2+n}{2}+1}+\frac{1}{\frac{n^2+n}{2}+2}+\cdots+\frac{1}{\frac{n^2+n}{2}+n}+\frac{1}{\frac{n^2+n}{2}+n+1}$$
+$$
+\begin{aligned}
+a_n &= \frac{1}{\frac{n^2-n}{2}+1}+\frac{1}{\frac{n^2-n}{2}+2}+\cdots+\frac{1}{\frac{n^2-n}{2}+n}\\
+a_{n+1} &= \frac{1}{\frac{n^2+n}{2}+1}+\frac{1}{\frac{n^2+n}{2}+2}+\cdots+\frac{1}{\frac{n^2+n}{2}+n}+\frac{1}{\frac{n^2+n}{2}+n+1}
+\begin{aligned}
+$$
 
 so $a_n$ has n terms and $a_{n+1}$ has $n+1$ terms.
 
-$$a_{n}-a_{n+1}=(\frac{1}{\frac{n^2-n}{2}+1}-\frac{1}{\frac{n^2+n}{2}+1})+(\frac{1}{\frac{n^2-n}{2}+2}-\frac{1}{\frac{n^2+n}{2}+2})+\cdots+(\frac{1}{\frac{n^2-n}{2}+n}-\frac{1}{\frac{n^2+n}{2}+n})-\frac{2}{n^2+3n+2}$$
+$$
+\begin{aligned}a_{n}-a_{n+1}=(\frac{1}{\frac{n^2-n}{2}+1}-\frac{1}{\frac{n^2+n}{2}+1})+(\frac{1}{\frac{n^2-n}{2}+2}-\frac{1}{\frac{n^2+n}{2}+2})+\cdots+(\frac{1}{\frac{n^2-n}{2}+n}-\frac{1}{\frac{n^2+n}{2}+n})-\frac{2}{n^2+3n+2}
+\end{aligned}
+$$
 
 The $k^{st}$ term (except for the last term) of $a_{n}-a_{n+1}$ is
 
-$$\frac{1}{\frac{n^2-n}{2}+k}-\frac{1}{\frac{n^2+n}{2}+k}\geq\frac{1}{\frac{n^2-n}{2}+n}-\frac{1}{\frac{n^2+n}{2}+n}=\frac{4}{n^3+4n^2+3n}$$
+$$
+\begin{aligned}
+\frac{1}{\frac{n^2-n}{2}+k}-\frac{1}{\frac{n^2+n}{2}+k}\geq\frac{1}{\frac{n^2-n}{2}+n}-\frac{1}{\frac{n^2+n}{2}+n}=\frac{4}{n^3+4n^2+3n}
+\end{aligned}
+$$
 
 so 
 
-$$a_{n}-a_{n+1}\geq\frac{4}{n^3+4n^2+3n}\cdot n-\frac{2}{n^2+3n+2}=\frac{4}{n^2+4n+3}\cdot n-\frac{2}{n^2+3n+2}\geq0$$
+$$
+\begin{aligned}
+a_{n}-a_{n+1}\geq\frac{4}{n^3+4n^2+3n}\cdot n-\frac{2}{n^2+3n+2}=\frac{4}{n^2+4n+3}\cdot n-\frac{2}{n^2+3n+2}\geq0
+\end{aligned}
+$$
 
 which means the sequence $a_n$ is monotonically decreasing.
 
-$$0\leq a_n\leq\frac{1}{\frac{n^2-n}{2}}\cdot n=\frac{2}{n-1}$$
+$$
+\begin{aligned}
+0\leq a_n\leq\frac{1}{\frac{n^2-n}{2}}\cdot n=\frac{2}{n-1}
+\end{aligned}
+$$
 
 so $\lim_{n\to\infty}a_n=0$ because $\lim_{n\to\infty}\frac{2}{n-1}=0$. Therefore, the series converges by Leibniz criterion.
 $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so the series is not absolutely convergent.
@@ -173,17 +219,16 @@ $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so the series is not a
 
 ### 1.1.12
 
-$$\beta(2)=1-\sum_{k=1}^\infty\frac{16k}{(16k^2-1)^2}=1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}-\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}$$
-
-$$\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\leq\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\leq\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\,+\frac{16\cdot 41}{(16\cdot 41^2-1)^2}$$
-
-$$1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}=0.915\,984\,644$$
-
-$$\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx=\frac{-1}{2(16x^2-1)}\Big|_{41}^\infty=0.000\,018\,591$$
-
-$$\frac{16\cdot 41}{(16\cdot 41^2-1)^2}=0.000\,000\,907$$
-
-$$0.915965146\leq\beta(2)\leq0.915966053$$
+$$
+\begin{aligned}
+\beta(2) &= 1-\sum_{k=1}^\infty\frac{16k}{(16k^2-1)^2}=1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}-\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\\
+\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx &\leq \sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\leq\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\,+\frac{16\cdot 41}{(16\cdot 41^2-1)^2}\\
+1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2} &= 0.915\,984\,644\\
+\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx &= \frac{-1}{2(16x^2-1)}\Big|_{41}^\infty=0.000\,018\,591\\
+\frac{16\cdot 41}{(16\cdot 41^2-1)^2} &= 0.000\,000\,907\\
+0.915965146 &\leq \beta(2)\leq0.915966053
+\end{aligned}
+$$
 
 So $\beta(2)=0.915966$ (to six-digit accuracy).
 
@@ -191,19 +236,24 @@ So $\beta(2)=0.915966$ (to six-digit accuracy).
 
 ### 1.1.13
 
-$$\zeta(2)+a\alpha_1+b\alpha_2=\sum_{n=1}^\infty(\frac{1}{n^2}+\frac{a}{n(n+1)}+\frac{b}{n(n+1)(n+2)})=\frac{(1+a)n^2+(3+2a+b)n+2}{n^2(n+1)(n+2)}$$
-
-$$\zeta(2)-\alpha_1-\alpha_2=\frac{2}{n^2(n+1)(n+2)}$$
+$$
+\begin{aligned}
+\zeta(2)+a\alpha_1+b\alpha_2 &= \sum_{n=1}^\infty(\frac{1}{n^2}+\frac{a}{n(n+1)}+\frac{b}{n(n+1)(n+2)})=\frac{(1+a)n^2+(3+2a+b)n+2}{n^2(n+1)(n+2)}\\
+\zeta(2)-\alpha_1-\alpha_2 &= \frac{2}{n^2(n+1)(n+2)}
+\end{aligned}
+$$
 
 --------------
 
 ### 1.1.14
 
-$$\sum_{n=0}^\infty \frac{1}{(2n+1)^3}+\sum_{n=1}^\infty\frac{1}{(2n)^3}=\sum_{n=1}^\infty\frac{1}{n^3}$$
-
-$$\lambda(3)=\sum_{n=1}^\infty\frac{1}{n^3}-\sum_{n=1}^\infty\frac{1}{(2n)^3}=\frac{7}{8}\sum_{n=1}^\infty\frac{1}{n^3}=\frac{7}{8}\zeta(3)$$
-
-$$\lambda(3)=1.051800$$
+$$
+\begin{aligned}
+\sum_{n=0}^\infty \frac{1}{(2n+1)^3}+\sum_{n=1}^\infty\frac{1}{(2n)^3}=\sum_{n=1}^\infty\frac{1}{n^3}\\
+\lambda(3) &= \sum_{n=1}^\infty\frac{1}{n^3}-\sum_{n=1}^\infty\frac{1}{(2n)^3}=\frac{7}{8}\sum_{n=1}^\infty\frac{1}{n^3}=\frac{7}{8}\zeta(3)\\
+\lambda(3) &= 1.051800
+\end{aligned}
+$$
 
 to six decimal place.
 
@@ -213,13 +263,25 @@ to six decimal place.
 
 (a) 
 
-$$\sum_{n=2}^\infty[\zeta(n)-1]=\sum_{n=2}^\infty(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-\frac{1}{k}}=\sum_{k=2}^\infty(\frac{1}{k-1}-\frac{1}{k})=1$$
+$$
+\begin{aligned}
+\sum_{n=2}^\infty[\zeta(n)-1]=\sum_{n=2}^\infty(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-\frac{1}{k}}=\sum_{k=2}^\infty(\frac{1}{k-1}-\frac{1}{k})=1
+\end{aligned}
+$$
 
 (b) 
 
-$$\sum_{n=2}^\infty(-1)^n[\zeta(n)-1]=\sum_{n=2}^\infty(-1)^n(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty(-1)^n\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty(-1)^n\frac{1}{k^n}$$
+$$
+\begin{aligned}
+\sum_{n=2}^\infty(-1)^n[\zeta(n)-1]=\sum_{n=2}^\infty(-1)^n(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty(-1)^n\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty(-1)^n\frac{1}{k^n}
+\end{aligned}
+$$
 
-$$=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-(-\frac{1}{k})}=\sum_{k=2}^\infty(\frac{1}{k}-\frac{1}{k+1})=\frac{1}{2}$$
+$$
+\begin{aligned}
+=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-(-\frac{1}{k})}=\sum_{k=2}^\infty(\frac{1}{k}-\frac{1}{k+1})=\frac{1}{2}
+\end{aligned}
+$$
 
 --------------
 
@@ -227,29 +289,46 @@ $$=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-(-\frac{1}{k})}=\sum_{k=2}^\infty(\fr
 
 (a) 
 
-$$\zeta(3)-\alpha_2'=1+\sum_{n=1}^\infty(\frac{1}{n^3}-\frac{1}{(n-1)n(n+1)})=1+\sum_{n=2}^\infty\frac{-1}{(n-1)n^3(n+1)}$$
-
-$$\zeta(3)=\frac{5}{4}-\sum_{n=2}^\infty\frac{1}{n^3(n^2-1)}$$
+$$
+\begin{aligned}
+\zeta(3)-\alpha_2' &= 1+\sum_{n=1}^\infty(\frac{1}{n^3}-\frac{1}{(n-1)n(n+1)})=1+\sum_{n=2}^\infty\frac{-1}{(n-1)n^3(n+1)}\\
+\zeta(3) &= \frac{5}{4}-\sum_{n=2}^\infty\frac{1}{n^3(n^2-1)}
+\end{aligned}
+$$
 
 (b) 
 
-$$\zeta(3)+\alpha_4'=\frac{5}{4}-\sum_{n=2}^\infty\frac{1}{(n-1)n^3(n+1)}+\sum_{n=3}^\infty\frac{1}{(n-2)(n-1)n(n+1)(n+2)}$$
-
-$$=\frac{29}{24}+\sum_{n=3}^\infty\frac{4}{(n-2)(n-1)n^3(n+1)(n+2)}$$
-
-$$\zeta(3)=\frac{115}{96}+\sum_{n=3}^\infty\frac{4}{(n-2)(n-1)n^3(n+1)(n+2)}$$
+$$
+\begin{aligned}
+\zeta(3)+\alpha_4' &= \frac{5}{4}-\sum_{n=2}^\infty\frac{1}{(n-1)n^3(n+1)}+\sum_{n=3}^\infty\frac{1}{(n-2)(n-1)n(n+1)(n+2)}\\
+&= \frac{29}{24}+\sum_{n=3}^\infty\frac{4}{(n-2)(n-1)n^3(n+1)(n+2)}\\
+\zeta(3) &= \frac{115}{96}+\sum_{n=3}^\infty\frac{4}{(n-2)(n-1)n^3(n+1)(n+2)}
+\end{aligned}
+$$
 
 (c) 
 
-$$\int_{N}^\infty\frac{1}{x^3}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3}\leq\int_{N}^\infty\frac{1}{x^3}\,dx+\frac{1}{N^3}$$
+$$
+\begin{aligned}
+\int_{N}^\infty\frac{1}{x^3}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3}\leq\int_{N}^\infty\frac{1}{x^3}\,dx+\frac{1}{N^3}
+\end{aligned}
+$$
 
 $\frac{1}{126^3}=4.999\times10^{-7}<5\times10^{-7}$, so 125 terms are required.
 
-$$\int_{N}^\infty\frac{1}{x^3(x^2-1)}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3(n^2-1)}\leq\int_{N}^\infty\frac{1}{x^3(x^2-1)}\,dx+\frac{1}{N^3(N^2-1)}$$
+$$
+\begin{aligned}
+\int_{N}^\infty\frac{1}{x^3(x^2-1)}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3(n^2-1)}\leq\int_{N}^\infty\frac{1}{x^3(x^2-1)}\,dx+\frac{1}{N^3(N^2-1)}
+\end{aligned}
+$$
 
 $\frac{1}{19^3(19^2-1)}=4\times10^{-7}<5\times10^{-7}$, so 17 terms ($n=2$ to $n=18$) are required.
 
-$$\int_{N}^\infty\frac{4}{x^3(x^2-1)(x^2-4)}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3(n^2-1)(n^2-4)}\leq\int_{N}^\infty\frac{4}{x^3(x^2-1)(x^2-4)}\,dx+\frac{4}{N^3(N^2-1)(N^2-4)}$$
+$$
+\begin{aligned}
+\int_{N}^\infty\frac{4}{x^3(x^2-1)(x^2-4)}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3(n^2-1)(n^2-4)}\leq\int_{N}^\infty\frac{4}{x^3(x^2-1)(x^2-4)}\,dx+\frac{4}{N^3(N^2-1)(N^2-4)}
+\end{aligned}
+$$
 
 $\frac{4}{10^3(10^2-1)(10^2-4)}=4.2\times10^{-7}<5\times10^{-7}$, so 7 terms ($n=3$ to $n=9$) are required.
 
@@ -264,11 +343,19 @@ Therefore, the series converges for $x>0$, and if the series uniformly converges
 
 For $x\in[a,b]$, $0<a<b$,
 
-$$|S(x)-s_n(x)|=|\sum_{k=n+1}^\infty\frac{(-1)^{k-1}}{k^x}|\leq\frac{1}{(n+1)^x}<\frac{1}{n^x}<\frac{1}{n^a}$$
+$$
+\begin{aligned}
+|S(x)-s_n(x)|=|\sum_{k=n+1}^\infty\frac{(-1)^{k-1}}{k^x}|\leq\frac{1}{(n+1)^x}<\frac{1}{n^x}<\frac{1}{n^a}
+\end{aligned}
+$$
 
 For any $\epsilon>0$, let $N=(\frac{1}{\epsilon})^{\frac{1}{a}}+1$, then 
 
-$$|S(x)-s_n(x)|<\frac{1}{n^a}<\frac{1}{N^a}=\epsilon$$
+$$
+\begin{aligned}
+|S(x)-s_n(x)|<\frac{1}{n^a}<\frac{1}{N^a}=\epsilon
+\end{aligned}
+$$
 
 for all $n\geq N$, so the series is uniformly convergent in the range $[a,b]$ if $0<a<b$.
 
@@ -280,7 +367,7 @@ $|\frac{1}{n^x}|\leq\frac{1}{n^a}$. $\sum_n \frac{1}{n^a}$ is a convergent serie
 
 ## 1.2.2
 
-The series converges when $|x|<1$ and diverges when $|x|\geq1$. If it uniformly converges in the interval $[a,b]$, then $-1<a<b<1$. For $x\in [a,b]$ and $-1<a<b<1$, let $c=\max(|a|,|b|)$, then $|x^n|\leq x^c$. Because $c<1$, so $\sum_{n=0}^\infty x^c$ converges, so by Weietress M test, $\sum_{n=0}^\infty x^n$ uniformly converges in the range $[a,b]$ if $-1<a<b<1$. 
+The series converges when $\vert x\vert <1$ and diverges when $\vert x\vert \geq1$. If it uniformly converges in the interval $[a,b]$, then $-1<a<b<1$. For $x\in [a,b]$ and $-1<a<b<1$, let $c=\max(\vert a\vert ,\vert b\vert )$, then $vert x^n\vert \leq x^c$. Because $c<1$, so $\sum_{n=0}^\infty x^c$ converges, so by Weietress M test, $\sum_{n=0}^\infty x^n$ uniformly converges in the range $[a,b]$ if $-1<a<b<1$. 
 
 --------------
 
@@ -294,7 +381,7 @@ The series converges when $|x|<1$ and diverges when $|x|\geq1$. If it uniformly 
 
 ## 1.2.4
 
-For $x\in[a,b]$, $|a_n\cos nx+b_n\sin nx|\leq|a_n|+|b_n|$. $\sum |a_n|$ and $\sum |b_n|$ converges, so $\sum(|a_n|+|b_n|)$ converges, so $\sum(a_n\cos nx+b_n\sin nx)$ is uniformly convergent by Weierstrass M test in the range $[a,b]$ for any $a<b$.
+For $x\in[a,b]$, $\vert a_n\cos nx+b_n\sin nx\vert \leq|a_n|+|b_n|$. $\sum\vert a_n\vert $ and $\sum\vert b_n\vert$ converges, so $\sum(\vert a_n\vert +\vert b_n\vert )$ converges, so $\sum(a_n\cos nx+b_n\sin nx)$ is uniformly convergent by Weierstrass M test in the range $[a,b]$ for any $a<b$.
 
 --------------
 
@@ -303,7 +390,11 @@ For $x\in[a,b]$, $|a_n\cos nx+b_n\sin nx|\leq|a_n|+|b_n|$. $\sum |a_n|$ and $\su
 Let $j=2n$, $a_n(x)=u_{2n}(x)$, then $a_{n+1}(x)=\frac{(2n+1)(2n+2)-l(l+1)}{(2n+2)(2n+3)}x^2a_n(x)$. Since
 $\lim_{n\to\infty}\frac{a_{n+1}(x)}{a_n(x)}=x^2>1$ when $|x|>1$ and $\lim_{n\to\infty}\frac{a_{n+1}(x)}{a_n(x)}<1$ when $|x|<1$, by ratio test the series diverges when $|x|>1$ and converges when $|x|<1$. When $x=1$,
 
-$$\frac{a_n}{a_{n+1}}=\frac{4n^2+10n+6}{4n^2+6n+2-l(l+1)}=1+\frac{4n+4+l(l+1)}{4n^2+6n+2-l(l+1)}=1+\frac{1}{n}+\frac{B(n)}{n^2}$$
+$$
+\begin{aligned}
+\frac{a_n}{a_{n+1}}=\frac{4n^2+10n+6}{4n^2+6n+2-l(l+1)}=1+\frac{4n+4+l(l+1)}{4n^2+6n+2-l(l+1)}=1+\frac{1}{n}+\frac{B(n)}{n^2}
+\end{aligned}
+$$
 
 where $B(n)$ is bound for large n. By Gauss' test, the series diverges when $x=1$, so the range of convergence is $-1<x<1$.
 
@@ -319,7 +410,11 @@ Let $j=2m$, $a_m(x)=u_{2m}(x)$. When $x=\pm1$, we have $\frac{a_m(x)}{a_{m+1}(x)
 
 Let $j=2m$, $u_m=a_{2m}$, then 
 
-$$\frac{u_m}{u_{m+1}}=\frac{4m^2+(4k+6)m+(k+1)(k+2)}{4m^2+(4k+4\alpha)m+k(k+2\alpha)-n(n+2\alpha)}=1+\frac{6-4\alpha}{4m}+\frac{B(m)}{m^2}$$
+$$
+\begin{aligned}
+\frac{u_m}{u_{m+1}}=\frac{4m^2+(4k+6)m+(k+1)(k+2)}{4m^2+(4k+4\alpha)m+k(k+2\alpha)-n(n+2\alpha)}=1+\frac{6-4\alpha}{4m}+\frac{B(m)}{m^2}
+\end{aligned}
+$$
 
 where $B(m)$ is bound for large m. By Gauss' test, the series converges $\alpha<\frac{1}{2}$ and diverges when $\alpha\geq\frac{1}{2}$.
 
@@ -327,33 +422,20 @@ where $B(m)$ is bound for large m. By Gauss' test, the series converges $\alpha<
 
 ## 1.2.8
 
-$$\sin x=\sum_{n=0}^\infty\frac{x^n}{n!}\left(\frac{d^n\sin{x}}{dx^n}\Big|_{x=0}\right)=\sum_{k=0}^\infty\frac{x^{2k}}{(2k)!}(-1)^k\sin{0}+\sum_{k=0}^\infty\frac{x^{2k+1}}{(2k+1)!}(-1)^k\cos{0}=\sum_{n=0}^\infty(-1)^n\frac{x^{2n+1}}{(2n+1)!}$$
-
-$$\cos x=\sum_{n=0}^\infty\frac{x^n}{n!}\left(\frac{d^n\cos{x}}{dx^n}\Big|_{x=0}\right)=\sum_{k=0}^\infty\frac{x^{2k}}{(2k)!}(-1)^k\cos{0}+\sum_{k=0}^\infty\frac{x^{2k+1}}{(2k+1)!}(-1)^{k+1}\sin{0}=\sum_{n=0}^\infty(-1)^n\frac{x^{2n}}{(2n)!}$$
+$$
+\begin{aligned}
+\sin x &= \sum_{n=0}^\infty\frac{x^n}{n!}\left(\frac{d^n\sin{x}}{dx^n}\Big|_{x=0}\right)=\sum_{k=0}^\infty\frac{x^{2k}}{(2k)!}(-1)^k\sin{0}+\sum_{k=0}^\infty\frac{x^{2k+1}}{(2k+1)!}(-1)^k\cos{0}=\sum_{n=0}^\infty(-1)^n\frac{x^{2n+1}}{(2n+1)!}\\
+\cos x &= \sum_{n=0}^\infty\frac{x^n}{n!}\left(\frac{d^n\cos{x}}{dx^n}\Big|_{x=0}\right)=\sum_{k=0}^\infty\frac{x^{2k}}{(2k)!}(-1)^k\cos{0}+\sum_{k=0}^\infty\frac{x^{2k+1}}{(2k+1)!}(-1)^{k+1}\sin{0}=\sum_{n=0}^\infty(-1)^n\frac{x^{2n}}{(2n)!}
+\end{aligned}
+$$
 
 --------------
 
 ## 1.2.9
 
-expand $\sin{x}$ and $\cos{x}$ for 4 terms, and perform long division.
+Expand $\sin{x}$ and $\cos{x}$ for 4 terms, and perform long division.
 
-$$
-\renewcommand{\arraystretch}{1.5}
-\begin{array}{ccccccccccc}
-& & & & & &\frac{1}{x} &-\frac{x}{3} &-\frac{x^3}{45} &-\frac{2x^5}{945} &\cdots \\
-\cline{7-11}
-&x &-\frac{x^3}{6} &+\frac{x^5}{120} &-\frac{x^7}{5040} &\surd &1 &-\frac{x^2}{2} &+\frac{x^4}{24} &-\frac{x^6}{720} &\cdots \\
-& & & & & &1 &-\frac{x^2}{6} &+\frac{x^4}{120} &-\frac{x^6}{5040} &\cdots \\
-\cline{7-11}
-& & & & & & &-\frac{x^2}{3} &+\frac{x^4}{30} &-\frac{x^6}{840} &\cdots \\
-& & & & & & &-\frac{x^2}{3} &+\frac{x^4}{18} &-\frac{x^6}{360} &\cdots \\
-\cline{8-11}
-& & & & & & & &-\frac{x^4}{45} &+\frac{x^6}{630} &\cdots \\
-& & & & & & & &-\frac{x^4}{45} &+\frac{x^6}{270} &\cdots \\
-\cline{9-11}
-& & & & & & & & &-\frac{2x^6}{945} &\cdots \\
-\end{array}
-$$
+![image tooltip here](/files/math_physics_ch1_pic1.png)
 
 So $\cot{x}=\frac{1}{x}-\frac{x}{3}-\frac{x^3}{45}-\frac{2x^5}{945}+\cdots$.
 
