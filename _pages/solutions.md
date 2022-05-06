@@ -11,13 +11,12 @@ redirect_from:
 
 ## Physics
 
-* [Mathematical Methods for Physicists](https://doi.org/10.1016/C2009-0-30629-7)
+### _[Mathematical Methods for Physicists](https://doi.org/10.1016/C2009-0-30629-7)_
   * Chapter 1
 
 ## Mathematics
 
-### _Principles of Mathematical Analysis_
-
-* Chapter 1
+* [Principles of Mathematical Analysis]
+  * Chapter 1
 
 ## Programming
