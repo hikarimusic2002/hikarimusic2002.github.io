@@ -11,9 +11,8 @@ redirect_from:
 
 ## Physics
 
-### _Mathematical Methods for Physicists_
-
-* Chapter 1
+* Mathematical Methods for Physicists
+  * Chapter 1
 
 ## Mathematics
 
