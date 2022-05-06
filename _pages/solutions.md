@@ -11,12 +11,14 @@ redirect_from:
 
 ## Physics
 
-### Mathematical Methods for Physicists
+### _Mathematical Methods for Physicists_
+
 * Chapter 1
 
 ## Mathematics
 
-### Principles of Mathematical Analysis
+### _Principles of Mathematical Analysis_
+
 * Chapter 1
 
 ## Programing
