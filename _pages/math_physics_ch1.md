@@ -178,7 +178,7 @@ $$
 \begin{aligned}
 a_n &= \frac{1}{\frac{n^2-n}{2}+1}+\frac{1}{\frac{n^2-n}{2}+2}+\cdots+\frac{1}{\frac{n^2-n}{2}+n}\\
 a_{n+1} &= \frac{1}{\frac{n^2+n}{2}+1}+\frac{1}{\frac{n^2+n}{2}+2}+\cdots+\frac{1}{\frac{n^2+n}{2}+n}+\frac{1}{\frac{n^2+n}{2}+n+1}
-\begin{aligned}
+\end{aligned}
 $$
 
 so $a_n$ has n terms and $a_{n+1}$ has $n+1$ terms.
@@ -381,7 +381,7 @@ The series converges when $\vert x\vert <1$ and diverges when $\vert x\vert \geq
 
 ## 1.2.4
 
-For $x\in[a,b]$, $\vert a_n\cos nx+b_n\sin nx\vert \leq|a_n|+|b_n|$. $\sum\vert a_n\vert $ and $\sum\vert b_n\vert$ converges, so $\sum(\vert a_n\vert +\vert b_n\vert )$ converges, so $\sum(a_n\cos nx+b_n\sin nx)$ is uniformly convergent by Weierstrass M test in the range $[a,b]$ for any $a<b$.
+For $x\in[a,b]$, $\vert a_n\cos nx+b_n\sin nx\vert \leq\vert a_n\vert +\vert b_n\vert$. $\sum\vert a_n\vert $ and $\sum\vert b_n\vert$ converges, so $\sum(\vert a_n\vert +\vert b_n\vert )$ converges, so $\sum(a_n\cos nx+b_n\sin nx)$ is uniformly convergent by Weierstrass M test in the range $[a,b]$ for any $a<b$.
 
 --------------
 
@@ -445,15 +445,27 @@ So $\cot{x}=\frac{1}{x}-\frac{x}{3}-\frac{x^3}{45}-\frac{2x^5}{945}+\cdots$.
 
 ## 1.2.10
 
-$$\frac{d}{dx}\coth^{-1}x=\frac{1}{1-x^2}=\frac{d}{dx}\left(\frac{1}{2}\ln\frac{x+1}{x-1}\right)=\frac{1}{1-x^2}$$
+$$
+\begin{aligned}
+\frac{d}{dx}\coth^{-1}x=\frac{1}{1-x^2}=\frac{d}{dx}\left(\frac{1}{2}\ln\frac{x+1}{x-1}\right)=\frac{1}{1-x^2}
+\end{aligned}
+$$
 
 So 
 
-$$\frac{d^n}{dx^n}\coth^{-1}x=\frac{d^n}{dx^n}\left(\frac{1}{2}\ln\frac{x+1}{x-1}\right)$$
+$$
+\begin{aligned}
+\frac{d^n}{dx^n}\coth^{-1}x=\frac{d^n}{dx^n}\left(\frac{1}{2}\ln\frac{x+1}{x-1}\right)
+\end{aligned}
+$$
 
 and 
 
-$$\sum_{n=0}^\infty\frac{x^n}{n!}\frac{d^n}{dx^n}\coth^{-1}x=\sum_{n=0}^\infty\frac{x^n}{n!}\frac{d^n}{dx^n}\left(\frac{1}{2}\ln\frac{x+1}{x-1}\right)$$
+$$
+\begin{aligned}
+\sum_{n=0}^\infty\frac{x^n}{n!}\frac{d^n}{dx^n}\coth^{-1}x=\sum_{n=0}^\infty\frac{x^n}{n!}\frac{d^n}{dx^n}\left(\frac{1}{2}\ln\frac{x+1}{x-1}\right)
+\end{aligned}
+$$
 
 Therefore, $\coth^{-1}x=\frac{1}{2}\ln\frac{x+1}{x-1}$.
 
@@ -465,13 +477,20 @@ Therefore, $\coth^{-1}x=\frac{1}{2}\ln\frac{x+1}{x-1}$.
 
 (b) 
 
-$$x^{\frac{1}{2}}=\sum_{n=0}^\infty\frac{(x-x_0)^n}{n!}\frac{d^n}{dx^n}x^{\frac{1}{2}}=\sum_{n=0}^\infty u_n(x)$$
+$$
+\begin{aligned}
+x^{\frac{1}{2}} &= \sum_{n=0}^\infty\frac{(x-x_0)^n}{n!}\frac{d^n}{dx^n}x^{\frac{1}{2}}=\sum_{n=0}^\infty u_n(x)\\
+\lim_{n\to\infty}\frac{u_{n+1}(x)}{u_n(x)} &= \lim_{n\to\infty}\left|\frac{(x-x_0)^{n+1}}{(n+1)!}\frac{d^{n+1}}{dx^{n+1}}x^{\frac{1}{2}}\Big/\frac{(x-x_0)^n}{n!}\frac{d^n}{dx^n}x^{\frac{1}{2}}\right|=\lim_{n\to\infty}\left|\frac{x-x_0}{x_0}\frac{2n-1}{2n+2} \right|<1
+\end{aligned}
+$$
 
-$$\lim_{n\to\infty}\frac{u_{n+1}(x)}{u_n(x)}= \lim_{n\to\infty}\left|\frac{(x-x_0)^{n+1}}{(n+1)!}\frac{d^{n+1}}{dx^{n+1}}x^{\frac{1}{2}}\Big/\frac{(x-x_0)^n}{n!}\frac{d^n}{dx^n}x^{\frac{1}{2}}\right|=\lim_{n\to\infty}\left|\frac{x-x_0}{x_0}\frac{2n-1}{2n+2} \right|<1$$ 
+when $\vert x-x_0\vert <x_0$, so the series converges when $\vert x-x_0\vert <x_0$. When $x=0$, all the terms are less than 0, and
 
-when $|x-x_0|<x_0$, so the series converges when $|x-x_0|<x_0$. When $x=0$, all the terms are less than 0, and
-
-$$\frac{u_{n}(x)}{u_{n+1}(x)}=\frac{2n+2}{2n-1}=1+\frac{2}{2n-1}=1+\frac{1}{n}+\frac{B(n)}{n^2}$$ 
+$$
+\begin{aligned}
+\frac{u_{n}(x)}{u_{n+1}(x)}=\frac{2n+2}{2n-1}=1+\frac{2}{2n-1}=1+\frac{1}{n}+\frac{B(n)}{n^2}
+\end{aligned}
+$$ 
 
 where B(n) is bound for large n, so the series diverges by Gauss' test.
 When $x=2x_0$, $\sum_{n=0}^\infty u_n(x)$ is an alternating series, and $\lim_{n\to\infty}u_n(x)=0$, so the series converges by Leibniz criterion.
@@ -481,11 +500,19 @@ Therefore, the range of convergence is $0<x\leq 2x_0$.
 
 ## 1.2.12
 
-$$\lim_{x\to x_0}\frac{f(x)}{g(x)}=\lim_{x\to x_0}\frac{f(x_0)+(x-x_0)f'(x_0)+\sum_{n=2}^{\infty}a_n(x-x_0)^n}{g(x_0)+(x-x_0)g'(x_0)+\sum_{n=2}^{\infty}b_n(x-x_0)^n}$$
+$$
+\begin{aligned}
+\lim_{x\to x_0}\frac{f(x)}{g(x)}=\lim_{x\to x_0}\frac{f(x_0)+(x-x_0)f'(x_0)+\sum_{n=2}^{\infty}a_n(x-x_0)^n}{g(x_0)+(x-x_0)g'(x_0)+\sum_{n=2}^{\infty}b_n(x-x_0)^n}
+\end{aligned}
+$$
 
 When $f(x_0)=g(x_0)=0$, 
 
-$$\lim_{x\to x_0}\frac{f(x)}{g(x)}=\lim_{x\to x_0}\frac{(x-x_0)f'(x_0)+\sum_{n=2}^{\infty}a_n(x-x_0)^n}{(x-x_0)g'(x_0)+\sum_{n=2}^{\infty}b_n(x-x_0)^n}=\lim_{x\to x_0}\frac{f'(x_0)+\sum_{n=1}^\infty c_n(x-x_0)^n}{g'(x_0)}=\lim_{x\to x_0}\frac{f'(x)}{g'(x)}$$
+$$
+\begin{aligned}
+\lim_{x\to x_0}\frac{f(x)}{g(x)}=\lim_{x\to x_0}\frac{(x-x_0)f'(x_0)+\sum_{n=2}^{\infty}a_n(x-x_0)^n}{(x-x_0)g'(x_0)+\sum_{n=2}^{\infty}b_n(x-x_0)^n}=\lim_{x\to x_0}\frac{f'(x_0)+\sum_{n=1}^\infty c_n(x-x_0)^n}{g'(x_0)}=\lim_{x\to x_0}\frac{f'(x)}{g'(x)}
+\end{aligned}
+$$
 
 by binomial theorem.
 
@@ -495,18 +522,29 @@ by binomial theorem.
 
 (a) 
 
-$$\frac{1}{n}-\ln{\frac{n}{n-1}}=\frac{1}{n}+\ln{\frac{n-1}{n}}=\frac{1}{n}+
-\ln{(1-\frac{1}{n})}=\frac{1}{n}-\sum_{k=1}^\infty(\frac{1}{n})^k=-\sum_{k=2}^\infty(\frac{1}{n})^k<0$$
+$$
+\begin{aligned}
+\frac{1}{n}-\ln{\frac{n}{n-1}}=\frac{1}{n}+\ln{\frac{n-1}{n}}=\frac{1}{n}+
+\ln{(1-\frac{1}{n})}=\frac{1}{n}-\sum_{k=1}^\infty(\frac{1}{n})^k=-\sum_{k=2}^\infty(\frac{1}{n})^k<0
+\end{aligned}
+$$
 
 (b) 
 
-$$\frac{1}{n}-\ln{\frac{n+1}{n}}=\frac{1}{n}-\ln{(1+\frac{1}{n})}=\frac{1}{n}-\sum_{k=1}^\infty(-1)^{k+1}(\frac{1}{n})^k=\sum_{k=2}^\infty(-1)^k(\frac{1}{n})^k>0$$
+$$
+\begin{aligned}
+\frac{1}{n}-\ln{\frac{n+1}{n}}=\frac{1}{n}-\ln{(1+\frac{1}{n})}=\frac{1}{n}-\sum_{k=1}^\infty(-1)^{k+1}(\frac{1}{n})^k=\sum_{k=2}^\infty(-1)^k(\frac{1}{n})^k>0
+\end{aligned}
+$$
 
 Euler-Mascheroni constant:
 
-$$\gamma=\lim_{n\to\infty}\left(\sum_{k=1}^n\frac{1}{k}-\ln{n}\right)=1+\sum_{n=2}^\infty(\frac{1}{n}-\ln{\frac{n}{n-1}})<1$$
-
-$$\gamma=1+\sum_{n=2}^\infty(\frac{1}{n}-\ln{\frac{n}{n-1}})=1+\sum_{n=1}^\infty(\frac{1}{n+1}-\ln{\frac{n+1}{n}})=1-1+\sum_{n=1}^\infty(\frac{1}{n}-\ln{\frac{n+1}{n}})+\lim_{n\to\infty}\frac{1}{n+1}>0$$
+$$
+\begin{aligned}
+\gamma &= \lim_{n\to\infty}\left(\sum_{k=1}^n\frac{1}{k}-\ln{n}\right)=1+\sum_{n=2}^\infty(\frac{1}{n}-\ln{\frac{n}{n-1}})<1\\
+\gamma &= 1+\sum_{n=2}^\infty(\frac{1}{n}-\ln{\frac{n}{n-1}})=1+\sum_{n=1}^\infty(\frac{1}{n+1}-\ln{\frac{n+1}{n}})=1-1+\sum_{n=1}^\infty(\frac{1}{n}-\ln{\frac{n+1}{n}})+\lim_{n\to\infty}\frac{1}{n+1}>0
+\end{aligned}
+$$
 
 So the Euler-Mascheroni constant $\gamma$ is bound by 0 and 1, and is therefore finite.
 
@@ -514,9 +552,12 @@ So the Euler-Mascheroni constant $\gamma$ is bound by 0 and 1, and is therefore 
 
 ## 1.2.14
 
-$$\psi(x\pm h)=\psi(x)\pm h\psi'(x)+\frac{h^2}{2}\psi''(x)\pm \frac{h^3}{6}\psi^{(3)}(x)+\frac{h^4}{24}\psi^{(4)}(x)+\cdots$$
-
-$$\frac{1}{h^2}\left[\psi(x+h)-2\psi(x)+\psi(x-h)\right]=\psi''(x)+\frac{h^2}{12}\psi^{(4)}(x)+\cdots$$
+$$
+\begin{aligned}
+\psi(x\pm h) &= \psi(x)\pm h\psi'(x)+\frac{h^2}{2}\psi''(x)\pm \frac{h^3}{6}\psi^{(3)}(x)+\frac{h^4}{24}\psi^{(4)}(x)+\cdots\\
+\frac{1}{h^2}\left[\psi(x+h)-2\psi(x)+\psi(x-h)\right] &= \psi''(x)+\frac{h^2}{12}\psi^{(4)}(x)+\cdots
+\end{aligned}
+$$
 
 So the error is $\frac{h^2}{12}\psi^{(4)}(x)$.
 
@@ -527,23 +568,36 @@ So the error is $\frac{h^2}{12}\psi^{(4)}(x)$.
 $\sin{x}=x-\frac{x^3}{6}+\frac{x^5}{120}-\frac{x^7}{5040}+\cdots$, and $\tan{x}=x+\frac{x^3}{3}+\frac{2x^5}{15}+\frac{7x^7}{315}+\cdots$ (expansion of $\tan{x}$ can be obtained by long division of expansions of $\sin{x}$ and $\cos{x}$).
 The term of highest order in $(\sin{(\tan{x})}-\tan{(\sin{x})})$ is $x^7$, the coefficient is 
 
-$$\left\{\left[\frac{7}{315}-\frac{1}{6}\left(3\times\frac{2}{15}+3\times\frac{1}{3^2}\right)+\frac{1}{120}\left(5\times\frac{1}{3}\right)-\frac{1}{5040}\right]-\left[-\frac{1}{5040}+\frac{1}{3}\left(3\times\frac{1}{120}+3\times\frac{1}{36}\right)+\frac{2}{15}\left(5\times\frac{-1}{6}+\frac{7}{315} \right)\right]\right\}x^7$$
+$$
+\begin{aligned}
+\left\{\left[\frac{7}{315}-\frac{1}{6}\left(3\times\frac{2}{15}+3\times\frac{1}{3^2}\right)+\frac{1}{120}\left(5\times\frac{1}{3}\right)-\frac{1}{5040}\right]-\left[-\frac{1}{5040}+\frac{1}{3}\left(3\times\frac{1}{120}+3\times\frac{1}{36}\right)+\frac{2}{15}\left(5\times\frac{-1}{6}+\frac{7}{315} \right)\right]\right\}x^7
+\end{aligned}
+$$
 
-$$\lim_{x\to\infty}\left[\frac{\sin{(\tan{x})}-\tan{(\sin{x})}}{x^7} \right]=-\frac{1}{30}$$
+Therefore,
+
+$$
+\begin{aligned}
+\lim_{x\to\infty}\left[\frac{\sin{(\tan{x})}-\tan{(\sin{x})}}{x^7} \right]=-\frac{1}{30}
+\end{aligned}
+$$
 
 --------------
 
 ## 1.2.16
 
-If the convergence ranges of the series $\sum_{n=0}^\infty a_n x^n$ is $-R<x<R$, then $\lim_{n\to\infty}\left|\frac{a_n+1}{a_n}R\right|=1$. The differentiated series is $\sum_{n=1}^\infty na_nx^{n-1}$, $\lim_{n\to\infty}\left|\frac{n+1}{n}\frac{a_n+1}{a_n}x\right|=\lim_{n\to\infty}\left|\frac{a_n+1}{a_n}x\right|<1$ when $-R<x<R$ (ignoring the end points). The integrated series is $\sum_{n=0}^\infty\frac{a_n}{n+1}x^{n+1}$, $\lim_{n\to\infty}\left|\frac{n+1}{n+2}\frac{a_n+1}{a_n}x\right|=\lim_{n\to\infty}\left|\frac{a_n+1}{a_n}x\right|<1$ when $-R<x<R$ (ignoring the end points). So all the series have the same converging range (ignoring the end points).
+If the convergence ranges of the series $\sum_{n=0}^\infty a_n x^n$ is $-R<x<R$, then $\lim_{n\to\infty}\left\vert\frac{a_n+1}{a_n}R\right\vert=1$. The differentiated series is $\sum_{n=1}^\infty na_nx^{n-1}$, $\lim_{n\to\infty}\left\vert\frac{n+1}{n}\frac{a_n+1}{a_n}x\right\vert=\lim_{n\to\infty}\left\vert\frac{a_n+1}{a_n}x\right\vert<1$ when $-R<x<R$ (ignoring the end points). The integrated series is $\sum_{n=0}^\infty\frac{a_n}{n+1}x^{n+1}$, $\lim_{n\to\infty}\left\vert\frac{n+1}{n+2}\frac{a_n+1}{a_n}x\right\vert=\lim_{n\to\infty}\left\vert\frac{a_n+1}{a_n}x\right\vert<1$ when $-R<x<R$ (ignoring the end points). So all the series have the same converging range (ignoring the end points).
 
 ## 1.3 Binomial Theorem
 
 ### 1.3.1
 
-$$P(x)=c\left(\frac{\cosh{x}}{\sinh(x)}-\frac{1}{x} \right)=c\frac{(1+\frac{x^2}{2}+\frac{x^4}{24}+\cdots)-(1+\frac{x^3}{6}+\frac{x^4}{120})}{x+\frac{x^3}{6}+\frac{x^5}{120}+\cdots}=c\frac{\frac{x}{3}+\frac{x^3}{30}+\cdots}{1+\frac{x^2}{6}+\cdots}$$
-
-$$=c(\frac{x}{3}+\frac{x^3}{30}+\cdots)(1-\frac{x^2}{6}+\cdots)=c\left(\frac{x}{3}-\frac{x^3}{45}+\cdots\right)$$
+$$
+\begin{aligned}
+P(x) &= c\left(\frac{\cosh{x}}{\sinh(x)}-\frac{1}{x} \right)=c\frac{(1+\frac{x^2}{2}+\frac{x^4}{24}+\cdots)-(1+\frac{x^3}{6}+\frac{x^4}{120})}{x+\frac{x^3}{6}+\frac{x^5}{120}+\cdots}=c\frac{\frac{x}{3}+\frac{x^3}{30}+\cdots}{1+\frac{x^2}{6}+\cdots}\\
+&=c(\frac{x}{3}+\frac{x^3}{30}+\cdots)(1-\frac{x^2}{6}+\cdots)=c\left(\frac{x}{3}-\frac{x^3}{45}+\cdots\right)
+\end{aligned}
+$$
 
 --------------
 
@@ -555,10 +609,15 @@ By binomial theorem, $\frac{1}{1-x^2}=\sum_{n=0}^\infty(-1)^n x^{2n}$, so $\int_
 
 ### 1.3.3
 
-$e^{-t}t^n=\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n$. When $-a\leq t\leq a$ \,($a>0$), we have $\left|\frac{(-t)^p}{p!}t^n\right|\leq\frac{a^{p+n}}{p!}$ and $\sum_{p=0}^\infty\frac{a^{p+n}}{p!}$ is convergent, so by Weierstrass M test $\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n$ is uniformly convergent in $-a\leq t\leq a$ for every $a>0$, and the series can be integrated by terms.
+$e^{-t}t^n=\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n$. When $-a\leq t\leq a$ \,($a>0$), we have $\left\vert\frac{(-t)^p}{p!}t^n\right\vert\leq\frac{a^{p+n}}{p!}$ and $\sum_{p=0}^\infty\frac{a^{p+n}}{p!}$ is convergent, so by Weierstrass M test $\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n$ is uniformly convergent in $-a\leq t\leq a$ for every $a>0$, and the series can be integrated by terms.
 
-\[\int_0^x e^{-t}t^n dt=\int_0^x\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n=\sum_{p=0}^\infty\int_0^x(-1)^p\frac{t^{n+p}}{p!}dt=\sum_{p=0}^\infty(-1)^p\frac{x^{n+p+1}}{p!(n+p+1)}\]
-For $-a\leq x\leq a$\,($a>0$), the integrated series converges by Leibniz criterion, so the range of convergence is $-a\leq t\leq a$ for every $a>0$. 
+$$
+\begin{aligned}
+\int_0^x e^{-t}t^n dt=\int_0^x\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n=\sum_{p=0}^\infty\int_0^x(-1)^p\frac{t^{n+p}}{p!}dt=\sum_{p=0}^\infty(-1)^p\frac{x^{n+p+1}}{p!(n+p+1)}
+\end{aligned}
+$$
+
+For $-a\leq x\leq a$ ($a>0$), the integrated series converges by Leibniz criterion, so the range of convergence is $-a\leq t\leq a$ for every $a>0$. 
 
 --------------
 
@@ -567,13 +626,36 @@ For $-a\leq x\leq a$\,($a>0$), the integrated series converges by Leibniz criter
 (a) $x=\sinh{y}=\frac{e^y-e^{-y}}{2}=y+\frac{y^3}{6}+\frac{y^5}{120}+\cdots$. Because x in terms of y has only terms of odd orders, y in terms of x can only has terms of odd orders too. Let $y=a_1x+a_3x^3+a_5x^5+\cdots$, substituting into $x=y+\frac{y^3}{6}+\frac{y^5}{120}+\cdots$, obtaining $x=a_1x+(a_3+\frac{a_1^3}{6})x^3+(a_5+\frac{a_1^2a_3}{2}+\frac{a_1^5}{120})x^5+\cdots$, so $a_1=1$, $a_3=-\frac{1}{6}$, $a_5=\frac{3}{40}$. Therefore  $\sinh^{-1}x=x-\frac{x^3}{6}+\frac{3x^5}{40}+\cdots$.
 \medskip
 
-(b) $\frac{d}{dx}\sinh^{-1}x=(x^2+1)^{-1/2}$, $\frac{d^2}{dx^2}\sinh^{-1}x=-x(x^2+1)^{-3/2}$, $\frac{d^3}{dx^3}\sinh^{-1}x=-(x^2+1)^{-3/2}+3x^2(x^2+1)^{-5/2}$, $\frac{d^4}{dx^4}\sinh^{-1}x=9x(x^2+1)^{-5/2}-15x^3(x^2+1)^{-7/2}$, $\frac{d^5}{dx^5}\sinh^{-1}x=9(x^2+1)^{-5/2}-90x^2(x^2+1)^{-7/2}+105x^4(x^2+1)^{-9/2}$. So $\sinh^{-1}x=\sum_{n=0}^\infty\frac{x^n}{n!}\frac{d^n}{dx^n}\sinh^{-1}x=x-\frac{x^3}{6}+\frac{3x^5}{40}+\cdots$.
+(b) 
+
+$$
+\begin{aligned}
+\frac{d}{dx}\sinh^{-1}x &= (x^2+1)^{-1/2}\\
+\frac{d^2}{dx^2}\sinh^{-1}x &=-x(x^2+1)^{-3/2}\\
+\frac{d^3}{dx^3}\sinh^{-1}x &=-(x^2+1)^{-3/2}+3x^2(x^2+1)^{-5/2}\\
+\frac{d^4}{dx^4}\sinh^{-1}x &= 9x(x^2+1)^{-5/2}-15x^3(x^2+1)^{-7/2}\\
+\frac{d^5}{dx^5}\sinh^{-1}x &=9(x^2+1)^{-5/2}-90x^2(x^2+1)^{-7/2}+105x^4(x^2+1)^{-9/2}\\
+
+\end{aligned}
+$$
+
+Therefore,
+
+$$
+\begin{aligned}
+\sinh^{-1}x=\sum_{n=0}^\infty\frac{x^n}{n!}\frac{d^n}{dx^n}\sinh^{-1}x=x-\frac{x^3}{6}+\frac{3x^5}{40}+\cdots
+\end{aligned}
+$$
 
 --------------
 
 ### 1.3.5
 
-$$\frac{1}{(1-x)^{n+1}}=\sum_{m=0}^\infty\binom{-(n+1)}{m}(-x)^m=\sum_{m=0}^\infty\frac{(n+m)!}{m!n!}x^m=\sum_{m'=n}^\infty\frac{m'!}{(m'-n)!n!}x^{m'-n}=\sum_{m=n}^\infty\binom{m}{n}x^{m-n}$$
+$$
+\begin{aligned}
+\frac{1}{(1-x)^{n+1}}=\sum_{m=0}^\infty\binom{-(n+1)}{m}(-x)^m=\sum_{m=0}^\infty\frac{(n+m)!}{m!n!}x^m=\sum_{m'=n}^\infty\frac{m'!}{(m'-n)!n!}x^{m'-n}=\sum_{m=n}^\infty\binom{m}{n}x^{m-n}
+\end{aligned}
+$$
 
 In the third equal sign we use a substitution $m'=m+n$.
 
@@ -581,7 +663,11 @@ In the third equal sign we use a substitution $m'=m+n$.
 
 ### 1.3.6
 
-$$(1+x)^{-\frac{m}{2}}=\sum_{n=0}^\infty\binom{-\frac{m}{2}}{n}x^n=\sum_{n=0}^\infty\frac{(-1)^n\frac{(m+2n-2)!!}{2^n (m-2)!!}}{n!}=\sum_{n=0}^\infty(-1)^n\frac{(m+2n-2)!!}{2^n n!(m-2)!!}$$
+$$
+\begin{aligned}
+(1+x)^{-\frac{m}{2}}=\sum_{n=0}^\infty\binom{-\frac{m}{2}}{n}x^n=\sum_{n=0}^\infty\frac{(-1)^n\frac{(m+2n-2)!!}{2^n (m-2)!!}}{n!}=\sum_{n=0}^\infty(-1)^n\frac{(m+2n-2)!!}{2^n n!(m-2)!!}
+\end{aligned}
+$$
 
 --------------
 
@@ -607,24 +693,30 @@ $$(1+x)^{-\frac{m}{2}}=\sum_{n=0}^\infty\binom{-\frac{m}{2}}{n}x^n=\sum_{n=0}^\i
 
 ### 1.3.9
 
-$$\frac{w}{c}=\frac{2(1-\alpha)}{1+(1-\alpha^2)}\frac{1-\alpha}{1-\alpha+\frac{\alpha^2}{2}}=(1-\alpha)\left[1-(-\alpha+\frac{\alpha^2}{2})+(-\alpha+\frac{\alpha^2}{2})^2-(-\alpha+\frac{\alpha^2}{2})^3+\cdots\right]$$
-
-$$=(1-\alpha)(1+\alpha+\frac{\alpha^2}{2}+\cdots)=1-\frac{\alpha^2}{2}-\frac{\alpha^3}{2}+\cdots$$
+$$
+\begin{aligned}
+\frac{w}{c} &=\frac{2(1-\alpha)}{1+(1-\alpha^2)}\frac{1-\alpha}{1-\alpha+\frac{\alpha^2}{2}}=(1-\alpha)\left[1-(-\alpha+\frac{\alpha^2}{2})+(-\alpha+\frac{\alpha^2}{2})^2-(-\alpha+\frac{\alpha^2}{2})^3+\cdots\right]\\
+&=(1-\alpha)(1+\alpha+\frac{\alpha^2}{2}+\cdots)=1-\frac{\alpha^2}{2}-\frac{\alpha^3}{2}+\cdots
+\end{aligned}
+$$
 
 --------------
 
 ### 1.3.10
 
-$$x=\frac{c^2}{g}\left\{ 1+\frac{1}{2}\left(g\frac{t}{c}\right)-\frac{1}{8}\left(g\frac{t}{c}\right)^4+\frac{1}{16}\left(g\frac{t}{c}\right)^6-\cdots \right\}=\frac{1}{2}gt^2-\frac{1}{8}\frac{g^3t^4}{c^2}+\frac{1}{16}\frac{g^5t^6}{c^4}-\cdots$$
+$$
+\begin{aligned}
+x=\frac{c^2}{g}\left\{ 1+\frac{1}{2}\left(g\frac{t}{c}\right)-\frac{1}{8}\left(g\frac{t}{c}\right)^4+\frac{1}{16}\left(g\frac{t}{c}\right)^6-\cdots \right\}=\frac{1}{2}gt^2-\frac{1}{8}\frac{g^3t^4}{c^2}+\frac{1}{16}\frac{g^5t^6}{c^4}-\cdots
+\end{aligned}
+$$
 
 --------------
 
 ### 1.3.11
 
-$$\frac{\gamma^2}{(s+n-|k|^2)^2}=\frac{\gamma^2}{\left(n+|k|(1-\frac{1}{2}\frac{\gamma^2}{|k|^2}+\cdots-1)\right)^2}=\frac{\gamma^2}{n^2(1-\frac{\gamma^2}{2n|k|})^2+\cdots}=\frac{\gamma^2}{n^2}(1+\frac{\gamma^2}{n|k|}+\cdots)=\frac{\gamma^2}{n^2}+\frac{\gamma^4}{n^3|k|}+\cdots$$
-
 $$
 \begin{aligned}
+\frac{\gamma^2}{(s+n-|k|^2)^2} &=\frac{\gamma^2}{\left(n+|k|(1-\frac{1}{2}\frac{\gamma^2}{|k|^2}+\cdots-1)\right)^2}=\frac{\gamma^2}{n^2(1-\frac{\gamma^2}{2n|k|})^2+\cdots}=\frac{\gamma^2}{n^2}(1+\frac{\gamma^2}{n|k|}+\cdots)=\frac{\gamma^2}{n^2}+\frac{\gamma^4}{n^3|k|}+\cdots\\
 E &= mc^2\left[1-\frac{1}{2}\left(\frac{\gamma^2}{n^2}+\frac{\gamma^4}{n^3|k|}+\cdots\right)+\frac{3}{8}\left(\frac{\gamma^2}{n^2}+\frac{\gamma^4}{n^3|k|}+\cdots\right)^2 +\cdots\right]\\
  &= mc^2\left[1-\frac{1}{2}\frac{\gamma^2}{n^2}+(\frac{3}{8}-\frac{n}{2|k|})\frac{\gamma^4}{n^4}+\cdots \right]
 \end{aligned}
@@ -636,37 +728,57 @@ $$
 
 (a)
 
-$$R=\frac{2mc^2(1+\frac{E_k}{2mc^2})^{1/2}-2mc^2}{E_k}=\frac{\frac{1}{2}E_k+\cdots}{E_k}\approx \frac{1}{2}$$
+$$
+\begin{aligned}
+R=\frac{2mc^2(1+\frac{E_k}{2mc^2})^{1/2}-2mc^2}{E_k}=\frac{\frac{1}{2}E_k+\cdots}{E_k}\approx \frac{1}{2}
+\end{aligned}
+$$
 
 (b)
 
-$$R=\sqrt{\frac{2mc^2(E_k+2mc^2)}{E_k^2}}-\frac{2mc^2}{E_k}\approx0$$
+$$
+\begin{aligned}
+R=\sqrt{\frac{2mc^2(E_k+2mc^2)}{E_k^2}}-\frac{2mc^2}{E_k}\approx0
+\end{aligned}
+$$
 
 --------------
 
 ### 1.3.13
 
 The first series converges for $|x|<1$, and the second series converges for $|x^{-1}|<1$, that is, $|x|>1$. The ranges of convergence of the two series do not overlap, so when adding together to get $\sum_{n=-\infty}^\infty x^n$, nowhere can the series converge.
+
 --------------
 
 ### 1.3.14
 
 (a) By binomial theorem, when $|x|<1$,
-$$\frac{1}{1-x}=\sum_{n=0}^\infty\binom{-1}{n}(-x)^n=\sum_{n=0}^\infty x^n$$
 
-$$\frac{x}{(1-x)^2}=x\sum_{n=0}^\infty\binom{-2}{n}(-x)^n=x\sum_{n=0}^\infty(n+1)x^n=\sum_{n=1}^\infty nx^n$$
-
-$$\langle \varepsilon \rangle=\frac{\varepsilon_0 e^{\frac{-\varepsilon_0}{kT}}}{(1-\frac{-\varepsilon_0}{kT})^2}\Big/ \frac{1}{1-\frac{-\varepsilon_0}{kT}}==\frac{\varepsilon_0}{e^{\frac{\varepsilon_0}{kT}}-1}$$
+$$
+\begin{aligned}
+\frac{1}{1-x} &=\sum_{n=0}^\infty\binom{-1}{n}(-x)^n=\sum_{n=0}^\infty x^n\\
+\frac{x}{(1-x)^2} &=x\sum_{n=0}^\infty\binom{-2}{n}(-x)^n=x\sum_{n=0}^\infty(n+1)x^n=\sum_{n=1}^\infty nx^n\\
+\langle \varepsilon \rangle &=\frac{\varepsilon_0 e^{\frac{-\varepsilon_0}{kT}}}{(1-\frac{-\varepsilon_0}{kT})^2}\Big/ \frac{1}{1-\frac{-\varepsilon_0}{kT}}==\frac{\varepsilon_0}{e^{\frac{\varepsilon_0}{kT}}-1}
+\end{aligned}
+$$
 
 (b)
 
-$$\langle \varepsilon \rangle=\frac{\varepsilon_0}{1+\frac{\varepsilon_0}{kT}+\cdots-1}\approx kT$$
+$$
+\begin{aligned}
+\langle \varepsilon \rangle=\frac{\varepsilon_0}{1+\frac{\varepsilon_0}{kT}+\cdots-1}\approx kT
+\end{aligned}
+$$
 
 --------------
 
 ### 1.3.15
 
-$$\tan^{-1}x=\int_{0}^x\frac{dt}{1+t^2}=\int_0^\infty\sum_{n=0}^\infty(-1)^n t^{2n}=\sum_{n=0}^\infty(-1)^n\frac{x^{2n+1}}{2n+1}$$
+$$
+\begin{aligned}
+\tan^{-1}x=\int_{0}^x\frac{dt}{1+t^2}=\int_0^\infty\sum_{n=0}^\infty(-1)^n t^{2n}=\sum_{n=0}^\infty(-1)^n\frac{x^{2n+1}}{2n+1}
+\end{aligned}
+$$
 
 When $-a<t<a$ and $0<a<1$, the series $\sum_{n=0}^\infty (-1)^n t^{2n}$ is uniformly convergent by Weierstrass M test, so the series can be integrated by term. 
 
@@ -674,11 +786,13 @@ When $-a<t<a$ and $0<a<1$, the series $\sum_{n=0}^\infty (-1)^n t^{2n}$ is unifo
 
 ### 1.3.16
 
-$$\frac{2+2\varepsilon}{1+2\varepsilon}=2(1+\varepsilon)(1-2\varepsilon+4\varepsilon^2-\cdots)=2-2\varepsilon+4\varepsilon^2-\cdots$$
-
-$$\frac{\ln(1+2\varepsilon)}{\varepsilon}=\frac{2\varepsilon-\frac{4\varepsilon^2}{2}+\frac{8\varepsilon^3}{3}-\cdots}{\varepsilon}=2-2\varepsilon+\frac{8}{3}\varepsilon^2-\cdots$$
-
-$$\lim_{n\to\infty}f(\varepsilon)=\lim_{n\to\infty}\frac{(1+\varepsilon)}{\varepsilon^2}\left(\frac{4}{3}\varepsilon^2+\cdots\right)=\frac{4}{3}$$
+$$\
+\begin{aligned}
+frac{2+2\varepsilon}{1+2\varepsilon} &=2(1+\varepsilon)(1-2\varepsilon+4\varepsilon^2-\cdots)=2-2\varepsilon+4\varepsilon^2-\cdots\\
+\frac{\ln(1+2\varepsilon)}{\varepsilon} &=\frac{2\varepsilon-\frac{4\varepsilon^2}{2}+\frac{8\varepsilon^3}{3}-\cdots}{\varepsilon}=2-2\varepsilon+\frac{8}{3}\varepsilon^2-\cdots\\
+\lim_{n\to\infty}f(\varepsilon) &=\lim_{n\to\infty}\frac{(1+\varepsilon)}{\varepsilon^2}\left(\frac{4}{3}\varepsilon^2+\cdots\right)=\frac{4}{3}
+\end{aligned}
+$$
 
 --------------
 
@@ -690,6 +804,7 @@ $$
  &= 1+\frac{A}{2}(1-2A^{-1}+A^{-2})(-2A^{-1}-\frac{2}{3}A^{-3}-\cdots)=2A^{-1}-\frac{4}{3}A^{-2}+\frac{2}{3}A^{-3}+\cdots\\
 \xi_2 &= \frac{2}{A}(1+\frac{2}{3}A^{-1})^{-1}=2A^{-1}(1-\frac{2}{3}A^{-1}+\frac{4}{9}A^{-2}-\cdots)=2A^{-1}-\frac{4}{3}A^{-2}+\frac{8}{9}A^{-3}+\cdots 
 \end{aligned}
+$$
 
 --------------
 
@@ -697,17 +812,29 @@ $$
 
 (a) 
 
-$$\arctan{x}=\int_0^\infty\frac{1}{1+t^2}dt=\int_0^\infty\sum_{k=0}^\infty(-1)^k t^{2k}dt=\sum_{k=0}^\infty\frac{x^{2k+1}}{2k+1}$$
+$$
+\begin{aligned}
+\arctan{x}=\int_0^\infty\frac{1}{1+t^2}dt=\int_0^\infty\sum_{k=0}^\infty(-1)^k t^{2k}dt=\sum_{k=0}^\infty\frac{x^{2k+1}}{2k+1}
+\end{aligned}
+$$
 
 (In exercise 1.3.15 we have verified that this series expansion is valid in $-a\leq x\leq a$ for $0<a<1$).
 
-$$\int_{0}^1\arctan{t}\frac{dt}{t}=\int_0^1\sum_{n=0}^\infty\frac{t^{2k}}{2k+1}dt=\sum_{k=0}^\infty(-1)^k\frac{1}{(2k+1)^2}$$
+$$
+\begin{aligned}
+\int_{0}^1\arctan{t}\frac{dt}{t}=\int_0^1\sum_{n=0}^\infty\frac{t^{2k}}{2k+1}dt=\sum_{k=0}^\infty(-1)^k\frac{1}{(2k+1)^2}
+\end{aligned}
+$$
 
 which is the Catalan's constant.
 
 (b) Integrating by parts, 
 
-$$-\int_0^1\ln{x}\frac{dx}{1+x^2}=-\left[(\ln{x})\arctan{x}\Big|_0^1-\int_0^1\frac{1}{x}\arctan{x}dx \right]=\int_0^1\arctan{x}\frac{dx}{x}$$
+$$
+\begin{aligned}
+-\int_0^1\ln{x}\frac{dx}{1+x^2}=-\left[(\ln{x})\arctan{x}\Big|_0^1-\int_0^1\frac{1}{x}\arctan{x}dx \right]=\int_0^1\arctan{x}\frac{dx}{x}
+\end{aligned}
+$$
 
 which is the same with (a).
 
@@ -721,7 +848,15 @@ If the equation holds for $n=k-1$, then  $\sum_{j=1}^{k-1}j^4=\frac{k-1}{30}(2k-
 
 ### 1.4.2
 
-If $(\frac{d}{dx})^n[f(x)g(x)]=\sum_{j=0}^n\binom{n}{j}\left[(\frac{d}{dx})^jf(x) \right]\left[(\frac{d}{dx})^{n-j}g(x) \right]$, then
+If 
+
+$$
+\begin{aligned}
+(\frac{d}{dx})^n[f(x)g(x)]=\sum_{j=0}^n\binom{n}{j}\left[(\frac{d}{dx})^jf(x) \right]\left[(\frac{d}{dx})^{n-j}g(x) \right]
+\end{aligned}
+$$
+
+then
 
 $$
 \begin{aligned}
@@ -741,7 +876,11 @@ so the equation holds for all positive integers by mathematical induction.
 
 ### 1.5.1
 
-$$\int_{-x}^x\frac{dt}{1-t~^2}=\frac{1}{2}\int_{-x}^x\left(\frac{1}{1-t}+\frac{1}{1+t}\right)dt=\frac{1}{2}\left[-\ln{\frac{1-x}{1+x}} +\ln{\frac{1+x}{1-x}}\right]=\ln{\frac{1+x}{1-x}}$$
+$$
+\begin{aligned}
+\int_{-x}^x\frac{dt}{1-t~^2}=\frac{1}{2}\int_{-x}^x\left(\frac{1}{1-t}+\frac{1}{1+t}\right)dt=\frac{1}{2}\left[-\ln{\frac{1-x}{1+x}} +\ln{\frac{1+x}{1-x}}\right]=\ln{\frac{1+x}{1-x}}
+\end{aligned}
+$$
 
 --------------
 
@@ -782,7 +921,11 @@ $$
 
 Substituting Eq. (1.88) into Eq. (1.87):
 
-$$f(x)=\sum_{n=0}^\infty\sum_{j=0}^n(-1)^{n+j}\binom{n}{j}\frac{x^n}{(1+x)^{n+1}}c_{n-j}$$
+$$
+\begin{aligned}
+f(x)=\sum_{n=0}^\infty\sum_{j=0}^n(-1)^{n+j}\binom{n}{j}\frac{x^n}{(1+x)^{n+1}}c_{n-j}
+\end{aligned}
+$$
 
 Rearrange the series by $n'=n-j$:
 
@@ -805,13 +948,20 @@ Let $\arctan{x}=\sum_{n=0}^\infty(-1)^n c_n x^n$, then from $n=0$, $c_n=0, -\fra
 
 ### 1.6.1
 
-$$\ln{(1+x)}=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\frac{x^5}{5}-\cdots$$
-
-$$\ln{(1-x)}=-x-\frac{x^2}{2}-\frac{x^3}{3}-\frac{x^4}{4}-\frac{x^5}{5}-\cdots$$
+$$
+\begin{aligned}
+\ln{(1+x)} &=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\frac{x^5}{5}-\cdots\\
+\ln{(1-x)} &=-x-\frac{x^2}{2}-\frac{x^3}{3}-\frac{x^4}{4}-\frac{x^5}{5}-\cdots
+\end{aligned}
+$$
 
 so
 
-$$\ln{\left(\frac{1+x}{1-x} \right)}=\ln{(1+x)}-\ln{(1-x)}=2\left(x+\frac{x^3}{3}+\frac{x^5}{5}+\cdots \right)$$
+$$
+\begin{aligned}
+\ln{\left(\frac{1+x}{1-x} \right)}=\ln{(1+x)}-\ln{(1-x)}=2\left(x+\frac{x^3}{3}+\frac{x^5}{5}+\cdots \right)
+\end{aligned}
+$$
 
 ## 1.7 Vectors
 
@@ -839,7 +989,11 @@ $(\textbf{B}-\textbf{A})+(\textbf{C}-\textbf{B})+(\textbf{A}-\textbf{C})=0$
 
 Let $\mathbf{v}_i'$ and $\mathbf{r}_i'$ be the velocity and position of the $i$th galaxy viewed from $\mathbf{r}_1$. Then 
 
-$$\mathbf{v}_i'=\mathbf{v}_i-\mathbf{v}_1=H_0\mathbf{r}_i-H_0\mathbf{r}_1=H_0\mathbf{r}_i'$$
+$$
+\begin{aligned}
+\mathbf{v}_i'=\mathbf{v}_i-\mathbf{v}_1=H_0\mathbf{r}_i-H_0\mathbf{r}_1=H_0\mathbf{r}_i'
+\end{aligned}
+$$
 
 --------------
 
@@ -855,7 +1009,7 @@ Diagonals of faces: $\pm(1,-1,0),\pm(1,0,-1),\pm(0,1,-1)$
 
 (a) $(x-a_x)a_x+(y-a_y)a_y+(z-a_z)a_z=0$. It is the surface containing the tip of $\mathbf{a}$ and perpendicular to $\mathbf{a}$.
 
-(b)$(x-a_x)x+(y-a_y)a_y+(z-a_z)a_z=0$, so $(x-\frac{a_x}{2})^2+(y-\frac{a_y}{2})^2+(z-\frac{a_z}{2})^2=\frac{a_x^2+a_y^2+a_z^2}{4}$. It is a sphere cantered at the tip of $\frac{1}{2}\mathbf{a}$ with radius  $\frac{1}{2}|\mathbf{a}|$.
+(b)$(x-a_x)x+(y-a_y)a_y+(z-a_z)a_z=0$, so $(x-\frac{a_x}{2})^2+(y-\frac{a_y}{2})^2+(z-\frac{a_z}{2})^2=\frac{a_x^2+a_y^2+a_z^2}{4}$. It is a sphere cantered at the tip of $\frac{1}{2}\mathbf{a}$ with radius  $\frac{1}{2}\vert\mathbf{a}\vert$.
 
 --------------
 
@@ -879,19 +1033,25 @@ Let the position vector of three vertices of the triangle be $\mathbf{A}, \mathb
 
 ### 1.7.10
 
-$|\mathbf{A}|^2=|\mathbf{B}|^2+|\mathbf{C}|^2-2\mathbf{B}\cdot\mathbf{C}=|\mathbf{B}|^2+|\mathbf{C}|^2-2|\mathbf{B}||\mathbf{C}|$
+$\vert\mathbf{A}\vert^2=\vert\mathbf{B}\vert^2+\vert\mathbf{C}\vert^2-2\mathbf{B}\cdot\mathbf{C}=\vert\mathbf{B}\vert^2+\vert\mathbf{C}\vert^2-2\vert\mathbf{B}\vert\vert\mathbf{C}\vert$
 
 --------------
 
 ### 1.7.11
 
-$\mathbf{Q}=-2\mathbf{P}$, so \textbf{Q} and \textbf{P} are anti-parallel. $\mathbf{P}\cdot\mathbf{R}=0$ and $\mathbf{Q}\cdot\mathbf{R}=0$, so \textbf{R} is perpendicular to \textbf{P} and \textbf{Q}.
+$\mathbf{Q}=-2\mathbf{P}$, so $\mathbf{Q}$ and $\mathbf{P}$ are anti-parallel. $\mathbf{P}\cdot\mathbf{R}=0$ and $\mathbf{Q}\cdot\mathbf{R}=0$, so $\mathbf{R}$ is perpendicular to $\mathbf{P}$ and $\mathbf{Q}$.
 
 ## 1.8 Complex Numbers And Functions
 
 ### 1.8.1
 
-$x+iy=re^{i\theta}$ where $r=\sqrt{x^2+y^2}$ and  $\theta=\tan^{-1}\frac{y}{x}$. $(x+iy)^{-1}=r^{-1}e^{-i\theta}=\frac{1}{\sqrt{x^2+y^2}}(\cos{(-\theta)}+i\sin{(-\theta}))=\frac{x}{x^2+y^2}-i\frac{y}{x^2+y^2}$
+$x+iy=re^{i\theta}$ where $r=\sqrt{x^2+y^2}$ and  $\theta=\tan^{-1}\frac{y}{x}$
+
+$$
+\begin{aligned}
+(x+iy)^{-1}=r^{-1}e^{-i\theta}=\frac{1}{\sqrt{x^2+y^2}}(\cos{(-\theta)}+i\sin{(-\theta}))=\frac{x}{x^2+y^2}-i\frac{y}{x^2+y^2}
+\end{aligned}
+$$
 
 --------------
 
@@ -929,23 +1089,31 @@ $$
 
 (a)
 
-$$\sum_{n=0}^{N-1}\cos{nx}=\Re{\left[\sum_{n=0}^{N-1}e^{inx} \right]}=\Re{\left[\frac{1-e^{iNx}}{1-e^{ix}} \right]}=\Re{\left[\frac{e^{iNx/2}}{e^{ix/2}}\left(\frac{e^{iNx/2}-e^{-iNx/2}}{e^{ix/2}-e^{-ix/2}} \right) \right]}=\left(\cos{\frac{(N-1)x}{2}}\right)\frac{\sin{(Nx/2)}}{\sin{(x/2)}}$$
+$$
+\begin{aligned}
+\sum_{n=0}^{N-1}\cos{nx}=\Re{\left[\sum_{n=0}^{N-1}e^{inx} \right]}=\Re{\left[\frac{1-e^{iNx}}{1-e^{ix}} \right]}=\Re{\left[\frac{e^{iNx/2}}{e^{ix/2}}\left(\frac{e^{iNx/2}-e^{-iNx/2}}{e^{ix/2}-e^{-ix/2}} \right) \right]}=\left(\cos{\frac{(N-1)x}{2}}\right)\frac{\sin{(Nx/2)}}{\sin{(x/2)}}
+\end{aligned}
+$$
 
 (b)
 
-$$\sum_{n=0}^{N-1}\sin{nx}=\Im{\left[\sum_{n=0}^{N-1}e^{inx} \right]}=\Im{\left[\frac{1-e^{iNx}}{1-e^{ix}} \right]}=\Im{\left[\frac{e^{iNx/2}}{e^{ix/2}}\left(\frac{e^{iNx/2}-e^{-iNx/2}}{e^{ix/2}-e^{-ix/2}} \right) \right]}=\left(\sin{\frac{(N-1)x}{2}}\right)\frac{\sin{(Nx/2)}}{\sin{(x/2)}}$$
+$$
+\begin{aligned}\sum_{n=0}^{N-1}\sin{nx}=\Im{\left[\sum_{n=0}^{N-1}e^{inx} \right]}=\Im{\left[\frac{1-e^{iNx}}{1-e^{ix}} \right]}=\Im{\left[\frac{e^{iNx/2}}{e^{ix/2}}\left(\frac{e^{iNx/2}-e^{-iNx/2}}{e^{ix/2}-e^{-ix/2}} \right) \right]}=\left(\sin{\frac{(N-1)x}{2}}\right)\frac{\sin{(Nx/2)}}{\sin{(x/2)}}
+\end{aligned}
+$$
 
 --------------
 
 ### 1.8.5
 
-$$\sin{z}=z-\frac{z^3}{3!}+\frac{z^5}{5!}-\cdots$$
-
-$$\cos{z}=1-\frac{z^2}{2!}+\frac{z^4}{4!}-\cdots$$
-
-$$\sinh{z}=\frac{e^z-e^{-z}}{2}=z+\frac{z^3}{3!}+\frac{z^5}{5!}+\cdots$$
-
-$$\cosh{z}=\frac{e^x+e^{-x}}{2}=1+\frac{z^2}{2!}+\frac{z^4}{4!}+\cdots$$
+$$
+\begin{aligned}
+\sin{z} &=z-\frac{z^3}{3!}+\frac{z^5}{5!}-\cdots\\
+\cos{z} &=1-\frac{z^2}{2!}+\frac{z^4}{4!}-\cdots\\
+\sinh{z} &=\frac{e^z-e^{-z}}{2}=z+\frac{z^3}{3!}+\frac{z^5}{5!}+\cdots\\
+\cosh{z} &=\frac{e^x+e^{-x}}{2}=1+\frac{z^2}{2!}+\frac{z^4}{4!}+\cdots
+\end{aligned}
+$$
 
 Substituting $iz$ for $z$, then we obtain all the four equations. 
 
@@ -1034,11 +1202,27 @@ $$
 
 (a) 
 
-$$(-8)^{1/3}=\left(8e^{i(1+2n)\pi} \right)^{1/3}=2e^{i\frac{\pi}{3}}, 2e^{i\pi},2e^{-i\frac{\pi}{3}}=1+\sqrt{3}i,-2,1-\sqrt{3}i$$
+$$
+\begin{aligned}
+(-8)^{1/3}=\left(8e^{i(1+2n)\pi} \right)^{1/3}=2e^{i\frac{\pi}{3}}, 2e^{i\pi},2e^{-i\frac{\pi}{3}}=1+\sqrt{3}i,-2,1-\sqrt{3}i
+\end{aligned}
+$$
 
-$$\[i^{1/4}=(e^{i(\frac{1}{2}+2n)\pi})^{1/4}=e^{i\frac{\pi}{8}},e^{i\frac{5\pi}{8}},e^{i\frac{9\pi}{8}},e^{i\frac{13\pi}{8}}$$
+(b)
 
-$$\[\frac{1}{\sqrt{2}}+\frac{1}{\sqrt{2}}i$$
+$$
+\begin{aligned}
+i^{1/4}=(e^{i(\frac{1}{2}+2n)\pi})^{1/4}=e^{i\frac{\pi}{8}},e^{i\frac{5\pi}{8}},e^{i\frac{9\pi}{8}},e^{i\frac{13\pi}{8}}
+\end{aligned}
+$$
+
+(c)
+
+$$
+\begin{aligned}
+\frac{1}{\sqrt{2}}+\frac{1}{\sqrt{2}}i
+\begin{aligned}
+$$
 
 --------------
 
@@ -1046,11 +1230,19 @@ $$\[\frac{1}{\sqrt{2}}+\frac{1}{\sqrt{2}}i$$
 
 (a) 
 
-$$(1+i)^3=\left(\sqrt{2}e^{i\frac{\pi}{4}} \right)^3=2^{3/2}e^{i3\pi/4}$$
+$$
+\begin{aligned}
+(1+i)^3=\left(\sqrt{2}e^{i\frac{\pi}{4}} \right)^3=2^{3/2}e^{i3\pi/4}
+\end{aligned}
+$$
 
 (b) 
 
-$$\left(e^{i(-1+2n)\pi} \right)^{1/5}=e^{ik\pi/5}$$
+$$
+\begin{aligned}
+\left(e^{i(-1+2n)\pi} \right)^{1/5}=e^{ik\pi/5}
+\end{aligned}
+$$
 
 where $k=1,3,5,7,9$.
 
@@ -1058,13 +1250,21 @@ where $k=1,3,5,7,9$.
 
 ### 1.9.1
 
-$$f(x,y)=\sum_{n=0}^\infty\frac{x^n}{n!}\frac{\partial^nf}{\partial x^n}\Big|_{0,y}=
-\sum_{n=0}^\infty\frac{x^n}{n!}\sum_{m=0}^\infty\frac{y^m}{m!}\frac{\partial^{m+n}f}{\partial y^m\partial x^n}\Big|_{0,0}$$
+$$
+\begin{aligned}
+f(x,y)=\sum_{n=0}^\infty\frac{x^n}{n!}\frac{\partial^nf}{\partial x^n}\Big|_{0,y}=
+\sum_{n=0}^\infty\frac{x^n}{n!}\sum_{m=0}^\infty\frac{y^m}{m!}\frac{\partial^{m+n}f}{\partial y^m\partial x^n}\Big|_{0,0}
+\end{aligned}
+$$
 
 Rearrange the double series by $p=m+n$ and $q=n$,
 
-$$f(x,y)=\sum_{p=0}^\infty\sum_{q=0}^p\frac{x^{p-q}}{(p-q)!}\frac{y^q}{q!}\frac{\partial^{m+n}f}{\partial y^m\partial x^n}\Big|_{0,0}
-=\sum_{p=0}^\infty\sum_{q=0}^p\frac{1}{p!}\binom{p}{q}x^{p-q}y^q\frac{\partial^{m+n}f}{\partial y^m\partial x^n}\Big|_{0,0}$$
+$$
+\begin{aligned}
+f(x,y)=\sum_{p=0}^\infty\sum_{q=0}^p\frac{x^{p-q}}{(p-q)!}\frac{y^q}{q!}\frac{\partial^{m+n}f}{\partial y^m\partial x^n}\Big|_{0,0}
+=\sum_{p=0}^\infty\sum_{q=0}^p\frac{1}{p!}\binom{p}{q}x^{p-q}y^q\frac{\partial^{m+n}f}{\partial y^m\partial x^n}\Big|_{0,0}
+\end{aligned}
+$$
 
 --------------
 
@@ -1072,7 +1272,11 @@ $$f(x,y)=\sum_{p=0}^\infty\sum_{q=0}^p\frac{x^{p-q}}{(p-q)!}\frac{y^q}{q!}\frac{
 
 Expand the function in every variable as in Exercise 1.9.1, then
 
-$$f(x_1,\cdots,x_m)=\sum_{n_1=0}^\infty\cdots\sum_{n_m=0}^\infty\frac{x_1^{n_1}}{n_1!}\cdots\frac{x_m^{n_m}}{n_m!}\frac{\partial^{n_1+\cdots+n_m}}{\partial x_1^{n_1}\cdots\partial x_m^{n_m}}f(0,\cdots,0)$$
+$$
+\begin{aligned}
+f(x_1,\cdots,x_m)=\sum_{n_1=0}^\infty\cdots\sum_{n_m=0}^\infty\frac{x_1^{n_1}}{n_1!}\cdots\frac{x_m^{n_m}}{n_m!}\frac{\partial^{n_1+\cdots+n_m}}{\partial x_1^{n_1}\cdots\partial x_m^{n_m}}f(0,\cdots,0)
+\end{aligned}
+$$
 
 Let $n=n_1+\cdots+n_m$, substitute $\alpha_i t$ for $x_i$, and apply the generalized form of binomial theorem (Eq 1.80),
 
@@ -1089,11 +1293,19 @@ $$
 
 ### 1.10.1
 
-$$\Gamma(n)=\int_0^\infty t^{n-1}e^{-t}dt=-t^{n-1}e^{-t}\Big|_0^\infty+\int_0^\infty(n-1)t^{n-2}e^{-t}dt=(n-1)\Gamma(n-1)$$
+$$
+\begin{aligned}
+\Gamma(n)=\int_0^\infty t^{n-1}e^{-t}dt=-t^{n-1}e^{-t}\Big|_0^\infty+\int_0^\infty(n-1)t^{n-2}e^{-t}dt=(n-1)\Gamma(n-1)
+\end{aligned}
+$$
 
 We have integrated by parts and applied the definition of $\Gamma(n-1)$. Keep reducing n by this method until $n=1$, and note that $\Gamma(1)=1$, we  obtain
 
-$$\Gamma(n)=(n-1)!$$
+$$
+\begin{aligned}
+\Gamma(n)=(n-1)!
+\end{aligned}
+$$
 
 --------------
 
@@ -1111,23 +1323,39 @@ $$
 
 where $c$ is determined by $J(\infty)=0$.
 
-$$\int_0^\infty \frac{\sin x}{x}dx=J(0)=\frac{\pi}{2}$$
+$$
+\begin{aligned}
+\int_0^\infty \frac{\sin x}{x}dx=J(0)=\frac{\pi}{2}
+\end{aligned}
+$$
 
 --------------
 
 ### 1.10.3
 
-$$\int_0^\infty\frac{dx}{\cosh{x}}=\int_0^\infty\frac{2}{e^x+e^{-x}}dx=\int_0^\infty\frac{2e^{-x}}{1+e^{-2x}}=\int_0^\infty2e^{-x}(1-e^{-2x}+e^{4x}-\cdots)dx=2(\frac{1}{1}-\frac{1}{3}+\frac{1}{5}-\cdots)$$
+$$
+\begin{aligned}
+\int_0^\infty\frac{dx}{\cosh{x}}=\int_0^\infty\frac{2}{e^x+e^{-x}}dx=\int_0^\infty\frac{2e^{-x}}{1+e^{-2x}}=\int_0^\infty2e^{-x}(1-e^{-2x}+e^{4x}-\cdots)dx=2(\frac{1}{1}-\frac{1}{3}+\frac{1}{5}-\cdots)
+\end{aligned}
+$$
 
 where the expansion is valid for all positive x because $e^{-2x}<1$ for all positive x. $\tan^{-1}1=\frac{\pi}{4}=\int_0^1\frac{1}{1+x^2}dx=\int_0^1(1-x^2+x^4-\cdots) dx=1-\frac{1}{3}+\frac{1}{5}-\cdots$, so 
 
-$$\int_0^\infty\frac{dx}{\cosh{x}}=2\tan^{-1}1=\frac{\pi}{2}$$
+$$
+\begin{aligned}
+\int_0^\infty\frac{dx}{\cosh{x}}=2\tan^{-1}1=\frac{\pi}{2}
+\end{aligned}
+$$
 
 --------------
 
 ### 1.10.4
 
-$$\int_0^\infty\frac{dx}{e^{ax}+1}=\int_0^\infty\frac{e^{-ax}}{1+e^{-ax}}=\int_0^\infty e^{-ax}(1-e^{-ax}+e^{-2ax}-\cdots)dx=\frac{1}{a}(\frac{1}{1}-\frac{1}{2}+\frac{1}{3}-\cdots)=\frac{1}{a}\ln{(1+1)}=\frac{\ln{2}}{a}$$
+$$
+\begin{aligned}
+\int_0^\infty\frac{dx}{e^{ax}+1}=\int_0^\infty\frac{e^{-ax}}{1+e^{-ax}}=\int_0^\infty e^{-ax}(1-e^{-ax}+e^{-2ax}-\cdots)dx=\frac{1}{a}(\frac{1}{1}-\frac{1}{2}+\frac{1}{3}-\cdots)=\frac{1}{a}\ln{(1+1)}=\frac{\ln{2}}{a}
+\end{aligned}
+$$
 
 --------------
 
@@ -1135,7 +1363,11 @@ $$\int_0^\infty\frac{dx}{e^{ax}+1}=\int_0^\infty\frac{e^{-ax}}{1+e^{-ax}}=\int_0
 
 Integrating by parts
 
-$$\int_\pi^\infty\frac{\sin{x}}{x^2}dx=\frac{-1}{x}\sin{x}\Big|_\pi^\infty-\int_\pi^\infty-\frac{\cos{x}}{x}dx=-\mathrm{Ci}(\pi)$$
+$$
+\begin{aligned}
+\int_\pi^\infty\frac{\sin{x}}{x^2}dx=\frac{-1}{x}\sin{x}\Big|_\pi^\infty-\int_\pi^\infty-\frac{\cos{x}}{x}dx=-\mathrm{Ci}(\pi)
+\end{aligned}
+$$
 
 where $\mathrm{Ci}(x)$ is the cosine integral (see Table 1.2)
 
@@ -1143,9 +1375,13 @@ where $\mathrm{Ci}(x)$ is the cosine integral (see Table 1.2)
 
 ### 1.10.6
 
-Let $J(a)=\int_0^\infty e^{-ax}\frac{\sin{x}}{x}dx$, which is the same as Exercise 1.10.2, then $\int_0^\infty e^{-x}\frac{\sin{x}}{x}dx=J(1)$.
+Let $J(a)=\int_0^\infty e^{-ax}\frac{\sin{x}}{x}dx$, which is the same as Exercise 1.10.2, then $\int_0^\infty e^{-x}\frac{\sin{x}}{x}dx=J(1)$:
 
-$$\int_0^\infty e^{-x}\frac{\sin{x}}{x}dx=-\tan^{-1}{1}+\frac{\pi}{2}=\frac{\pi}{4}$$
+$$
+\begin{aligned}
+\int_0^\infty e^{-x}\frac{\sin{x}}{x}dx=-\tan^{-1}{1}+\frac{\pi}{2}=\frac{\pi}{4}
+\end{aligned}
+$$
 
 --------------
 
@@ -1153,7 +1389,11 @@ $$\int_0^\infty e^{-x}\frac{\sin{x}}{x}dx=-\tan^{-1}{1}+\frac{\pi}{2}=\frac{\pi}
 
 Integrating by parts
 
-$$\int_0^x \mathrm{erf}(t)dt=\mathrm{erf}(t)\cdot t\Big|_0^x-\int_0^x d\,\mathrm{erf}(t)\cdot t=x\,\mathrm{erf}(x)-\int_0^x\frac{2}{\sqrt{\pi}}e^{-t^2}dt\cdot t=x\,\mathrm{erf}(x)+\frac{e^{-x^2}-1}{\sqrt{\pi}}$$
+$$
+\begin{aligned}
+\int_0^x \mathrm{erf}(t)dt=\mathrm{erf}(t)\cdot t\Big|_0^x-\int_0^x d\,\mathrm{erf}(t)\cdot t=x\,\mathrm{erf}(x)-\int_0^x\frac{2}{\sqrt{\pi}}e^{-t^2}dt\cdot t=x\,\mathrm{erf}(x)+\frac{e^{-x^2}-1}{\sqrt{\pi}}
+\end{aligned}
+$$
 
 --------------
 
@@ -1174,7 +1414,11 @@ $$
 
 Let $y=x+1$
 
-$$\int_0^\infty\frac{e^{-x}}{x+1}dx=\int_1^\infty\frac{e^{-y+1}}{y}dy=e\,\mathrm{E_1}(1)$$
+$$
+\begin{aligned}
+\int_0^\infty\frac{e^{-x}}{x+1}dx=\int_1^\infty\frac{e^{-y+1}}{y}dy=e\,\mathrm{E_1}(1)
+\end{aligned}
+$$
 
 --------------
 
@@ -1182,37 +1426,57 @@ $$\int_0^\infty\frac{e^{-x}}{x+1}dx=\int_1^\infty\frac{e^{-y+1}}{y}dy=e\,\mathrm
 
 Integrating by parts
 
-$$I=\int_0^\infty(\tan^{-1}x)^2\frac{1}{x^2}dx=-(\tan^{-1}x)^2\frac{1}{x}\Big|_0^\infty-\int_0^\infty2\tan^{-1}x\frac{1}{1+x^2}\frac{-1}{x}dx=\int_0^\infty\frac{2\tan^{-1}x}{(1+x^2)x}dx$$
+$$
+\begin{aligned}
+I=\int_0^\infty(\tan^{-1}x)^2\frac{1}{x^2}dx=-(\tan^{-1}x)^2\frac{1}{x}\Big|_0^\infty-\int_0^\infty2\tan^{-1}x\frac{1}{1+x^2}\frac{-1}{x}dx=\int_0^\infty\frac{2\tan^{-1}x}{(1+x^2)x}dx
+\end{aligned}
+$$
 
 Let $J(a)=\int_0^\infty\frac{2\tan^{-1}ax}{(1+x^2)x}dx$, then $I=J(1)$
 
 $$
 \begin{aligned}
 \frac{dJ(a)}{da} &= \int_0^\infty\frac{2}{(1+x^2)x}\frac{x}{1+a^2x^2}=\frac{2}{1-a^2}\int_0^\infty\left(\frac{1}{1+x^2}-\frac{a^2}{1+a^2x^2} \right)dx\\
-&= \frac{2}{1-a^2}\left[\tan^{-1}x\Big|_0^\infty-a\tan^{-1}ax\Big|_0^\infty \right]=\frac{2}{1-a^2}\left[(1-a)\frac{\pi}{2} \right] =\frac{\pi}{1+a}\]
-\[J(a)=\int\frac{\pi}{1+a}da=\pi\ln|1+a|+c=\pi\ln|1+a|
+&= \frac{2}{1-a^2}\left[\tan^{-1}x\Big|_0^\infty-a\tan^{-1}ax\Big|_0^\infty \right]=\frac{2}{1-a^2}\left[(1-a)\frac{\pi}{2} \right] =\frac{\pi}{1+a}\\
+J(a) &=\int\frac{\pi}{1+a}da=\pi\ln|1+a|+c=\pi\ln|1+a|
 \end{aligned}
 $$
 
 where $c=0$ is determined by $J(0)=0$. So 
 
-$$\int_0^\infty\left(\frac{\tan^{-1}x}{x} \right)^2dx=J(1)=\pi\ln2$$
+$$
+\begin{aligned}
+\int_0^\infty\left(\frac{\tan^{-1}x}{x} \right)^2dx=J(1)=\pi\ln2
+\end{aligned}
+$$
 
 --------------
 
 ### 1.10.11
 
-$$A=4\int_0^a dx\int_0^{b\sqrt{1-\frac{x^2}{a^2}}}dy=4\int_0^ab\sqrt{1-\frac{x^2}{a^2}}dx$$
+$$
+\begin{aligned}
+A=4\int_0^a dx\int_0^{b\sqrt{1-\frac{x^2}{a^2}}}dy=4\int_0^ab\sqrt{1-\frac{x^2}{a^2}}dx
+\end{aligned}
+$$
 
 Let $\frac{x}{a}=\sin{\theta}$, then$\sqrt{1-\frac{x^2}{a^2}}=\cos{\theta}$, $dx=a\cos{\theta}d\theta$, and the range of integration becomes $0$ to $\frac{\pi}{2}$
 
-$$A=4\int_0^\frac{\pi}{2}ab\cos^2\theta d\theta=4ab\left(\frac{\theta}{2}+\frac{\sin{2\theta}}{4} \right)\Big|_0^{\frac{\pi}{2}}=\pi ab$$
+$$
+\begin{aligned}
+=4\int_0^\frac{\pi}{2}ab\cos^2\theta d\theta=4ab\left(\frac{\theta}{2}+\frac{\sin{2\theta}}{4} \right)\Big|_0^{\frac{\pi}{2}}=\pi ab
+\end{aligned}
+$$
 
 --------------
 
 ### 1.10.12
 
-$$A=\int_{-\frac{\pi}{3}}^\frac{\pi}{3}d\theta\int_{\frac{1}{2}\sec{\theta}}^1 r\,dr=\int_{-\frac{\pi}{3}}^\frac{\pi}{3}\frac{1}{2}\left(1-\frac{\sec^2\theta}{4} \right)d\theta=\left(\frac{\theta}{2}-\frac{\tan{\theta}}{8} \right)\Big|_{-\frac{\pi}{3}}^{\frac{\pi}{3}}=\frac{\pi}{3}-\frac{\sqrt{3}}{4}$$
+$$
+\begin{aligned}
+A=\int_{-\frac{\pi}{3}}^\frac{\pi}{3}d\theta\int_{\frac{1}{2}\sec{\theta}}^1 r\,dr=\int_{-\frac{\pi}{3}}^\frac{\pi}{3}\frac{1}{2}\left(1-\frac{\sec^2\theta}{4} \right)d\theta=\left(\frac{\theta}{2}-\frac{\tan{\theta}}{8} \right)\Big|_{-\frac{\pi}{3}}^{\frac{\pi}{3}}=\frac{\pi}{3}-\frac{\sqrt{3}}{4}
+\end{aligned}
+$$
 
 Which is the area of the circular sector minus the area of triangle.
 
@@ -1220,7 +1484,11 @@ Which is the area of the circular sector minus the area of triangle.
 
 ### 1.11.1
 
-$$\lim_{n\to\infty}\int_{-\infty}^\infty f(x)\delta_n(x)dx=\lim_{n\to\infty}\int_{-\frac{1}{2n}}^{\frac{1}{2n}}f(x)n\,dx=\lim_{n\to\infty}f(\xi_n)\frac{1}{n}n=f(0)$$
+$$
+\begin{aligned}
+\lim_{n\to\infty}\int_{-\infty}^\infty f(x)\delta_n(x)dx=\lim_{n\to\infty}\int_{-\frac{1}{2n}}^{\frac{1}{2n}}f(x)n\,dx=\lim_{n\to\infty}f(\xi_n)\frac{1}{n}n=f(0)
+\end{aligned}
+$$
 
 where $-\frac{1}{2n}\leq\xi_n\leq\frac{1}{2n}$ (by mean value theorem).
 
@@ -1230,7 +1498,11 @@ where $-\frac{1}{2n}\leq\xi_n\leq\frac{1}{2n}$ (by mean value theorem).
 
 Let $nx=\tan\theta$, then $1+n^2x^2=\sec^2\theta$, and $ndx=\sec^2\theta d\theta$. The range of integration becomes $-\frac{\pi}{2}$ to $\frac{\pi}{2}$
 
-$$\int_{-\infty}^\infty\frac{n}{\pi}\frac{1}{1+n^2x^2}dx==\int_{-\frac{\pi}{2}}^\frac{\pi}{2}\frac{n}{\pi}\frac{1}{\sec^2\theta}\frac{1}{n}\sec^2\theta\,d\theta=\frac{\theta}{\pi}\Big|_{-\frac{\pi}{2}}^\frac{\pi}{2} =1$$
+$$
+\begin{aligned}
+\int_{-\infty}^\infty\frac{n}{\pi}\frac{1}{1+n^2x^2}dx==\int_{-\frac{\pi}{2}}^\frac{\pi}{2}\frac{n}{\pi}\frac{1}{\sec^2\theta}\frac{1}{n}\sec^2\theta\,d\theta=\frac{\theta}{\pi}\Big|_{-\frac{\pi}{2}}^\frac{\pi}{2} =1
+\end{aligned}
+$$
 
 --------------
 
@@ -1244,7 +1516,11 @@ The proof probably requires contour integral of complex analysis, while I have n
 
 Let $a(x-x_1)=y$, then $x=\frac{y}{a}+x_1$, $adx=dy$,
 
-$$\int_{-\infty}^\infty f(x)\delta[a(x-x_1)]dx=\frac{1}{a}\int_{-\infty}^\infty f(\frac{y}{a}+x_1)\delta(y)dy=\frac{1}{a}f(\frac{0}{a}+x_1)=\frac{1}{a}f(x_1)=\int_{-\infty}^\infty f(x)\frac{1}{a}\delta(x-x_1)dx$$
+$$
+\begin{aligned}
+\int_{-\infty}^\infty f(x)\delta[a(x-x_1)]dx=\frac{1}{a}\int_{-\infty}^\infty f(\frac{y}{a}+x_1)\delta(y)dy=\frac{1}{a}f(\frac{0}{a}+x_1)=\frac{1}{a}f(x_1)=\int_{-\infty}^\infty f(x)\frac{1}{a}\delta(x-x_1)dx
+\end{aligned}
+$$
 
 so $\delta[a(x-x_1)]=\frac{1}{a}\delta(x-x_1)$.
 
@@ -1254,7 +1530,11 @@ so $\delta[a(x-x_1)]=\frac{1}{a}\delta(x-x_1)$.
 
 When $(x-x_1)(x-x_2)\neq0$, $\delta[(x-x_1)(x-x_2)]=0$, so
 
-$$\int_{-\infty}^\infty f(x)\delta[(x-x_1)(x-x_2)]dx=\int_{x_1-\varepsilon}^{x_1+\varepsilon}f(x)\delta[(x-x_1)(x-x_2)]dx+\int_{x_2-\varepsilon}^{x_2+\varepsilon}f(x)\delta[(x-x_1)(x-x_2)]dx$$
+$$
+\begin{aligned}
+\int_{-\infty}^\infty f(x)\delta[(x-x_1)(x-x_2)]dx=\int_{x_1-\varepsilon}^{x_1+\varepsilon}f(x)\delta[(x-x_1)(x-x_2)]dx+\int_{x_2-\varepsilon}^{x_2+\varepsilon}f(x)\delta[(x-x_1)(x-x_2)]dx
+\end{aligned}
+$$
 
 for arbitrarily small positive $\varepsilon$. Then
 
@@ -1269,7 +1549,11 @@ $$
 
 Therefore,
 
-$$\delta[(x-x_1)(x-x_2)]=\frac{\delta(x-x_1)+\delta(x-x_2)}{|x_1-x_2|}$$
+$$
+\begin{aligned}
+\delta[(x-x_1)(x-x_2)]=\frac{\delta(x-x_1)+\delta(x-x_2)}{|x_1-x_2|}
+\end{aligned}
+$$
 
 --------------
 
@@ -1277,11 +1561,19 @@ $$\delta[(x-x_1)(x-x_2)]=\frac{\delta(x-x_1)+\delta(x-x_2)}{|x_1-x_2|}$$
 
 Integrating by parts
 
-$$\int_{-\infty}^\infty f(x)x\frac{d\delta(x)}{dx}dx=f(x)x\delta(x)\Big|_{-\infty}^\infty-\int_{-\infty}^\infty[f'(x)x+f(x)]\delta(x)dx=0-f(0)=-\int_{-\infty}^\infty f(x)\delta(x)dx$$
+$$
+\begin{aligned}
+\int_{-\infty}^\infty f(x)x\frac{d\delta(x)}{dx}dx=f(x)x\delta(x)\Big|_{-\infty}^\infty-\int_{-\infty}^\infty[f'(x)x+f(x)]\delta(x)dx=0-f(0)=-\int_{-\infty}^\infty f(x)\delta(x)dx
+\end{aligned}
+$$
 
 Therefore,
 
-$$x\frac{d\delta(x)}{dx}=-\delta(x)$$
+$$
+\begin{aligned}
+x\frac{d\delta(x)}{dx}=-\delta(x)
+\end{aligned}
+$$
 
 --------------
 
@@ -1289,7 +1581,11 @@ $$x\frac{d\delta(x)}{dx}=-\delta(x)$$
 
 Integrating by parts
 
-$$\int_{-\infty}^\infty\frac{d\delta(x)}{dx}f(x)dx=\delta(x)f(x)\Big|_{-\infty}^\infty-\int_{-\infty}^\infty\delta(x)f'(x)dx=-f'(0)$$
+$$
+\begin{aligned}
+\int_{-\infty}^\infty\frac{d\delta(x)}{dx}f(x)dx=\delta(x)f(x)\Big|_{-\infty}^\infty-\int_{-\infty}^\infty\delta(x)f'(x)dx=-f'(0)
+\end{aligned}
+$$
 
 --------------
 
@@ -1297,17 +1593,29 @@ $$\int_{-\infty}^\infty\frac{d\delta(x)}{dx}f(x)dx=\delta(x)f(x)\Big|_{-\infty}^
 
 (The equation holds only when $f(x)$ has only one zero point.) When $f(x)\neq0$, $\delta\left(f(x)\right)=0$, so
 
-$$\int_{-\infty}^\infty h(x)\delta(f(x))dx=\int_{x_0-\varepsilon}^{x_0+\varepsilon}h(x)\delta\left((x-x_0)f'(x_0)+\frac{(x-x_0)^2}{2}f''(x_0)+\cdots \right)dx$$
+$$
+\begin{aligned}
+\int_{-\infty}^\infty h(x)\delta(f(x))dx=\int_{x_0-\varepsilon}^{x_0+\varepsilon}h(x)\delta\left((x-x_0)f'(x_0)+\frac{(x-x_0)^2}{2}f''(x_0)+\cdots \right)dx
+\end{aligned}
+$$
 
 for arbitrary small positive $\varepsilon$. Then
 
-$$\lim_{\varepsilon\to 0}\int_{x_0-\varepsilon}^{x_0+\varepsilon} h(x)\delta(f(x))dx
+$$
+\begin{aligned}
+\lim_{\varepsilon\to 0}\int_{x_0-\varepsilon}^{x_0+\varepsilon} h(x)\delta(f(x))dx
 =\lim_{\varepsilon\to 0}\int_{x_0-\varepsilon}^{x_0+\varepsilon} h(x)\delta\left((x-x_0)f'(x_0)\right)dx
-=\int_{-\infty}^{\infty} h(x)\frac{1}{|f'(x_0)|}\delta(x-x_0) dx$$4
+=\int_{-\infty}^{\infty} h(x)\frac{1}{|f'(x_0)|}\delta(x-x_0) dx
+\end{aligned}
+$$
 
 by Exercise 1.11.4. Therefore
 
-$$\delta\left(f(x) \right)=\frac{1}{|f'(x_0)|}\delta(x-x_0)$$
+$$
+\begin{aligned}
+\delta\left(f(x) \right)=\frac{1}{|f'(x_0)|}\delta(x-x_0)
+\end{aligned}
+$$
 
 --------------
 
@@ -1315,10 +1623,18 @@ $$\delta\left(f(x) \right)=\frac{1}{|f'(x_0)|}\delta(x-x_0)$$
 
 (a)
 
-$$\int_{-\infty}^\infty\frac{n}{2\cosh^2{nx}}dx=\frac{1}{2}\tanh{nx}\Big|_{-\infty}^\infty=1$$
+$$
+\begin{aligned}
+\int_{-\infty}^\infty\frac{n}{2\cosh^2{nx}}dx=\frac{1}{2}\tanh{nx}\Big|_{-\infty}^\infty=1
+\end{aligned}
+$$
 
 (b)
 
-$$\int_{-\infty}^x\frac{n}{2\cosh^2{nx}}dx=\frac{1}{2}\left(\tanh{nx}+1 \right)=u_n(x)$$
+$$
+\begin{aligned}
+\int_{-\infty}^x\frac{n}{2\cosh^2{nx}}dx=\frac{1}{2}\left(\tanh{nx}+1 \right)=u_n(x)
+\end{aligned}
+$$
 
 When $n\to\infty$ and $x<0$, $u_n(x)=\frac{1}{2}(-1+1)=0$; when $n\to\infty$ and $x>0$, $u_n(x)=\frac{1}{2}(1+1)=1$.
