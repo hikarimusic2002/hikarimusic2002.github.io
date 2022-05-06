@@ -12,6 +12,7 @@ redirect_from:
 ## 1.1 Infinite Series
 
 ### 1.1.1
+
 (a) If $A>0$, since $\lim_{n\to \infty}n^p u_n=A$, we have $\vert n^p u_n-A\vert < \frac{A}{2}$ when $n\geq N$ for some $N$. Then $0<\frac{A}{2}\frac{1}{n^p}<u_n<\frac{3A}{2}\frac{1}{n^p}$. Since $\sum_{n=1}^{\infty}\frac{3A}{2}\frac{1}{n^p}$ converges when $p>1$ by Cauchy integral test, $\sum_{n=1}^{\infty}u_n$ converges by comparison test.
 
 If $A<0$, then $\lim_{n\to \infty}n^p(-u_n)=-A$ where $-A>0$. From above $\sum_1^\infty(-u_n)$ converges, so $\sum_1^\infty u_n$ converges.
@@ -21,38 +22,46 @@ If $A=0$, we have $\vert n^p u_n\vert < 1$ when $n\geq N$ for some N. Then $-\fr
 (b) $\lim_{n\to\infty}nu_n=A$, so $A-\frac{A}{2}<nu_n<A+\frac{A}{2}$ when $n\geq N$ for some N. So $u_n>\frac{A}{2}\frac{1}{n}$ for sufficiently large $n$. The harmonic series $\sum_{n=1}^\infty\frac{1}{n}$ diverges, so $\sum_{n=1}^\infty u_n$ diverges.
 
 --------------
+
 ### 1.1.2
+
 Let $b_n'=\frac{b_n}{2K}$, then $\lim_{n\to\infty}\frac{b_n'}{a_n}=\frac{1}{2}$, so for sufficiently large $n$, we have $\frac{1}{2}-\frac{1}{2}=0<\frac{b_n'}{a_n}<1=\frac{1}{2}+\frac{1}{2}$. Then $0<b_n'<a_n$ or $0>b_n'>a_n$, so $\sum a_n$ converging implies $\sum b_n'$ converging by comparison test, and therefore $\sum b_n$ converges.
 
 Let $b_n''=\frac{2b_n}{K}$, then $\lim_{n\to\infty}\frac{b_n''}{a_n}=2$, so for sufficiently large $n$, we have $2+1=3>\frac{b_n''}{a_n}>1=2-1$.Then $3a_n>b_n'' >a_n$ or $3a_n<b_n'' <a_n$,  so $\sum a_n$ diverging implies $\sum b_n''$ divergeing by comparison test, and therefore $\sum b_n$ diverges.
 
 --------------
+
 ### 1.1.3
-$\int_2^\infty\frac{1}{x(\ln x)^2}dx=-\frac{1}{\ln x}\bigr\vert_2^\infty=\frac{1}{\ln 2}$, so by Cauchy integral test $\sum_{n=2}^\infty \frac{1}{n(\ln n)^2}$ converges.
+
+$$\int_2^\infty\frac{1}{x(\ln x)^2}dx=-\frac{1}{\ln x}\bigr\vert_2^\infty=\frac{1}{\ln 2}$$
+
+so by Cauchy integral test $\sum_{n=2}^\infty \frac{1}{n(\ln n)^2}$ converges.
 
 --------------
+
 ### 1.1.4
-$$\frac{u_n}{u_{n+1}}=1+\frac{(a_1-b_1)n+(a_0-b_0))}{n^2+b_1n+b_0}=1+\frac{a_1-b_1}{n}+\frac{B(n)}{n^2}$$
-where $B(n)$ is bounded for large n (It can be verified by binomial theorem, that each term in $B(n)$ has negative or zero power of n. By Gauss' test, $\sum_{n=1}^\infty u_n$ converges if $a_1-b_1>1$ and diverges if $a_1-b_1\leq 1$. 
+
+$$\frac{u_n}{u_{n+1}}=1+\frac{(a_1-b_1)n+(a_0-b_0)}{n^2+b_1n+b_0}=1+\frac{a_1-b_1}{n}+\frac{B(n)}{n^2}$$
+
+where $B(n)$ is bounded for large n (it can be verified by binomial theorem, that each term in $B(n)$ has negative or zero power of n). By Gauss' test, $\sum_{n=1}^\infty u_n$ converges if $a_1-b_1>1$ and diverges if $a_1-b_1\leq 1$. 
 
 --------------
+
 ### 1.1.5
-(a) $\ln n<n$, so $\frac{1}{\ln n}>\frac{1}{n}>0$ for all positive integers n, and the harmonic series $\sum_{n=1}^\infty \frac{1}{n}$ diverges implies $\sum_{n=2}^\infty \frac{1}{\ln n}$ diverges.
-\medskip
+
+(a) $\ln n<n$, so $\frac{1}{\ln n}>\frac{1}{n}>0$ for all positive integers $n$, and the harmonic series $\sum_{n=1}^\infty \frac{1}{n}$ diverging implies $\sum_{n=2}^\infty \frac{1}{\ln n}$ diverging.
 
 (b) $\frac{(n+1)!}{10^{n+1}}/\frac{n!}{10^n}=\frac{n+1}{10}\geq 1$ for $n\geq 9$, so $\sum_{n=1}^\infty \frac{n!}{10^n}$ diverges by ratio test.
-\medskip
 
 (c) $2n(2n+1)>(2n)^2$, so $0<\frac{1}{2n(2n+1)}<\frac{1}{(2n)^2}$. 
 $\sum_{n=1}^\infty \frac{1}{4n^2}$ converges by integral test, so $\sum_{n=1}^\infty \frac{1}{2n(2n+1)}$ converges by comparison test.
-\medskip
 
-(d) $\frac{1}{\sqrt{n(n+1)}}>\frac{1}{\sqrt{(n+1)^2}}=\frac{1}{n+1}>0$. $\sum_{n=1}^\infty \frac{1}{n+1}$ diverges by integral test, so $\sum_{n=1}^\infty[n(n+1)]^{-\frac{1}{2}}$ diverges.
-\medskip
+(d) $\frac{1}{\sqrt{n(n+1)}}>\frac{1}{\sqrt{(n+1)^2}}=\frac{1}{n+1}>0$. Since $\sum_{n=1}^\infty \frac{1}{n+1}$ diverges by integral test, $\sum_{n=1}^\infty\[n(n+1)\]^{-\frac{1}{2}}$ diverges.
 
-(e) $\int_0^\infty \frac{1}{2x+1}=\frac{1}{2}\ln (2n+1)\bigr |_0^\infty$ is infinite, so $\sum_{n=0}^\infty \frac{1}{2n+1}$ diverges by integral test.
+(e) $\int_0^\infty \frac{1}{2x+1}=\frac{1}{2}\ln(2n+1)\bigr\vert_0^\infty$ is infinite, so $\sum_{n=0}^\infty\frac{1}{2n+1}$ diverges by integral test.
 
 --------------
+
 ### 1.1.6
 (a) $0<\frac{1}{n(n+1)}<\frac{1}{n^2}$. $\sum_{n=1}^\infty\frac{1}{n^2}$ converges by integral test, so $\sum_{n=1}^\infty \frac{1}{n(n+1)}$ converges by comparison test. 
 \medskip
