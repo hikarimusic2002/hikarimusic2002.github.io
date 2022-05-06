@@ -36,7 +36,8 @@ $\int_2^\infty \frac{1}{x(\ln x)^2}dx=-\frac{1}{\ln x}\bigr |_2^\infty=\frac{1}{
 $$\frac{u_n}{u_{n+1}}=1+\frac{(a_1-b_1)n+(a_0-b_0))}{n^2+b_1n+b_0}=1+\frac{a_1-b_1}{n}+\frac{B(n)}{n^2}$$
 where $B(n)$ is bounded for large n (It can be verified by binomial theorem, that each term in $B(n)$ has negative or zero power of n. By Gauss' test, $\sum_{n=1}^\infty u_n$ converges if $a_1-b_1>1$ and diverges if $a_1-b_1\leq 1$. 
 
-\paragraph{1.1.5}
+--------------
+#### 1.1.5
 (a) $\ln n<n$, so $\frac{1}{\ln n}>\frac{1}{n}>0$ for all positive integers n, and the harmonic series $\sum_{n=1}^\infty \frac{1}{n}$ diverges implies $\sum_{n=2}^\infty \frac{1}{\ln n}$ diverges.
 \medskip
 
@@ -52,7 +53,8 @@ $\sum_{n=1}^\infty \frac{1}{4n^2}$ converges by integral test, so $\sum_{n=1}^\i
 
 (e) $\int_0^\infty \frac{1}{2x+1}=\frac{1}{2}\ln (2n+1)\bigr |_0^\infty$ is infinite, so $\sum_{n=0}^\infty \frac{1}{2n+1}$ diverges by integral test.
 
-\paragraph{1.1.6}
+--------------
+#### 1.1.6
 (a) $0<\frac{1}{n(n+1)}<\frac{1}{n^2}$. $\sum_{n=1}^\infty\frac{1}{n^2}$ converges by integral test, so $\sum_{n=1}^\infty \frac{1}{n(n+1)}$ converges by comparison test. 
 \medskip
 
@@ -69,7 +71,8 @@ $\sum_{n=1}^\infty \frac{1}{4n^2}$ converges by integral test, so $\sum_{n=1}^\i
 
 $\lim_{n\to\infty}n^{\frac{1}{n}}=1$ implies for sufficiently large n, $0=1-1<n^{\frac{1}{n}}<1+1=2$, so $\frac{1}{n^{\frac{1}{n}}}>\frac{1}{2}$, and $\frac{1}{n\cdot n^{\frac{1}{n}}}>\frac{1}{2n}$. $\sum_{n=1}^\infty \frac{1}{2n}$ diverges by integral test, so $\sum_{n=1}^\infty \frac{1}{n\cdot n^{\frac{1}{n}}}$ diverges by comparison test.
 
-\paragraph{1.1.7}
+--------------
+#### 1.1.7
 If $a_1\geq a_2\geq a_3 \geq \cdots \geq 0$, then $\sum_{n=1}^\infty a_n$ converges if and only if $\sum_{k=1}^\infty2^ka_{2k}$ converges\footnote{See Walter Rudin, \textit{Principles of Mathmatical Analysis}, Chapter 3, theorem 3.27}. 
 
 $\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}=2^{(1-p)k}\frac{1}{k^q}\frac{1}{(\ln2)^q}$. If $p>1$, then $\sum_{k=1}^\infty \frac{1}{(2^{p-1})^k}\frac{1}{(\ln 2)^q}$ converges by ratio test, so $\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}$ converges, and $\sum_{n=2}^\infty \frac{1}{n^p(\ln n)^q}$ converges. 
@@ -78,7 +81,8 @@ If $p=1$, $\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}=\frac{1}{k^q}\frac
 
 Therefore, if $p>1$, or $p=1$ and $q>1$, then $\sum_{n=2}^\infty \frac{1}{n^p(\ln n)^q}$ converges.
 
-\paragraph{1.1.8}
+--------------
+#### 1.1.8
 \[\gamma=\lim_{n\to\infty}(\sum_{m=1}^n\frac{1}{m}-\ln n)=\sum_{m=1}^{1000}\frac{1}{m}+\lim_{n\to\infty}(\sum_{m=1001}^n\frac{1}{m}-\ln n)\]
 
 \[\lim_{n\to\infty}n=\sum_{m=1001}^\infty\ln \frac{m}{m-1}-\ln 1000\]
@@ -97,19 +101,22 @@ Therefore, if $p>1$, or $p=1$ and $q>1$, then $\sum_{n=2}^\infty \frac{1}{n^p(\l
 
 \[0.577\,213<\gamma<0.577\,216\]
 
-\paragraph{1.1.9}
+--------------
+#### 1.1.9
 The number in each shell is proportional to $r^2$, but the solid angle of each shell is proportional to $\frac{1}{r^2}$, so the total solid angle occupied by stars in each shell is the same. Let it be $\omega_0$.
 
 If the solid angle occupied by stars from shell 1 to n is $a_n$, then $a_{n+1}=a_n+a-a_n\cdot \frac{a}{4\pi}$, where $a_n\cdot \frac{a}{4\pi}$ is the solid angle of stars in shell $n+1$ that is blocked by stars in shell 1 to n. So $a_{n+1}-4\pi=(a_n-4\pi)(1-\frac{a}{4\pi})$, and $a_n=(a-4\pi)(1-\frac{a}{4\pi})^{n-1}+4\pi$. $1-\frac{a}{4\pi}<1$, so $\lim_{n\to\infty}a_n=4\pi$.
 
-\paragraph{1.1.10}
+--------------
+#### 1.1.10
 \[\frac{u_n}{u_{n+1}}=\left (\frac{2n+2}{2n+1} \right)^2=1+\frac{4n+3}{4n^2+4n+1}=1+\frac{1}{n}+\frac{B(n)}{n^2}\] 
 
 where B(n) is bound for large n. By Gauss' test, \[\sum_{n=1}^\infty\left[ \frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)} \right]^2\] 
 
 converges.
 
-\paragraph{1.1.11}
+--------------
+#### 1.1.11
 (a) $\frac{\ln n}{n}$ is monotonically decreasing, and $\lim_{n\to\infty}\frac{\ln n}{n}=0$, so the series converges by  Leibniz criterion. $\frac{\ln n}{n}\geq \frac{1}{n}$ when $n\geq 3$, and $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so $\sum_{n=1}^\infty\frac{\ln n}{n}$ diverges by comparison test, so the series is not absolutely convergent.
 \medskip
 
@@ -139,11 +146,8 @@ which means the sequence $a_n$ is monotonically decreasing.
 so $\lim_{n\to\infty}a_n=0$ because $\lim_{n\to\infty}\frac{2}{n-1}=0$. Therefore the series converges by Leibniz criterion.
 $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so the series is not absolutely convergent.
 
-
-
-
-
-\paragraph{1.1.12}
+--------------
+#### 1.1.12
 \[\beta(2)=1-\sum_{k=1}^\infty\frac{16k}{(16k^2-1)^2}=1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}-\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\]
 
 \[\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\leq\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\leq\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\,+\frac{16\cdot 41}{(16\cdot 41^2-1)^2}\]
@@ -155,12 +159,14 @@ $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so the series is not a
 
 So $\beta(2)=0.915966$ (to six-digit accuracy).
 
-\paragraph{1.1.13}
+--------------
+#### 1.1.13
 \[\zeta(2)+a\alpha_1+b\alpha_2=\sum_{n=1}^\infty(\frac{1}{n^2}+\frac{a}{n(n+1)}+\frac{b}{n(n+1)(n+2)})=\frac{(1+a)n^2+(3+2a+b)n+2}{n^2(n+1)(n+2)}\]
 
 \[\zeta(2)-\alpha_1-\alpha_2=\frac{2}{n^2(n+1)(n+2)}\]
 
-\paragraph{1.1.14}
+--------------
+#### 1.1.14
 \[\sum_{n=0}^\infty \frac{1}{(2n+1)^3}+\sum_{n=1}^\infty\frac{1}{(2n)^3}=\sum_{n=1}^\infty\frac{1}{n^3}\]
 
 \[\lambda(3)=\sum_{n=1}^\infty\frac{1}{n^3}-\sum_{n=1}^\infty\frac{1}{(2n)^3}=\frac{7}{8}\sum_{n=1}^\infty\frac{1}{n^3}=\frac{7}{8}\zeta(3)\]
@@ -168,14 +174,16 @@ So $\beta(2)=0.915966$ (to six-digit accuracy).
 
 to six decimal place.
 
-\paragraph{1.1.15}
+--------------
+#### 1.1.15
 (a) \[\sum_{n=2}^\infty[\zeta(n)-1]=\sum_{n=2}^\infty(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-\frac{1}{k}}=\sum_{k=2}^\infty(\frac{1}{k-1}-\frac{1}{k})=1\]
 
 (b) \[\sum_{n=2}^\infty(-1)^n[\zeta(n)-1]=\sum_{n=2}^\infty(-1)^n(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty(-1)^n\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty(-1)^n\frac{1}{k^n}\]
 
 \[=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-(-\frac{1}{k})}=\sum_{k=2}^\infty(\frac{1}{k}-\frac{1}{k+1})=\frac{1}{2}\]
 
-\paragraph{1.1.16}
+--------------
+#### 1.1.16
 (a) \[\zeta(3)-\alpha_2'=1+\sum_{n=1}^\infty(\frac{1}{n^3}-\frac{1}{(n-1)n(n+1)})=1+\sum_{n=2}^\infty\frac{-1}{(n-1)n^3(n+1)}\]
 \[\zeta(3)=\frac{5}{4}-\sum_{n=2}^\infty\frac{1}{n^3(n^2-1)}\]
 
