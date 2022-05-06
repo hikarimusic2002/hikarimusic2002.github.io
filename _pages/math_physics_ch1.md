@@ -63,152 +63,193 @@ $\sum_{n=1}^\infty \frac{1}{4n^2}$ converges by integral test, so $\sum_{n=1}^\i
 --------------
 
 ### 1.1.6
-(a) $0<\frac{1}{n(n+1)}<\frac{1}{n^2}$. $\sum_{n=1}^\infty\frac{1}{n^2}$ converges by integral test, so $\sum_{n=1}^\infty \frac{1}{n(n+1)}$ converges by comparison test. 
-\medskip
+(a) $0<\frac{1}{n(n+1)}<\frac{1}{n^2}$. Since $\sum_{n=1}^\infty\frac{1}{n^2}$ converges by integral test, $\sum_{n=1}^\infty \frac{1}{n(n+1)}$ converges by comparison test. 
 
-(b) $\int_2^\infty \frac{1}{n\ln n}\,dx=\ln \ln n\bigr |_2^\infty$ is infinite, so $\sum_{n=2}^{\infty} \frac{1}{n\ln n}$ converges by integral test.
-\medskip
+(b) $\int_2^\infty \frac{1}{n\ln n}\,dx=\ln \ln n\vert_2^\infty$ is infinite, so $\sum_{n=2}^{\infty} \frac{1}{n\ln n}$ converges by integral test.
 
-(c) $\frac{1}{(n+1)2^{n+1}}/\frac{1}{n2^n}=\frac{n}{n+1}\frac{1}{2}\leq \frac{1}{2}$ for all n, so $\sum_{n=1}^\infty \frac{1}{n2^n}$ converges by retio test.
-\medskip
+(c) $\frac{1}{(n+1)2^{n+1}}/\frac{1}{n2^n}=\frac{n}{n+1}\frac{1}{2}\leq \frac{1}{2}$ for all $n$, so $\sum_{n=1}^\infty \frac{1}{n\,2^n}$ converges by retio test.
 
-(d) $\ln \frac{n+1}{n}=\ln (n+1)-\ln n$, so $\sum_{n=1}^\infty \ln (1+\frac{1}{n})=(\ln2-\ln1)+(\ln3-\ln2)+\cdots=\lim_{n\to\infty} \ln n$ is infinite, so $\sum_{n=1}^\infty \ln (1+\frac{1}{n})$ diverges.
-\medskip
+(d) $\ln \frac{n+1}{n}=\ln (n+1)-\ln n$, so 
 
-(e) $n^{\frac{1}{n}}>1$. Let $x_n=n^{\frac{1}{n}}-1$, then $(1+x_n)^n=n$, and $\frac{n(n+1)}{2}x_n^2\leq n$ by binomial theorem, so $0\leq x_n \leq \sqrt{\frac{2}{n-1}}$, and $\lim_{n\to\infty}\sqrt{\frac{2}{n-1}}=0$ implies $\lim_{n\to\infty}x_n=0$, so $\lim_{n\to\infty}n^{\frac{1}{n}}=1$.
+$$\sum_{n=1}^\infty \ln (1+\frac{1}{n})=(\ln2-\ln1)+(\ln3-\ln2)+\cdots=\lim_{n\to\infty} \ln n$$
 
-$\lim_{n\to\infty}n^{\frac{1}{n}}=1$ implies for sufficiently large n, $0=1-1<n^{\frac{1}{n}}<1+1=2$, so $\frac{1}{n^{\frac{1}{n}}}>\frac{1}{2}$, and $\frac{1}{n\cdot n^{\frac{1}{n}}}>\frac{1}{2n}$. $\sum_{n=1}^\infty \frac{1}{2n}$ diverges by integral test, so $\sum_{n=1}^\infty \frac{1}{n\cdot n^{\frac{1}{n}}}$ diverges by comparison test.
+is infinite, which means $\sum_{n=1}^\infty \ln (1+\frac{1}{n})$ diverges.
+
+(e) $n^{\frac{1}{n}}>1$. Let $x_n=n^{\frac{1}{n}}-1$, then $(1+x_n)^n=n$, and $\frac{n(n+1)}{2}x_n^2\leq n$ by binomial theorem. Therefore, $0\leq x_n \leq \sqrt{\frac{2}{n-1}}$, so $\lim_{n\to\infty}\sqrt{\frac{2}{n-1}}=0$ implies $\lim_{n\to\infty}x_n=0$, and $\lim_{n\to\infty}n^{\frac{1}{n}}=1$.
+
+$\lim_{n\to\infty}n^{\frac{1}{n}}=1$ implies for sufficiently large $n$, $0=1-1<n^{\frac{1}{n}}<1+1=2$, so $\frac{1}{n^{\frac{1}{n}}}>\frac{1}{2}$, and $\frac{1}{n\cdot n^{\frac{1}{n}}}>\frac{1}{2n}$. Since $\sum_{n=1}^\infty \frac{1}{2n}$ diverges by integral test, $\sum_{n=1}^\infty \frac{1}{n\cdot n^{\frac{1}{n}}}$ diverges by comparison test.
 
 --------------
 ### 1.1.7
-If $a_1\geq a_2\geq a_3 \geq \cdots \geq 0$, then $\sum_{n=1}^\infty a_n$ converges if and only if $\sum_{k=1}^\infty2^ka_{2k}$ converges\footnote{See Walter Rudin, \textit{Principles of Mathmatical Analysis}, Chapter 3, theorem 3.27}. 
+If $a_1\geq a_2\geq a_3 \geq \cdots \geq 0$, then $\sum_{n=1}^\infty a_n$ converges if and only if $\sum_{k=1}^\infty2^ka_{2k}$ converges.
 
-$\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}=2^{(1-p)k}\frac{1}{k^q}\frac{1}{(\ln2)^q}$. If $p>1$, then $\sum_{k=1}^\infty \frac{1}{(2^{p-1})^k}\frac{1}{(\ln 2)^q}$ converges by ratio test, so $\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}$ converges, and $\sum_{n=2}^\infty \frac{1}{n^p(\ln n)^q}$ converges. 
+$$\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}=2^{(1-p)k}\frac{1}{k^q}\frac{1}{(\ln2)^q}$$. 
 
-If $p=1$, $\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}=\frac{1}{k^q}\frac{1}{(\ln2)^q}$, converges if $q>1$.
+If $p>1$, then $\sum_{k=1}^\infty \frac{1}{(2^{p-1})^k}\frac{1}{(\ln 2)^q}$ converges by ratio test, so $\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}$ converges, and $\sum_{n=2}^\infty \frac{1}{n^p(\ln n)^q}$ converges. 
 
-Therefore, if $p>1$, or $p=1$ and $q>1$, then $\sum_{n=2}^\infty \frac{1}{n^p(\ln n)^q}$ converges.
+If $p=1$, then $\sum_{k=1}^\infty 2^k \frac{1}{(2^k)^p(\ln 2^k)^q}=\frac{1}{k^q}\frac{1}{(\ln2)^q}$, which converges if $q>1$.
+
+Therefore, if $p>1$, or $p=1$ and $q>1$, wh have $\sum_{n=2}^\infty \frac{1}{n^p(\ln n)^q}$ converges.
 
 --------------
+
 ### 1.1.8
-\[\gamma=\lim_{n\to\infty}(\sum_{m=1}^n\frac{1}{m}-\ln n)=\sum_{m=1}^{1000}\frac{1}{m}+\lim_{n\to\infty}(\sum_{m=1001}^n\frac{1}{m}-\ln n)\]
 
-\[\lim_{n\to\infty}n=\sum_{m=1001}^\infty\ln \frac{m}{m-1}-\ln 1000\]
+$$\gamma=\lim_{n\to\infty}(\sum_{m=1}^n\frac{1}{m}-\ln n)=\sum_{m=1}^{1000}\frac{1}{m}+\lim_{n\to\infty}(\sum_{m=1001}^n\frac{1}{m}-\ln n)$$
 
-\[\gamma=\sum_{m=1}^{1000}\frac{1}{m}-\ln{1000}+\sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\]
+$$\lim_{n\to\infty}n=\sum_{m=1001}^\infty\ln \frac{m}{m-1}-\ln 1000$$
 
-\[\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx\geq\sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\geq \int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx+(\frac{1}{1001}-\ln\frac{1001}{1000})\]
+$$\gamma=\sum_{m=1}^{1000}\frac{1}{m}-\ln{1000}+\sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})$$
 
-\[\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx=\ln\frac{x}{x-1}+x\ln\frac{x-1}{x}\Big |_{1001}^\infty=-0.000\,499\,667\]
+$$\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx\geq\sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\geq \int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx+(\frac{1}{1001}-\ln\frac{1001}{1000})$$
 
-\[\frac{1}{1001}-\ln\frac{1001}{1000}=-0.000\,000\,499\]
+$$\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx=\left[\ln\frac{x}{x-1}+x\ln\frac{x-1}{x}\right]_{1001}^\infty=-0.000\,499\,667$$
 
-\[\sum_{m=1}^{1000}\frac{1}{m}-\ln1000=0.577\,714\,7\]
+$$\frac{1}{1001}-\ln\frac{1001}{1000}=-0.000\,000\,499$$
 
-\[0.577\,715-0.000\,499>\gamma>0.577\,714-0.000\,500-0.000\,001\]
+$$\sum_{m=1}^{1000}\frac{1}{m}-\ln1000=0.577\,714\,7$$
 
-\[0.577\,213<\gamma<0.577\,216\]
+$$0.577\,715-0.000\,499>\gamma>0.577\,714-0.000\,500-0.000\,001$$
+
+$$0.577\,213<\gamma<0.577\,216$$
 
 --------------
+
 ### 1.1.9
+
 The number in each shell is proportional to $r^2$, but the solid angle of each shell is proportional to $\frac{1}{r^2}$, so the total solid angle occupied by stars in each shell is the same. Let it be $\omega_0$.
 
-If the solid angle occupied by stars from shell 1 to n is $a_n$, then $a_{n+1}=a_n+a-a_n\cdot \frac{a}{4\pi}$, where $a_n\cdot \frac{a}{4\pi}$ is the solid angle of stars in shell $n+1$ that is blocked by stars in shell 1 to n. So $a_{n+1}-4\pi=(a_n-4\pi)(1-\frac{a}{4\pi})$, and $a_n=(a-4\pi)(1-\frac{a}{4\pi})^{n-1}+4\pi$. $1-\frac{a}{4\pi}<1$, so $\lim_{n\to\infty}a_n=4\pi$.
+If the solid angle occupied by stars from shell 1 to n is $a_n$, then $a_{n+1}=a_n+a-a_n\cdot \frac{a}{4\pi}$, where $a_n\cdot \frac{a}{4\pi}$ is the solid angle of stars in shell $n+1$ that is blocked by stars in shell 1 to n. So $a_{n+1}-4\pi=(a_n-4\pi)(1-\frac{a}{4\pi})$, and $a_n=(a-4\pi)(1-\frac{a}{4\pi})^{n-1}+4\pi$. $1-\frac{a}{4\pi}<1$, which means $\lim_{n\to\infty}a_n=4\pi$.
 
 --------------
 ### 1.1.10
-\[\frac{u_n}{u_{n+1}}=\left (\frac{2n+2}{2n+1} \right)^2=1+\frac{4n+3}{4n^2+4n+1}=1+\frac{1}{n}+\frac{B(n)}{n^2}\] 
 
-where B(n) is bound for large n. By Gauss' test, \[\sum_{n=1}^\infty\left[ \frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)} \right]^2\] 
+$$\frac{u_n}{u_{n+1}}=\left (\frac{2n+2}{2n+1} \right)^2=1+\frac{4n+3}{4n^2+4n+1}=1+\frac{1}{n}+\frac{B(n)}{n^2}$$
+
+where B(n) is bound for large n. By Gauss' test, 
+
+$$\sum_{n=1}^\infty\left[\frac{1\cdot3\cdot5\cdots(2n-1)}{2\cdot4\cdot6\cdots(2n)}\right]^2$$ 
 
 converges.
 
 --------------
 ### 1.1.11
 (a) $\frac{\ln n}{n}$ is monotonically decreasing, and $\lim_{n\to\infty}\frac{\ln n}{n}=0$, so the series converges by  Leibniz criterion. $\frac{\ln n}{n}\geq \frac{1}{n}$ when $n\geq 3$, and $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so $\sum_{n=1}^\infty\frac{\ln n}{n}$ diverges by comparison test, so the series is not absolutely convergent.
-\medskip
 
 (b)  The series $\frac{1}{1}-\frac{1}{3}+\frac{1}{5}-\cdots$ converges by Leibniz criterion, and so does the series  $\frac{1}{2}-\frac{1}{4}+\frac{1}{6}-\cdots$. So the series  $\frac{1}{1}+\frac{1}{2}-\frac{1}{3}-\frac{1}{4}+\frac{1}{5}+\frac{1}{6}\cdots$ is the sum of two convergent series, and is therefore convergent.
 $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so the series is not absolutely convergent.
-\medskip
 
 (c) 
-Combine adjacent terms with same sign to form a new series $\sum_{n=1}^\infty a_n$
-\[(1)-(\frac{1}{2}+\frac{1}{3})+(\frac{1}{4}+\frac{1}{5}+\frac{1}{6})-(\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\frac{1}{10})+\cdots\]
+Combine adjacent terms with same sign to form a new series 
 
-where \[a_n=\frac{1}{\frac{n^2-n}{2}+1}+\frac{1}{\frac{n^2-n}{2}+2}+\cdots+\frac{1}{\frac{n^2-n}{2}+n}\]
-\[a_{n+1}=\frac{1}{\frac{n^2+n}{2}+1}+\frac{1}{\frac{n^2+n}{2}+2}+\cdots+\frac{1}{\frac{n^2+n}{2}+n}+\frac{1}{\frac{n^2+n}{2}+n+1}\]
+$$sum_{n=1}^\infty a_n=(1)-(\frac{1}{2}+\frac{1}{3})+(\frac{1}{4}+\frac{1}{5}+\frac{1}{6})-(\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\frac{1}{10})+\cdots$$
+
+where 
+
+$$a_n=\frac{1}{\frac{n^2-n}{2}+1}+\frac{1}{\frac{n^2-n}{2}+2}+\cdots+\frac{1}{\frac{n^2-n}{2}+n}$$
+
+$$a_{n+1}=\frac{1}{\frac{n^2+n}{2}+1}+\frac{1}{\frac{n^2+n}{2}+2}+\cdots+\frac{1}{\frac{n^2+n}{2}+n}+\frac{1}{\frac{n^2+n}{2}+n+1}$$
 
 so $a_n$ has n terms and $a_{n+1}$ has $n+1$ terms.
 
-\[a_{n}-a_{n+1}=(\frac{1}{\frac{n^2-n}{2}+1}-\frac{1}{\frac{n^2+n}{2}+1})+(\frac{1}{\frac{n^2-n}{2}+2}-\frac{1}{\frac{n^2+n}{2}+2})+\cdots+(\frac{1}{\frac{n^2-n}{2}+n}-\frac{1}{\frac{n^2+n}{2}+n})-\frac{2}{n^2+3n+2}\]
+$$a_{n}-a_{n+1}=(\frac{1}{\frac{n^2-n}{2}+1}-\frac{1}{\frac{n^2+n}{2}+1})+(\frac{1}{\frac{n^2-n}{2}+2}-\frac{1}{\frac{n^2+n}{2}+2})+\cdots+(\frac{1}{\frac{n^2-n}{2}+n}-\frac{1}{\frac{n^2+n}{2}+n})-\frac{2}{n^2+3n+2}$$
 
 The $k^{st}$ term (except for the last term) of $a_{n}-a_{n+1}$ is
-\[\frac{1}{\frac{n^2-n}{2}+k}-\frac{1}{\frac{n^2+n}{2}+k}\geq\frac{1}{\frac{n^2-n}{2}+n}-\frac{1}{\frac{n^2+n}{2}+n}=\frac{4}{n^3+4n^2+3n}\]
 
-so \[a_{n}-a_{n+1}\geq\frac{4}{n^3+4n^2+3n}\cdot n-\frac{2}{n^2+3n+2}=\frac{4}{n^2+4n+3}\cdot n-\frac{2}{n^2+3n+2}\geq0\]
+$$\frac{1}{\frac{n^2-n}{2}+k}-\frac{1}{\frac{n^2+n}{2}+k}\geq\frac{1}{\frac{n^2-n}{2}+n}-\frac{1}{\frac{n^2+n}{2}+n}=\frac{4}{n^3+4n^2+3n}$$
+
+so 
+
+$$a_{n}-a_{n+1}\geq\frac{4}{n^3+4n^2+3n}\cdot n-\frac{2}{n^2+3n+2}=\frac{4}{n^2+4n+3}\cdot n-\frac{2}{n^2+3n+2}\geq0$$
 
 which means the sequence $a_n$ is monotonically decreasing.
-\[0\leq a_n\leq\frac{1}{\frac{n^2-n}{2}}\cdot n=\frac{2}{n-1}\]
 
-so $\lim_{n\to\infty}a_n=0$ because $\lim_{n\to\infty}\frac{2}{n-1}=0$. Therefore the series converges by Leibniz criterion.
+$$0\leq a_n\leq\frac{1}{\frac{n^2-n}{2}}\cdot n=\frac{2}{n-1}$$
+
+so $\lim_{n\to\infty}a_n=0$ because $\lim_{n\to\infty}\frac{2}{n-1}=0$. Therefore, the series converges by Leibniz criterion.
 $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so the series is not absolutely convergent.
 
 --------------
+
 ### 1.1.12
-\[\beta(2)=1-\sum_{k=1}^\infty\frac{16k}{(16k^2-1)^2}=1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}-\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\]
 
-\[\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\leq\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\leq\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\,+\frac{16\cdot 41}{(16\cdot 41^2-1)^2}\]
+$$\beta(2)=1-\sum_{k=1}^\infty\frac{16k}{(16k^2-1)^2}=1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}-\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}$$
 
-\[1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}=0.915\,984\,644\]
-\[\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx=\frac{-1}{2(16x^2-1)}\Big|_{41}^\infty=0.000\,018\,591\]
-\[\frac{16\cdot 41}{(16\cdot 41^2-1)^2}=0.000\,000\,907\]
-\[0.915965146\leq\beta(2)\leq0.915966053\]
+$$\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\leq\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\leq\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\,+\frac{16\cdot 41}{(16\cdot 41^2-1)^2}$$
+
+$$1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}=0.915\,984\,644$$
+
+$$\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx=\frac{-1}{2(16x^2-1)}\Big|_{41}^\infty=0.000\,018\,591$$
+
+$$\frac{16\cdot 41}{(16\cdot 41^2-1)^2}=0.000\,000\,907$$
+
+$$0.915965146\leq\beta(2)\leq0.915966053$$
 
 So $\beta(2)=0.915966$ (to six-digit accuracy).
 
 --------------
-### 1.1.13
-\[\zeta(2)+a\alpha_1+b\alpha_2=\sum_{n=1}^\infty(\frac{1}{n^2}+\frac{a}{n(n+1)}+\frac{b}{n(n+1)(n+2)})=\frac{(1+a)n^2+(3+2a+b)n+2}{n^2(n+1)(n+2)}\]
 
-\[\zeta(2)-\alpha_1-\alpha_2=\frac{2}{n^2(n+1)(n+2)}\]
+### 1.1.13
+
+$$\zeta(2)+a\alpha_1+b\alpha_2=\sum_{n=1}^\infty(\frac{1}{n^2}+\frac{a}{n(n+1)}+\frac{b}{n(n+1)(n+2)})=\frac{(1+a)n^2+(3+2a+b)n+2}{n^2(n+1)(n+2)}$$
+
+$$\zeta(2)-\alpha_1-\alpha_2=\frac{2}{n^2(n+1)(n+2)}$$
 
 --------------
-### 1.1.14
-\[\sum_{n=0}^\infty \frac{1}{(2n+1)^3}+\sum_{n=1}^\infty\frac{1}{(2n)^3}=\sum_{n=1}^\infty\frac{1}{n^3}\]
 
-\[\lambda(3)=\sum_{n=1}^\infty\frac{1}{n^3}-\sum_{n=1}^\infty\frac{1}{(2n)^3}=\frac{7}{8}\sum_{n=1}^\infty\frac{1}{n^3}=\frac{7}{8}\zeta(3)\]
-\[\lambda(3)=1.051800\]
+### 1.1.14
+
+$$\sum_{n=0}^\infty \frac{1}{(2n+1)^3}+\sum_{n=1}^\infty\frac{1}{(2n)^3}=\sum_{n=1}^\infty\frac{1}{n^3}$$
+
+$$\lambda(3)=\sum_{n=1}^\infty\frac{1}{n^3}-\sum_{n=1}^\infty\frac{1}{(2n)^3}=\frac{7}{8}\sum_{n=1}^\infty\frac{1}{n^3}=\frac{7}{8}\zeta(3)$$
+
+$$\lambda(3)=1.051800$$
 
 to six decimal place.
 
 --------------
+
 ### 1.1.15
-(a) \[\sum_{n=2}^\infty[\zeta(n)-1]=\sum_{n=2}^\infty(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-\frac{1}{k}}=\sum_{k=2}^\infty(\frac{1}{k-1}-\frac{1}{k})=1\]
 
-(b) \[\sum_{n=2}^\infty(-1)^n[\zeta(n)-1]=\sum_{n=2}^\infty(-1)^n(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty(-1)^n\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty(-1)^n\frac{1}{k^n}\]
+(a) 
 
-\[=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-(-\frac{1}{k})}=\sum_{k=2}^\infty(\frac{1}{k}-\frac{1}{k+1})=\frac{1}{2}\]
+$$\sum_{n=2}^\infty[\zeta(n)-1]=\sum_{n=2}^\infty(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-\frac{1}{k}}=\sum_{k=2}^\infty(\frac{1}{k-1}-\frac{1}{k})=1$$
+
+(b) 
+
+$$\sum_{n=2}^\infty(-1)^n[\zeta(n)-1]=\sum_{n=2}^\infty(-1)^n(\sum_{k=1}^\infty\frac{1}{k^n}-1)=\sum_{n=2}^\infty(-1)^n\sum_{k=2}^\infty\frac{1}{k^n}=\sum_{k=2}^\infty\sum_{n=2}^\infty(-1)^n\frac{1}{k^n}$$
+
+$$=\sum_{k=2}^\infty\frac{\frac{1}{k^2}}{1-(-\frac{1}{k})}=\sum_{k=2}^\infty(\frac{1}{k}-\frac{1}{k+1})=\frac{1}{2}$$
 
 --------------
-### 1.1.16
-(a) \[\zeta(3)-\alpha_2'=1+\sum_{n=1}^\infty(\frac{1}{n^3}-\frac{1}{(n-1)n(n+1)})=1+\sum_{n=2}^\infty\frac{-1}{(n-1)n^3(n+1)}\]
-\[\zeta(3)=\frac{5}{4}-\sum_{n=2}^\infty\frac{1}{n^3(n^2-1)}\]
 
-(b) \[\zeta(3)+\alpha_4'=\frac{5}{4}-\sum_{n=2}^\infty\frac{1}{(n-1)n^3(n+1)}+\sum_{n=3}^\infty\frac{1}{(n-2)(n-1)n(n+1)(n+2)}\]
-\[=\frac{29}{24}+\sum_{n=3}^\infty\frac{4}{(n-2)(n-1)n^3(n+1)(n+2)}\]
-\[\zeta(3)=\frac{115}{96}+\sum_{n=3}^\infty\frac{4}{(n-2)(n-1)n^3(n+1)(n+2)}\]
+### 1.1.16
+
+(a) 
+
+$$\zeta(3)-\alpha_2'=1+\sum_{n=1}^\infty(\frac{1}{n^3}-\frac{1}{(n-1)n(n+1)})=1+\sum_{n=2}^\infty\frac{-1}{(n-1)n^3(n+1)}$$
+
+$$\zeta(3)=\frac{5}{4}-\sum_{n=2}^\infty\frac{1}{n^3(n^2-1)}$$
+
+(b) 
+
+$$\zeta(3)+\alpha_4'=\frac{5}{4}-\sum_{n=2}^\infty\frac{1}{(n-1)n^3(n+1)}+\sum_{n=3}^\infty\frac{1}{(n-2)(n-1)n(n+1)(n+2)}$$
+
+$$=\frac{29}{24}+\sum_{n=3}^\infty\frac{4}{(n-2)(n-1)n^3(n+1)(n+2)}$$
+
+$$\zeta(3)=\frac{115}{96}+\sum_{n=3}^\infty\frac{4}{(n-2)(n-1)n^3(n+1)(n+2)}$$
 
 (c) 
-\[\int_{N}^\infty\frac{1}{x^3}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3}\leq\int_{N}^\infty\frac{1}{x^3}\,dx+\frac{1}{N^3}\]
+
+$$\int_{N}^\infty\frac{1}{x^3}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3}\leq\int_{N}^\infty\frac{1}{x^3}\,dx+\frac{1}{N^3}$$
 
 $\frac{1}{126^3}=4.999\times10^{-7}<5\times10^{-7}$, so 125 terms are required.
 
-\[\int_{N}^\infty\frac{1}{x^3(x^2-1)}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3(n^2-1)}\leq\int_{N}^\infty\frac{1}{x^3(x^2-1)}\,dx+\frac{1}{N^3(N^2-1)}\]
+$$\int_{N}^\infty\frac{1}{x^3(x^2-1)}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3(n^2-1)}\leq\int_{N}^\infty\frac{1}{x^3(x^2-1)}\,dx+\frac{1}{N^3(N^2-1)}$$
 
 $\frac{1}{19^3(19^2-1)}=4\times10^{-7}<5\times10^{-7}$, so 17 terms ($n=2$ to $n=18$) are required.
 
-\[\int_{N}^\infty\frac{4}{x^3(x^2-1)(x^2-4)}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3(n^2-1)(n^2-4)}\leq\int_{N}^\infty\frac{4}{x^3(x^2-1)(x^2-4)}\,dx+\frac{4}{N^3(N^2-1)(N^2-4)}\]
+$$\int_{N}^\infty\frac{4}{x^3(x^2-1)(x^2-4)}\,dx\leq\sum_{n=N}^\infty\frac{1}{n^3(n^2-1)(n^2-4)}\leq\int_{N}^\infty\frac{4}{x^3(x^2-1)(x^2-4)}\,dx+\frac{4}{N^3(N^2-1)(N^2-4)}$$
 
 $\frac{4}{10^3(10^2-1)(10^2-4)}=4.2\times10^{-7}<5\times10^{-7}$, so 7 terms ($n=3$ to $n=9$) are required.
 
