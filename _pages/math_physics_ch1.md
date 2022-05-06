@@ -33,7 +33,7 @@ Let $b_n''=\frac{2b_n}{K}$, then $\lim_{n\to\infty}\frac{b_n''}{a_n}=2$, so for 
 
 ### 1.1.3
 
-$$\int_2^\infty\frac{1}{x(\ln x)^2}dx=-\frac{1}{\ln x}\bigr\vert_2^\infty=\frac{1}{\ln 2}$$
+$$\int_2^\infty\frac{1}{x(\ln x)^2}dx=-\left[\frac{1}{\ln x}\right]_2^\infty=\frac{1}{\ln 2}$$
 
 so by Cauchy integral test $\sum_{n=2}^\infty \frac{1}{n(\ln n)^2}$ converges.
 
