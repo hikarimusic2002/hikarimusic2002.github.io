@@ -1,6 +1,5 @@
 ---
-layout: single
-classes: wide
+layout: splash
 title: "Mathematical Methods for Physicists"
 permalink: /solutions/math_physics_ch1
 author_profile: false
