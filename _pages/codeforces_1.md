@@ -11,10 +11,6 @@ redirect_from:
 
 ### 1C. Ancient Berland Circus
 
-```
-_includes/head/custom.html
-```
-
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
