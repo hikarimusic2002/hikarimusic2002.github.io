@@ -1,5 +1,5 @@
 ---
-title: 'BIOSTATS: '
+title: 'BIOSTATS: An Intuitive GUI for Biostatistical Analysis'
 date: 2015-08-14
 permalink: /posts/2022/12/biostats
 tags:
