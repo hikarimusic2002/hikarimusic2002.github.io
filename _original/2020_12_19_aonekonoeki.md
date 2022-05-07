@@ -7,9 +7,7 @@ tags:
   - 曲
 ---
 
-original song「青猫の駅」
-produced by Hikari
-初めての曲です！よろしく！
+十八歳のときに初めて作った曲です。いろいろ大変だったが、よければどぞ聞いてください！
 
 ## About
 
