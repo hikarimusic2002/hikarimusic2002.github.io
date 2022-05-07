@@ -335,7 +335,7 @@ $\frac{4}{10^3(10^2-1)(10^2-4)}=4.2\times10^{-7}<5\times10^{-7}$, so 7 terms ($n
 
 ## 1.2 Series of Functions
 
-## 1.2.1
+### 1.2.1
 
 (a) When $x>0$, $\lim_{n\to\infty}\frac{(-1)^{n-1}}{n^x}=0$, and the sequence $\frac{1}{n^x}$ is monotonically decreasing, so by Leibniz criterion, $\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n^x}$ converges. 
 When $x\leq0$, $\lim_{n\to\infty}\frac{(-1)^{n-1}}{n^x}\neq0$, so $\sum_{n=1}^\infty\frac{(-1)^{n-1}}{n^x}$ diverges. 
@@ -365,13 +365,13 @@ $|\frac{1}{n^x}|\leq\frac{1}{n^a}$. $\sum_n \frac{1}{n^a}$ is a convergent serie
 
 --------------
 
-## 1.2.2
+### 1.2.2
 
 The series converges when $\vert x\vert <1$ and diverges when $\vert x\vert \geq1$. If it uniformly converges in the interval $[a,b]$, then $-1<a<b<1$. For $x\in [a,b]$ and $-1<a<b<1$, let $c=\max(\vert a\vert ,\vert b\vert )$, then $\vert x^n\vert \leq x^c$. Because $c<1$, so $\sum_{n=0}^\infty x^c$ converges, so by Weietress M test, $\sum_{n=0}^\infty x^n$ uniformly converges in the range $[a,b]$ if $-1<a<b<1$. 
 
 --------------
 
-## 1.2.3
+### 1.2.3
 
 (a) When $0<x\leq1$, $\lim_{n\to\infty}\frac{1}{1+x^n}\neq0$, so the series diverges. When $x>1$, $0<\frac{1}{1+x^n}<\frac{1}{x^n}$. The geometry series $\frac{1}{x^n}$ converges, so $\sum_{n=0}^\infty\frac{1}{1+x^n}$ converges by comparison test.
 
@@ -379,13 +379,13 @@ The series converges when $\vert x\vert <1$ and diverges when $\vert x\vert \geq
 
 --------------
 
-## 1.2.4
+### 1.2.4
 
 For $x\in[a,b]$, we have $\vert a_n\cos nx+b_n\sin nx\vert \leq\vert a_n\vert +\vert b_n\vert$. Since $\sum\vert a_n\vert $ and $\sum\vert b_n\vert$ converges, $\sum(\vert a_n\vert +\vert b_n\vert )$ converges, so $\sum(a_n\cos nx+b_n\sin nx)$ is uniformly convergent by Weierstrass M test in the range $[a,b]$ for any $a<b$.
 
 --------------
 
-## 1.2.5
+### 1.2.5
 
 Let $j=2n$, $a_n(x)=u_{2n}(x)$, then $a_{n+1}(x)=\frac{(2n+1)(2n+2)-l(l+1)}{(2n+2)(2n+3)}x^2a_n(x)$. Since
 $\lim_{n\to\infty}\frac{a_{n+1}(x)}{a_n(x)}=x^2>1$ when $|x|>1$ and $\lim_{n\to\infty}\frac{a_{n+1}(x)}{a_n(x)}<1$ when $|x|<1$, by ratio test the series diverges when $|x|>1$ and converges when $|x|<1$. When $x=1$,
@@ -400,13 +400,13 @@ where $B(n)$ is bound for large n. By Gauss' test, the series diverges when $x=1
 
 --------------
 
-## 1.2.6
+### 1.2.6
 
 Let $j=2m$, $a_m(x)=u_{2m}(x)$. When $x=\pm1$, we have $\frac{a_m(x)}{a_{m+1}(x)}=1+\frac{3}{2m}+\frac{B(m)}{m^2}$, where $B(m)$ is bound for large m. By Gauss' test, the series converges at $x=\pm1$.
 
 --------------
 
-## 1.2.7
+### 1.2.7
 
 Let $j=2m$, $u_m=a_{2m}$, then 
 
@@ -420,7 +420,7 @@ where $B(m)$ is bound for large m. By Gauss' test, the series converges $\alpha<
 
 --------------
 
-## 1.2.8
+### 1.2.8
 
 $$
 \begin{aligned}
@@ -431,7 +431,7 @@ $$
 
 --------------
 
-## 1.2.9
+### 1.2.9
 
 Expand $\sin{x}$ and $\cos{x}$ for 4 terms, and perform long division.
 
@@ -443,7 +443,7 @@ So $\cot{x}=\frac{1}{x}-\frac{x}{3}-\frac{x^3}{45}-\frac{2x^5}{945}+\cdots$.
 
 --------------
 
-## 1.2.10
+### 1.2.10
 
 $$
 \begin{aligned}
@@ -471,7 +471,7 @@ Therefore, $\coth^{-1}x=\frac{1}{2}\ln\frac{x+1}{x-1}$.
 
 --------------
 
-## 1.2.11
+### 1.2.11
 
 (a) $\frac{d}{dx}x^{\frac{1}{2}}=\frac{1}{2}x^{-\frac{1}{2}}$ is undefined at $x=0$, so Maclaurin expansion does not exist.
 
@@ -498,7 +498,7 @@ Therefore, the range of convergence is $0<x\leq 2x_0$.
 
 --------------
 
-## 1.2.12
+### 1.2.12
 
 $$
 \begin{aligned}
@@ -518,7 +518,7 @@ by binomial theorem.
 
 --------------
 
-## 1.2.13
+### 1.2.13
 
 (a) 
 
@@ -550,7 +550,7 @@ So the Euler-Mascheroni constant $\gamma$ is bound by 0 and 1, and is therefore 
 
 --------------
 
-## 1.2.14
+### 1.2.14
 
 $$
 \begin{aligned}
@@ -563,7 +563,7 @@ So the error is $\frac{h^2}{12}\psi^{(4)}(x)$.
 
 --------------
 
-## 1.2.15
+### 1.2.15
 
 $\sin{x}=x-\frac{x^3}{6}+\frac{x^5}{120}-\frac{x^7}{5040}+\cdots$, and $\tan{x}=x+\frac{x^3}{3}+\frac{2x^5}{15}+\frac{7x^7}{315}+\cdots$ (expansion of $\tan{x}$ can be obtained by long division of expansions of $\sin{x}$ and $\cos{x}$).
 The term of highest order in $(\sin{(\tan{x})}-\tan{(\sin{x})})$ is $x^7$, the coefficient is 
@@ -584,7 +584,7 @@ $$
 
 --------------
 
-## 1.2.16
+### 1.2.16
 
 If the convergence ranges of the series $\sum_{n=0}^\infty a_n x^n$ is $-R<x<R$, then $\lim_{n\to\infty}\left\vert\frac{a_n+1}{a_n}R\right\vert=1$. The differentiated series is $\sum_{n=1}^\infty na_nx^{n-1}$, $\lim_{n\to\infty}\left\vert\frac{n+1}{n}\frac{a_n+1}{a_n}x\right\vert=\lim_{n\to\infty}\left\vert\frac{a_n+1}{a_n}x\right\vert<1$ when $-R<x<R$ (ignoring the end points). The integrated series is $\sum_{n=0}^\infty\frac{a_n}{n+1}x^{n+1}$, $\lim_{n\to\infty}\left\vert\frac{n+1}{n+2}\frac{a_n+1}{a_n}x\right\vert=\lim_{n\to\infty}\left\vert\frac{a_n+1}{a_n}x\right\vert<1$ when $-R<x<R$ (ignoring the end points). So all the series have the same converging range (ignoring the end points).
 
