@@ -168,7 +168,7 @@ Combine adjacent terms with same sign to form a new series
 
 $$
 \begin{aligned}
-sum_{n=1}^\infty a_n=(1)-(\frac{1}{2}+\frac{1}{3})+(\frac{1}{4}+\frac{1}{5}+\frac{1}{6})-(\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\frac{1}{10})+\cdots
+\sum_{n=1}^\infty a_n=(1)-(\frac{1}{2}+\frac{1}{3})+(\frac{1}{4}+\frac{1}{5}+\frac{1}{6})-(\frac{1}{7}+\frac{1}{8}+\frac{1}{9}+\frac{1}{10})+\cdots
 \end{aligned}
 $$
 
