@@ -770,7 +770,7 @@ int main()
 
 ```
 
-78C. Beaver Game
+### 78C. Beaver Game
 
 ```cpp
 #include <bits/stdc++.h>
