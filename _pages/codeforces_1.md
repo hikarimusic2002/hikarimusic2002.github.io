@@ -1,7 +1,7 @@
 ---
 layout: splash
-title: "Mathematical Methods for Physicists"
-permalink: /solutions/math_physics_ch1
+title: "Codeforces"
+permalink: /solutions/codeforces_1
 author_profile: false
 redirect_from:
   - /resume
