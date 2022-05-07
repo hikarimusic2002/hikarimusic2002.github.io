@@ -88,8 +88,6 @@ int main()
 #include <bits/stdc++.h>
 using namespace std;
 
-map<pair<int,int>, bool> mp ;
-
 int bfs (pair<int,int> a, pair<int,int> b) {
     map<pair<int,int>,int> d ;
     map<pair<int,int>,bool> u ;
