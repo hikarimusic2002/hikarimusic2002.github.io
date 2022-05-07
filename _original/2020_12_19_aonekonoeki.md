@@ -17,15 +17,10 @@ tags:
 
 ## About
 
-* Vocal: AI Kiritan
-* Song: Hikari
-* Lyrics: Hikari
-* Arrange: Hikari
-* Mix: Hikari
-* Movie: Hikari
-* Illust: Hikari
-* [Music](https://drive.google.com/file/d/1fKhjIVwsEmY96lbSODlEu6PCToSl6JVd/view?usp=sharing)
-* [Off-vocal](https://drive.google.com/file/d/1REyiaOR7ab2gCNkniBqbYVO8cAk-PnPj/view?usp=sharing)
+* ボーカル：AIきりたん
+* 作曲・作詞・編曲・絵・動画：Hikari
+* [Music Download](https://drive.google.com/file/d/1fKhjIVwsEmY96lbSODlEu6PCToSl6JVd/view?usp=sharing)
+* [Off Vocal Download](https://drive.google.com/file/d/1REyiaOR7ab2gCNkniBqbYVO8cAk-PnPj/view?usp=sharing)
 
 ## 歌詞
 
