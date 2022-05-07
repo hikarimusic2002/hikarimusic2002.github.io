@@ -9,7 +9,7 @@ redirect_from:
 
 # Codeforces Problems 1 ~ 50
 
-### 1A
+### 1C. Ancient Berland Circus
 
 ```C++
 #include <bits/stdc++.h>
