@@ -178,6 +178,9 @@ collections:
   research:
     output: true
     permalink: /:collection/:path/
+  original:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -193,6 +196,16 @@ defaults:
   - scope:
       path: ""
       type: research
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      share: true
+      related: true
+  # _original
+  - scope:
+      path: ""
+      type: original
     values:
       layout: single
       author_profile: true
