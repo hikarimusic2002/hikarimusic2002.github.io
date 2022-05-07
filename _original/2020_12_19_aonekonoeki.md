@@ -11,7 +11,8 @@ tags:
 
 ## 青猫の駅
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/lK9PFIAO_B4" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## About
 
