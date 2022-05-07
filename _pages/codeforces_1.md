@@ -11,7 +11,7 @@ redirect_from:
 
 ### 1C. Ancient Berland Circus
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 #define PI acos(-1)
