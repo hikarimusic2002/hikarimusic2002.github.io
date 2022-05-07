@@ -133,3 +133,107 @@ int main()
 
 ```
 {% endraw %}
+
+### 257C. View Angle
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define PI acos(-1)
+
+int n ;
+vector<double> a ;
+
+int main()
+{
+    scanf("%d",&n) ;
+    for (int i=0;i<n;++i) {
+        double x,y ;
+        scanf("%lf %lf",&x,&y) ;
+        a.push_back(atan2(y,x)) ;
+    }
+    sort(a.begin(),a.end()) ;
+    a.push_back(a[0]+2*PI) ;
+    double ans=2*PI ;
+    for (int i=0;i<n;++i) {
+        ans=min(ans,2*PI-(a[i+1]-a[i])) ;
+    }
+    printf("%.10lf",ans*180/PI) ;
+    return 0;
+}
+
+```
+
+### 281A. Word Capitalization
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std ;
+
+string s ;
+
+int main() {
+    cin>>s ;
+    if (s[0]>=97) s[0]-=32 ;
+    cout<<s ;
+    return 0 ;
+}
+
+```
+
+### 300C. Beautiful Numbers
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define mod 1000000007
+#define n_max 1000000
+
+void cal_fac(vector<ll>& fac) {
+    for (int i=2;i<=n_max;++i) {
+        fac[i]=i*fac[i-1] % mod ;
+    }
+}
+
+bool is_good(ll n, ll a, ll b) {
+    while (n) {
+        if (n%10!=a && n%10!=b) return false ;
+        n/=10 ;
+    }
+    return true ;
+}
+
+ll inv(ll a) {
+    ll n=mod-2 ;
+    ll ans=1 ;
+    while (n) {
+        if (n&1) {
+            ans*=a ;
+            ans%=mod ;
+        }
+        a*=a ;
+        a%=mod ;
+        n>>=1 ;
+    }
+    return ans ;
+}
+
+int main()
+{
+    vector<ll> fac(n_max+5,1) ;
+    cal_fac(fac) ;
+    ll a,b,n, ans=0 ;
+    scanf("%lld %lld %lld",&a,&b,&n) ;
+    for (ll i=0;i<=n;++i) {
+        if (is_good(i*a+(n-i)*b, a, b)) {
+            ans+=fac[n]*inv(fac[n-i]*fac[i]%mod) % mod ;
+            ans%=mod ;
+        }
+    }
+    printf("%lld",ans) ;
+    return 0;
+}
+
+```
+
