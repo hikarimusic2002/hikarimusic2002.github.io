@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Hikari's Personal Site"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Hikari"
 description              : &description "personal description"
 url                      : https://hikarimusic2002.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -187,6 +187,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  research:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -244,6 +247,16 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _research
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      share: true
+      related: true
 
 # Sass/SCSS
 sass:
