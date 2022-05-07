@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /original/
-title: "オリジナル"
+title: "ORIGINAL"
 author_profile: true
 ---
 
