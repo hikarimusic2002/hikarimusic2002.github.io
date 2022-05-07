@@ -39,7 +39,7 @@ Algorithm
   {% capture written_label %}{{ label }}{% endcapture %}
   {% endif %}
 {% endunless %}
-{% for post in collection.docs %}
+{% for post in collection.docs reversed %}
   {% unless collection.output == false or collection.label == "posts" %}
   {% include archive-single.html %}
   {% endunless %}
