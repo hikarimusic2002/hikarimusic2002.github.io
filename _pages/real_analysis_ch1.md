@@ -11,10 +11,10 @@ redirect_from:
 
 ### 1.
 
-$\newcommand{\V}{\mathbf}$
 If $r+x$ is rational, than $x=(r+x)-r$ is rational, a contradiction, so $r+x$ is irrational.
 
 If $rx$ is rational, than $x=(rx)\frac{1}{r}$ is rational, a contradiction, so $rx$ is irrational.
+$\newcommand{\V}{\mathbf}$
 
 ---------
 
