@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-# Codeforces Problems 1 ~ 50
+# Codeforces Problems 1 ~ 100
 
 ### 1C. Ancient Berland Circus
 
