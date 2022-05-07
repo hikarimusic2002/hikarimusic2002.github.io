@@ -12,6 +12,10 @@ redirect_from:
 ### 1C. Ancient Berland Circus
 
 ```
+_includes/head/custom.html
+```
+
+```
 #include <bits/stdc++.h>
 using namespace std;
 #define PI acos(-1)
