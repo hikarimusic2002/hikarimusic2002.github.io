@@ -84,9 +84,12 @@ int main()
 
 ### 242C. King's Path
 
+{% raw %}
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
+
+map<pair<int,int>, bool> mp ;
 
 int bfs (pair<int,int> a, pair<int,int> b) {
     map<pair<int,int>,int> d ;
@@ -95,7 +98,7 @@ int bfs (pair<int,int> a, pair<int,int> b) {
     d[a]=0 ;
     u[a]=1 ;
     q.push(a) ;
-
+    int dir[8][2]={{1,0},{-1,0},{0,1},{0,-1},{1,1},{1,-1},{-1,1},{-1,-1}} ;
     while (!q.empty()) {
         pair<int,int> x=q.front() ;
         q.pop() ;
@@ -129,3 +132,4 @@ int main()
 }
 
 ```
+{% endraw %}
