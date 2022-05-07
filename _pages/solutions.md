@@ -20,4 +20,4 @@ redirect_from:
 ## Algorithm
 
 ### [Codeforces](https://codeforces.com/problemset)
-  * [   1 ~   50](https://hikarimusic2002.github.io/solutions/codeforces_1)
+  * [Problems 1 ~ 50](https://hikarimusic2002.github.io/solutions/codeforces_1)
