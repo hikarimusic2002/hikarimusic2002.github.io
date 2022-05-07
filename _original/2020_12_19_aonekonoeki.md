@@ -1,10 +1,10 @@
 ---
-title: 'AONEKO'
-date: 2022-12-31
-permalink: /original/2022_12_31_aoneko
+title: '青猫の駅'
+date: 2020-12-19
+permalink: /original/2020_12_19_aonekonoeki
 tags:
-  - original
-  - programming
+  - オリジナル
+  - 曲
 ---
 
 This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
