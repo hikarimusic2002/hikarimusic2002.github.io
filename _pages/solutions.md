@@ -51,3 +51,5 @@ redirect_from:
 
   * [Problems 1401 ~ 1500](https://hikarimusic2002.github.io/solutions/codeforces_15)
 
+  * [Problems 1501 ~ 1600](https://hikarimusic2002.github.io/solutions/codeforces_16)
+
