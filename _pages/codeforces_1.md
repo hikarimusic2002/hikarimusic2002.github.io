@@ -401,7 +401,7 @@ int main()
 
 ```
 
-### 27E Number With The Given Amount Of Divisors
+### 27E. Number With The Given Amount Of Divisors
 
 ```cpp
 #include <bits/stdc++.h>
@@ -515,6 +515,287 @@ int main()
 
 ```
 
+### 34D. Road Map
 
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define n_max 50000
 
+vector<vector<int>> adj(n_max+5) ;
+vector<int> p(n_max+5) ;
+vector<bool> vis(n_max+5,0) ;
+
+void dfs (int v) {
+    vis[v]=1 ;
+    for (int u : adj[v]) {
+        if (!vis[u]) {
+            p[u]=v ;
+            dfs(u) ;
+        }
+    }
+}
+
+int main()
+{
+    int n,r1,r2,x ;
+    scanf("%d %d %d",&n,&r1,&r2) ;
+    for (int i=1;i<=n;++i) {
+        if (i==r1) continue ;
+        scanf("%d",&x) ;
+        adj[i].push_back(x) ;
+        adj[x].push_back(i) ;
+    }
+    dfs(r2) ;
+    for (int i=1;i<=n;++i) {
+        if (i==r2) continue ;
+        printf("%d ",p[i]) ;
+    }
+    return 0;
+}
+
+```
+
+### 58A. Chat room
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std ;
+
+string a,b ;
+
+int main() {
+    cin>>a ;
+    b="hello" ;
+    int cnt=0 ;
+    for (int i=0;i<a.length();++i) {
+        if (cnt==5) break ;
+        if (a[i]==b[cnt]) ++cnt ;
+    }
+    if (cnt==5) cout<<"YES" ;
+    else cout<<"NO" ;
+    return 0 ;
+}
+
+```
+
+### 61D. Eternal Victory
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define n_max 100000
+
+vector<vector<pair<int,int>>> g(n_max+5) ;
+vector<bool> vis(n_max+5);
+vector<ll> dis(n_max+5) ;
+ll d_max, d_sum ;
+
+void dfs(int a) {
+    vis[a]=1 ;
+    for (pair<int,int> p : g[a]) {
+        if (!vis[p.first]) {
+            dis[p.first]=dis[a]+p.second ;
+            d_sum+=p.second ;
+            d_max=max(d_max,dis[p.first]) ;
+            dfs(p.first) ;
+        }
+    }
+}
+
+int main()
+{
+    int n ;
+    cin>>n ;
+    for (int i=0;i<n-1;++i) {
+        int x,y,w ;
+        cin>>x>>y>>w ;
+        g[x].push_back(make_pair(y,w)) ;
+        g[y].push_back(make_pair(x,w)) ;
+    }
+    dfs(1) ;
+    cout<<2*d_sum-d_max ;
+    return 0;
+}
+
+```
+
+66D. Petya and His Friends
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int n ;
+
+int main()
+{
+    scanf("%d",&n) ;
+    if (n==2) printf("%d",-1) ;
+    else {
+        for (int i=1;i<=n-2;++i) {
+            printf("%d\n",2*3*i) ;
+        }
+        printf("%d\n",2*5) ;
+        printf("%d\n",3*5) ;
+    }
+
+    return 0;
+}
+
+```
+
+### 71A. Way Too Long Words
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std ;
+
+int n ;
+string s ;
+
+int main() {
+    cin>>n ;
+    while (n--) {
+        cin>>s ;
+        int l=s.length() ;
+        if (l<=10) cout<<s<<'\n' ;
+        else cout<<s[0]<<l-2<<s[l-1]<<'\n' ;
+    }
+    return 0 ;
+}
+
+```
+
+### 71C. Round Table Knights
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define n_max 100000
+
+int n ;
+int a[n_max+5] ;
+
+bool good(int i) {
+    if (i==n) return 0 ;
+    if (n%2==0 && i==n/2) return 0 ;
+    for (int j=0;j<i;++j) {
+        bool ans=1 ;
+        for (int k=0;k<n/i;++k) {
+            if (a[(j+k*i)%n]==0) {
+                ans=0 ;
+                
+                
+                
+                break ;
+            }
+        }
+        if (ans==1) return 1 ;
+    }
+    return 0 ;
+} 
+
+int main()
+{
+    scanf("%d",&n) ;
+    for (int i=0;i<n;++i) {
+        scanf("%d",&a[i]) ;
+    }
+    bool ans=0 ;
+    for (int i=1;i*i<=n;++i) {
+        if (n%i==0) {
+            if (good(i) || good(n/i)) {
+                ans=1 ;
+                break ;
+            }
+        }
+    }
+    printf("%s",(ans?"YES":"NO")) ;
+    return 0;
+}
+
+```
+
+### 75C. Modified GCD
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+ll gcd(ll a,ll b) {
+    return b ? gcd(b,a%b) : a ;
+}
+
+void factorize(vector<ll>& fac, ll g) {
+    for (int i=1;i*i<=g;++i) {
+        if (g%i==0) {
+            fac.push_back(i) ;
+            fac.push_back(g/i) ;
+        }
+    }
+    sort(fac.begin(),fac.end()) ;
+}
+
+ll search(vector<ll> fac, ll low, ll high) {
+    ll l=0, h=fac.size()-1, ans=-1 ;
+    while (l<=h) {
+        ll m=l+(h-l)/2 ;
+        if (fac[m]>high) h=m-1 ;
+        else {
+            ans=fac[m] ;
+            l=m+1 ;
+        }
+    }
+    if (ans>=low) return ans ;
+    return -1 ;
+}
+
+int main()
+{
+    ll a,b,n,low,high,g ;
+    vector<ll> fac ;
+    scanf("%lld %lld",&a,&b) ;
+    g=gcd(a,b) ;
+    factorize(fac,g) ;
+    scanf("%lld",&n) ;
+    for (int i=0;i<n;++i) {
+        scanf("%lld %lld",&low,&high) ;
+        printf("%lld\n",search(fac,low,high)) ;
+    }
+    return 0;
+}
+
+```
+
+78C. Beaver Game
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+bool win(ll n, ll m, ll k) {
+    if (n%2==1) {
+        if (m!=1 && k==1) return 1 ;
+        for (int i=2;i*i<=m;++i) {
+            if (m%i==0) {
+                if (i>=k || (m/i)>=k) return 1 ;
+            }
+        }
+    }
+    return 0 ;
+}
+
+int main()
+{
+    ll n,m,k ;
+    scanf("%lld %lld %lld",&n,&m,&k) ;
+    printf("%s",win(n,m,k)?"Timur":"Marsel") ;
+    return 0;
+}
+
+```
 
