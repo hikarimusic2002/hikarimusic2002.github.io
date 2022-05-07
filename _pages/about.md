@@ -15,15 +15,15 @@ redirect_from:
 Solutions
 ------
 
-### Physics
+Physics
 
   * [Mathematical Methods for Physicists](https://hikarimusic2002.github.io/solutions)
 
-### Mathematics
+Mathematics
 
   * [Principles of Mathematical Analysis](https://hikarimusic2002.github.io/solutions)
 
-### Algorithm
+Algorithm
 
   *  [Codeforces](https://hikarimusic2002.github.io/solutions)
 
