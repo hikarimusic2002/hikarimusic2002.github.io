@@ -7,9 +7,9 @@ redirect_from:
   - /resume
 ---
 
-$$\newcommand{\V}{\mathbf}$$
-
 # Chapter 1: Mathematical Preliminaries
+
+$$\newcommand{\V}{\mathbf}$$
 
 ### 1.
 
