@@ -44,7 +44,7 @@
 }
 
 .page__lead {
-  font-family: $global-font-family;
+  font-family: "Sawarabi Mincho";
   font-size: $type-size-4;
 }
 
@@ -56,6 +56,7 @@
   }
 
   p, li, dl {
+    font-family: "Sawarabi Mincho";
     font-size: 1em;
   }
 
