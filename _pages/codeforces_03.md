@@ -95,7 +95,7 @@ int bfs (pair<int,int> a, pair<int,int> b) {
     d[a]=0 ;
     u[a]=1 ;
     q.push(a) ;
-    int dir[8][2]={{1,0},{-1,0},{0,1},{0,-1},{1,1},{1,-1},{-1,1},{-1,-1}} ;
+
     while (!q.empty()) {
         pair<int,int> x=q.front() ;
         q.pop() ;
