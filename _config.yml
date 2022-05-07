@@ -181,9 +181,6 @@ collections:
   ksearch:
     output: true
     permalink: /:collection/:path/
-  original:
-    output: true
-    permalink: /:collection/:path/
 
 
 
@@ -216,16 +213,7 @@ defaults:
       comments: true
       share: true
       related: true
-  # _original
-  - scope:
-      path: ""
-      type: original
-    values:
-      layout: single
-      author_profile: true
-      comments: true
-      share: true
-      related: true
+
 
 # Sass/SCSS
 sass:
