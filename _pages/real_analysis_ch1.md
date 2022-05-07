@@ -9,6 +9,7 @@ redirect_from:
 
 # Chapter 1: Mathematical Preliminaries
 
+## a
 $$\newcommand{\V}{\mathbf}$$
 
 ### 1.
