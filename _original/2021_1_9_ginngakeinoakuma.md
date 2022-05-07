@@ -10,3 +10,4 @@ tags:
 オリジナル曲「EPR」のサムネ
 
 ## 銀河系の悪魔
+<img source="/files/EPR.jpg" width="40%">
