@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Codeforces"
-permalink: /solutions/codeforces_2
+permalink: /solutions/codeforces_02
 author_profile: false
 redirect_from:
   - /resume
@@ -39,7 +39,7 @@ int main()
 
 ```
 
-112A. Petya and Strings
+### 112A. Petya and Strings
 
 ```cpp
 //Codeforces 112A - Petya and Strings
