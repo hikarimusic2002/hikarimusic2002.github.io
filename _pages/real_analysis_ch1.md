@@ -20,7 +20,7 @@ $\newcommand{\V}{\mathbf}$
 
 ### 2.
 
-If there is a rational number $\frac{p}{q}$ (p,q are intergers and $gcd(p,q)=1$), whose square is 12. Then $p^2=12q^2$. $3\vert 12$, so $3\vertr p^2$, $3\vert p$. So $9\vert p^2$, $9\vert 12q^2$, $3\vert 4q^2$, $3\vert q$. So $3\vert p$ and $3\vert q$, contrary to $gcd(p,q)=1$.
+If there is a rational number $\frac{p}{q}$ (p,q are intergers and $gcd(p,q)=1$), whose square is 12. Then $p^2=12q^2$. $3\vert 12$, so $3\vert r p^2$, $3\vert p$. So $9\vert p^2$, $9\vert 12q^2$, $3\vert 4q^2$, $3\vert q$. So $3\vert p$ and $3\vert q$, contrary to $gcd(p,q)=1$.
 
 ---------
 
@@ -53,7 +53,7 @@ For every $x\in A$, $x\geq \inf A$, so $-x\leq -\inf A$, so $-\inf A$ is an uppe
 
 (a) $((b^m)^{\frac{1}{n}})^{nq}=b^{mq}=b^{np}=((b^p)^{\frac{1}{q}})^{nq}=k$. By Theorem 1.21, $k^{\frac{1}{nq}}$ is unique, so $(b^m)^{\frac{1}{n}}=(b^p)^{\frac{1}{q}}$. 
 
-(b) Let $r=\frac{m}{n}$, $s=\frac{p}{q}$. $(b^{r+s})^{nq}=(b^{\frac{mq+np}{nq}})^{nq}=b^{mq+np}=((b^m)^{\frac{1}{n}}(b^p)^{\frac{1}{q}})^{nq}=(b^rb^s)^{nq}$. By \\Theorem 1.21, $b^{r+s}=b^rb^s$.
+(b) Let $r=\frac{m}{n}$, $s=\frac{p}{q}$. $(b^{r+s})^{nq}=(b^{\frac{mq+np}{nq}})^{nq}=b^{mq+np}=((b^m)^{\frac{1}{n}}(b^p)^{\frac{1}{q}})^{nq}=(b^rb^s)^{nq}$. By Theorem 1.21, $b^{r+s}=b^rb^s$.
 
 (c) If $t<r$, then $r-t>0$, so $b^{r-t}>1$, $b^r>b^t$. So $b^r\geq b^t$ for all $b^t\in B(r)$, so $b^r$ is an upper bound of $B(r)$. But $b^r\in B(r)$, so every $\gamma<b^r$ is not an upper bound of $B(r)$, so $b^r=\sup B(r)$.
 
@@ -106,7 +106,7 @@ When $a<c$, $z<w$. When $a>c$, $z>w$. When $a=c$ and $b<d$, $z<w$. When $a=c$ an
 
 If $z<w$ and $w<r$ ($r=e+fi$), then $a<c$ or $a=c$, $c<e$ or $c=e$. If $a<c$, then $a<e$, so $z<r$. If $a=c$ and $c<e$, then $a<e$, so $z<r$. If $a=c$ and $c=e$, then $b<d$ and $d<f$, so $b<f$, so $z<r$. Therefore, for all cases $z<r$ when $z<w$ and $w<r$, satisfying definition 1.5(ii).
 
-Assume that complex number under this definition has least-upper-bound property. Consider the set $S=\{xi\vertx\in\mathbb{R}\}$. $1$ is greater than all the $0+xi$, so $S$ is bound above. Let $a+bi=\sup S$, $a\geq0$. If $a>0$, then $\frac{a}{2}>0$ is also an upper bound, a contradiction. So $a=0$, but then $(b+1)i>a+bi$ and $(b+1)i\in S$, a contradiction. Therefore, complex number under this definition cannot have least-upper-bound property.
+Assume that complex number under this definition has least-upper-bound property. Consider the set $S=\{xi\vert x\in\mathbb{R}\}$. $1$ is greater than all the $0+xi$, so $S$ is bound above. Let $a+bi=\sup S$, $a\geq0$. If $a>0$, then $\frac{a}{2}>0$ is also an upper bound, a contradiction. So $a=0$, but then $(b+1)i>a+bi$ and $(b+1)i\in S$, a contradiction. Therefore, complex number under this definition cannot have least-upper-bound property.
 
 ---------
 
@@ -156,9 +156,9 @@ According to the proof of Theorem 1.35, when the equality holds, $\sum\vert Ba_j
 \[(u_i^2+u_k^2)b^2+2u_ju_ka\cdot b+a^2(u_i^2+u_j^2)-s^2=0\]
 To solve the quadratic equation for $b$, the discriminant  $\Delta=4u_j^2u_k^2a^2-4(u_i^2+u_k^2)\left[a^2(u_i^2+u_j^2)-k^2 \right]$. When $a^2<\frac{k^2}{u_i^2+u_j^2}$, $\Delta>0$, the solution of $b$ exists, so there are infinitely many $a$ and $b$ satisfying $|\V{w}|=s$. So there are infinitely many $\V{w}$ satisfying $\V{w}\cdot(\V{x}-\V{y})=0$ and $|\V{w}|=\sqrt{r^2-\frac{d^2}{4}}$, so there are infinitely many $\V{z}$ satisfying $|\V{z}-\V{x}|=r$ and $|\V{z}-\V{y}|=r$.
 
-(b) Let $\V{z}=\frac{\V{x}+\V{y}}{2}$, then $|\V{z}-\V{x}|=|\V{z}-\V{y}|=|\frac{\V{x}-\V{y}}{2}|=\frac{d}{2}=r$. If $\V{z}'\neq \V{z}$, then $|\V{z}'-\V{z}|=\varepsilon>0$, and $|\V{z}'-\V{x}|\geq|\V{z}'-\V{z}|+|\V{z}-\V{x}|=\varepsilon+r>r$, so $\V{z}'$ cannot satisfy the condition, and $\V{z}$ is unique.
+(b) Let $\V{z}=\frac{\V{x}+\V{y}}{2}$, then $\vert \V{z}-\V{x}\vert =\vert \V{z}-\V{y}\vert =\vert \frac{\V{x}-\V{y}}{2}\vert =\frac{d}{2}=r$. If $\V{z}'\neq \V{z}$, then $\vert \V{z}'-\V{z}\vert =\varepsilon>0$, and $\vert \V{z}'-\V{x}\vert \geq\vert \V{z}'-\V{z}\vert +\vert \V{z}-\V{x}\vert =\varepsilon+r>r$, so $\V{z}'$ cannot satisfy the condition, and $\V{z}$ is unique.
 
-(c) If such $\V{z}$ exists, then $2r=|\V{x}-\V{z}|+|\V{z}-\V{y}|\geq|\V{x}-\V{y}|=d$, contradicting with $2r<d$, so the $\V{z}$ cannot exist.
+(c) If such $\V{z}$ exists, then $2r=\vert \V{x}-\V{z}\vert +\vert \V{z}-\V{y}\vert \geq\vert \V{x}-\V{y}\vert =d$, contradicting with $2r<d$, so the $\V{z}$ cannot exist.
 
 ---------
 
@@ -180,11 +180,11 @@ When $k=1$, if $\V{x}\neq0$ and $\V{y}\neq0$, then $\V{x}\cdot\V{y}=x_1y_1\neq0$
 
 $$
 \begin{aligned}
-\sum(x_i-a_i)^2 &=4\sum(x_i-b_i)^2\\
-\sum3x_i^2-(8b_i-2a_i)x_i+(4b_i^2-a_i^2) &=0\\
-\sum3(x_i-\frac{4b_i-a_i}{3})^2+(4b_i^2-a_i^2)-\frac{(4b_i-a_i)^2}{3} &=0\\
-\sum3(x_i-\frac{4b_i-a_i}{3})^2 &=\sum\frac{4a_i^2-8a_ib_i+4b_i}{3}\\
-\sum(x_i-\frac{4b_i-a_i}{3})^2 &=\sum\frac{4}{9}(b_i-a_i)^2=\sum(\frac{2}{3}(b_i-a_i))^2
+& \sum(x_i-a_i)^2=4\sum(x_i-b_i)^2\\
+& \sum3x_i^2-(8b_i-2a_i)x_i+(4b_i^2-a_i^2)=0\\
+& \sum3(x_i-\frac{4b_i-a_i}{3})^2+(4b_i^2-a_i^2)-\frac{(4b_i-a_i)^2}{3}=0\\
+& \sum3(x_i-\frac{4b_i-a_i}{3})^2=\sum\frac{4a_i^2-8a_ib_i+4b_i}{3}\\
+& \sum(x_i-\frac{4b_i-a_i}{3})^2=\sum\frac{4}{9}(b_i-a_i)^2=\sum(\frac{2}{3}(b_i-a_i))^2
 \end{aligned}
 $$
 
@@ -194,4 +194,4 @@ So if $\V{c}=\frac{4\V{b}-\V{a}}{3}$ and $r=\frac{2}{3}\vert\V{b}-\V{a}\vert$, t
 
 ### 20.
 
-The proof of least-upper-bound property and axioms (A1) to (A3) did not use property (III) and therefore still hold. Let $0^*$ be $\{x\vert x\in\mathbb{Q},x\leq0 \}$. For every $r\in\alpha$ and $s\in0^*$, $r+s\leq r$, hence $r+s\in\alpha$, so $\alpha+0^*\subset\alpha$. For every $r\in\alpha$, $r=r+0\in\alpha+0^*$, so $\alpha\subset\alpha+0^*$. So $\alpha+0^*=\alpha$, and (A4) holds. If (A5) holds, let $\alpha=\{x\vert x\in\mathbb{Q},x<1\}$, then there is an $\alpha'$ such that $\alpha+\alpha'=0^*$. So there are $r\in\alpha$ and $s\in\alpha'$ that $r+s=0$, and because $r<1$, $s>-1$. Let $s=-1+\varepsilon$, $\varepsilon>0$, and let $t=1-\frac{\varepsilon}{2}$, then $t\in\alpha$. $s+t\in\alpha'+\alpha=0^*$, so $s+t\leq0$, but $s+t=-1+\varepsilon+1-\frac{\varepsilon}{2}=\frac{\varepsilon}{2}>0$, a contradiction, so (A5) cannot hold.
+The proof of least-upper-bound property and axioms (A1) to (A3) did not use property (III) and therefore still hold. Let $0^\star$ be $\{x\vert x\in\mathbb{Q},x\leq0 \}$. For every $r\in\alpha$ and $s\in0^\star$, $r+s\leq r$, hence $r+s\in\alpha$, so $\alpha+0^\star\subset\alpha$. For every $r\in\alpha$, $r=r+0\in\alpha+0^\star$, so $\alpha\subset\alpha+0^\star$. So $\alpha+0^\star=\alpha$, and (A4) holds. If (A5) holds, let $\alpha=\{x\vert x\in\mathbb{Q},x<1\}$, then there is an $\alpha'$ such that $\alpha+\alpha'=0^\star$. So there are $r\in\alpha$ and $s\in\alpha'$ that $r+s=0$, and because $r<1$, $s>-1$. Let $s=-1+\varepsilon$, $\varepsilon>0$, and let $t=1-\frac{\varepsilon}{2}$, then $t\in\alpha$. $s+t\in\alpha'+\alpha=0^\star$, so $s+t\leq0$, but $s+t=-1+\varepsilon+1-\frac{\varepsilon}{2}=\frac{\varepsilon}{2}>0$, a contradiction, so (A5) cannot hold.
