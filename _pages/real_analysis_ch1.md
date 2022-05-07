@@ -90,7 +90,7 @@ If $b^x>y$, form (e) $b^{x-\frac{1}{n}}>y$ for some n. So $b^{x-\frac{1}{n}}>b^w
 Therefore, only $b^x=y$ can be the case.
 
 (g)
-If $x<x'$, let $q$ be a rational that $x<q<x'$(Theorem 1.20(b)). By definition of real power in Exercise 6, $b^x<b^q\leq b^{x'}$, so $b^x<b^{x'}$. Similarly, $x>x'$ implies $b^x>b^{x'}$. Therefore, if $b^x=b^{x'}$, then $x=x'$ and $x$ is unique
+If $x<x'$, let $q$ be a rational that $x<q<x'$(Theorem 1.20(b)). By definition of real power in Exercise 6, $b^x<b^q\leq b^{x'}$, so $b^x<b^{x'}$. Similarly, $x>x'$ implies $b^x>b^{x'}$. Therefore, if $b^x=b^{x'}$, then $x=x'$ and $x$ is unique.
 
 ---------
 
@@ -152,8 +152,15 @@ According to the proof of Theorem 1.35, when the equality holds, $\sum\vert Ba_j
 
 ### 16.
 
-(a) If $\V{z}=\frac{\V{x}+\V{y}}{2}+\V{w}$, $\V{w}\cdot(\V{x}-\V{y})=0$, and $|\V{w}|=\sqrt{r^2-\frac{d^2}{4}}$, then $|\V{z}-\V{x}|=|-\frac{\V{x}-\V{y}}{2}+\V{w}|=\sqrt{|\V{w}|^2+|\frac{\V{x}-\V{y}}{2}|^2-2\V{w}\cdot\frac{\V{x}-\V{y}}{2}}=\sqrt{r^2-\frac{d^2}{4}+\frac{d^2}{4}}=r$, and similarly $|\V{z}-\V{y}|=r$. So we want to prove that there are infinitely many $\V{w}$ that satisfy $\V{w}\cdot(\V{x}-\V{y})=0$ and $|\V{w}|=\sqrt{r^2-\frac{d^2}{4}}$. Let $\V{x}-\V{y}=\V{u}\neq0$, $\sqrt{r^2-\frac{d^2}{4}}=s>0$. Let $u_i$ be the coordinate that $u_i\neq0$, and choose other two coordinates $u_j, u_k$(they exist because the dimension $k\geq3$). Let $w_i=au_j+bu_k$, $w_j=-au_i$, $w_k=-bu_i$, and all the other coordinates $=0$. Then $\V{w}\cdot\V{u}=0$, and we want to prove that there are infinitely many $a,b$ that satisfy $|\V{w}|=s$. Substituting, we get \[(au_j+bu_k)^2+(-au_i)^2+(-bu_i)^2=s^2\]
-\[(u_i^2+u_k^2)b^2+2u_ju_ka\cdot b+a^2(u_i^2+u_j^2)-s^2=0\]
+(a) If $\V{z}=\frac{\V{x}+\V{y}}{2}+\V{w}$, $\V{w}\cdot(\V{x}-\V{y})=0$, and $|\V{w}|=\sqrt{r^2-\frac{d^2}{4}}$, then $|\V{z}-\V{x}|=|-\frac{\V{x}-\V{y}}{2}+\V{w}|=\sqrt{|\V{w}|^2+|\frac{\V{x}-\V{y}}{2}|^2-2\V{w}\cdot\frac{\V{x}-\V{y}}{2}}=\sqrt{r^2-\frac{d^2}{4}+\frac{d^2}{4}}=r$, and similarly $|\V{z}-\V{y}|=r$. So we want to prove that there are infinitely many $\V{w}$ that satisfy $\V{w}\cdot(\V{x}-\V{y})=0$ and $|\V{w}|=\sqrt{r^2-\frac{d^2}{4}}$. Let $\V{x}-\V{y}=\V{u}\neq0$, $\sqrt{r^2-\frac{d^2}{4}}=s>0$. Let $u_i$ be the coordinate that $u_i\neq0$, and choose other two coordinates $u_j, u_k$(they exist because the dimension $k\geq3$). Let $w_i=au_j+bu_k$, $w_j=-au_i$, $w_k=-bu_i$, and all the other coordinates $=0$. Then $\V{w}\cdot\V{u}=0$, and we want to prove that there are infinitely many $a,b$ that satisfy $|\V{w}|=s$. Substituting, we get 
+
+$$
+\begin{aligned}
+& (au_j+bu_k)^2+(-au_i)^2+(-bu_i)^2=s^2\\
+& (u_i^2+u_k^2)b^2+2u_ju_ka\cdot b+a^2(u_i^2+u_j^2)-s^2=0
+\end{aligned}
+$$
+
 To solve the quadratic equation for $b$, the discriminant  $\Delta=4u_j^2u_k^2a^2-4(u_i^2+u_k^2)\left[a^2(u_i^2+u_j^2)-k^2 \right]$. When $a^2<\frac{k^2}{u_i^2+u_j^2}$, $\Delta>0$, the solution of $b$ exists, so there are infinitely many $a$ and $b$ satisfying $|\V{w}|=s$. So there are infinitely many $\V{w}$ satisfying $\V{w}\cdot(\V{x}-\V{y})=0$ and $|\V{w}|=\sqrt{r^2-\frac{d^2}{4}}$, so there are infinitely many $\V{z}$ satisfying $|\V{z}-\V{x}|=r$ and $|\V{z}-\V{y}|=r$.
 
 (b) Let $\V{z}=\frac{\V{x}+\V{y}}{2}$, then $\vert \V{z}-\V{x}\vert =\vert \V{z}-\V{y}\vert =\vert \frac{\V{x}-\V{y}}{2}\vert =\frac{d}{2}=r$. If $\V{z}'\neq \V{z}$, then $\vert \V{z}'-\V{z}\vert =\varepsilon>0$, and $\vert \V{z}'-\V{x}\vert \geq\vert \V{z}'-\V{z}\vert +\vert \V{z}-\V{x}\vert =\varepsilon+r>r$, so $\V{z}'$ cannot satisfy the condition, and $\V{z}$ is unique.
@@ -164,7 +171,13 @@ To solve the quadratic equation for $b$, the discriminant  $\Delta=4u_j^2u_k^2a^
 
 ### 17.
 
-$\vert \V{x}+\V{y}\vert^2+\vert \V{x}-\V{y}\vert^2=\sum(x_i+y_i)^2+\sum(x_i-y_i)^2=2\sum x_i^2+2\sum y_i^2+\sum 2x_iy_i+\sum(-2)x_iy_i=2\vert \V{x}\vert^2+2\vert\V{y}\vert^2$. It can be geometrically interpreted as the sum of squares of two diagonals of parallelograms being equal to the sum of squares of four sides of parallelograms.
+$$
+\begin{aligned}
+\vert \V{x}+\V{y}\vert^2+\vert \V{x}-\V{y}\vert^2=\sum(x_i+y_i)^2+\sum(x_i-y_i)^2=2\sum x_i^2+2\sum y_i^2+\sum 2x_iy_i+\sum(-2)x_iy_i=2\vert \V{x}\vert^2+2\vert\V{y}\vert^2
+\end{aligned}
+$$
+
+It can be geometrically interpreted as the sum of squares of two diagonals of parallelograms being equal to the sum of squares of four sides of parallelograms.
 
 ---------
 
