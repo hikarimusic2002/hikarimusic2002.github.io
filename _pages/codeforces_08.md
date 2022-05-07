@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Codeforces"
-permalink: /solutions/codeforces_8
+permalink: /solutions/codeforces_08
 author_profile: false
 redirect_from:
   - /resume
