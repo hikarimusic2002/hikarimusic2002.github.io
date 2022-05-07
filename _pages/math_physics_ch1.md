@@ -1,10 +1,8 @@
 ---
 layout: splash
-title: "Mathematical Methods for Physicists"
+title: "Mathematical Methods for Physicists Ch1"
 permalink: /solutions/math_physics_ch1
 author_profile: false
-redirect_from:
-  - /resume
 ---
 
 # Chapter 1: Mathematical Preliminaries
