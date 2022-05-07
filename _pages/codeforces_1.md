@@ -15,7 +15,7 @@ redirect_from:
 _includes/head/custom.html
 ```
 
-{% highlight cpp %}
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 #define PI acos(-1)
@@ -53,4 +53,4 @@ int main()
     printf("%.8lf",ans) ;
     return 0;
 }
-{% endhighlight %}
+```
