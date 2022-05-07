@@ -114,15 +114,15 @@ Therefore, if $p>1$, or $p=1$ and $q>1$, wh have $\sum_{n=2}^\infty \frac{1}{n^p
 
 $$
 \begin{aligned}
-\gamma &= \lim_{n\to\infty}(\sum_{m=1}^n\frac{1}{m}-\ln n)=\sum_{m=1}^{1000}\frac{1}{m}+\lim_{n\to\infty}(\sum_{m=1001}^n\frac{1}{m}-\ln n)\\
-\lim_{n\to\infty}n &= \sum_{m=1001}^\infty\ln \frac{m}{m-1}-\ln 1000\\
-\gamma &= \sum_{m=1}^{1000}\frac{1}{m}-\ln{1000}+\sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\\
-\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx &\geq \sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\geq \int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx+(\frac{1}{1001}-\ln\frac{1001}{1000})\\
-\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx &= \left[\ln\frac{x}{x-1}+x\ln\frac{x-1}{x}\right]_{1001}^\infty=-0.000\,499\,667\\
-\frac{1}{1001}-\ln\frac{1001}{1000} &= -0.000\,000\,499\\
-\sum_{m=1}^{1000}\frac{1}{m}-\ln1000 &= 0.577\,714\,7\\
-0.577\,715-0.000\,499 &> \gamma>0.577\,714-0.000\,500-0.000\,001\\
-0.577\,213 &< \gamma<0.577\,216
+&\gamma = \lim_{n\to\infty}(\sum_{m=1}^n\frac{1}{m}-\ln n)=\sum_{m=1}^{1000}\frac{1}{m}+\lim_{n\to\infty}(\sum_{m=1001}^n\frac{1}{m}-\ln n)\\
+&\lim_{n\to\infty}n = \sum_{m=1001}^\infty\ln \frac{m}{m-1}-\ln 1000\\
+&\gamma = \sum_{m=1}^{1000}\frac{1}{m}-\ln{1000}+\sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\\
+&\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx \geq \sum_{m=1001}^\infty(\frac{1}{m}-\ln\frac{m}{m-1})\geq \int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx+(\frac{1}{1001}-\ln\frac{1001}{1000})\\
+&\int_{1001}^\infty(\frac{1}{x}-\ln\frac{x}{x-1})\,dx = \left[\ln\frac{x}{x-1}+x\ln\frac{x-1}{x}\right]_{1001}^\infty=-0.000\,499\,667\\
+&\frac{1}{1001}-\ln\frac{1001}{1000} = -0.000\,000\,499\\
+&\sum_{m=1}^{1000}\frac{1}{m}-\ln1000 = 0.577\,714\,7\\
+&0.577\,715-0.000\,499 > \gamma>0.577\,714-0.000\,500-0.000\,001\\
+&0.577\,213 < \gamma<0.577\,216
 \end{aligned}
 $$ 
 
@@ -220,12 +220,12 @@ $\sum_{n=1}^\infty\frac{1}{n}$ diverges by integral test, so the series is not a
 
 $$
 \begin{aligned}
-\beta(2) &= 1-\sum_{k=1}^\infty\frac{16k}{(16k^2-1)^2}=1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}-\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\\
-\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx &\leq \sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\leq\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\,+\frac{16\cdot 41}{(16\cdot 41^2-1)^2}\\
-1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2} &= 0.915\,984\,644\\
-\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx &= \frac{-1}{2(16x^2-1)}\Big|_{41}^\infty=0.000\,018\,591\\
-\frac{16\cdot 41}{(16\cdot 41^2-1)^2} &= 0.000\,000\,907\\
-0.915965146 &\leq \beta(2)\leq0.915966053
+&\beta(2) = 1-\sum_{k=1}^\infty\frac{16k}{(16k^2-1)^2}=1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2}-\sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\\
+&\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx \leq \sum_{k=41}^\infty\frac{16k}{(16k^2-1)^2}\leq\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx\,+\frac{16\cdot 41}{(16\cdot 41^2-1)^2}\\
+&1-\sum_{k=1}^{40}\frac{16k}{(16k^2-1)^2} = 0.915\,984\,644\\
+&\int_{41}^\infty\frac{16x}{(16x^2-1)^2}\,dx = \frac{-1}{2(16x^2-1)}\Big|_{41}^\infty=0.000\,018\,591\\
+&\frac{16\cdot 41}{(16\cdot 41^2-1)^2} = 0.000\,000\,907\\
+& 0.915965146 \leq \beta(2)\leq0.915966053
 \end{aligned}
 $$
 
@@ -248,9 +248,9 @@ $$
 
 $$
 \begin{aligned}
-\sum_{n=0}^\infty \frac{1}{(2n+1)^3}+\sum_{n=1}^\infty\frac{1}{(2n)^3} &=\sum_{n=1}^\infty\frac{1}{n^3}\\
-\lambda(3) &= \sum_{n=1}^\infty\frac{1}{n^3}-\sum_{n=1}^\infty\frac{1}{(2n)^3}=\frac{7}{8}\sum_{n=1}^\infty\frac{1}{n^3}=\frac{7}{8}\zeta(3)\\
-\lambda(3) &= 1.051800
+&\sum_{n=0}^\infty \frac{1}{(2n+1)^3}+\sum_{n=1}^\infty\frac{1}{(2n)^3} =\sum_{n=1}^\infty\frac{1}{n^3}\\
+&\lambda(3) = \sum_{n=1}^\infty\frac{1}{n^3}-\sum_{n=1}^\infty\frac{1}{(2n)^3}=\frac{7}{8}\sum_{n=1}^\infty\frac{1}{n^3}=\frac{7}{8}\zeta(3)\\
+&\lambda(3) = 1.051800
 \end{aligned}
 $$
 
