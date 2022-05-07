@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Mathematical Methods for Physicists Ch1"
-permalink: /solutions/math_physics_ch1
+permalink: /solutions/math_physics_01
 author_profile: false
 
 ---
