@@ -1,6 +1,6 @@
 ---
 title: '【オリジナル小説】夢の狩人'
-date: 2020-12-19
+date: 2021-11-13
 permalink: /original/2021_11_13_yumenokaryuudo
 tags:
   - オリジナル
