@@ -178,7 +178,7 @@ collections:
   research:
     output: true
     permalink: /:collection/:path/
-  ksearch:
+  original:
     output: true
     permalink: /:collection/:path/
 
@@ -203,10 +203,10 @@ defaults:
       comments: true
       share: true
       related: true
-  # _ksearch
+  # _original
   - scope:
       path: ""
-      type: ksearch
+      type: original
     values:
       layout: single
       author_profile: true
