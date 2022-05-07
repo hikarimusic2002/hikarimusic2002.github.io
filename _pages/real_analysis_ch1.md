@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Principles of Mathematical Analysis"
+title: "Principles of Mathematical Analysis Ch1"
 permalink: /solutions/real_analysis_ch1
 author_profile: false
 redirect_from:
