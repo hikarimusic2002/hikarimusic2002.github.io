@@ -178,9 +178,13 @@ collections:
   research:
     output: true
     permalink: /:collection/:path/
+  ksearch:
+    output: true
+    permalink: /:collection/:path/
   original:
     output: true
     permalink: /:collection/:path/
+
 
 
 # Defaults
@@ -202,10 +206,10 @@ defaults:
       comments: true
       share: true
       related: true
-  # _kesearch
+  # _ksearch
   - scope:
       path: ""
-      type: kesearch
+      type: ksearch
     values:
       layout: single
       author_profile: true
