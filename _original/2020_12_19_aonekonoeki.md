@@ -23,6 +23,8 @@ tags:
 * Mix: Hikari
 * Movie: Hikari
 * Illust: Hikari
+* [Music](https://drive.google.com/file/d/1fKhjIVwsEmY96lbSODlEu6PCToSl6JVd/view?usp=sharing)
+* [Off-vocal](https://drive.google.com/file/d/1REyiaOR7ab2gCNkniBqbYVO8cAk-PnPj/view?usp=sharing)
 
 ## 歌詞
 
