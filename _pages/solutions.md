@@ -20,47 +20,34 @@ redirect_from:
 ## Algorithm
 
 ### [Codeforces](https://codeforces.com/problemset)
+
   * [Problems 1 ~ 100](https://hikarimusic2002.github.io/solutions/codeforces_01)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 101 ~ 200](https://hikarimusic2002.github.io/solutions/codeforces_02)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 201 ~ 300](https://hikarimusic2002.github.io/solutions/codeforces_03)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 301 ~ 400](https://hikarimusic2002.github.io/solutions/codeforces_04)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 401 ~ 500](https://hikarimusic2002.github.io/solutions/codeforces_05)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 501 ~ 600](https://hikarimusic2002.github.io/solutions/codeforces_06)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 601 ~ 700](https://hikarimusic2002.github.io/solutions/codeforces_07)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 701 ~ 800](https://hikarimusic2002.github.io/solutions/codeforces_08)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 801 ~ 900](https://hikarimusic2002.github.io/solutions/codeforces_09)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 901 ~ 1000](https://hikarimusic2002.github.io/solutions/codeforces_10)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 1001 ~ 1100](https://hikarimusic2002.github.io/solutions/codeforces_11)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 1101 ~ 1200](https://hikarimusic2002.github.io/solutions/codeforces_12)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 1201 ~ 1300](https://hikarimusic2002.github.io/solutions/codeforces_13)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 1301 ~ 1400](https://hikarimusic2002.github.io/solutions/codeforces_14)
 
-### [Codeforces](https://codeforces.com/problemset)
   * [Problems 1401 ~ 1500](https://hikarimusic2002.github.io/solutions/codeforces_15)
 
