@@ -621,7 +621,7 @@ int main()
 
 ```
 
-66D. Petya and His Friends
+### 66D. Petya and His Friends
 
 ```cpp
 #include <bits/stdc++.h>
