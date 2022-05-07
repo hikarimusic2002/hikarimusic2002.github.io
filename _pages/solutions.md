@@ -20,4 +20,4 @@ redirect_from:
 ## Algorithm
 
 ### [Codeforces](https://codeforces.com/problemset)
-  * [Problem 0000 ~ 0050]
+  * [0001 ~ 0050]
