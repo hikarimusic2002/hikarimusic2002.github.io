@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Mathematical Methods for Physicists"
+title: "Principles of Mathematical Analysis"
 permalink: /solutions/real_analysis_ch1
 author_profile: false
 redirect_from:
@@ -10,7 +10,12 @@ redirect_from:
 # Chapter 1: Mathematical Preliminaries
 
 ## a
-$$\newcommand{\V}{\mathbf}$$
+
+$$
+\begin{aligned}
+\newcommand{\V}{\mathbf}
+\end{aligned}
+$$
 
 ### 1.
 
