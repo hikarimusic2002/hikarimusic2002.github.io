@@ -1,5 +1,5 @@
 ---
-title: 'Blog Post number 4'
+title: 'BIOSTATS: '
 date: 2015-08-14
 permalink: /posts/2022/12/biostats
 tags:
