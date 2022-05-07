@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-やりたいこと多すぎて結局何もやりきれなかったダメ人間
-
+* やりたいこと多すぎて結局何もやりきれなかったダメ人間
 * CKCOS / IPHO silv. / IBO repr.
 * National Taiwan University College of Medicine
 
