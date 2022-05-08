@@ -53,7 +53,6 @@ int main()
     printf("%d",2*ans) ;
     return 0;
 }
-
 ```
 
 ### 877E. Danil and a Part-time Job
@@ -156,6 +155,5 @@ int main()
     }
     return 0;
 }
-
 ```
 
