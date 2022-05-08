@@ -38,7 +38,6 @@ int main() {
     }
     return 0 ;
 }
-
 ```
 
 ### 474F. Ant colony
@@ -95,7 +94,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 475D. CGCDSSQ
@@ -166,7 +164,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 500A. New Year Transportation
@@ -187,6 +184,5 @@ int main() {
     printf("%s",(c==t)?"YES":"NO") ;
     return 0 ;
 }
-
 ```
 
