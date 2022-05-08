@@ -352,6 +352,7 @@ $K^4=-K$, $K^5=-K^2$, $K^6=I$. So if $n=6k$, k is positive integer, then $K^n=I$
 
 ### 2.2.7
 
+{% raw %}
 $$
 \begin{aligned}
 [A,[B,C]] &=[A,BC-CB]=(ABC-ACB)-(BCA-CBA)=ABC-ACB-BCA+CBA\\
@@ -359,6 +360,7 @@ $$
 &=(BAC-BCA)-(ACB-CAB)-[(CAB-CBA)-(ABC-BAC)]=ABC-ACB-BCA+CBA
 \end{aligned}
 $$
+{% endraw %}
 
 So $[A,[B,C]]=[B,[A,C]]-[C,[B,A]]$
 
@@ -378,7 +380,7 @@ Carry out the corresponding matrix multiplication, then all the relations are tr
 
 ### 2.2.10
 
-If $A$ and $B$ are upper right triangular matrices, then $A_{ij}=0$ when $j<i$, $B_{ij}=0$ when $j<i$. $(AB)_{ij}=\sum_k A_{ik}B_{kj}$, when $j<i$: if $k>j$, then $B_{kj}=0$, if $k\leq j$, then $k<i$ and $A_{ik}=0$. So in all case $(AB)_{ij}=\sum_k A_{ik}B_{kj}=0$ when $j<i$, so $AB$ is also an upper right triangular matrix.
+If $A$ and $B$ are upper right triangular matrices, then $A_{ij}=0$ when $j<i$, $B_{ij}=0$ when $j<i$. $(AB)\_{ij}=\sum_k A_{ik}B\_{kj}$, when $j<i$: if $k>j$, then $B_{kj}=0$, if $k\leq j$, then $k<i$ and $A_{ik}=0$. So in all case $(AB)\_{ij}=\sum_k A\_{ik}B\_{kj}=0$ when $j<i$, so $AB$ is also an upper right triangular matrix.
 
 -----
 
@@ -412,14 +414,13 @@ If the $i^{th}$ diagonal entries of $A$ is $a_i$, then $(AB)_{ij}=a_iB_{ij}$, an
 
 ### 2.2.15
 
-$(AB)_{ij}=\sum_k A_{ik}B_{kj}=\sum_k a_i\delta_{ik}b_j\delta_{kj}=a_ib_j\delta_{ij}=a_ib_i\delta_{ij}$. $(BA)_{ij}=\sum_k B_{ik}A_{kj}=\sum_k b_i\delta_{ik}a_j\delta_{kj}=a_jb_i\delta_{ij}=a_ib_i\delta_{ij}$. So $(AB)_{ij}=(BA)_{ij}$, and $A$ and $B$ commute.
-$\newcommand{\trace}{\mathrm{trace}}$
+$(AB)\_{ij}=\sum_k A_{ik}B_{kj}=\sum_k a_i\delta_{ik}b_j\delta_{kj}=a_ib_j\delta_{ij}=a_ib_i\delta_{ij}$. $(BA)\_{ij}=\sum_k B_{ik}A_{kj}=\sum_k b_i\delta_{ik}a_j\delta_{kj}=a_jb_i\delta_{ij}=a_ib_i\delta_{ij}$. So $(AB)\_{ij}=(BA)\_{ij}$, and $A$ and $B$ commute.
 
 -----
 
 ### 2.2.16
 
-For any two matrices $X,Y$ we have $\trace(XY)=\trace(YX)$. If $A,B$ commute, $\trace(ABC)=\trace(BAC)=\trace(CBA)$; if $B,C$ commute, $\trace(ABC)=\trace(ACB)=\trace(CBA)$; if $A,C$ commute, $\trace(ABC)=\trace(CAB)=\trace(ACB)=\trace(CBA)$.
+For any two matrices $X,Y$ we have $\newcommand{\trace}{\mathrm{trace}} \trace(XY)=\trace(YX)$. If $A,B$ commute, $\trace(ABC)=\trace(BAC)=\trace(CBA)$; if $B,C$ commute, $\trace(ABC)=\trace(ACB)=\trace(CBA)$; if $A,C$ commute, $\trace(ABC)=\trace(CAB)=\trace(ACB)=\trace(CBA)$.
 
 -----
 
@@ -445,7 +446,7 @@ $\trace(A)=\trace(ABB)=\trace(BAB)=\trace(-ABB)=\trace(-A)=-\trace(A)$, so $\tra
 
 ### 2.2.20
 
-$(A^{-1}A)_{ik}=\sum_j(A^{-1})_{ij}A_{jk}=\sum_j\frac{(-1)^{i+j}M_{ji}}{\det(A)}A_jk=\frac{1}{\det(A)}\sum_j(-1)^{i+j}M_{ji}A_{jk}$. If $i=k$, notice that $\det(A)=\det(A^T)=\sum_{j}(-1)^{i+j}M_{ji}A_{ji}$, so $(A^{-1}A)_{ik}=\frac{\det(A)}{\det(A)}=1$; if $i\neq k$, then $(A^{-1}A)_{ik}=\frac{1}{\det(A)}\sum_{j}(-1)^{i+j}M_{ji}A_{jk}=\frac{1}{\det(A)}A_{jk}C_{ji}=0$ by Exercise 2.1.4(b) (it is obvious by noticing that $\sum_{j}(-1)^{i+j}M_{ji}A_{jk}$ is the determinant of A whose $k^{th}$ column is replaced by $j^{th}$ column, and the determinant of matrix with two same column is zero). Therefore, $(A^{-1}A)_{ik}=\delta_{ik}$, so $A^{-1}A=I$.
+$(A^{-1}A)\_{ik}=\sum_j(A^{-1})\_{ij}A_{jk}=\sum_j\frac{(-1)^{i+j}M_{ji}}{\det(A)}A_jk=\frac{1}{\det(A)}\sum_j(-1)^{i+j}M_{ji}A_{jk}$. If $i=k$, notice that $\det(A)=\det(A^T)=\sum_{j}(-1)^{i+j}M_{ji}A_{ji}$, so $(A^{-1}A)\_{ik}=\frac{\det(A)}{\det(A)}=1$; if $i\neq k$, then $(A^{-1}A)\_{ik}=\frac{1}{\det(A)}\sum_{j}(-1)^{i+j}M_{ji}A_{jk}=\frac{1}{\det(A)}A_{jk}C_{ji}=0$ by Exercise 2.1.4(b) (it is obvious by noticing that $\sum_{j}(-1)^{i+j}M_{ji}A_{jk}$ is the determinant of A whose $k^{th}$ column is replaced by $j^{th}$ column, and the determinant of matrix with two same column is zero). Therefore, $(A^{-1}A)\_{ik}=\delta_{ik}$, so $A^{-1}A=I$.
 
 -----
 
@@ -492,8 +493,8 @@ $$
 ### 2.2.25
 
 $$
-begin{aligned}
 \renewcommand{\arraystretch}{1.5}
+begin{aligned}
 &\begin{pmatrix}
 1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16}&\frac{1}{32}\\
 \frac{1}{2}&1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16
@@ -588,16 +589,16 @@ If $A=A^T$ and $B=-B^T$, then $\trace(AB)=\trace(BA)=\trace(-B^TA^T)=\trace(-(AB
 
 ### 2.2.29
 
-\renewcommand{\arraystretch}{1}
-$AA^T=\begin{pmatrix}a&b\\c&d\end{pmatrix}\begin{pmatrix}a&c\\b&d\end{pmatrix}=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, so $a^2+b^2=1$, $c^2+d^2=1$, $ac+bd=0$. Let $\theta=\tan^{-1}\frac{b}{a}$, then $a=\cos\theta$, $b=\sin\theta$, $\frac{c}{d}=-\tan{\theta}$, $c=-\sin\theta$, $d=\cos\theta$. So the most general form is $\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix}$.
+
+$$\renewcommand{\arraystretch}{1} AA^T=\begin{pmatrix}a&b\\c&d\end{pmatrix}\begin{pmatrix}a&c\\b&d\end{pmatrix}=\begin{pmatrix}1&0\\0&1\end{pmatrix}$$, so $a^2+b^2=1$, $c^2+d^2=1$, $ac+bd=0$. Let $\theta=\tan^{-1}\frac{b}{a}$, then $a=\cos\theta$, $b=\sin\theta$, $\frac{c}{d}=-\tan{\theta}$, $c=-\sin\theta$, $d=\cos\theta$. So the most general form is $$\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix}$$.
 
 -----
 
 ### 2.2.30
 
-$\det(A^*)=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}^*a_{2j}^*\cdots=(\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots)^*=(\det A)^*$
+$\det(A^\star)=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}^\star a_{2j}\star*\cdots=(\sum\_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots)^\star=(\det A)^\star$
 
-$\det(A^*)=\det((A^*)^T)=A^\dagger$
+$\det(A^\star)=\det((A^\star)^T)=A^\dagger$
 
 -----
 
@@ -609,14 +610,14 @@ If two of the matrices are real, then their commutator is real, so $i$ multiply 
 
 ### 2.2.32
 
-$(AB)^\dagger=((AB)^T)^*=(B^TA^T)^*=((B)^T)^*((A)^T)^*=B^\dagger A^\dagger$
+$(AB)^\dagger=((AB)^T)^\star=(B^TA^T)^\star=((B)^T)^\star((A)^T)^\star=B^\dagger A^\dagger$
 
 -----
 
 ### 2.2.33
 
-$S^\dagger_{ij}=S^*_{ji}$, so 
-$\trace(S^\dagger S)=\sum_i(S^\dagger S)_{ii}=\sum_i\sum_j S^\dagger_{ij}S_{ji}=\sum_i\sum_j|S_{ji}|^2>0$ when $S$ is not null matrix.
+$S^\dagger_{ij}=S^\star_{ji}$, so 
+$\trace(S^\dagger S)=\sum_i(S^\dagger S)\_{ii}=\sum_i\sum_j S^\dagger_{ij}S_{ji}=\sum_i\sum_j|S_{ji}|^2>0$ when $S$ is not null matrix.
 
 -----
 
@@ -688,7 +689,14 @@ $$
 
 ### 2.2.41
 
-$(\gamma^0)^2=(\sigma_3)^2\otimes(1_2)^2=1_2\otimes1_2=1_4$. $(\gamma^i)^2=\gamma^2\otimes(\sigma_i)^2=(-1_2)\otimes1_2=-1_4$. When $\mu\neq0$, 
+$$
+\begin{aligned}
+(\gamma^0)^2 &=(\sigma_3)^2\otimes(1_2)^2=1_2\otimes1_2=1_4\\
+(\gamma^i)^2 &=\gamma^2\otimes(\sigma_i)^2=(-1_2)\otimes1_2=-1_4
+\end{aligned}
+$$
+
+When $\mu\neq0$, 
 
 $$
 \begin{aligned}
@@ -726,13 +734,49 @@ $\gamma^5\gamma^\mu=i\gamma^0\gamma^1\gamma^2\gamma^3\gamma^\mu$. Switch $\gamma
 \medskip
 
 (c)
-If $\alpha,\beta,\nu$ are different with each other, then $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(3-1)\gamma^\alpha\gamma^\beta\gamma^\nu=2(-1)^3\gamma^\nu\gamma^\beta\gamma^\alpha=-2\gamma^\nu\gamma^\beta\gamma^\alpha$. If only two of  $\alpha,\beta,\nu$ are the same, then $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(-3+1)\gamma^\alpha\gamma^\beta\gamma^\nu=-2(1)(-1)^2\gamma^\nu\gamma^\beta\gamma^\alpha\\=-2\gamma^\nu\gamma^\beta\gamma^\alpha$. If $\alpha,\beta,\nu$ are all the same, then $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(-3+1)\gamma^\alpha\gamma^\beta\gamma^\nu=-2\gamma^\nu\gamma^\beta\gamma^\alpha$. Therefore, in all cases, $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=-2\gamma^\nu\gamma^\beta\gamma^\alpha$.
+If $\alpha,\beta,\nu$ are different with each other, then 
+
+$$
+\begin{aligned}
+\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(3-1)\gamma^\alpha\gamma^\beta\gamma^\nu=2(-1)^3\gamma^\nu\gamma^\beta\gamma^\alpha=-2\gamma^\nu\gamma^\beta\gamma^\alpha
+\end{aligned}
+$$
+
+If only two of  $\alpha,\beta,\nu$ are the same, then 
+
+$$
+\begin{aligned}
+\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(-3+1)\gamma^\alpha\gamma^\beta\gamma^\nu=-2(1)(-1)^2\gamma^\nu\gamma^\beta\gamma^\alpha\=-2\gamma^\nu\gamma^\beta\gamma^\alpha
+\end{aligned}
+$$
+
+If $\alpha,\beta,\nu$ are all the same, then 
+
+$$
+\begin{aligned}
+\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(-3+1)\gamma^\alpha\gamma^\beta\gamma^\nu=-2\gamma^\nu\gamma^\beta\gamma^\alpha
+\end{aligned}
+$$
+
+Therefore, in all cases, $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=-2\gamma^\nu\gamma^\beta\gamma^\alpha$.
 
 -----
 
 ### 2.2.44
 
-$(\gamma^5)^2=-\gamma^0\gamma^1\gamma^2\gamma^3\gamma^0\gamma^1\gamma^2\gamma^3=-(-1)^{3+2+1}(\gamma^0)^2(\gamma^1)^2(\gamma^2)^2(\gamma^3)^2=1$, so\\ $M^2=\frac{1}{4}(1+2\gamma^5+(\gamma^5)^2)=\frac{1}{4}(2+2\gamma^5)=\frac{1}{2}(1+\gamma^5)=M$.
+$$
+\begin{aligned}
+(\gamma^5)^2=-\gamma^0\gamma^1\gamma^2\gamma^3\gamma^0\gamma^1\gamma^2\gamma^3=-(-1)^{3+2+1}(\gamma^0)^2(\gamma^1)^2(\gamma^2)^2(\gamma^3)^2=1
+\end{aligned}
+$$
+
+so
+
+$$
+\begin{aligned}
+M^2=\frac{1}{4}(1+2\gamma^5+(\gamma^5)^2)=\frac{1}{4}(2+2\gamma^5)=\frac{1}{2}(1+\gamma^5)=M
+\end{aligned}
+$$
 
 -----
 
@@ -780,6 +824,7 @@ $$
 So $\left[\gamma^0mc^2+c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)-E\right]\psi=0$ becomes
 
 $$
+\begin{aligned}
 \begin{pmatrix}
 mc^2-E&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)\\
 c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)&-mc^2-E
@@ -787,10 +832,13 @@ c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)&-mc^2-E
 \begin{pmatrix}
 \psi_L\\\psi_S
 \end{pmatrix}=0
+\end{aligned}
 $$
 
 (b) By the indicated approximation, the equation becomes
-\[
+
+$$
+\begin{aligned}
 \begin{pmatrix}
 -\varepsilon&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)\\
 c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)&-2mc^2
@@ -798,7 +846,9 @@ c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)&-2mc^2
 \begin{pmatrix}
 \psi_L\\\psi_S
 \end{pmatrix}=0
-\]
+\end{aligned}
+$$
+
 It can be separated to $\varepsilon\psi_L=c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)\psi_S$ and $c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)\psi_L=2mc^2\psi_S$. Eliminating $\psi_S$ and we obtain $\frac{1}{2m}\left(p_1^2+p_2^2+p_3^2\right)\psi_L=\varepsilon\psi_L$
 
 (c) From the two separated equations, we can get $(\frac{\psi_S}{\psi_L})^2=\frac{\varepsilon}{2mc^2}\ll1$ in the non-relativistic approximation.
@@ -840,6 +890,7 @@ $$
 As in Exercise 2.2.48 but with $\gamma^0$ and $\gamma^i$ defined in Exercise 2.2.49, the Dirac equation becomes
 
 $$
+\begin{aligned}
 \begin{pmatrix}
 -c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E&mc^2\\
 mc^2&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E
@@ -847,11 +898,13 @@ mc^2&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E
 \begin{pmatrix}
 \psi_L\\\psi_S
 \end{pmatrix}=0
+\end{aligned}
 $$
 
 In the limit that m approaches zero, the equation becomes
 
 $$
+\begin{aligned}
 \begin{pmatrix}
 -c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E&0\\
 0&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E
@@ -859,6 +912,7 @@ $$
 \begin{pmatrix}
 \psi_L\\\psi_S
 \end{pmatrix}=0
+\end{aligned}
 $$
 
 which separates into independent $2\times2$ blocks.
@@ -867,6 +921,6 @@ which separates into independent $2\times2$ blocks.
 
 ### 2.2.51
 
-(a) $|r'|^2=r'^\dagger r'=r^\dagger U^\dagger Ur=r^\dagger r=|r|^2$
+(a) $\vert r'\vert^2=r'^\dagger r'=r^\dagger U^\dagger Ur=r^\dagger r=\vert r\vert^2$
 
 (b) $r^\dagger r=r'^\dagger r'=r^\dagger U^\dagger Ur$ for any $r$, so $U^\dagger U=I$.
