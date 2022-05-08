@@ -48,7 +48,6 @@ int main()
     printf("-1") ;
     return 0 ;
 }
-
 ```
 
 ### 1295D Same GCDs
@@ -88,7 +87,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 
