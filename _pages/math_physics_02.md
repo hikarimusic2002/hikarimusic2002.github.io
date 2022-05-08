@@ -358,7 +358,7 @@ $$K^3=
 0&0&-1
 \end{pmatrix}=-I
 $$, 
-$K^4=-K$, $K^5=-K^2$, $K^6=I$. So if $n=6k$, k is positive integer, then $K^n=I$.
+$K^4=-K$, $K^5=-K^2$, $K^6=I$. So if $n=6k$, $k$ is positive integer, then $K^n=I$.
 
 -----
 
@@ -606,7 +606,7 @@ $$\renewcommand{\arraystretch}{1} AA^T=\begin{pmatrix}a&b\\c&d\end{pmatrix}\begi
 
 ### 2.2.30
 
-$\det(A^\star)=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}^\star a_{2j}\star*\cdots=(\sum\_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots)^\star=(\det A)^\star$
+$\det(A^\star)=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}^\star a_{2j}^\star\cdots=(\sum\_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots)^\star=(\det A)^\star$
 
 $\det(A^\star)=\det((A^\star)^T)=A^\dagger$
 
@@ -735,13 +735,10 @@ $\gamma^5\gamma^\mu=i\gamma^0\gamma^1\gamma^2\gamma^3\gamma^\mu$. Switch $\gamma
 ### 2.2.43
 
 ($\gamma_\mu=\sum g_{\nu\mu}\gamma^\mu=$ should be $\gamma_\nu=\sum g_{\nu\mu}\gamma^\mu$) $\gamma_0=\gamma^0$ and $\gamma_i=-\gamma ^i,\,i=1,2,3$. Along with $(\gamma^0)^2=1$ and $(\gamma^i)^2=-1$, we have $\gamma_\mu\gamma^\mu=1,\,\mu=0,1,2,3$.
-\medskip
 
-(a) If $\mu=\alpha$, $\gamma_\mu\gamma^\alpha\gamma^\mu=\gamma_\mu\gamma^\mu\gamma^\alpha=\gamma^\alpha$; if $\mu\neq\alpha$, $\gamma_\mu\gamma^\alpha\gamma^\mu=-\gamma_\mu\gamma^\mu\gamma^\alpha=-\gamma^\alpha$. So $\sum\gamma_\mu\gamma^\alpha\gamma^\mu=(1-3)\gamma^\alpha=-2\gamma^\alpha$
-\medskip
+(a) If $\mu=\alpha$, $\gamma_\mu\gamma^\alpha\gamma^\mu=\gamma_\mu\gamma^\mu\gamma^\alpha=\gamma^\alpha$; if $\mu\neq\alpha$, $\gamma_\mu\gamma^\alpha\gamma^\mu=-\gamma_\mu\gamma^\mu\gamma^\alpha=-\gamma^\alpha$. So $\sum\gamma_\mu\gamma^\alpha\gamma^\mu=(1-3)\gamma^\alpha=-2\gamma^\alpha$.
 
 (b) If $\alpha=\beta$, $\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\mu=\gamma^\alpha\gamma^\beta=(\gamma^\alpha)^2=g^{\alpha\alpha}=g^{\alpha\beta}$ for all $\mu=0,1,2,3$, so $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\mu=4g^{\alpha\beta}$. If $\alpha\neq\beta$, for $\mu=\alpha$ or $\mu=\beta$, $\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\mu=-\gamma^\alpha\gamma^\beta$, and for $\mu\neq\alpha$ and $\mu\neq\beta$, $\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\mu=\gamma^\alpha\gamma^\beta$, so $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\mu=(-2+2)\gamma^\alpha\gamma^\beta=0=g^{\alpha\beta}$. So $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\mu=4g^{\alpha\beta}$.
-\medskip
 
 (c)
 If $\alpha,\beta,\nu$ are different with each other, then 
@@ -798,7 +795,7 @@ By evaluation, we can found that the 16 Dirac matrices is equal to $(i)^n\sigma_
 
 ### 2.2.46
 
-(The 16 Dirac matrices is defined as $E_{ij}=\sigma_i\otimes\sigma_j$, $i,j=0,1,2,3$, where $\sigma_0=I_2$) \\For $(i,j)\neq(0,0)$, $\trace(E_{ij})=\trace(\sigma_i)(\sigma_j)=0$ because $\trace(\sigma_k)=0$ when $k=1,2,3$. So $\trace(E_{ij}E_{mn})\neq0$ only when $(\sigma_i\otimes\sigma_j)(\sigma_m\otimes\sigma_n)=\sigma_0\otimes\sigma_0$, that is, $i=m$ and $j=n$. Let $c_i=c_{mn}$, $\Gamma_i=E_{mn}$,  $\sum_{i=1}^{16}c_i\Gamma_i=\sum_{i,j=0}^3c_{ij}E_{ij}$, then $\trace(A\Gamma_i)=\trace(\sum_{i,j=0}^3c_{ij}E_{ij}E_{mn})=c_{mn}\trace(E_{mn}E_{mn})=c_{mn}\trace(I_4)=4c_{mn}=4c_i$, so $c_i=\frac{1}{4}\trace(A\Gamma_i)$.
+(The 16 Dirac matrices is defined as $E_{ij}=\sigma_i\otimes\sigma_j$, $i,j=0,1,2,3$, where $\sigma_0=I_2$). For $(i,j)\neq(0,0)$, $\trace(E_{ij})=\trace(\sigma_i)(\sigma_j)=0$ because $\trace(\sigma_k)=0$ when $k=1,2,3$. So $\trace(E_{ij}E_{mn})\neq0$ only when $(\sigma_i\otimes\sigma_j)(\sigma_m\otimes\sigma_n)=\sigma_0\otimes\sigma_0$, that is, $i=m$ and $j=n$. Let $c_i=c_{mn}$, $\Gamma_i=E_{mn}$,  $\sum_{i=1}^{16}c_i\Gamma_i=\sum_{i,j=0}^3c_{ij}E_{ij}$, then $\trace(A\Gamma_i)=\trace(\sum_{i,j=0}^3c_{ij}E_{ij}E_{mn})=c_{mn}\trace(E_{mn}E_{mn})=c_{mn}\trace(I_4)=4c_{mn}=4c_i$, so $c_i=\frac{1}{4}\trace(A\Gamma_i)$.
 
 -----
 
@@ -859,7 +856,7 @@ c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)&-2mc^2
 \end{aligned}
 $$
 
-It can be separated to $\varepsilon\psi_L=c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)\psi_S$ and $c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)\psi_L=2mc^2\psi_S$. Eliminating $\psi_S$ and we obtain $\frac{1}{2m}\left(p_1^2+p_2^2+p_3^2\right)\psi_L=\varepsilon\psi_L$
+It can be separated to $\varepsilon\psi_L=c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)\psi_S$ and $c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)\psi_L=2mc^2\psi_S$. Eliminating $\psi_S$ and we obtain $\frac{1}{2m}\left(p_1^2+p_2^2+p_3^2\right)\psi_L=\varepsilon\psi_L$.
 
 (c) From the two separated equations, we can get $(\frac{\psi_S}{\psi_L})^2=\frac{\varepsilon}{2mc^2}\ll1$ in the non-relativistic approximation.
 
