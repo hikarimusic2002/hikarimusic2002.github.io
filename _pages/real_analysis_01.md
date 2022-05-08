@@ -11,16 +11,16 @@ redirect_from:
 
 ### 1.
 
-If $r+x$ is rational, than $x=(r+x)-r$ is rational, a contradiction, so $r+x$ is irrational.
+If $r+x$ is rational, then $x=(r+x)-r$ is rational, a contradiction, so $r+x$ is irrational.
 
-If $rx$ is rational, than $x=(rx)\frac{1}{r}$ is rational, a contradiction, so $rx$ is irrational.
+If $rx$ is rational, then $x=(rx)\frac{1}{r}$ is rational, a contradiction, so $rx$ is irrational.
 $\newcommand{\V}{\mathbf}$
 
 ---------
 
 ### 2.
 
-If there is a rational number $\frac{p}{q}$ (p,q are intergers and $gcd(p,q)=1$), whose square is 12. Then $p^2=12q^2$. $3\vert 12$, so $3\vert r p^2$, $3\vert p$. So $9\vert p^2$, $9\vert 12q^2$, $3\vert 4q^2$, $3\vert q$. So $3\vert p$ and $3\vert q$, contrary to $gcd(p,q)=1$.
+If there is a rational number $\frac{p}{q}$ ($p$,$q$ are intergers and $\mathrm{gcd}(p,q)=1$), whose square is 12. Then $p^2=12q^2$. $3\vert 12$, so $3\vert r p^2$, $3\vert p$. So $9\vert p^2$, $9\vert 12q^2$, $3\vert 4q^2$, $3\vert q$. So $3\vert p$ and $3\vert q$, contrary to $\mathrm{gcd}(p,q)=1$.
 
 ---------
 
@@ -44,7 +44,7 @@ For an element $x$ of $E$, $\alpha\leq x $ and $x\leq \beta$, so $\alpha \leq\be
 
 ### 5.
 
-For every $x\in A$, $x\geq \inf A$, so $-x\leq -\inf A$, so $-\inf A$ is an upper bound of -A. If $\gamma<-\inf A$, $-\gamma >\inf A$, so $-\gamma$ is not a lower bound of A, then there is a element $x<-\gamma$ in A. Then there is an element $-x>\gamma$ in -A, which means $\gamma$ is not an upper bound of -A. So $-\inf A=\sup (-A)$, and $\inf A=-\sup (-A)$.
+For every $x\in A$, $x\geq \inf A$, so $-x\leq -\inf A$, so $-\inf A$ is an upper bound of $-A$. If $\gamma<-\inf A$, $-\gamma >\inf A$, so $-\gamma$ is not a lower bound of $A$, then there is a element $x<-\gamma$ in $A$. Then there is an element $-x>\gamma$ in $-A$, which means $\gamma$ is not an upper bound of $-A$. So $-\inf A=\sup (-A)$, and $\inf A=-\sup (-A)$.
 
 
 ---------
@@ -83,9 +83,9 @@ $b^w<y$, so $y\cdot b^{-w}>1$. So from (c), $b^{\frac{1}{n}}<y\cdot b^{-w}$ when
 $b^w>y$, so $\frac{b^w}{y}>1$. So from (c), $b^{\frac{1}{n}}<\frac{b^w}{y}$ when $n>\frac{b-1}{\frac{b^w}{y}-1}$. Since $b^{\frac{1}{n}},y>0$, $b^{w-\frac{1}{n}}>y$ for sufficiently large n.
 
 (f)
-If $b^x<y$, from (d) $b^{x+\frac{1}{n}}<y$ for some n. Then $x+\frac{1}{n}\in A$, but $x+\frac{1}{n}>x$, contrary to the fact that x in an upper bound of A.
+If $b^x<y$, from (d) $b^{x+\frac{1}{n}}<y$ for some $n$. Then $x+\frac{1}{n}\in A$, but $x+\frac{1}{n}>x$, contrary to the fact that x in an upper bound of A.
 
-If $b^x>y$, form (e) $b^{x-\frac{1}{n}}>y$ for some n. So $b^{x-\frac{1}{n}}>b^w$, and $x-\frac{1}{n}>w$ for all w in A since $b>1$. So $x-\frac{1}{n}$ is an upper bound of A, but $x-\frac{1}{n}<x$, contrary to $x=\sup A$.
+If $b^x>y$, form (e) $b^{x-\frac{1}{n}}>y$ for some $n$. So $b^{x-\frac{1}{n}}>b^w$, and $x-\frac{1}{n}>w$ for all w in A since $b>1$. So $x-\frac{1}{n}$ is an upper bound of A, but $x-\frac{1}{n}<x$, contrary to $x=\sup A$.
 
 Therefore, only $b^x=y$ can be the case.
 
@@ -106,7 +106,7 @@ When $a<c$, $z<w$. When $a>c$, $z>w$. When $a=c$ and $b<d$, $z<w$. When $a=c$ an
 
 If $z<w$ and $w<r$ ($r=e+fi$), then $a<c$ or $a=c$, $c<e$ or $c=e$. If $a<c$, then $a<e$, so $z<r$. If $a=c$ and $c<e$, then $a<e$, so $z<r$. If $a=c$ and $c=e$, then $b<d$ and $d<f$, so $b<f$, so $z<r$. Therefore, for all cases $z<r$ when $z<w$ and $w<r$, satisfying definition 1.5(ii).
 
-Assume that complex number under this definition has least-upper-bound property. Consider the set $S=\{xi\vert x\in\mathbb{R}\}$. $1$ is greater than all the $0+xi$, so $S$ is bound above. Let $a+bi=\sup S$, $a\geq0$. If $a>0$, then $\frac{a}{2}>0$ is also an upper bound, a contradiction. So $a=0$, but then $(b+1)i>a+bi$ and $(b+1)i\in S$, a contradiction. Therefore, complex number under this definition cannot have least-upper-bound property.
+Assume that complex number under this definition has least-upper-bound property. Consider the set $S=\\{xi\vert x\in\mathbb{R}\\}$. $1$ is greater than all the $0+xi$, so $S$ is bound above. Let $a+bi=\sup S$, $a\geq0$. If $a>0$, then $\frac{a}{2}>0$ is also an upper bound, a contradiction. So $a=0$, but then $(b+1)i>a+bi$ and $(b+1)i\in S$, a contradiction. Therefore, complex number under this definition cannot have least-upper-bound property.
 
 ---------
 
