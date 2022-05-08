@@ -239,7 +239,9 @@ The only case that $\varepsilon_{ijk}\varepsilon_{pqk}\neq0$ is : k is one of $(
 ### 2.2.1
 
 $$
-((AB)C)_{il}=\sum_m(AB)_{im}C_{ml}=\sum_m\sum_k A_{ik}B_{km}C_{ml}=\sum_k\sum_m A_{ik}B_{km}C_{ml}=\sum_k A_{ik}(BC)_{kl}=(A(BC))_{il}
+\begin{aligned}
+((AB)C)_{il}=\sum_m(AB)_{im}C_{ml}=\sum_m\sum_k A_{ik}B_{km}C_{ml}=\sum_k\sum_m A_{ik}B_{km}C_{ml}=\sum_k A_{ik}(BC)\_{kl}=(A(BC))\_{il}
+\end{aligned}
 $$
 
 -----
@@ -256,7 +258,8 @@ If $(A+B)(A-B)=A^2-B^2$, than $A^2+BA-AB-B^2=A^2-B^2$, so $AB-BA=[A,B]=0$. If $[
 
 $$
 \renewcommand{\arraystretch}{1}
-(a+ib)+(c+id)\longleftrightarrow
+\begin{aligned}
+&(a+ib)+(c+id)\longleftrightarrow
 \begin{pmatrix}
 a&b\\-b&a
 \end{pmatrix}+
@@ -266,11 +269,8 @@ c&d\\-d&c
 \begin{pmatrix}
 a+c&b+d\\-(b+d)&a+c
 \end{pmatrix}\longleftrightarrow
-(a+c)+i(b+d)
-$$
-
-$$
-(a+ib)(c+id)\longleftrightarrow
+(a+c)+i(b+d)\\
+&(a+ib)(c+id)\longleftrightarrow
 \begin{pmatrix}
 a&b\\-b&a
 \end{pmatrix}
@@ -281,15 +281,18 @@ c&d\\-d&c
 ac-bd&ad+bc\\-(ad+bc)&ac-bd
 \end{pmatrix}\longleftrightarrow
 (ac-bd)+i(ad+bc)
+\end{aligned}
 $$
 
 (b)
 
 $$
+\begin{aligned}
 (a+ib)^{-1}=\frac{1}{a^2+b^2}(a-ib)\longleftrightarrow\frac{1}{a^2+b^2}
 \begin{pmatrix}
 a&-b\\b&a
 \end{pmatrix}
+\end{aligned}
 $$
 
 -----
