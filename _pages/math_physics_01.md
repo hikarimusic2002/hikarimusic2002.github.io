@@ -26,7 +26,7 @@ If $A=0$, we have $\vert n^p u_n\vert < 1$ when $n\geq N$ for some N. Then $-\fr
 
 Let $b_n'=\frac{b_n}{2K}$, then $\lim_{n\to\infty}\frac{b_n'}{a_n}=\frac{1}{2}$, so for sufficiently large $n$, we have $\frac{1}{2}-\frac{1}{2}=0<\frac{b_n'}{a_n}<1=\frac{1}{2}+\frac{1}{2}$. Then $0<b_n'<a_n$ or $0>b_n'>a_n$, so $\sum a_n$ converging implies $\sum b_n'$ converging by comparison test, and therefore $\sum b_n$ converges.
 
-Let $b_n''=\frac{2b_n}{K}$, then $\lim_{n\to\infty}\frac{b_n''}{a_n}=2$, so for sufficiently large $n$, we have $2+1=3>\frac{b_n''}{a_n}>1=2-1$.Then $3a_n>b_n'' >a_n$ or $3a_n<b_n'' <a_n$,  so $\sum a_n$ diverging implies $\sum b_n''$ divergeing by comparison test, and therefore $\sum b_n$ diverges.
+Let $b_n''=\frac{2b_n}{K}$, then $\lim_{n\to\infty}\frac{b_n''}{a_n}=2$, so for sufficiently large $n$, we have $2+1=3>\frac{b_n''}{a_n}>1=2-1$.Then $3a_n>b_n'' >a_n$ or $3a_n<b_n'' <a_n$,  so $\sum a_n$ diverging implies $\sum b_n''$ diverging by comparison test, and therefore $\sum b_n$ diverges.
 
 --------------
 
@@ -60,8 +60,8 @@ where $B(n)$ is bounded for large n (it can be verified by binomial theorem, tha
 
 (b) $\frac{(n+1)!}{10^{n+1}}/\frac{n!}{10^n}=\frac{n+1}{10}\geq 1$ for $n\geq 9$, so $\sum_{n=1}^\infty \frac{n!}{10^n}$ diverges by ratio test.
 
-(c) $2n(2n+1)>(2n)^2$, so $0<\frac{1}{2n(2n+1)}<\frac{1}{(2n)^2}$. 
-$\sum_{n=1}^\infty \frac{1}{4n^2}$ converges by integral test, so $\sum_{n=1}^\infty \frac{1}{2n(2n+1)}$ converges by comparison test.
+(c) $2n(2n+1)>(2n)^2$, so $0<\frac{1}{2n(2n+1)}<\frac{1}{(2n)^2}$. Since
+$\sum_{n=1}^\infty \frac{1}{4n^2}$ converges by integral test, $\sum_{n=1}^\infty \frac{1}{2n(2n+1)}$ converges by comparison test.
 
 (d) $\frac{1}{\sqrt{n(n+1)}}>\frac{1}{\sqrt{(n+1)^2}}=\frac{1}{n+1}>0$. Since $\sum_{n=1}^\infty \frac{1}{n+1}$ diverges by integral test, $\sum_{n=1}^\infty\[n(n+1)\]^{-\frac{1}{2}}$ diverges.
 
@@ -74,7 +74,7 @@ $\sum_{n=1}^\infty \frac{1}{4n^2}$ converges by integral test, so $\sum_{n=1}^\i
 
 (b) $\int_2^\infty \frac{1}{n\ln n}\,dx=\ln \ln n\vert_2^\infty$ is infinite, so $\sum_{n=2}^{\infty} \frac{1}{n\ln n}$ converges by integral test.
 
-(c) $\frac{1}{(n+1)2^{n+1}}/\frac{1}{n2^n}=\frac{n}{n+1}\frac{1}{2}\leq \frac{1}{2}$ for all $n$, so $\sum_{n=1}^\infty \frac{1}{n\,2^n}$ converges by retio test.
+(c) $\frac{1}{(n+1)2^{n+1}}/\frac{1}{n2^n}=\frac{n}{n+1}\frac{1}{2}\leq \frac{1}{2}$ for all $n$, so $\sum_{n=1}^\infty \frac{1}{n\,2^n}$ converges by ratio test.
 
 (d) $\ln \frac{n+1}{n}=\ln (n+1)-\ln n$, so 
 
@@ -88,7 +88,7 @@ is infinite, which means $\sum_{n=1}^\infty \ln (1+\frac{1}{n})$ diverges.
 
 (e) $n^{\frac{1}{n}}>1$. Let $x_n=n^{\frac{1}{n}}-1$, then $(1+x_n)^n=n$, and $\frac{n(n+1)}{2}x_n^2\leq n$ by binomial theorem. Therefore, $0\leq x_n \leq \sqrt{\frac{2}{n-1}}$, so $\lim_{n\to\infty}\sqrt{\frac{2}{n-1}}=0$ implies $\lim_{n\to\infty}x_n=0$, and $\lim_{n\to\infty}n^{\frac{1}{n}}=1$.
 
-$\lim_{n\to\infty}n^{\frac{1}{n}}=1$ implies for sufficiently large $n$, $0=1-1<n^{\frac{1}{n}}<1+1=2$, so $\frac{1}{n^{\frac{1}{n}}}>\frac{1}{2}$, and $\frac{1}{n\cdot n^{\frac{1}{n}}}>\frac{1}{2n}$. Since $\sum_{n=1}^\infty \frac{1}{2n}$ diverges by integral test, $\sum_{n=1}^\infty \frac{1}{n\cdot n^{\frac{1}{n}}}$ diverges by comparison test.
+$\lim_{n\to\infty}n^{\frac{1}{n}}=1$ implies for sufficiently large $n$, we have $0=1-1<n^{\frac{1}{n}}<1+1=2$, so $\frac{1}{n^{\frac{1}{n}}}>\frac{1}{2}$, and $\frac{1}{n\cdot n^{\frac{1}{n}}}>\frac{1}{2n}$. Since $\sum_{n=1}^\infty \frac{1}{2n}$ diverges by integral test, $\sum_{n=1}^\infty \frac{1}{n\cdot n^{\frac{1}{n}}}$ diverges by comparison test.
 
 --------------
 
@@ -180,7 +180,7 @@ a_{n+1} &= \frac{1}{\frac{n^2+n}{2}+1}+\frac{1}{\frac{n^2+n}{2}+2}+\cdots+\frac{
 \end{aligned}
 $$
 
-so $a_n$ has n terms and $a_{n+1}$ has $n+1$ terms.
+so $a_n$ has $n$ terms and $a_{n+1}$ has $n+1$ terms.
 
 $$
 \begin{aligned}a_{n}-a_{n+1}=(\frac{1}{\frac{n^2-n}{2}+1}-\frac{1}{\frac{n^2+n}{2}+1})+(\frac{1}{\frac{n^2-n}{2}+2}-\frac{1}{\frac{n^2+n}{2}+2})+\cdots+(\frac{1}{\frac{n^2-n}{2}+n}-\frac{1}{\frac{n^2+n}{2}+n})-\frac{2}{n^2+3n+2}
