@@ -344,7 +344,7 @@ For $x\in[a,b]$, $0<a<b$,
 
 $$
 \begin{aligned}
-|S(x)-s_n(x)|=|\sum_{k=n+1}^\infty\frac{(-1)^{k-1}}{k^x}|\leq\frac{1}{(n+1)^x}<\frac{1}{n^x}<\frac{1}{n^a}
+|S(x)-s_n(x)|=\left\vert\sum_{k=n+1}^\infty\frac{(-1)^{k-1}}{k^x}\right\vert\leq\frac{1}{(n+1)^x}<\frac{1}{n^x}<\frac{1}{n^a}
 \end{aligned}
 $$
 
@@ -359,8 +359,8 @@ $$
 for all $n\geq N$, so the series is uniformly convergent in the range $[a,b]$ if $0<a<b$.
 
 (b) The series converges when $x>1$ and diverges when $x\leq 1$ by integral test, so if it uniformly converges in interval $[a,b]$, then $1<a<b$.
-For $x\in[a,b]$ and $1<a<b$,
-$|\frac{1}{n^x}|\leq\frac{1}{n^a}$. $\sum_n \frac{1}{n^a}$ is a convergent series, so by Weierstrass M test,  $\sum_{n=1}^\infty\frac{1}{n^x}$ is uniformly convergent in the range $[a,b]$ if $1<a<b$.
+For $x\in[a,b]$ and $1<a<b$, we have
+$|\frac{1}{n^x}|\leq\frac{1}{n^a}$. Since $\sum_n \frac{1}{n^a}$ is a convergent series, by Weierstrass M test  $\sum_{n=1}^\infty\frac{1}{n^x}$ is uniformly convergent in the range $[a,b]$ if $1<a<b$.
 
 --------------
 
@@ -372,9 +372,9 @@ The series converges when $\vert x\vert <1$ and diverges when $\vert x\vert \geq
 
 ### 1.2.3
 
-(a) When $0<x\leq1$, $\lim_{n\to\infty}\frac{1}{1+x^n}\neq0$, so the series diverges. When $x>1$, $0<\frac{1}{1+x^n}<\frac{1}{x^n}$. The geometry series $\frac{1}{x^n}$ converges, so $\sum_{n=0}^\infty\frac{1}{1+x^n}$ converges by comparison test.
+(a) When $0<x\leq1$, we have $\lim_{n\to\infty}\frac{1}{1+x^n}\neq0$, so the series diverges. When $x>1$, we hvae $0<\frac{1}{1+x^n}<\frac{1}{x^n}$. The geometry series $\frac{1}{x^n}$ converges, so $\sum_{n=0}^\infty\frac{1}{1+x^n}$ converges by comparison test.
 
-(b) If the series is uniformly convergent in the interval $[a,b]$, then $1<a<b$. For $x\in [a,b]$ and $1<a<b$, $\frac{1}{1+x^n}<\frac{1}{x^n}\leq\frac{1}{a^n}$. The geometry series $\sum_{n=0}^\infty\frac{1}{a^n}$ converges, so by Weierstrass M test, $\sum_{n=0}^\infty\frac{1}{1+x^n}$ is uniformly convergent in the range $[a,b]$ if $1<a<b$.
+(b) If the series is uniformly convergent in the interval $[a,b]$, then $1<a<b$. For $x\in [a,b]$ and $1<a<b$, we have $\frac{1}{1+x^n}<\frac{1}{x^n}\leq\frac{1}{a^n}$. The geometry series $\sum_{n=0}^\infty\frac{1}{a^n}$ converges, so by Weierstrass M test, $\sum_{n=0}^\infty\frac{1}{1+x^n}$ is uniformly convergent in the range $[a,b]$ if $1<a<b$.
 
 --------------
 
@@ -553,8 +553,8 @@ So the Euler-Mascheroni constant $\gamma$ is bound by 0 and 1, and is therefore 
 
 $$
 \begin{aligned}
-\psi(x\pm h) &= \psi(x)\pm h\psi'(x)+\frac{h^2}{2}\psi''(x)\pm \frac{h^3}{6}\psi^{(3)}(x)+\frac{h^4}{24}\psi^{(4)}(x)+\cdots\\
-\frac{1}{h^2}\left[\psi(x+h)-2\psi(x)+\psi(x-h)\right] &= \psi''(x)+\frac{h^2}{12}\psi^{(4)}(x)+\cdots
+& \psi(x\pm h) = \psi(x)\pm h\psi'(x)+\frac{h^2}{2}\psi''(x)\pm \frac{h^3}{6}\psi^{(3)}(x)+\frac{h^4}{24}\psi^{(4)}(x)+\cdots\\
+& \frac{1}{h^2}\left[\psi(x+h)-2\psi(x)+\psi(x-h)\right] = \psi''(x)+\frac{h^2}{12}\psi^{(4)}(x)+\cdots
 \end{aligned}
 $$
 
@@ -608,7 +608,7 @@ By binomial theorem, $\frac{1}{1-x^2}=\sum_{n=0}^\infty(-1)^n x^{2n}$, so $\int_
 
 ### 1.3.3
 
-$e^{-t}t^n=\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n$. When $-a\leq t\leq a$ \,($a>0$), we have $\left\vert\frac{(-t)^p}{p!}t^n\right\vert\leq\frac{a^{p+n}}{p!}$ and $\sum_{p=0}^\infty\frac{a^{p+n}}{p!}$ is convergent, so by Weierstrass M test $\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n$ is uniformly convergent in $-a\leq t\leq a$ for every $a>0$, and the series can be integrated by terms.
+$e^{-t}t^n=\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n$. When $-a\leq t\leq a$ ($a>0$), we have $\left\vert\frac{(-t)^p}{p!}t^n\right\vert\leq\frac{a^{p+n}}{p!}$ and $\sum_{p=0}^\infty\frac{a^{p+n}}{p!}$ is convergent, so by Weierstrass M test $\sum_{p=0}^\infty\frac{(-t)^p}{p!}t^n$ is uniformly convergent in $-a\leq t\leq a$ for every $a>0$, and the series can be integrated by terms.
 
 $$
 \begin{aligned}
