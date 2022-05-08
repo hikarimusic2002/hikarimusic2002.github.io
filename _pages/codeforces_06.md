@@ -70,7 +70,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 520B. Two Buttons
@@ -96,7 +95,6 @@ int main() {
     printf("%d",c) ;
     return 0 ;
 }
-
 ```
 
 ### 580C. Kefa and Park
@@ -134,7 +132,6 @@ int main() {
     printf("%d",ans) ;
     return 0 ;
 }
-
 ```
 
 ### 584D. Dima and Lisa
@@ -174,6 +171,5 @@ int main()
     }
     return 0;
 }
-
 ```
 
