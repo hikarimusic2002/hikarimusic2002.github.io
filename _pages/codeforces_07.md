@@ -82,7 +82,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 630I. Parking lot
@@ -110,7 +109,6 @@ int main()
     printf("%lld",(9*n-3)*binpow(4,n-3)) ;
     return 0;
 }
-
 ```
 
 ### 687B. Remainders Game
@@ -165,7 +163,6 @@ int main()
     printf("%s",ans?"Yes":"No") ;
     return 0;
 }
-
 ```
 
 ### 689D. Friends and Subsequences
@@ -249,6 +246,5 @@ int main()
     printf("%lld",ans_count()) ;
     return 0;
 }
-
 ```
 
