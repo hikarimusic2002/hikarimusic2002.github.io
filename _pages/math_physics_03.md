@@ -804,7 +804,7 @@ For the surfaces parallel to $yz$ surface,
 
 $$
 \begin{aligned}
-\int\displaylimits_{S_{yz}}\V{r}\cdot d\boldsymbol{\sigma}=\int\displaylimits_{S_{yz}}(x\VE_x+y\VE_y+z\VE_z)\cdot(d\sigma\VE_x)=\int\displaylimits_{S_{yz}}(xd\sigma)=x
+\int\limits_{S_{yz}}\V{r}\cdot d\boldsymbol{\sigma}=\int\limits_{S_{yz}}(x\VE_x+y\VE_y+z\VE_z)\cdot(d\sigma\VE_x)=\int\limits_{S_{yz}}(xd\sigma)=x
 \end{aligned}
 $$
 
@@ -812,7 +812,7 @@ equals to $1$ at $x=1$ and $0$ at $x=0$. The same is for $y$ and $z$, so
 
 $$
 \begin{aligned}
-\frac{1}{3}\int\displaylimits_S\V{r}\cdot d\boldsymbol{\sigma}=\frac{1}{3}(1+1+1)=1
+\frac{1}{3}\int\limits_S\V{r}\cdot d\boldsymbol{\sigma}=\frac{1}{3}(1+1+1)=1
 \end{aligned}
 $$
 
@@ -822,7 +822,7 @@ $$
 ### 3.8.1
 
 Let $\V{a}$ be a constant vector, then \[\V{a}\cdot\oint\displaylimits_{\partial V}d\boldsymbol{\sigma}=\oint\displaylimits_{\partial V}\V{a}\cdot d\boldsymbol{\sigma}=\int\displaylimits_V(\del\cdot\V{a})d\tau=0\]
-Because $\V{a}$ can be in arbitrary direction, $\oint\displaylimits_{\delta V}d\boldsymbol{\sigma}$ must be zero.
+Because $\V{a}$ can be in arbitrary direction, $\oint_{\delta V}d\boldsymbol{\sigma}$ must be zero.
 
 -----
 
@@ -830,7 +830,7 @@ Because $\V{a}$ can be in arbitrary direction, $\oint\displaylimits_{\delta V}d\
 
 $$
 \begin{aligned}
-\frac{1}{3}\oint\displaylimits_S \V{r}\cdot d\boldsymbol{\sigma}=\frac{1}{3}\int\displaylimits_V (\del\cdot\V{r})d\tau=\frac{1}{3}\int\displaylimits_V 3d\tau=V\\
+\frac{1}{3}\oint\limits_S \V{r}\cdot d\boldsymbol{\sigma}=\frac{1}{3}\int\limits_V (\del\cdot\V{r})d\tau=\frac{1}{3}\int\limits_V 3d\tau=V\\
 
 \end{aligned}
 $$
@@ -841,7 +841,7 @@ $$
 
 $$
 \begin{aligned}
-\oint\displaylimits_S\V{B}\cdot d\boldsymbol{\sigma}=\oint\displaylimits_S(\del\times\V{A})\cdot d\boldsymbol{\sigma}=\int\displaylimits_V\del\cdot(\del\times\V{A})d\tau=0
+\oint\limits_S\V{B}\cdot d\boldsymbol{\sigma}=\oint\limits_S(\del\times\V{A})\cdot d\boldsymbol{\sigma}=\int\limits_V\del\cdot(\del\times\V{A})d\tau=0
 \end{aligned}
 $$
 
@@ -923,11 +923,11 @@ so the area of the ellipse is $\pi ab$.
 $$
 \begin{aligned}
 \oint\V{r}\times d\V{r}&=-\oint d\V{r}\times\V{r}\\
-&=-\int\displaylimits_S(d\boldsymbol{\sigma}\times\del)\times\V{r}\\
-&=-\int\displaylimits_S\left((dxdy\VE_z)\times(\pdv{}{x}\VE_x+\pdv{}{y}\VE_y+\pdv{}{z}\VE_z)\right)\times\V{r}\\
-&=-\int\displaylimits_S(-dxdy\pdv{}{y}\VE_x+dxdy\pdv{}{x}\VE_y)\times(x\VE_x+y\VE_y)\\
-&\[
-=-\int\displaylimits_S -2dxdy=2A
+&=-\int\limits_S(d\boldsymbol{\sigma}\times\del)\times\V{r}\\
+&=-\int\limits_S\left((dxdy\VE_z)\times(\pdv{}{x}\VE_x+\pdv{}{y}\VE_y+\pdv{}{z}\VE_z)\right)\times\V{r}\\
+&=-\int\limits_S(-dxdy\pdv{}{y}\VE_x+dxdy\pdv{}{x}\VE_y)\times(x\VE_x+y\VE_y)\\
+&
+=-\int\limits_S -2dxdy=2A
 \end{aligned}
 $$
 
@@ -953,9 +953,9 @@ $\del\times(f\V{V})=(\del f)\times\V{V}+f(\del\times\V{V})$ from Eq. 3.73 . So
 
 $$
 \begin{aligned}
-\oint u\del v\cdot d\boldsymbol{\lambda}&=\int\displaylimits_S\del\times(u\del v)\cdot d\boldsymbol{\sigma}\\
-&=\int\displaylimits_S(\del u)\times(\del v)\cdot d\boldsymbol{\sigma}+\int\displaylimits_S u(\del\times(\del v))\cdot d\boldsymbol{\sigma}\\
-&=\int\displaylimits_S(\del u)\times(\del v)\cdot d\boldsymbol{\sigma}
+\oint u\del v\cdot d\boldsymbol{\lambda}&=\int\limits_S\del\times(u\del v)\cdot d\boldsymbol{\sigma}\\
+&=\int\limits_S(\del u)\times(\del v)\cdot d\boldsymbol{\sigma}+\int\limits_S u(\del\times(\del v))\cdot d\boldsymbol{\sigma}\\
+&=\int\limits_S(\del u)\times(\del v)\cdot d\boldsymbol{\sigma}
 \end{aligned}
 $$
 
@@ -969,7 +969,7 @@ Let $\V{a}$ be a constant vector, then
 
 $$
 \begin{aligned}
-\int\displaylimits_V\del\cdot(\V{a}\times\V{P})d\tau=\int\displaylimits_V(\del\times\V{a})\cdot\V{P} d\tau-\int\displaylimits_V\V{a}\cdot(\del\times\V{P})d\tau=-\V{a}\cdot\int\displaylimits_V\del\times\V{P}d\tau
+\int\limits_V\del\cdot(\V{a}\times\V{P})d\tau=\int\limits_V(\del\times\V{a})\cdot\V{P} d\tau-\int\limits_V\V{a}\cdot(\del\times\V{P})d\tau=-\V{a}\cdot\int\limits_V\del\times\V{P}d\tau
 \end{aligned}
 $$
 
@@ -977,15 +977,15 @@ Also,
 
 $$
 \begin{aligned}
-\int\displaylimits_V\del\cdot(\V{a}\times\V{P})d\tau=\oint\displaylimits_{\partial V}\V{a}\times\V{P}\cdot d\boldsymbol{\sigma}=\oint\displaylimits_{\partial V}\V{P}\times d\boldsymbol{\sigma}\cdot\V{a}=\V{a}\cdot\oint\displaylimits_{\partial V}\V{P}\times d\boldsymbol{\sigma}
+\int\limits_V\del\cdot(\V{a}\times\V{P})d\tau=\oint\limits_{\partial V}\V{a}\times\V{P}\cdot d\boldsymbol{\sigma}=\oint\limits_{\partial V}\V{P}\times d\boldsymbol{\sigma}\cdot\V{a}=\V{a}\cdot\oint\limits_{\partial V}\V{P}\times d\boldsymbol{\sigma}
 \end{aligned}
 $$
 
-So $\V{a}\cdot\left(\oint\displaylimits_{\partial V}\V{P}\times d\boldsymbol{\sigma}+\int\displaylimits_V\del\times\V{P}d\tau\right)=0$. Because $\V{a}$ can be in arbitrary direction, $\oint\displaylimits_{\partial V}\V{P}\times d\boldsymbol{\sigma}+\int\displaylimits_V\del\times\V{P}d\tau$ must be zero, and therefore 
+So $\V{a}\cdot\left(\oint\limits_{\partial V}\V{P}\times d\boldsymbol{\sigma}+\int\limits_V\del\times\V{P}d\tau\right)=0$. Because $\V{a}$ can be in arbitrary direction, $\oint\limits_{\partial V}\V{P}\times d\boldsymbol{\sigma}+\int\limits_V\del\times\V{P}d\tau$ must be zero, and therefore 
 
 $$
 \begin{aligned}
-\oint\displaylimits_{\partial V}d\boldsymbol{\sigma}\times\V{P}=\int\displaylimits_V\del\times\V{P}d\tau
+\oint\limits_{\partial V}d\boldsymbol{\sigma}\times\V{P}=\int\limits_V\del\times\V{P}d\tau
 \end{aligned}
 $$
 
@@ -997,7 +997,7 @@ Let $\V{a}$ be a constant vector, then
 
 $$
 \begin{aligned}
-\oint\displaylimits_{\partial S}(\V{a}\varphi)\cdot d\V{r}=\V{a}\cdot\oint\displaylimits_{\partial S}\varphi d\V{r}
+\oint\limits_{\partial S}(\V{a}\varphi)\cdot d\V{r}=\V{a}\cdot\oint\limits_{\partial S}\varphi d\V{r}
 \end{aligned}
 $$
 
@@ -1005,15 +1005,15 @@ Also,
 
 $$
 \begin{aligned}
-\oint\displaylimits_{\partial S}(\V{a}\varphi)\cdot d\V{r}=\int\displaylimits_S\del\times(\varphi\V{a})\cdot d\boldsymbol{\sigma}=\int\displaylimits_S(\del\varphi)\times\V{a}\cdot d\boldsymbol{\sigma}=\int\displaylimits_S d\boldsymbol{\sigma}\times(\del\varphi)\cdot\V{a}=\V{a}\cdot\int\displaylimits_S d\boldsymbol{\sigma}\times(\del\varphi)
+\oint\limits_{\partial S}(\V{a}\varphi)\cdot d\V{r}=\int\limits_S\del\times(\varphi\V{a})\cdot d\boldsymbol{\sigma}=\int\limits_S(\del\varphi)\times\V{a}\cdot d\boldsymbol{\sigma}=\int\limits_S d\boldsymbol{\sigma}\times(\del\varphi)\cdot\V{a}=\V{a}\cdot\int\limits_S d\boldsymbol{\sigma}\times(\del\varphi)
 \end{aligned}
 $$
 
-so $\V{a}\cdot\left(\int\displaylimits_S d\boldsymbol{\sigma}\times(\del\varphi)-\oint\displaylimits_{\partial S}\varphi d\V{r} \right)=0$.  Because $\V{a}$ can be in arbitrary direction, $\int\displaylimits_S d\boldsymbol{\sigma}\times(\del\varphi)-\oint\displaylimits_{\partial S}\varphi d\V{r}$ must be zero, and therefore
+so $\V{a}\cdot\left(\int\limits_S d\boldsymbol{\sigma}\times(\del\varphi)-\oint\limits_{\partial S}\varphi d\V{r} \right)=0$.  Because $\V{a}$ can be in arbitrary direction, $\int\limits_S d\boldsymbol{\sigma}\times(\del\varphi)-\oint\limits_{\partial S}\varphi d\V{r}$ must be zero, and therefore
 
 $$
 \begin{aligned}
-\int\displaylimits_S d\boldsymbol{\sigma}\times(\del\varphi)= \oint\displaylimits_{\partial S}\varphi d\V{r}
+\int\limits_S d\boldsymbol{\sigma}\times(\del\varphi)= \oint\limits_{\partial S}\varphi d\V{r}
 \end{aligned}
 $$
 
@@ -1025,9 +1025,9 @@ Let $\V{a}$ be a constant vector, then
 
 $$
 \begin{aligned}
-\oint\displaylimits_{\partial S
-}(\V{a}\times\V{P})\cdot d\V{r}=\oint\displaylimits_{\partial S
-}(\V{P}\times d\V{r})\cdot\V{a}=\V{a}\cdot\oint\displaylimits_{\partial S
+\oint\limits_{\partial S
+}(\V{a}\times\V{P})\cdot d\V{r}=\oint\limits_{\partial S
+}(\V{P}\times d\V{r})\cdot\V{a}=\V{a}\cdot\oint\limits_{\partial S
 }\V{P}\times d\V{r}
 \end{aligned}
 $$
@@ -1044,17 +1044,17 @@ and
 
 $$
 \begin{aligned}
-\oint\displaylimits_S(\V{a}\times\V{P})\cdot d\V{r}=\int\displaylimits_S\del\times(\V{a}\times\V{P})\cdot d\boldsymbol{\sigma}=-\int\displaylimits_S\V{a}\cdot(d\boldsymbol{\sigma}\times\del)\times\V{P}=-\V{a}\cdot\int\displaylimits_S(d\boldsymbol{\sigma}\times\del)\times\V{P}
+\oint\limits_S(\V{a}\times\V{P})\cdot d\V{r}=\int\limits_S\del\times(\V{a}\times\V{P})\cdot d\boldsymbol{\sigma}=-\int\limits_S\V{a}\cdot(d\boldsymbol{\sigma}\times\del)\times\V{P}=-\V{a}\cdot\int\limits_S(d\boldsymbol{\sigma}\times\del)\times\V{P}
 \end{aligned}
 $$
 
-so $\V{a}\cdot\left(\int\displaylimits_S(d\boldsymbol{\sigma}\times\del)\times\V{P}+\oint\displaylimits_{\partial S
-}\V{P}\times d\V{r} \right)=0$. Because $\V{a}$ can be in arbitrary direction, $\int\displaylimits_S(d\boldsymbol{\sigma}\times\del)\times\V{P}+\oint\displaylimits_{\partial S
+so $\V{a}\cdot\left(\int\limits_S(d\boldsymbol{\sigma}\times\del)\times\V{P}+\oint\limits_{\partial S
+}\V{P}\times d\V{r} \right)=0$. Because $\V{a}$ can be in arbitrary direction, $\int\limits_S(d\boldsymbol{\sigma}\times\del)\times\V{P}+\oint\limits_{\partial S
 }\V{P}\times d\V{r}$ must be zero, and therefore
 
 $$
 \begin{aligned}
-\int\displaylimits_S(d\boldsymbol{\sigma}\times\del)\times\V{P}=\oint\displaylimits_{\partial S
+\int\limits_S(d\boldsymbol{\sigma}\times\del)\times\V{P}=\oint\limits_{\partial S
 }d\V{r}\times\V{P}
 \end{aligned}
 $$
@@ -1243,20 +1243,20 @@ Choose point $P$ to be the origin of the coordinate system $(0,0,0)$. Let $u=\fr
 
 $$
 \begin{aligned}
-\int\displaylimits_V\left(\frac{1}{r}\del^2\varphi-\varphi\del^2(\frac{1}{r}) \right)d\tau=\oint\displaylimits_{\partial V}\left(\frac{1}{r}\del\varphi-\varphi\del(\frac{1}{r}) \right)\cdot d\boldsymbol{\sigma}
+\int\limits_V\left(\frac{1}{r}\del^2\varphi-\varphi\del^2(\frac{1}{r}) \right)d\tau=\oint\limits_{\partial V}\left(\frac{1}{r}\del\varphi-\varphi\del(\frac{1}{r}) \right)\cdot d\boldsymbol{\sigma}
 \end{aligned}
 $$
 
-where the volume $V$ is a sphere centered at $(0,0,0)$ with radius $r$. Because there are no charges on or within the sphere, we have $\del^2\varphi=0$, and by Eq. 3.120, $\del^2(\frac{1}{r})=-4\pi\delta(\V{r})$. So the left side of the equation equals to $\int\displaylimits_V4\pi\varphi\delta(\V{r})d\tau=4\pi\varphi(0)$. As for the right side, 
+where the volume $V$ is a sphere centered at $(0,0,0)$ with radius $r$. Because there are no charges on or within the sphere, we have $\del^2\varphi=0$, and by Eq. 3.120, $\del^2(\frac{1}{r})=-4\pi\delta(\V{r})$. So the left side of the equation equals to $\int_V4\pi\varphi\delta(\V{r})d\tau=4\pi\varphi(0)$. As for the right side, 
 
 $$
 \begin{aligned}
-\oint\displaylimits_{\partial V}\frac{1}{r}\del\varphi\cdot d\boldsymbol{\sigma}&=\frac{1}{r}\int\displaylimits_V\del\cdot(\del\varphi)d\tau=\frac{1}{r}\int\displaylimits_V\del^2\varphi d\tau=0\\
--\oint\displaylimits_V\varphi\del(\frac{1}{r})\cdot d\boldsymbol{\sigma}&=\oint\displaylimits_V\varphi\frac{1}{r^2}\hat{\V{r}}\cdot d\boldsymbol{\sigma}=\frac{\oint\displaylimits_V\varphi d\sigma}{r^2}
+\oint\limits_{\partial V}\frac{1}{r}\del\varphi\cdot d\boldsymbol{\sigma}&=\frac{1}{r}\int\limits_V\del\cdot(\del\varphi)d\tau=\frac{1}{r}\int\limits_V\del^2\varphi d\tau=0\\
+-\oint\limits_V\varphi\del(\frac{1}{r})\cdot d\boldsymbol{\sigma}&=\oint\limits_V\varphi\frac{1}{r^2}\hat{\V{r}}\cdot d\boldsymbol{\sigma}=\frac{\oint\limits_V\varphi d\sigma}{r^2}
 \end{aligned}
 $$
 
-so the equation becomes $4\pi\varphi(0)=\frac{\oint\displaylimits_V\varphi d\sigma}{r^2}$, so $\varphi(0)=\frac{\oint\displaylimits_V\varphi d\sigma}{4\pi r^2}$, which means the potential at $P$ is the average of the potential over the spherical surface centered on $P$ with radius $r$.
+so the equation becomes $4\pi\varphi(0)=\frac{\oint\limits_V\varphi d\sigma}{r^2}$, so $\varphi(0)=\frac{\oint\limits_V\varphi d\sigma}{4\pi r^2}$, which means the potential at $P$ is the average of the potential over the spherical surface centered on $P$ with radius $r$.
 
 -----
 
@@ -1345,12 +1345,9 @@ $$
 
 (b) 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{B.PNG}
-    \caption{The purple lines are $xy=0$, $xy=1$, $xy=2$} the orange lines are $x^2-y^2=0$, $x^2-y^2=1$, $x^2-y^2=2$.
-    \label{fig:B}
-\end{figure}
+![](/files/math_physics_ch3_1.PNG)
+*The purple lines are $xy=0$, $xy=1$, $xy=2$. The orange lines are $x^2-y^2=0$, $x^2-y^2=1$, $x^2-y^2=2$.*
+
 
 (c) Take the derivative of $xy=u$ we get $ydx+xdy=0$. That is, $(y,x)\cdot(dx,dy)=0$, so $(y,x)$ is a normal vector of $xy=u$ and therefore in the direction of $\VE_u$. Because $\pdv{u}{x}=y$, so $\VE_u$ should be in the direction of $(y,x)$, not $(-y,-x)$. Normalizing, we get $\VE_u=\frac{y}{\sqrt{x^2+y^2}}\VE_x+\frac{x}{\sqrt{x^2+y^2}}\VE_y$. By a similar process, from $2xdx-2ydy=0$, we get $\VE_v=\frac{x}{\sqrt{x^2+y^2}}\VE_x+\frac{-y}{\sqrt{x^2+y^2}}\VE_y$.
 
