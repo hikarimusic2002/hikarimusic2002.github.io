@@ -9,6 +9,21 @@ redirect_from:
 
 # Codeforces Problems 1 ~ 100
 
+### 1A. Theatre Square
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std ;
+
+long long  n, m, a ;
+
+int main() {
+    cin>>n>>m>>a ;
+    cout<<(n/a+((n%a==0)?0:1))*(m/a+((m%a==0)?0:1)) ;
+    return 0 ;
+}
+```
+
 ### 1B. Spreadsheets
 
 ```cpp
