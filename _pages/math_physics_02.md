@@ -494,7 +494,7 @@ $$
 
 (a) $\sum_{i=1}^nT_{ij}$ is the sum of fraction of population of $j$th area having moved to other(including $j$) areas, so the sum add up to 1.
 
-(b) $\sum_{i=1}^nQ_i=\sum_{i=1}^n(TP)_i=\sum_{i=1}^n\sum_{j=1}^n T_{ij}P_j=\sum_{j=1}^n\left(\sum_{i=1}^nT_{ij} \right)P_j=\sum_{j=1}^nP_j=1$
+(b) $\sum_{i=1}^nQ_i=\sum_{i=1}^n(TP)\_i=\sum_{i=1}^n\sum_{j=1}^n T_{ij}P_j=\sum_{j=1}^n\left(\sum_{i=1}^nT_{ij} \right)P_j=\sum_{j=1}^nP_j=1$
 
 -----
 
