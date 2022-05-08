@@ -66,6 +66,7 @@ $|A|=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots$, which is the sum 
 Example:
 
 $$
+\begin{aligned}
 \begin{vmatrix}
  &o& & \\
  o& & & \\
@@ -79,9 +80,11 @@ $$
  & &o&\\
  & &&o
 \end{vmatrix}
+\end{aligned}
 $$
 
 $$
+\begin{aligned}
 \begin{vmatrix}
  &o&&&\\
  &&&a_{24}&\\
@@ -105,6 +108,7 @@ $$
  &&&o&\\
  &&&&o
 \end{vmatrix}
+\end{aligned}
 $$
 
 (b) If $A'$ is the matrix whose $k^{th}$ column is the $j^{th}$ column of $A$ and all the other columns is the same with $A$,  then $\sum_ia_{ij}C_{ik}=\sum_{i}a'\_{ik}C'\_{ik}$ is the determinant of $A'$, but $A'$ has two equal rows ($j^{th}$ and $k^{th}$ rows), so it equals to zero.
@@ -121,6 +125,7 @@ For $\det(H_4)$:
 Subtract the last row from each row above it:
 
 $$
+\begin{aligned}
 \renewcommand{\arraystretch}{1.5}
 \begin{vmatrix}
 \frac{1}{1}&\frac{1}{2}&\frac{1}{3}&\frac{1}{4}\\
@@ -151,11 +156,13 @@ $$
 \frac{1}{3}&\frac{1}{4}&\frac{1}{5}&\frac{1}{6}\\
 1&1&1&1\\
 \end{vmatrix}
+\end{aligned}
 $$
 
 Subtract the last column from each column precedes it:
 
 $$
+\begin{aligned}
 \frac{(3!)^2}{7!}
 \begin{vmatrix}
 \frac{1}{1}&\frac{1}{2}&\frac{1}{3}&\frac{1}{4}\\
@@ -181,12 +188,15 @@ $$
 \end{vmatrix}
 =
 \frac{(3!)^4}{(7!)(6!)}\det(H_3)
+\end{aligned}
 $$
 
 By this procedure, we found that
 
 $$
+\begin{aligned}
 \det(H_n)=\frac{(n-1)!^4}{(2n-1)!(2n-1)!}\det(H_{n-1})
+\end{aligned}
 $$
 
 So $\det(H_4)=\frac{3!^4}{7!6!}\det(H_3)=1.65344\times10^{-7}$, $\det(H_5)=\frac{4!^4}{9!8!}\det(H_4)=3.74930\times10^{-12}$, $\det(H_6)=\frac{5!^4}{11!10!}=5.36730\times10^{-18}$
@@ -352,17 +362,15 @@ $K^4=-K$, $K^5=-K^2$, $K^6=I$. So if $n=6k$, k is positive integer, then $K^n=I$
 
 ### 2.2.7
 
-{% raw %}
 $$
 \begin{aligned}
-[A,[B,C]] &=[A,BC-CB]=(ABC-ACB)-(BCA-CBA)=ABC-ACB-BCA+CBA\\
+\[A,\[B,C]] &=[A,BC-CB]=(ABC-ACB)-(BCA-CBA)=ABC-ACB-BCA+CBA\\
 [B,[A,C]]-[C,[B,A]] &=[B,AC-CA]-[C,AB-BA]\\
 &=(BAC-BCA)-(ACB-CAB)-[(CAB-CBA)-(ABC-BAC)]=ABC-ACB-BCA+CBA
 \end{aligned}
 $$
-{% endraw %}
 
-So $[A,[B,C]]=[B,[A,C]]-[C,[B,A]]$
+So $[A,[B,C]]=[B,[A,C]]-[C,[B,A]]$.
 
 -----
 
@@ -408,7 +416,7 @@ It is similar with Exercise 2.2.12.
 
 ### 2.2.14
 
-If the $i^{th}$ diagonal entries of $A$ is $a_i$, then $(AB)_{ij}=a_iB_{ij}$, and $(BA)_{ij}=B_{ij}a_j$. So if $i\neq j$, then by $a_iB_{ij}=a_jB_{ij}$ and $a_i\neq a_j$, we have $B_{ij}=0$, which means $B$ is a diagonal matrix.
+If the $i^{th}$ diagonal entries of $A$ is $a_i$, then $(AB)\_{ij}=a_iB_{ij}$, and $(BA)\_{ij}=B_{ij}a_j$. So if $i\neq j$, then by $a_iB_{ij}=a_jB_{ij}$ and $a_i\neq a_j$, we have $B_{ij}=0$, which means $B$ is a diagonal matrix.
 
 -----
 
@@ -513,7 +521,7 @@ begin{aligned}
 0&0&0&0&0&1\\
 \end{pmatrix}
 \xrightarrow{R_i-\frac{1}{2}R_{i-1}\rightarrow R_i \,i=6\sim2}\\
-$\begin{pmatrix}
+&\begin{pmatrix}
 1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16}&\frac{1}{32}\\
 0&\frac{3}{4}&\frac{3}{8}&\frac{3}{16}&\frac{3}{32}&\frac{3}{64}\\
 0&0&\frac{3}{4}&\frac{3}{8}&\frac{3}{16}&\frac{3}{32}\\
@@ -746,7 +754,7 @@ If only two of  $\alpha,\beta,\nu$ are the same, then
 
 $$
 \begin{aligned}
-\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(-3+1)\gamma^\alpha\gamma^\beta\gamma^\nu=-2(1)(-1)^2\gamma^\nu\gamma^\beta\gamma^\alpha\=-2\gamma^\nu\gamma^\beta\gamma^\alpha
+\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(-3+1)\gamma^\alpha\gamma^\beta\gamma^\nu=-2(1)(-1)^2\gamma^\nu\gamma^\beta\gamma^\alpha=-2\gamma^\nu\gamma^\beta\gamma^\alpha
 \end{aligned}
 $$
 
@@ -782,7 +790,7 @@ $$
 
 ### 2.2.45
 
-By evaluation, we can found that the 16 Dirac matrices is equal to $(i)^n\sigma_i\otimes\sigma_j,\,i,j=0,1,2,3$ with each Dirac matrix having different $(i,j)$, if we let $\sigma_0=1_2$, $n$ depend on $i,j$. Then the problem is equivalent to prove that the 16 $\sigma_i\otimes\sigma_j$ form a linearly independent set. If $a,b\neq0$ and $(i.j)\neq(k,l)$, then  $a\sigma_i\otimes\sigma_j+b\sigma_k\otimes\sigma_l\neq0$ because the four $\sigma_\mu$ form a linearly independent set. So the 16 $\sigma_i\otimes\sigma_j$ form a linearly independent set, and the 16 Dirac matrices form a linearly independent set
+By evaluation, we can found that the 16 Dirac matrices is equal to $(i)^n\sigma_i\otimes\sigma_j,\,i,j=0,1,2,3$ with each Dirac matrix having different $(i,j)$, if we let $\sigma_0=1\_2$, $n$ depend on $i,j$. Then the problem is equivalent to prove that the 16 $\sigma_i\otimes\sigma_j$ form a linearly independent set. If $a,b\neq0$ and $(i.j)\neq(k,l)$, then  $a\sigma_i\otimes\sigma_j+b\sigma_k\otimes\sigma_l\neq0$ because the four $\sigma_\mu$ form a linearly independent set. So the 16 $\sigma_i\otimes\sigma_j$ form a linearly independent set, and the 16 Dirac matrices form a linearly independent set
 
 -----
 
@@ -804,18 +812,18 @@ Note that $(\gamma^0)^T=\gamma^0$, $(\gamma^1)^T=-\gamma^1$, $(\gamma^2)^T=\gamm
 
 $$
 \begin{aligned}
-\gamma^0mc^2&=mc^2\sigma_3\otimes I_2=
+&\gamma^0mc^2=mc^2\sigma_3\otimes I_2=
 \begin{pmatrix}mc^2&0\\0&-mc^2\end{pmatrix}\\
-c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3) &=c\gamma^0(\gamma^1p_1+\gamma^2p_2+\gamma^3p_3)\\
+&c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)=c\gamma^0(\gamma^1p_1+\gamma^2p_2+\gamma^3p_3)\\
 &=c(\sigma_3\otimes I_2)(\gamma\otimes\sigma_1p_1+\gamma\otimes\sigma_2p_2+\gamma\otimes\sigma_3p_3)\\
 &=c\sigma_1\otimes(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)\\
 &=\begin{pmatrix}
 0&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)\\\sigma_1p_1+\sigma_2p_2+\sigma_3p_3&0\end{pmatrix}\\
--EI_4 &=-EI_2\otimes I_2=
+&-EI_4=-EI_2\otimes I_2=
 \begin{pmatrix}
 -E&0\\0&-E
 \end{pmatrix}\\
-\psi &=\begin{pmatrix}
+&\psi=\begin{pmatrix}
 \psi_L\\\psi_S
 \end{pmatrix}
 \end{aligned}
