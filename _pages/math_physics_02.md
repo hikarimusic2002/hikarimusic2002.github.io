@@ -20,7 +20,7 @@ author_profile: false
 
 -----
 
-### 2.2.2
+### 2.1.2
 
 $$
 \begin{vmatrix}
@@ -34,10 +34,9 @@ $$
 
 -----
 
-### 2.2.3
+### 2.1.3
 
 (a)
-
 $$
 \begin{vmatrix}
 1&2\\
@@ -47,7 +46,6 @@ $$
 $$
 
 (b)
-
 $$
 \begin{vmatrix}
 3&2\\
@@ -60,7 +58,7 @@ $$
 
 -----
 
-### 2.2.4
+### 2.1.4
 
 (a)
 $|A|=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots$, which is the sum of all products formed by choosing one entry in each row that they are all in different columns (call it a valid combination), multiplying them together, and multiplying $+1$ or $-1$ depending on the parity of permutation $c_1c_2\cdots$, where $c_i$ is the column of the entry chosen in row i. $a_{ji}C_{ji}=a_{ji}M_{ji}(-1)^{j+i}$, is the sum of all products of valid combinations in $M_{ji}$, multiplying $a_{j+i}$, multiplying $(-1)^{j+i}$. If it takes n steps for a permutation in $M_{ji}$ to return to reference order, then it will take $n+|j-i|$ steps for the permutation appended $a_{ji}$ to return to reference order, so $a_{ij}M_{ij}(-1)^{|j-i|}=a_{ij}M_{ij}(-1)^{j+i}$ will contribute to the sum of products of valid combinations in A that contains $a_{ji}$, so $\sum_{i}a_{ji}C_{ji}$ contains all products of valid combinations, and is therefore equal to $|A|$.
@@ -111,15 +109,19 @@ $$
 
 (b) If $A'$ is the matrix whose $k^{th}$ column is the $j^{th}$ column of $A$ and all the other columns is the same with $A$,  then $\sum_ia_{ij}C_{ik}=\sum_{i}a'\_{ik}C'\_{ik}$ is the determinant of $A'$, but $A'$ has two equal rows ($j^{th}$ and $k^{th}$ rows), so it equals to zero.
 
-\paragraph{2.1.5}
+-----
+
+### 2.1.5
+
 (a) $\det(H_1)=1$, $\det(H_2)=8.3333\times10^{-2}$, $\det(H_3)=4.62963\times10^{-4}$
 
 (b)
-for $\det(H_4)$: 
+For $\det(H_4)$: 
 
 Subtract the last row from each row above it:
+
+$$
 \renewcommand{\arraystretch}{1.5}
-\[
 \begin{vmatrix}
 \frac{1}{1}&\frac{1}{2}&\frac{1}{3}&\frac{1}{4}\\
 \frac{1}{2}&\frac{1}{3}&\frac{1}{4}&\frac{1}{5}\\ 
@@ -149,9 +151,11 @@ Subtract the last row from each row above it:
 \frac{1}{3}&\frac{1}{4}&\frac{1}{5}&\frac{1}{6}\\
 1&1&1&1\\
 \end{vmatrix}
-\]
+$$
+
 Subtract the last column from each column precedes it:
-\[
+
+$$
 \frac{(3!)^2}{7!}
 \begin{vmatrix}
 \frac{1}{1}&\frac{1}{2}&\frac{1}{3}&\frac{1}{4}\\
@@ -177,20 +181,32 @@ Subtract the last column from each column precedes it:
 \end{vmatrix}
 =
 \frac{(3!)^4}{(7!)(6!)}\det(H_3)
-\]
+$$
+
 By this procedure, we found that
-\[
+
+$$
 \det(H_n)=\frac{(n-1)!^4}{(2n-1)!(2n-1)!}\det(H_{n-1})
-\]
+$$
+
 So $\det(H_4)=\frac{3!^4}{7!6!}\det(H_3)=1.65344\times10^{-7}$, $\det(H_5)=\frac{4!^4}{9!8!}\det(H_4)=3.74930\times10^{-12}$, $\det(H_6)=\frac{5!^4}{11!10!}=5.36730\times10^{-18}$
 
-\paragraph{2.1.6}
+-----
+
+### 2.1.6
+
 Linear dependence implies one row (or column) can be expressed by linear combination of other rows (columns), so $A_{ni}=a_1A_{1i}+a_2A_{2i}+\cdots$. Add $-a_j$ times the $j^{th}$ row to the $n^{th}$  row, then the determinant remains the same, but all entries in the $n^{th}$ row becomes $0$, so the determinant equals to zero.
 
-\paragraph{2.1.7}
+-----
+
+### 2.1.7
+
 By Gauss's elimination, $x_1=1.88282$, $x_2=-0.36179$, $-0.96889$, $0.44221$, $0.41022$, $0.39219$
 
-\paragraph{2.1.8}
+-----
+
+### 2.1.8
+
 (a) $\sum_{i}\delta_{ii}=\delta_{11}+\delta_{22}+\delta_{33}=3$
 
 (b) $\sum_{ij}\delta_{ij}\varepsilon_{ijk}=\sum_{i}\delta_{ii}\varepsilon_{iik}=0$
@@ -198,23 +214,39 @@ By Gauss's elimination, $x_1=1.88282$, $x_2=-0.36179$, $-0.96889$, $0.44221$, $0
 (c) If $i\neq j$, then at least two of $1,j,p,q$ is the same, and $\varepsilon_{ipq}\varepsilon_{jpq}=0$. If  $i=j=1$, then 
 $\sum_{pq}\varepsilon_{ipq}\varepsilon_{jpq}=\varepsilon_{123}\varepsilon_{123}+\varepsilon_{132}\varepsilon_{132}=2$, and the case is similar when $i=j=2$ and $i=j=3$. Therefore, $\sum_{pq}\varepsilon_{ipq}\varepsilon_{jpq}=2\delta_{ij}$ 
 
-(d)$\sum_{ijk}\varepsilon_{ijk}\varepsilon_{ijk}=(-1)^2\times6=6$
+(d) $\sum_{ijk}\varepsilon_{ijk}\varepsilon_{ijk}=(-1)^2\times6=6$
 
-\paragraph{2.1.9}
+-----
+
+### 2.1.9
+
 The only case that $\varepsilon_{ijk}\varepsilon_{pqk}\neq0$ is : k is one of $(1,2,3)$ and $(i,j),(p,q)$ are the other two of $(1,2,3)$, respectively. So $i=p,j=q$ or $i=q,j=p$. For the former case, $\varepsilon_{ijk}\varepsilon_{pqk}=(\pm1)^2=1=\delta_{ip}\delta_{jq}$, and for the latter case, $\varepsilon_{ijk}\varepsilon_{pqk}=(1)(-1)=-1=-\delta_{iq}\delta_{jp}$. Therefore, $\sum_{k}\varepsilon_{ijk}\varepsilon_{pqk}=\delta_{ip}\delta_{jq}-\delta_{iq}\delta_{jp}$
 
-\section*{2.2 Matrices}
+## 2.2 Matrices
 
-\paragraph{2.2.1}
-\[((AB)C)_{il}=\sum_m(AB)_{im}C_{ml}=\sum_m\sum_k A_{ik}B_{km}C_{ml}=\sum_k\sum_m A_{ik}B_{km}C_{ml}=\sum_k A_{ik}(BC)_{kl}=(A(BC))_{il}\]
+-----
 
-\paragraph{2.2.2}
+### 2.2.1
+
+$$
+((AB)C)_{il}=\sum_m(AB)_{im}C_{ml}=\sum_m\sum_k A_{ik}B_{km}C_{ml}=\sum_k\sum_m A_{ik}B_{km}C_{ml}=\sum_k A_{ik}(BC)_{kl}=(A(BC))_{il}
+$$
+
+-----
+
+### 2.2.2
+
 If $(A+B)(A-B)=A^2-B^2$, than $A^2+BA-AB-B^2=A^2-B^2$, so $AB-BA=[A,B]=0$. If $[A,B]=0$, then $(A+B)(A-B)=A^2-B^2-(AB-BA)=A^2-B^2$
 
-\paragraph{2.2.3}
+-----
+
+### 2.2.3
+
 (a)
+
+$$
 \renewcommand{\arraystretch}{1}
-\[(a+ib)+(c+id)\longleftrightarrow
+(a+ib)+(c+id)\longleftrightarrow
 \begin{pmatrix}
 a&b\\-b&a
 \end{pmatrix}+
@@ -225,8 +257,10 @@ c&d\\-d&c
 a+c&b+d\\-(b+d)&a+c
 \end{pmatrix}\longleftrightarrow
 (a+c)+i(b+d)
-\]
-\[(a+ib)(c+id)\longleftrightarrow
+$$
+
+$$
+(a+ib)(c+id)\longleftrightarrow
 \begin{pmatrix}
 a&b\\-b&a
 \end{pmatrix}
@@ -237,66 +271,81 @@ c&d\\-d&c
 ac-bd&ad+bc\\-(ad+bc)&ac-bd
 \end{pmatrix}\longleftrightarrow
 (ac-bd)+i(ad+bc)
-\]
+$$
+
 (b)
-\[(a+ib)^{-1}=\frac{1}{a^2+b^2}(a-ib)\longleftrightarrow\frac{1}{a^2+b^2}
+
+$$
+(a+ib)^{-1}=\frac{1}{a^2+b^2}(a-ib)\longleftrightarrow\frac{1}{a^2+b^2}
 \begin{pmatrix}
 a&-b\\b&a
 \end{pmatrix}
-\]
+$$
 
-\paragraph{2.2.4}
+-----
+
+### 2.2.4
+
 Multiply each row of $A$ by $-1$ will turn $A$ into $-A$, so $\det(-A)=(-1)^n\det(A)$.
 
-\paragraph{2.2.5}
-(a) If $A^2=0$ and $A=\begin{pmatrix}
+-----
+
+### 2.2.5
+
+(a) If $A^2=0$ and $$A=\begin{pmatrix}
 x&y\\z&t
-\end{pmatrix}$
-\[A^2=
+\end{pmatrix}$$
+
+$$
+A^2=
 \begin{pmatrix}
 x&y\\z&t
 \end{pmatrix}
 \begin{pmatrix}
 x&y\\z&t
 \end{pmatrix}=0
-\]
-Then $x^2+yz=0$, $t^2+yz=0$, $y(x+t)=0$, $z(x+t)=0$. Let $y=b^2$, $z=-a^2$, then $x=\pm ab$, $t=\pm ab$. Without less of generality let $x=ab$ because the sign of $a$ and $b$ is arbitrary. If $y\neq0$, then $t=-x=-ab$; if $y=0$, then $t=x=ab=0$ so $t=-ab$. Therefore, in all cases we can find $a,b$ such that $\begin{pmatrix}
+$$
+
+Then $x^2+yz=0$, $t^2+yz=0$, $y(x+t)=0$, $z(x+t)=0$. Let $y=b^2$, $z=-a^2$, then $x=\pm ab$, $t=\pm ab$. Without less of generality let $x=ab$ because the sign of $a$ and $b$ is arbitrary. If $y\neq0$, then $t=-x=-ab$; if $y=0$, then $t=x=ab=0$ so $t=-ab$. Therefore, in all cases we can find $a,b$ such that $$\begin{pmatrix}
 x&y\\z&t
 \end{pmatrix}=\begin{pmatrix}
 ab&b^2\\-a^2&-ab
-\end{pmatrix}$
+\end{pmatrix}$$
 
 (b)
-Let $A=\begin{pmatrix}
+Let $$A=\begin{pmatrix}
 1&0\\0&1
-\end{pmatrix}$, $B=\begin{pmatrix}
+\end{pmatrix}$$, $$B=\begin{pmatrix}
 -1&0\\0&-1
-\end{pmatrix}$, then $\det{C}=\det\begin{pmatrix}
+\end{pmatrix}$$, then $$\det{C}=\det\begin{pmatrix}
 0&0\\0&0
-\end{pmatrix}=0$ but $\det{A}+\det{B}=1+1=2$
+\end{pmatrix}=0$$ but $\det{A}+\det{B}=1+1=2$
 
-\paragraph{2.2.6}
-$K=
+-----
+
+### 2.2.6
+
+$$K=
 \begin{pmatrix}
 0&0&i\\
 -i&0&0\\
 0&-1&0
 \end{pmatrix}
-$, 
-$K^2=
+$$, 
+$$K^2=
 \begin{pmatrix}
 0&-i&0\\
 0&0&1\\
 i&0&0
 \end{pmatrix}
-$, 
-$K^3=
+$$, 
+$$K^3=
 \begin{pmatrix}
 -1&0&0\\
 0&-1&0\\
 0&0&-1
 \end{pmatrix}=-I
-$, 
+$$, 
 $K^4=-K$, $K^5=-K^2$, $K^6=I$. So if $n=6k$, k is positive integer, then $K^n=I$
 
 \paragraph{2.2.7}
