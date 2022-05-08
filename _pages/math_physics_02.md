@@ -307,9 +307,7 @@ Multiply each row of $A$ by $-1$ will turn $A$ into $-A$, so $\det(-A)=(-1)^n\de
 
 (a) If $A^2=0$ and $$A=\begin{pmatrix}
 x&y\\z&t
-\end{pmatrix}$$
-
-$$
+\end{pmatrix}$$, then $$
 \begin{aligned}
 A^2=
 \begin{pmatrix}
@@ -319,8 +317,7 @@ x&y\\z&t
 x&y\\z&t
 \end{pmatrix}=0
 \end{aligned}
-$$
-
+$$. 
 Then $x^2+yz=0$, $t^2+yz=0$, $y(x+t)=0$, $z(x+t)=0$. Let $y=b^2$, $z=-a^2$, then $x=\pm ab$, $t=\pm ab$. Without less of generality let $x=ab$ because the sign of $a$ and $b$ is arbitrary. If $y\neq0$, then $t=-x=-ab$; if $y=0$, then $t=x=ab=0$ so $t=-ab$. Therefore, in all cases we can find $a,b$ such that $$\begin{pmatrix}
 x&y\\z&t
 \end{pmatrix}=\begin{pmatrix}
