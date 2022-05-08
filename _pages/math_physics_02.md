@@ -356,7 +356,7 @@ $$K^3=
 0&0&-1
 \end{pmatrix}=-I
 $$, 
-$K^4=-K$, $K^5=-K^2$, $K^6=I$. So if $n=6k$, k is positive integer, then $K^n=I$
+$K^4=-K$, $K^5=-K^2$, $K^6=I$. So if $n=6k$, k is positive integer, then $K^n=I$.
 
 -----
 
@@ -364,7 +364,7 @@ $K^4=-K$, $K^5=-K^2$, $K^6=I$. So if $n=6k$, k is positive integer, then $K^n=I$
 
 $$
 \begin{aligned}
-\[A,\[B,C]] &=[A,BC-CB]=(ABC-ACB)-(BCA-CBA)=ABC-ACB-BCA+CBA\\
+[A,[B,C]] &=[A,BC-CB]=(ABC-ACB)-(BCA-CBA)=ABC-ACB-BCA+CBA\\
 [B,[A,C]]-[C,[B,A]] &=[B,AC-CA]-[C,AB-BA]\\
 &=(BAC-BCA)-(ACB-CAB)-[(CAB-CBA)-(ABC-BAC)]=ABC-ACB-BCA+CBA
 \end{aligned}
