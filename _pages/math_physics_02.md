@@ -110,11 +110,7 @@ $$
 \end{vmatrix}
 $$
 
-{% raw %}
-
-(b) If $A'$ is the matrix whose $k^{th}$ column is the $j^{th}$ column of $A$ and all the other columns is the same with $A$,  then $\sum_ia_{ij}C_{ik}=\sum_{i}a'_{ik}C'_{ik}$ is the determinant of $A'$, but $A'$ has two equal rows ($j^{th}$ and $k^{th}$ rows), so it equals to zero.
-
-{% endraw %}
+(b) If $A'$ is the matrix whose $k^{th}$ column is the $j^{th}$ column of $A$ and all the other columns is the same with $A$,  then $\sum_ia_{ij}C_{ik}=\sum_{i}a'\_{ik}C'\_{ik}$ is the determinant of $A'$, but $A'$ has two equal rows ($j^{th}$ and $k^{th}$ rows), so it equals to zero.
 
 \paragraph{2.1.5}
 (a) $\det(H_1)=1$, $\det(H_2)=8.3333\times10^{-2}$, $\det(H_3)=4.62963\times10^{-4}$
