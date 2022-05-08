@@ -502,7 +502,7 @@ $$
 
 $$
 \renewcommand{\arraystretch}{1.5}
-begin{aligned}
+\begin{aligned}
 &\begin{pmatrix}
 1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16}&\frac{1}{32}\\
 \frac{1}{2}&1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16
