@@ -22,32 +22,40 @@ author_profile: false
 
 ### 2.2.2
 
-$\begin{vmatrix}
+$$
+\begin{vmatrix}
 1&3&3\\
 1&-1&1\\
 2&1&3
 \end{vmatrix}
-=2$
-, So the homogeneous linear independent equations have no nontrivial solutions.
+=2
+$$
+
+, so the homogeneous linear independent equations have no nontrivial solutions.
 
 -----
 
 ### 2.2.3
 
-(a)$
+(a)
+
+$$
 \begin{vmatrix}
 1&2\\
 2&4
 \end{vmatrix}
-=0$
+=0
+$$
 
 (b)
-$
+
+$$
 \begin{vmatrix}
 3&2\\
 6&4
 \end{vmatrix}
-=0$
+=0
+$$
 
 (c) $(1,1)$, $(2,2)$
 
@@ -57,7 +65,6 @@ $
 
 (a)
 $|A|=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots$, which is the sum of all products formed by choosing one entry in each row that they are all in different columns (call it a valid combination), multiplying them together, and multiplying $+1$ or $-1$ depending on the parity of permutation $c_1c_2\cdots$, where $c_i$ is the column of the entry chosen in row i. $a_{ji}C_{ji}=a_{ji}M_{ji}(-1)^{j+i}$, is the sum of all products of valid combinations in $M_{ji}$, multiplying $a_{j+i}$, multiplying $(-1)^{j+i}$. If it takes n steps for a permutation in $M_{ji}$ to return to reference order, then it will take $n+|j-i|$ steps for the permutation appended $a_{ji}$ to return to reference order, so $a_{ij}M_{ij}(-1)^{|j-i|}=a_{ij}M_{ij}(-1)^{j+i}$ will contribute to the sum of products of valid combinations in A that contains $a_{ji}$, so $\sum_{i}a_{ji}C_{ji}$ contains all products of valid combinations, and is therefore equal to $|A|$.
-\medskip
 
 Example:
 
@@ -102,6 +109,7 @@ $$
  &&&&o
 \end{vmatrix}
 $$
+
 
 (b) If $A'$ is the matrix whose $k^{th}$ column is the $j^{th}$ column of $A$ and all the other columns is the same with $A$,  then $\sum_ia_{ij}C_{ik}=\sum_{i}a'_{ik}C'_{ik}$ is the determinant of $A'$, but $A'$ has two equal rows ($j^{th}$ and $k^{th}$ rows), so it equals to zero.
 
