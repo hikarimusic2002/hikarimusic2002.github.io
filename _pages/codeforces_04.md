@@ -32,7 +32,6 @@ int main() {
     cout<<ss.substr(0,ss.length()-1) ;
     return 0 ;
 }
-
 ```
 
 ### 339D. Xenia and Bit Operations
@@ -79,7 +78,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 380C. Sereja and Brackets
@@ -151,6 +149,5 @@ int main()
     }
     return 0;
 }
-
 ```
 
