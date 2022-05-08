@@ -520,6 +520,30 @@ begin{aligned}
 0&0&0&0&1&0\\
 0&0&0&0&0&1\\
 \end{pmatrix}
+\xrightarrow{R_i-\frac{1}{2}R_{i-1}\rightarrow R_i \,i=6\sim2}
+\end{aligned}
+$$
+
+$$
+\renewcommand{\arraystretch}{1.5}
+begin{aligned}
+&\begin{pmatrix}
+1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16}&\frac{1}{32}\\
+\frac{1}{2}&1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16
+}\\
+\frac{1}{4}&\frac{1}{2}&1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}\\
+\frac{1}{8}&\frac{1}{4}&\frac{1}{2}&1&\frac{1}{2}&\frac{1}{4}\\
+\frac{1}{16}&\frac{1}{8}&\frac{1}{4}&\frac{1}{2}&1&\frac{1}{2}\\
+\frac{1}{32}&\frac{1}{16}&\frac{1}{8}&\frac{1}{4}&\frac{1}{2}&1\\
+\end{pmatrix}
+\begin{pmatrix}
+1&0&0&0&0&0\\
+0&1&0&0&0&0\\
+0&0&1&0&0&0\\
+0&0&0&1&0&0\\
+0&0&0&0&1&0\\
+0&0&0&0&0&1\\
+\end{pmatrix}
 \xrightarrow{R_i-\frac{1}{2}R_{i-1}\rightarrow R_i \,i=6\sim2}\\
 &\begin{pmatrix}
 1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16}&\frac{1}{32}\\
