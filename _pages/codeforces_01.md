@@ -172,7 +172,6 @@ int main()
     printf("%lld",ans) ;
     return 0;
 }
-
 ```
 
 ### 14D. Two Paths
@@ -220,7 +219,6 @@ int main() {
     }
     printf("%d",ans) ;
 }
-
 ```
 
 ### 16C. Monitor
@@ -246,7 +244,6 @@ int main()
     printf("%lld %lld",x*k,y*k) ;
     return 0;
 }
-
 ```
 
 ### 20C. Dijkstra
@@ -311,7 +308,6 @@ int main()
     showpath(n,p) ;
     return 0;
 }
-
 ```
 
 ### 25C. Roads in Berlands
@@ -347,7 +343,6 @@ int main() {
         printf("%lld ",s) ;
     }
 }
-
 ```
 
 ### 25D. Roads not only in Berland
@@ -411,7 +406,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 27E. Number With The Given Amount Of Divisors
@@ -468,7 +462,6 @@ int main()
     printf("%lld",dp[n][p_max]) ;
     return 0;
 }
-
 ```
 
 ### 28B. pSort
@@ -525,7 +518,6 @@ int main()
     printf("%s",ans?"YES":"NO") ;
     return 0;
 }
-
 ```
 
 ### 34D. Road Map
@@ -566,7 +558,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 58A. Chat room
@@ -589,7 +580,6 @@ int main() {
     else cout<<"NO" ;
     return 0 ;
 }
-
 ```
 
 ### 61D. Eternal Victory
@@ -631,7 +621,6 @@ int main()
     cout<<2*d_sum-d_max ;
     return 0;
 }
-
 ```
 
 ### 66D. Petya and His Friends
@@ -656,7 +645,6 @@ int main()
 
     return 0;
 }
-
 ```
 
 ### 71A. Way Too Long Words
@@ -678,7 +666,6 @@ int main() {
     }
     return 0 ;
 }
-
 ```
 
 ### 71C. Round Table Knights
@@ -728,7 +715,6 @@ int main()
     printf("%s",(ans?"YES":"NO")) ;
     return 0;
 }
-
 ```
 
 ### 75C. Modified GCD
@@ -780,7 +766,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 78C. Beaver Game
@@ -809,6 +794,5 @@ int main()
     printf("%s",win(n,m,k)?"Timur":"Marsel") ;
     return 0;
 }
-
 ```
 
