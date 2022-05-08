@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Codeforces"
+title: "Codeforces 801 ~ 900"
 permalink: /solutions/codeforces_09
 author_profile: false
 redirect_from:
