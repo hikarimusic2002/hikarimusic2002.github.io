@@ -30,7 +30,6 @@ $$
 \end{vmatrix}
 =2
 $$
-
 , so the homogeneous linear independent equations have no nontrivial solutions.
 
 -----
