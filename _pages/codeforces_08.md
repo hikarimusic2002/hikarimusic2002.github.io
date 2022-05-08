@@ -59,7 +59,6 @@ int main()
     for (int i=n-1;i>=0;--i) printf("%lld\n",ans[i]) ;
     return 0;
 }
-
 ```
 
 ### 780C. Andryusha and Colored Balloons
@@ -110,7 +109,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 793B. Igor and his way to work
@@ -175,6 +173,5 @@ int main()
     printf("%s",bfs()?"YES":"NO") ;
     return 0;
 }
-
 ```
 
