@@ -70,7 +70,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 1C. Ancient Berland Circus
@@ -145,7 +144,6 @@ int main()
     else printf("%d",-1) ;
     return 0;
 }
-
 ```
 
 ### 10C. Digital Root
