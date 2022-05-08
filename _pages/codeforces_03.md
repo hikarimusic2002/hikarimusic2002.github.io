@@ -79,7 +79,6 @@ int main()
     cout<<ans ;
     return 0;
 }
-
 ```
 
 ### 242C. King's Path
@@ -130,7 +129,6 @@ int main()
     printf("%d",bfs(make_pair(x0,y0),make_pair(x1,y1)) ) ;
     return 0;
 }
-
 ```
 {% endraw %}
 
@@ -161,7 +159,6 @@ int main()
     printf("%.10lf",ans*180/PI) ;
     return 0;
 }
-
 ```
 
 ### 281A. Word Capitalization
@@ -178,7 +175,6 @@ int main() {
     cout<<s ;
     return 0 ;
 }
-
 ```
 
 ### 300C. Beautiful Numbers
@@ -234,6 +230,5 @@ int main()
     printf("%lld",ans) ;
     return 0;
 }
-
 ```
 
