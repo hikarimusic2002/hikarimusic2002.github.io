@@ -36,14 +36,11 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 112A. Petya and Strings
 
 ```cpp
-//Codeforces 112A - Petya and Strings
-
 #include <bits/stdc++.h>
 using namespace std ;
 
@@ -67,7 +64,6 @@ int main() {
     cout<<t ;
     return 0 ;
 }
-
 ```
 
 ### 115A. Party
@@ -100,7 +96,6 @@ int main() {
     cout<<ans ;
     return 0 ;
 }
-
 ```
 
 ### 117B. Very Interesting Game
@@ -138,7 +133,6 @@ int main()
     else printf("%d",2) ;
     return 0;
 }
-
 ```
 
 ### 118A. A String Task
@@ -159,7 +153,6 @@ int main() {
     }
     return 0 ;
 }
-
 ```
 
 ### 131A. cAPS lOCK
@@ -188,7 +181,6 @@ int main() {
     cout<<s ;
     return 0 ;
 }
-
 ```
 
 ### 140A. New Year Table
@@ -217,7 +209,6 @@ int main()
     if (r>R) printf("%s","NO") ;
     return 0;
 }
-
 ```
 
 ### 154B. Colliders
@@ -294,7 +285,6 @@ int main()
     }
     return 0;
 }
-
 ```
 
 
