@@ -348,91 +348,153 @@ $$K^3=
 $$, 
 $K^4=-K$, $K^5=-K^2$, $K^6=I$. So if $n=6k$, k is positive integer, then $K^n=I$
 
-\paragraph{2.2.7}
-\[[A,[B,C]]=[A,BC-CB]=(ABC-ACB)-(BCA-CBA)=ABC-ACB-BCA+CBA\]
-\[[B,[A,C]]-[C,[B,A]]=[B,AC-CA]-[C,AB-BA]\]
-\[=(BAC-BCA)-(ACB-CAB)-[(CAB-CBA)-(ABC-BAC)]=ABC-ACB-BCA+CBA\]
+-----
+
+### 2.2.7
+
+$$
+\begin{aligned}
+[A,[B,C]] &=[A,BC-CB]=(ABC-ACB)-(BCA-CBA)=ABC-ACB-BCA+CBA\\
+[B,[A,C]]-[C,[B,A]] &=[B,AC-CA]-[C,AB-BA]\\
+&=(BAC-BCA)-(ACB-CAB)-[(CAB-CBA)-(ABC-BAC)]=ABC-ACB-BCA+CBA
+\end{aligned}
+$$
+
 So $[A,[B,C]]=[B,[A,C]]-[C,[B,A]]$
 
-\paragraph{2.2.8}
+-----
+
+### 2.2.8
+
 Use the definition of commutator and carry out the corresponding matrix multiplication, then all the three relations are trivially satisfied.
 
-\paragraph{2.2.9}
+-----
+
+### 2.2.9
+
 Carry out the corresponding matrix multiplication, then all the relations are trivially satisfied.
 
-\paragraph{2.2.10}
+-----
+
+### 2.2.10
+
 If $A$ and $B$ are upper right triangular matrices, then $A_{ij}=0$ when $j<i$, $B_{ij}=0$ when $j<i$. $(AB)_{ij}=\sum_k A_{ik}B_{kj}$, when $j<i$: if $k>j$, then $B_{kj}=0$, if $k\leq j$, then $k<i$ and $A_{ik}=0$. So in all case $(AB)_{ij}=\sum_k A_{ik}B_{kj}=0$ when $j<i$, so $AB$ is also an upper right triangular matrix.
 
-\paragraph{2.2.11}
+-----
+
+### 2.2.11
+
 (a)(b) By matrix multiplication the relations hold trivially.
 
 (c) When $i=j$, $\sigma_i\sigma_j+\sigma_j\sigma_i=2(\sigma_i)^2=2I_2=2\delta_{ij}I_2$. When $i\neq j$: by (a) we know the inverse matrix of $\sigma_i$ is itself, and by (b) we have $\sigma_i\sigma_j=i\sigma_k$, so $(\sigma_i\sigma_j)^{-1}=\sigma_j^{-1}\sigma_i^{-1}=\sigma_j\sigma_i=(i\sigma_k)^{-1}=-i\sigma_k$, so $\sigma_i\sigma_j+\sigma_j\sigma_i=i\sigma_k-i\sigma_k=0=2\delta_{ij}I_2$. So $\sigma_i\sigma_j+\sigma_j\sigma_i=2\delta_{ij}I_2$ holds for all cases.
 
-\paragraph{2.2.12}
+-----
+
+### 2.2.12
+
 (a)(b) By definition of commutator and matrix multiplication, the relations can be easily verified.
 
 (c) $[M^2,M_i]=2IM_i-M_i2I=0$; $[M_z,L^+]=[M_z,M_x]+i[M_z,M_y]=iM_y+i(-i)M_x=M_x+iM_y$; $[L^+,L^-]=[M_x+iM_y,M_x-iM_y]=i[M_y.M_x]-i[M_x,M_y]=2M_z$
 
-\paragraph{2.2.13}
+-----
+
+### 2.2.13
+
 It is similar with Exercise 2.2.12.
 
-\paragraph{2.2.14}
+-----
+
+### 2.2.14
+
 If the $i^{th}$ diagonal entries of $A$ is $a_i$, then $(AB)_{ij}=a_iB_{ij}$, and $(BA)_{ij}=B_{ij}a_j$. So if $i\neq j$, then by $a_iB_{ij}=a_jB_{ij}$ and $a_i\neq a_j$, we have $B_{ij}=0$, which means $B$ is a diagonal matrix.
 
-\paragraph{2.2.15}
+-----
+
+### 2.2.15
+
 $(AB)_{ij}=\sum_k A_{ik}B_{kj}=\sum_k a_i\delta_{ik}b_j\delta_{kj}=a_ib_j\delta_{ij}=a_ib_i\delta_{ij}$. $(BA)_{ij}=\sum_k B_{ik}A_{kj}=\sum_k b_i\delta_{ik}a_j\delta_{kj}=a_jb_i\delta_{ij}=a_ib_i\delta_{ij}$. So $(AB)_{ij}=(BA)_{ij}$, and $A$ and $B$ commute.
+$\newcommand{\trace}{\mathrm{trace}}$
 
-\newcommand{\trace}{\mathrm{trace}}
+-----
 
-\paragraph{2.2.16}
+### 2.2.16
+
 For any two matrices $X,Y$ we have $\trace(XY)=\trace(YX)$. If $A,B$ commute, $\trace(ABC)=\trace(BAC)=\trace(CBA)$; if $B,C$ commute, $\trace(ABC)=\trace(ACB)=\trace(CBA)$; if $A,C$ commute, $\trace(ABC)=\trace(CAB)=\trace(ACB)=\trace(CBA)$.
 
-\paragraph{2.2.17}
+-----
+
+### 2.2.17
+
 $\trace([M_j,M_k])=\trace(M_jM_k-M_kM_j)=\trace(M_jM_k)-\trace(M_kM_j)=0=\trace(iM_l)=i\trace(M_l)$, so $\trace(M_l)=0$, ans so as $M_j$ and $M_k$ because the commutation relation is cyclic.
 
-\paragraph{2.2.18}
+-----
+
+### 2.2.18
+
 $\trace(A)=\trace(ABB)=\trace(BAB)=\trace(-ABB)=\trace(-A)=-\trace(A)$, so $\trace(A)=0$. The same is for $\trace(B)$.
 
-\paragraph{2.2.19}
+-----
+
+### 2.2.19
+
 (a) If $AB=-BA$ and both are non-singular (so the matrix inverses exist): $\trace(A)=\trace(ABB^{-1})=\trace(B^{-1}AB)=\trace(-B^{-1}BA)=\trace(-A)=-\trace(A)$, so $\trace(A)=0$. The same is for $\trace(B)$.
 
 (b) $A,B$ being non-singular means $\det(A),\det(B)\neq0$. Suppose they are anti-commuting and n is odd, then $\det(A)\det(B)=\det(AB)=\det(-BA)=\det(-B)\det(A)=(-1)^n\det(B)\det(A)=-\det(A)\det(B)$, so $\det(A)\det(B)=0$. So either  $\det(A)$ or $\det(B)$ equals to zero, contradicting to $\det(A),\det(B)\neq0$. 
 
-\paragraph{2.2.20}
+-----
+
+### 2.2.20
+
 $(A^{-1}A)_{ik}=\sum_j(A^{-1})_{ij}A_{jk}=\sum_j\frac{(-1)^{i+j}M_{ji}}{\det(A)}A_jk=\frac{1}{\det(A)}\sum_j(-1)^{i+j}M_{ji}A_{jk}$. If $i=k$, notice that $\det(A)=\det(A^T)=\sum_{j}(-1)^{i+j}M_{ji}A_{ji}$, so $(A^{-1}A)_{ik}=\frac{\det(A)}{\det(A)}=1$; if $i\neq k$, then $(A^{-1}A)_{ik}=\frac{1}{\det(A)}\sum_{j}(-1)^{i+j}M_{ji}A_{jk}=\frac{1}{\det(A)}A_{jk}C_{ji}=0$ by Exercise 2.1.4(b) (it is obvious by noticing that $\sum_{j}(-1)^{i+j}M_{ji}A_{jk}$ is the determinant of A whose $k^{th}$ column is replaced by $j^{th}$ column, and the determinant of matrix with two same column is zero). Therefore, $(A^{-1}A)_{ik}=\delta_{ik}$, so $A^{-1}A=I$.
 
-\paragraph{2.2.21}
+-----
+
+### 2.2.21
+
 (a) The unit matrix with $M_{ii}$ replaced by $k$.
 
 (b) The unit matrix with $M_{im}$ replaced by $-K$.
 
 (c) The unit matrix with $M_{ii},M_{mm}$ replaced by 0 and $M_{im},M_{mi}$ replaced by 1.
 
-\paragraph{2.2.22}
+-----
+
+### 2.2.22
+
 (a) The unit matrix with $M_{ii}$ replaced by $k$.
 
 (b) The unit matrix with $M_{mi}$ replaced by $-k$.
 
 (c) The unit matrix with $M_{ii},M_{mm}$ replaced by 0 and $M_{im},M_{mi}$ replaced by 1.
 
-\paragraph{2.2.23}
-By Gauss-Jordan matrix inversion, $A^{-1}=
+-----
+
+### 2.2.23
+
+By Gauss-Jordan matrix inversion, $$A^{-1}=
 \begin{pmatrix}
 1&-1&0\\
 -1&\frac{11}{7}&-\frac{1}{7}\\
 0&-\frac{1}{7}&\frac{2}{7}
 \end{pmatrix}
-$
+$$
 
-\paragraph{2.2.24}
+-----
+
+### 2.2.24
+
 (a) $\sum_{i=1}^nT_{ij}$ is the sum of fraction of population of $j$th area having moved to other(including $j$) areas, so the sum add up to 1.
 
 (b) $\sum_{i=1}^nQ_i=\sum_{i=1}^n(TP)_i=\sum_{i=1}^n\sum_{j=1}^n T_{ij}P_j=\sum_{j=1}^n\left(\sum_{i=1}^nT_{ij} \right)P_j=\sum_{j=1}^nP_j=1$
 
-\paragraph{2.2.25}
+-----
+
+### 2.2.25
+
+$$
+begin{aligned}
 \renewcommand{\arraystretch}{1.5}
-\[
-\begin{pmatrix}
+&\begin{pmatrix}
 1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16}&\frac{1}{32}\\
 \frac{1}{2}&1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16
 }\\
@@ -449,10 +511,8 @@ $
 0&0&0&0&1&0\\
 0&0&0&0&0&1\\
 \end{pmatrix}
-\xrightarrow{R_i-\frac{1}{2}R_{i-1}\rightarrow R_i \,i=6\sim2}
-\]
-\[
-\begin{pmatrix}
+\xrightarrow{R_i-\frac{1}{2}R_{i-1}\rightarrow R_i \,i=6\sim2}\\
+$\begin{pmatrix}
 1&\frac{1}{2}&\frac{1}{4}&\frac{1}{8}&\frac{1}{16}&\frac{1}{32}\\
 0&\frac{3}{4}&\frac{3}{8}&\frac{3}{16}&\frac{3}{32}&\frac{3}{64}\\
 0&0&\frac{3}{4}&\frac{3}{8}&\frac{3}{16}&\frac{3}{32}\\
@@ -468,10 +528,8 @@ $
 0&0&0&-\frac{1}{2}&1&0\\
 0&0&0&0&-\frac{1}{2}&1\\
 \end{pmatrix}
-\xrightarrow[R_i-\frac{1}{2}R_{i+1}\rightarrow R_i \,i=1\sim5]{\frac{3}{4}R_1\rightarrow R_1}
-\]
-\[
-\begin{pmatrix}
+\xrightarrow[R_i-\frac{1}{2}R_{i+1}\rightarrow R_i \,i=1\sim5]{\frac{3}{4}R_1\rightarrow R_1}\\
+&\begin{pmatrix}
 \frac{3}{4}&0&0&0&0&0\\
 0&\frac{3}{4}&0&0&0&0\\
 0&0&\frac{3}{4}&0&0&0\\
@@ -487,10 +545,8 @@ $
 0&0&0&-\frac{1}{2}&\frac{5}{4}&-\frac{1}{2}\\
 0&0&0&0&-\frac{1}{2}&1\\
 \end{pmatrix}
-\xrightarrow{\frac{4}{3}R_i\rightarrow R_i\,i=1\sim 6}
-\]
-\[
-\begin{pmatrix}
+\xrightarrow{\frac{4}{3}R_i\rightarrow R_i\,i=1\sim 6}\\
+&\begin{pmatrix}
 1&0&0&0&0&0\\
 0&1&0&0&0&0\\
 0&0&1&0&0&0\\
@@ -506,56 +562,105 @@ $
 0&0&0&-\frac{2}{3}&\frac{5}{3}&-\frac{2}{3}\\
 0&0&0&0&-\frac{2}{3}&\frac{4}{3}\\
 \end{pmatrix}
-\]
+\end{aligned}
+$$
 
-\paragraph{2.2.26}
+
+-----
+
+### 2.2.26
+
 If $A,B$ are orthogonal, $AA^T=I$ and $BB^T=I$, then $(AB)(AB)^T=ABB^TA^T=AA^T=I$, so $AB$ is also orthogonal.
 
-\paragraph{2.2.27}
+-----
+
+### 2.2.27
+
 $\det(AA^T)=\det(A)\det(A^T)=(\det(A))^2=\det(I)=1$, so $\det(A)=\pm1$
 
-\paragraph{2.2.28}
+-----
+
+### 2.2.28
+
 If $A=A^T$ and $B=-B^T$, then $\trace(AB)=\trace(BA)=\trace(-B^TA^T)=\trace(-(AB)^T)=-\trace(AB)$, so $\trace(AB)=0$.
 
-\paragraph{2.2.29}
+-----
+
+### 2.2.29
+
 \renewcommand{\arraystretch}{1}
 $AA^T=\begin{pmatrix}a&b\\c&d\end{pmatrix}\begin{pmatrix}a&c\\b&d\end{pmatrix}=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, so $a^2+b^2=1$, $c^2+d^2=1$, $ac+bd=0$. Let $\theta=\tan^{-1}\frac{b}{a}$, then $a=\cos\theta$, $b=\sin\theta$, $\frac{c}{d}=-\tan{\theta}$, $c=-\sin\theta$, $d=\cos\theta$. So the most general form is $\begin{pmatrix}\cos\theta&\sin\theta\\-\sin\theta&\cos\theta\end{pmatrix}$.
 
-\paragraph{2.2.30}
+-----
+
+### 2.2.30
+
 $\det(A^*)=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}^*a_{2j}^*\cdots=(\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots)^*=(\det A)^*$
 
 $\det(A^*)=\det((A^*)^T)=A^\dagger$
 
-\paragraph{2.2.31}
+-----
+
+### 2.2.31
+
 If two of the matrices are real, then their commutator is real, so $i$ multiply the third matrix must be real, so the third matrix must be  pure imaginary.
 
-\paragraph{2.2.32}
+-----
+
+### 2.2.32
+
 $(AB)^\dagger=((AB)^T)^*=(B^TA^T)^*=((B)^T)^*((A)^T)^*=B^\dagger A^\dagger$
 
-\paragraph{2.2.33}
+-----
+
+### 2.2.33
+
 $S^\dagger_{ij}=S^*_{ji}$, so 
 $\trace(S^\dagger S)=\sum_i(S^\dagger S)_{ii}=\sum_i\sum_j S^\dagger_{ij}S_{ji}=\sum_i\sum_j|S_{ji}|^2>0$ when $S$ is not null matrix.
 
-\paragraph{2.2.34}
+-----
+
+### 2.2.34
+
 $A^\dagger=A$, $B^\dagger=B$. $(AB+BA)^\dagger=B^\dagger A^\dagger+A^\dagger B^\dagger=BA+AB=AB+BA$; $[i(AB-BA)]^\dagger=-i(B^\dagger A^\dagger-A^\dagger B^\dagger)=-i(BA-AB)=i(AB-BA)$. So both $(AB-BA)$ and $i(AB-BA)$ are Hermitian.
 
-\paragraph{2.2.35}
+-----
+
+### 2.2.35
+
 $(C+C^\dagger)^\dagger=C^\dagger+C=C+C^\dagger$; $[i(C-C^\dagger)]^\dagger=-i(C^\dagger-C)=i(C-C^\dagger)$. So both matrices are Hermitian,
 
-\paragraph{2.2.36}
+-----
+
+### 2.2.36
+
 $C=-i(AB-BA)$, $C^\dagger=i(B^\dagger A^\dagger-A^\dagger B^\dagger)=i(BA-AB)=-i(AB-BA)=C$ so $C$ is Hermitian.
 
-\paragraph{2.2.37}
+-----
+
+### 2.2.37
+
 If $AB=BA$, then $(AB)^\dagger=B^\dagger A^\dagger=BA=AB$ so $AB$ is Hermitian; if $AB$ is Hermitian, then $AB=(AB)^\dagger=B^\dagger A^\dagger=BA$. Therefore, $AB=BA$ is a necessary and sufficient condition for $AB$ to be Hermitian.
 
-\paragraph{2.2.38}
+-----
+
+### 2.2.38
+
 $UU^\dagger=I$, $U^\dagger=U^{-1}$, $U=(U^{-1})^\dagger$, $U^{-1}U=I=U^{-1}(U^{-1})^\dagger$, so $U^{-1}$ is unitary.
 
-\paragraph{2.2.39}
+-----
+
+### 2.2.39
+
 It is obvious that $(A\otimes B)^T=A^T\otimes B^T$, so $(A\otimes B)^\dagger=A^\dagger\otimes B^\dagger$. If $A$ and $B$ are unitary, then $(A\otimes B)(A\otimes B)^\dagger =(A\otimes B)(A^\dagger\otimes B^\dagger)=(AA^\dagger\otimes BB^\dagger)=I_1\otimes I_2=I$
 
-\paragraph{2.2.40}
-$\boldsymbol{\sigma}\cdot\mathbf{p}=\sigma_1p_1+\sigma_2p_2+\sigma_3p_3=
+-----
+
+### 2.2.40
+
+$$
+\begin{aligned}
+\boldsymbol{\sigma}\cdot\mathbf{p} &=\sigma_1p_1+\sigma_2p_2+\sigma_3p_3=
 \begin{pmatrix}
 0&p_1\\p_1&0
 \end{pmatrix}+
@@ -567,9 +672,8 @@ p_3&0\\0&-p_3
 \end{pmatrix}=
 \begin{pmatrix}
 p_3&p_1-ip_2\\p_1+ip_2&-p_3
-\end{pmatrix}
-$,
-so $(\boldsymbol{\sigma}\cdot\mathbf{p})^2=\begin{pmatrix}
+\end{pmatrix}\\
+(\boldsymbol{\sigma}\cdot\mathbf{p})^2 &=\begin{pmatrix}
 p_3&p_1-ip_2\\p_1+ip_2&-p_3
 \end{pmatrix}\begin{pmatrix}
 p_3&p_1-ip_2\\p_1+ip_2&-p_3
@@ -577,18 +681,41 @@ p_3&p_1-ip_2\\p_1+ip_2&-p_3
 \begin{pmatrix}
 \mathbf{p}^2&0\\0&\mathbf{p}^2
 \end{pmatrix}=\mathbf{p}^2\mathbf{1}_2
-$
+\end{aligned}
+$$
 
-\paragraph{2.2.41}
-$(\gamma^0)^2=(\sigma_3)^2\otimes(1_2)^2=1_2\otimes1_2=1_4$. $(\gamma^i)^2=\gamma^2\otimes(\sigma_i)^2=(-1_2)\otimes1_2=-1_4$. When $\mu\neq0$, $\gamma^\mu\gamma^i+\gamma^i\gamma^\mu=\gamma^2\otimes(\sigma_\mu\sigma_i)+\gamma^2\otimes(\sigma_i\sigma_\mu)=\gamma^2\otimes(\sigma_\mu\sigma_i+\sigma_i\sigma_\mu)=\gamma^2\otimes0=0$; when $\mu=0$, $\gamma^0\gamma^i+\gamma^i\gamma^0=(\sigma_3\gamma)\otimes(\sigma_i)+(\gamma\sigma_3)\otimes(\sigma_i)=
+-----
+
+### 2.2.41
+
+$(\gamma^0)^2=(\sigma_3)^2\otimes(1_2)^2=1_2\otimes1_2=1_4$. $(\gamma^i)^2=\gamma^2\otimes(\sigma_i)^2=(-1_2)\otimes1_2=-1_4$. When $\mu\neq0$, 
+
+$$
+\begin{aligned}
+\gamma^\mu\gamma^i+\gamma^i\gamma^\mu=\gamma^2\otimes(\sigma_\mu\sigma_i)+\gamma^2\otimes(\sigma_i\sigma_\mu)=\gamma^2\otimes(\sigma_\mu\sigma_i+\sigma_i\sigma_\mu)=\gamma^2\otimes0=0
+\end{aligned}
+$$ 
+
+When $\mu=0$, 
+
+$$
+\begin{aligned}
+\gamma^0\gamma^i+\gamma^i\gamma^0=(\sigma_3\gamma)\otimes(\sigma_i)+(\gamma\sigma_3)\otimes(\sigma_i)=
 \begin{pmatrix}0&1\\1&0\end{pmatrix}\otimes(\sigma_i)+
 \begin{pmatrix}0&-1\\-1&0\end{pmatrix}\otimes(\sigma_i)=0
-$
+\end{aligned}
+$$
 
-\paragraph{2.2.42}
+-----
+
+### 2.2.42
+
 $\gamma^5\gamma^\mu=i\gamma^0\gamma^1\gamma^2\gamma^3\gamma^\mu$. Switch $\gamma^\mu$ with $\gamma^i$ left to it: if $i=\mu$, it won't cange; if $i\neq\mu$, it will be multiplied $(-1)$ by the anti-commuting properties. So after switching four times to move $\gamma^\mu$ to the left-most side, three $(-1)$ have been multiplied, so $\gamma^5\gamma^\mu=-i\gamma^\mu\gamma^0\gamma^1\gamma^2\gamma^3=-\gamma^\mu\gamma^5$, so $\gamma^5$ anti-commutes with all four $\gamma^\mu$.
 
-\paragraph{2.2.43}
+-----
+
+### 2.2.43
+
 ($\gamma_\mu=\sum g_{\nu\mu}\gamma^\mu=$ should be $\gamma_\nu=\sum g_{\nu\mu}\gamma^\mu$) $\gamma_0=\gamma^0$ and $\gamma_i=-\gamma ^i,\,i=1,2,3$. Along with $(\gamma^0)^2=1$ and $(\gamma^i)^2=-1$, we have $\gamma_\mu\gamma^\mu=1,\,\mu=0,1,2,3$.
 \medskip
 
@@ -601,38 +728,58 @@ $\gamma^5\gamma^\mu=i\gamma^0\gamma^1\gamma^2\gamma^3\gamma^\mu$. Switch $\gamma
 (c)
 If $\alpha,\beta,\nu$ are different with each other, then $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(3-1)\gamma^\alpha\gamma^\beta\gamma^\nu=2(-1)^3\gamma^\nu\gamma^\beta\gamma^\alpha=-2\gamma^\nu\gamma^\beta\gamma^\alpha$. If only two of  $\alpha,\beta,\nu$ are the same, then $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(-3+1)\gamma^\alpha\gamma^\beta\gamma^\nu=-2(1)(-1)^2\gamma^\nu\gamma^\beta\gamma^\alpha\\=-2\gamma^\nu\gamma^\beta\gamma^\alpha$. If $\alpha,\beta,\nu$ are all the same, then $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=(-3+1)\gamma^\alpha\gamma^\beta\gamma^\nu=-2\gamma^\nu\gamma^\beta\gamma^\alpha$. Therefore, in all cases, $\sum\gamma_\mu\gamma^\alpha\gamma^\beta\gamma^\nu\gamma^\mu=-2\gamma^\nu\gamma^\beta\gamma^\alpha$.
 
+-----
 
+### 2.2.44
 
-\paragraph{2.2.44}
 $(\gamma^5)^2=-\gamma^0\gamma^1\gamma^2\gamma^3\gamma^0\gamma^1\gamma^2\gamma^3=-(-1)^{3+2+1}(\gamma^0)^2(\gamma^1)^2(\gamma^2)^2(\gamma^3)^2=1$, so\\ $M^2=\frac{1}{4}(1+2\gamma^5+(\gamma^5)^2)=\frac{1}{4}(2+2\gamma^5)=\frac{1}{2}(1+\gamma^5)=M$.
 
-\paragraph{2.2.45}
+-----
+
+### 2.2.45
+
 By evaluation, we can found that the 16 Dirac matrices is equal to $(i)^n\sigma_i\otimes\sigma_j,\,i,j=0,1,2,3$ with each Dirac matrix having different $(i,j)$, if we let $\sigma_0=1_2$, $n$ depend on $i,j$. Then the problem is equivalent to prove that the 16 $\sigma_i\otimes\sigma_j$ form a linearly independent set. If $a,b\neq0$ and $(i.j)\neq(k,l)$, then  $a\sigma_i\otimes\sigma_j+b\sigma_k\otimes\sigma_l\neq0$ because the four $\sigma_\mu$ form a linearly independent set. So the 16 $\sigma_i\otimes\sigma_j$ form a linearly independent set, and the 16 Dirac matrices form a linearly independent set
 
-\paragraph{2.2.46}
+-----
+
+### 2.2.46
+
 (The 16 Dirac matrices is defined as $E_{ij}=\sigma_i\otimes\sigma_j$, $i,j=0,1,2,3$, where $\sigma_0=I_2$) \\For $(i,j)\neq(0,0)$, $\trace(E_{ij})=\trace(\sigma_i)(\sigma_j)=0$ because $\trace(\sigma_k)=0$ when $k=1,2,3$. So $\trace(E_{ij}E_{mn})\neq0$ only when $(\sigma_i\otimes\sigma_j)(\sigma_m\otimes\sigma_n)=\sigma_0\otimes\sigma_0$, that is, $i=m$ and $j=n$. Let $c_i=c_{mn}$, $\Gamma_i=E_{mn}$,  $\sum_{i=1}^{16}c_i\Gamma_i=\sum_{i,j=0}^3c_{ij}E_{ij}$, then $\trace(A\Gamma_i)=\trace(\sum_{i,j=0}^3c_{ij}E_{ij}E_{mn})=c_{mn}\trace(E_{mn}E_{mn})=c_{mn}\trace(I_4)=4c_{mn}=4c_i$, so $c_i=\frac{1}{4}\trace(A\Gamma_i)$.
 
-\paragraph{2.2.47}
+-----
+
+### 2.2.47
+
 Note that $(\gamma^0)^T=\gamma^0$, $(\gamma^1)^T=-\gamma^1$, $(\gamma^2)^T=\gamma^2$, $(\gamma^3)^T=-\gamma^3$. $C^{-1}=-i(\gamma^0)^{-1}(\gamma^2)^{-1}=i\gamma^0\gamma^2$, so $C\gamma^\mu C^{-1}=-\gamma^2\gamma^0\gamma^\mu\gamma^0\gamma^2$. If $\mu=0$ or $2$, $-\gamma^2\gamma^0\gamma^\mu\gamma^0\gamma^2=-(-1)(1)(-1)\gamma^\mu=-\gamma^\mu=-(\gamma^\mu)^T$; If $\mu=1$ or $3$, $-\gamma^2\gamma^0\gamma^\mu\gamma^0\gamma^2=-(-1)^2(1)(-1)\gamma^\mu=\gamma^\mu=-(\gamma^\mu)^T$. So in all cases $C\gamma^\mu C^{-1}=-(\gamma^\mu)^T$.
 
-\paragraph{2.2.48}
-(a) \[\gamma^0mc^2=mc^2\sigma_3\otimes I_2=
-\begin{pmatrix}mc^2&0\\0&-mc^2\end{pmatrix}\] \[c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)=c\gamma^0(\gamma^1p_1+\gamma^2p_2+\gamma^3p_3)=c(\sigma_3\otimes I_2)(\gamma\otimes\sigma_1p_1+\gamma\otimes\sigma_2p_2+\gamma\otimes\sigma_3p_3)\]
-\[=c\sigma_1\otimes(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)=
-\begin{pmatrix}
-0&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)\\\sigma_1p_1+\sigma_2p_2+\sigma_3p_3&0\end{pmatrix}\]
-\[-EI_4=-EI_2\otimes I_2=
+-----
+
+### 2.2.48
+
+(a) 
+
+$$
+\begin{aligned}
+\gamma^0mc^2&=mc^2\sigma_3\otimes I_2=
+\begin{pmatrix}mc^2&0\\0&-mc^2\end{pmatrix}\\
+c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3) &=c\gamma^0(\gamma^1p_1+\gamma^2p_2+\gamma^3p_3)\\
+&=c(\sigma_3\otimes I_2)(\gamma\otimes\sigma_1p_1+\gamma\otimes\sigma_2p_2+\gamma\otimes\sigma_3p_3)\\
+&=c\sigma_1\otimes(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)\\
+&=\begin{pmatrix}
+0&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)\\\sigma_1p_1+\sigma_2p_2+\sigma_3p_3&0\end{pmatrix}\\
+-EI_4 &=-EI_2\otimes I_2=
 \begin{pmatrix}
 -E&0\\0&-E
-\end{pmatrix}
-\]
-\[\psi=
-\begin{pmatrix}
+\end{pmatrix}\\
+\psi &=\begin{pmatrix}
 \psi_L\\\psi_S
 \end{pmatrix}
-\]
+\end{aligned}
+$$
+
 So $\left[\gamma^0mc^2+c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)-E\right]\psi=0$ becomes
-\[
+
+$$
 \begin{pmatrix}
 mc^2-E&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)\\
 c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)&-mc^2-E
@@ -640,7 +787,7 @@ c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)&-mc^2-E
 \begin{pmatrix}
 \psi_L\\\psi_S
 \end{pmatrix}=0
-\]
+$$
 
 (b) By the indicated approximation, the equation becomes
 \[
@@ -656,23 +803,24 @@ It can be separated to $\varepsilon\psi_L=c(\alpha_1p_1+\alpha_2p_2+\alpha_3p_3)
 
 (c) From the two separated equations, we can get $(\frac{\psi_S}{\psi_L})^2=\frac{\varepsilon}{2mc^2}\ll1$ in the non-relativistic approximation.
 
-\paragraph{2.2.49}
-\[(\gamma^0)^2=
+-----
+
+### 2.2.49
+
+$$
+\begin{aligned}
+(\gamma^0)^2 &=
 \begin{pmatrix}
 I_2&0\\0&I_2
-\end{pmatrix}=I_4
-\]
-\[
-(\gamma^i)^2=
+\end{pmatrix}=I_4\\
+(\gamma^i)^2 &=
 \begin{pmatrix}
 -\sigma_i^2&0\\0&-\sigma_i^2
 \end{pmatrix}=
 \begin{pmatrix}
 -I_2&0\\0&-I_2
-\end{pmatrix}=-I_4 ,\, i=1,2,3
-\]
-\[
-\gamma^\mu\gamma^i+\gamma^i\gamma^\mu=
+\end{pmatrix}=-I_4 ,\, i=1,2,3\\
+\gamma^\mu\gamma^i+\gamma^i\gamma^\mu &=
 \begin{pmatrix}
 -\sigma_\mu\sigma_i&0\\
 0&-\sigma_\mu\sigma_i
@@ -682,11 +830,16 @@ I_2&0\\0&I_2
 0&-\sigma_i\sigma_\mu
 \end{pmatrix}=
 0,\,\mu\neq i
-\]
+\end{aligned}
+$$
 
-\paragraph{2.2.50}
+-----
+
+### 2.2.50
+
 As in Exercise 2.2.48 but with $\gamma^0$ and $\gamma^i$ defined in Exercise 2.2.49, the Dirac equation becomes
-\[
+
+$$
 \begin{pmatrix}
 -c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E&mc^2\\
 mc^2&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E
@@ -694,9 +847,11 @@ mc^2&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E
 \begin{pmatrix}
 \psi_L\\\psi_S
 \end{pmatrix}=0
-\]
+$$
+
 In the limit that m approaches zero, the equation becomes
-\[
+
+$$
 \begin{pmatrix}
 -c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E&0\\
 0&c(\sigma_1p_1+\sigma_2p_2+\sigma_3p_3)-E
@@ -704,10 +859,14 @@ In the limit that m approaches zero, the equation becomes
 \begin{pmatrix}
 \psi_L\\\psi_S
 \end{pmatrix}=0
-\]
+$$
+
 which separates into independent $2\times2$ blocks.
 
-\paragraph{2.2.51}
+-----
+
+### 2.2.51
+
 (a) $|r'|^2=r'^\dagger r'=r^\dagger U^\dagger Ur=r^\dagger r=|r|^2$
 
 (b) $r^\dagger r=r'^\dagger r'=r^\dagger U^\dagger Ur$ for any $r$, so $U^\dagger U=I$.
