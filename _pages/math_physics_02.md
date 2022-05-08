@@ -520,7 +520,6 @@ begin{aligned}
 0&0&0&0&1&0\\
 0&0&0&0&0&1\\
 \end{pmatrix}
-\xrightarrow{R_i-\frac{1}{2}R_{i-1}\rightarrow R_i \,i=6\sim2}
 \end{aligned}
 $$
 
