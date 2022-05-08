@@ -61,7 +61,7 @@ $$
 ### 2.1.4
 
 (a)
-$|A|=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots$, which is the sum of all products formed by choosing one entry in each row that they are all in different columns (call it a valid combination), multiplying them together, and multiplying $+1$ or $-1$ depending on the parity of permutation $c_1c_2\cdots$, where $c_i$ is the column of the entry chosen in row i. $a_{ji}C_{ji}=a_{ji}M_{ji}(-1)^{j+i}$, is the sum of all products of valid combinations in $M_{ji}$, multiplying $a_{j+i}$, multiplying $(-1)^{j+i}$. If it takes n steps for a permutation in $M_{ji}$ to return to reference order, then it will take $n+|j-i|$ steps for the permutation appended $a_{ji}$ to return to reference order, so $a_{ij}M_{ij}(-1)^{|j-i|}=a_{ij}M_{ij}(-1)^{j+i}$ will contribute to the sum of products of valid combinations in A that contains $a_{ji}$, so $\sum_{i}a_{ji}C_{ji}$ contains all products of valid combinations, and is therefore equal to $|A|$.
+$|A|=\sum_{ij\cdots}\varepsilon_{ij\cdots}a_{1i}a_{2j}\cdots$, which is the sum of all products formed by choosing one entry in each row that they are all in different columns (call it a valid combination), multiplying them together, and multiplying $+1$ or $-1$ depending on the parity of permutation $c_1c_2\cdots$, where $c_i$ is the column of the entry chosen in row $i$. $a_{ji}C_{ji}=a_{ji}M_{ji}(-1)^{j+i}$ is the sum of all products of valid combinations in $M_{ji}$, multiplying $a_{j+i}$, multiplying $(-1)^{j+i}$. If it takes n steps for a permutation in $M_{ji}$ to return to reference order, then it will take $n+|j-i|$ steps for the permutation appended $a_{ji}$ to return to reference order, so $a_{ij}M_{ij}(-1)^{|j-i|}=a_{ij}M_{ij}(-1)^{j+i}$ will contribute to the sum of products of valid combinations in A that contains $a_{ji}$, so $\sum_{i}a_{ji}C_{ji}$ contains all products of valid combinations, and is therefore equal to $|A|$.
 
 Example:
 
@@ -240,7 +240,7 @@ The only case that $\varepsilon_{ijk}\varepsilon_{pqk}\neq0$ is : k is one of $(
 
 $$
 \begin{aligned}
-((AB)C)_{il}=\sum_m(AB)_{im}C_{ml}=\sum_m\sum_k A_{ik}B_{km}C_{ml}=\sum_k\sum_m A_{ik}B_{km}C_{ml}=\sum_k A_{ik}(BC)\_{kl}=(A(BC))\_{il}
+((AB)C)_{il}=\sum_m(AB)_{im}C_{ml}=\sum_m\sum_k A_{ik}B_{km}C_{ml}=\sum_k\sum_m A_{ik}B_{km}C_{ml}=\sum_k A_{ik}(BC)_{kl}=(A(BC))_{il}
 \end{aligned}
 $$
 
