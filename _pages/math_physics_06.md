@@ -8,6 +8,12 @@ author_profile: false
 
 # Chapter 6 Eigenvalue Problems
 
+{% raw %}
+
+## 6.2 Matrix Eigenvalue Problems
+
+### 6.2.1
+
 $$
 \newcommand{\br}[2]{\langle#1|#2\rangle}
 \newcommand{\brr}[2]{\left\langle#1|#2\right\rangle}
@@ -17,16 +23,6 @@ $$
 \newcommand{\VE}{\mathbf{\hat{e}}}
 \newcommand{\ket}[1]{|#1\rangle}
 \newcommand{\bra}[1]{\langle#1|}
-\newcommand{\n}{\lambda}
-$$
-
-{% raw %}
-
-## 6.2 Matrix Eigenvalue Problems
-
-### 6.2.1
-
-$$
 \newcommand{\n}{\lambda}
 \begin{aligned}
 \begin{vmatrix}
@@ -677,7 +673,7 @@ $$
 and $\det(\M{A}-\n\M{I})=0$, while this is exactly what we want to prove in this problem. However, a formal proof probably requires knowledge of linear algebra such as rank, Gaussian elimination, etc, which are beyond the scope of the book and probably not intended by the author.
 )
 
-(b) If $\M{A}|\V{v}\rangle=0$, then $|\V{v}\rangle$ is an eigenvector of $\M{A}$ with zero eigenvalue. So
+(b) If $\M{A}\vert\V{v}\rangle=0$, then $\vert\V{v}\rangle$ is an eigenvector of $\M{A}$ with zero eigenvalue. So
 
 $$
 \begin{aligned}
@@ -973,7 +969,7 @@ $$
 \end{aligned}
 $$
 
-Note that $\br{\V{y}}{\V{y}}=\sum_i|y_i|^2=1$, and $|y_i|^2\geq0$, so
+Note that $\br{\V{y}}{\V{y}}=\sum_i\vert y_i\vert^2=1$, and $\vert y_i\vert^2\geq0$, so
 
 $$
 \begin{aligned}
@@ -1051,7 +1047,7 @@ $$
 
 so $b=0$ or $a+d=0$. 
 
-If $a+d=0$, then $a^2+|b|^2=1$, which means we can find $0\leq\theta\leq\frac{\pi}{2}$ such that $a^2=\cos^2\theta$, $|b|^2=\sin^2\theta$. So the matrix has the form
+If $a+d=0$, then $a^2+\vert b\vert^2=1$, which means we can find $0\leq\theta\leq\frac{\pi}{2}$ such that $a^2=\cos^2\theta$, $\vert b\vert^2=\sin^2\theta$. So the matrix has the form
 
 $$
 \begin{aligned}
@@ -1069,6 +1065,22 @@ Now using the anti-commuting property,
 
 $$
 \begin{aligned}
+&\begin{pmatrix}
+\cos\theta_1&\sin\theta_1 e^{i\varphi_1}\\
+\sin\theta_1 e^{-i\varphi_1}& -\cos\theta_1
+\end{pmatrix}
+\begin{pmatrix}
+\cos\theta_2&\sin\theta_2 e^{i\varphi_2}\\
+\sin\theta_2 e^{-i\varphi_2}& -\cos\theta_2
+\end{pmatrix}+
+\begin{pmatrix}
+\cos\theta_2&\sin\theta_2 e^{i\varphi_2}\\
+\sin\theta_2 e^{-i\varphi_2}& -\cos\theta_2
+\end{pmatrix}
+\begin{pmatrix}
+\cos\theta_1&\sin\theta_1 e^{i\varphi_1}\\
+\sin\theta_1 e^{-i\varphi_1}& -\cos\theta_1
+\end{pmatrix}\\
 =\begin{pmatrix}
 2\cos\theta_1\cos\theta_2+2\sin\theta_1\sin\theta_2\cos(\varphi_1-\varphi_2)& 0\\
 0& 2\cos\theta_1\cos\theta_2+2\sin\theta_1\sin\theta_2\cos(\varphi_1-\varphi_2)
@@ -1505,7 +1517,14 @@ so when $\mathrm{trace}\,\M{H}=0$, $\det\M{U}=1$.
 
 ### 6.5.16
 
-$\M{B}$ is defined as \[\M{B}=\sum_{j=0}^\infty\frac{1}{j!}\M{A}^j\]
+$\M{B}$ is defined as 
+
+$$
+\begin{aligned}
+\M{B}=\sum_{j=0}^\infty\frac{1}{j!}\M{A}^j
+\end{aligned}
+$$
+
 If $\V{x}_i$ is an eigenvector of $\M{A}$, so $\M{A}\V{x}_i=A_i\V{x}_i$, then 
 
 $$
@@ -1543,7 +1562,7 @@ so $(\rho_\lambda)^2=\rho_\lambda$, which means $\rho_\lambda=0,1$.
 
 ### 6.5.18
 
-$\br{\V{x}_i|\M{A}}{\V{x}_j}=\lambda_j\br{\V{x}_i}{\V{x}_j}=\lambda_j\delta_{ij}$. So
+$\br{\V{x}\_i\vert \M{A}}{\V{x}\_j}=\lambda_j\br{\V{x}\_i}{\V{x}\_j}=\lambda_j\delta_{ij}$. So
 
 $$
 \begin{aligned}
@@ -1581,7 +1600,7 @@ $$
 \end{aligned}
 $$
 
-so the error is of the order of $|\delta_i|^2$.
+so the error is of the order of $\vert\delta_i\vert^2$.
 
 -----
 
@@ -1597,7 +1616,7 @@ $$
 $$
 
 (b)
-To find the normal mode, let $x_1(t)=x_1\sin\omega t$,\; $x_2(t)=x_2\sin\omega t$. Substitute and cancel
+To find the normal mode, let $x_1(t)=x_1\sin\omega t$, $x_2(t)=x_2\sin\omega t$. Substitute and cancel
 out $\sin\omega t$, we have
 
 $$
@@ -1640,7 +1659,7 @@ $$
 
 ### 6.5.20
 
-Follow the proof in Section 6.5 (p.319), we know if $\M{A}\V{x}_j=\lambda_j\V{x}_j$, or $(\M{A}-\lambda_j\M{I})\ket{\V{x}_j}=0$, then we have $(\M{A}^\dagger-\lambda_j^*\M{I})\ket{\V{x}_j}=0$, or $\M{A}^\dagger\V{x}_j=\lambda_j^*\V{x}_j$, so $\ket{\V{x}_j}$ is also an eigenvector of $\M{A}^\dagger$ with eigenvalue $\lambda_j^*$.
+Follow the proof in Section 6.5 (p.319), we know if $\M{A}\V{x}\_j=\lambda_j\V{x}\_j$, or $(\M{A}-\lambda_j\M{I})\ket{\V{x}\_j}=0$, then we have $(\M{A}^\dagger-\lambda_j^\star\M{I})\ket{\V{x}\_j}=0$, or $\M{A}^\dagger\V{x}\_j=\lambda_j^\star\V{x}\_j$, so $\ket{\V{x}\_j}$ is also an eigenvector of $\M{A}^\dagger$ with eigenvalue $\lambda_j^\star$.
 
 $$
 \begin{aligned}
