@@ -411,7 +411,7 @@ $$
 
 ### 3.5.7
 
-$\V{A'}=\M{S}\V{A}$, which means $A'_i=\sum_{j}\M{S}\_{ij}A_j$. Because $\M{S}\_{ij}$ is independent of $t$, so $\frac{dA'\_i}{dt}=\sum_{j}\M{S}\_{ij}\frac{dA_j}{dt}$, which means $\frac{d\V{A'}}{dt}=\M{S}\frac{d\V{A}}{dt}$.
+$\V{A'}=\M{S}\V{A}$, which means $A'\_i=\sum_{j}\M{S}\_{ij}A_j$. Because $\M{S}\_{ij}$ is independent of $t$, so $\frac{dA'\_i}{dt}=\sum_{j}\M{S}\_{ij}\frac{dA_j}{dt}$, which means $\frac{d\V{A'}}{dt}=\M{S}\frac{d\V{A}}{dt}$.
 
 -----
 
