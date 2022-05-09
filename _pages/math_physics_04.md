@@ -177,7 +177,7 @@ x_1\\x_2\\x_3\\x_4
 \end{aligned}
 $$
 
-or $\V{x'}=\T{U}\V{x}$, where $\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$, $\beta=\frac{v}{c}$. It can be verified that $\T{U}$ is orthogonal, so $\T{U}^{-1}=\T{U}^T$, and $\V{x}=\T{U}^T\V{x'}$.\quad $\pdv{x'_i}{x_j}=\T{U}_{ij}$, and $\pdv{x_j}{x'_i}=\T{U}^T_{ji}=\T{U}_{ij}$, so $\pdv{x'_i}{x_j}=\pdv{x_j}{x'_i}$. (Therefore, as long as the transformation is orthogonal, this relation holds.)
+or $\V{x'}=\T{U}\V{x}$, where $\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$, $\beta=\frac{v}{c}$. It can be verified that $\T{U}$ is orthogonal, so $\T{U}^{-1}=\T{U}^T$, and $\V{x}=\T{U}^T\V{x'}$. $\pdv{x'\_i}{x_j}=\T{U}\_{ij}$, and $\pdv{x_j}{x'\_i}=\T{U}^T_{ji}=\T{U}\_{ij}$, so $\pdv{x'\_i}{x_j}=\pdv{x_j}{x'\_i}$. (Therefore, as long as the transformation is orthogonal, this relation holds.)
 
 $$
 \begin{aligned}
