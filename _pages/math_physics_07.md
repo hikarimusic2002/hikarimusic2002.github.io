@@ -307,11 +307,11 @@ $r=r_0-kt$.
 ### 7.2.15
 
 (a) 
-$\frac{1}{v}dv=-adt$,\quad$\ln\frac{v}{v_0}=-at$,\quad$v=v_0e^{-at}$.
+$\frac{1}{v}dv=-adt$,$\ln\frac{v}{v_0}=-at$,$v=v_0e^{-at}$.
 
-(b) $\frac{1}{v}dv+adt=0$,\quad $\varphi=\int\frac{1}{v}dv+\int adt=constant$,\quad $\ln v+at=\ln v_0$,\quad $v=v_0\,e^{-at}$.
+(b) $\frac{1}{v}dv+adt=0$, $\varphi=\int\frac{1}{v}dv+\int adt=constant$, $\ln v+at=\ln v_0$, $v=v_0\,e^{-at}$.
 
-(c) $v(t)=\frac{C}{\alpha(t)}$,\quad $\alpha(t)=e^{\int adt}=e^{at}$,\quad $v=Ce^{-at}$,\quad $v=v_0e^{-at}$.
+(c) $v(t)=\frac{C}{\alpha(t)}$,$\alpha(t)=e^{\int adt}=e^{at}$, $v=Ce^{-at}$, $v=v_0e^{-at}$.
 
 ----- 
 
@@ -353,7 +353,7 @@ $$
 
 ### 7.2.17
 
-Let $u=xy$,\; $du=ydx+xdy=ydx+\frac{u}{y}dy$. Substitute $u$ for $x$,
+Let $u=xy$, $du=ydx+xdy=ydx+\frac{u}{y}dy$. Substitute $u$ for $x$,
 
 $$
 \begin{aligned}
@@ -451,7 +451,7 @@ y''+\frac{-2x}{1-x^2}y'+\frac{l(l+1)}{1-x^2}y=0
 \end{aligned}
 $$
 
-so $P(x)=\frac{-2x}{1-x^2}$,\; $Q(x)=\frac{l(l+1)}{1-x^2}$.
+so $P(x)=\frac{-2x}{1-x^2}$, $Q(x)=\frac{l(l+1)}{1-x^2}$.
 
 $$
 \begin{aligned}
@@ -488,7 +488,7 @@ y''+\frac{1-x}{x}y'+\frac{a}{x}y=0
 \end{aligned}
 $$
 
-so $P(x)=\frac{1-x}{x}$,\; $Q(x)=\frac{a}{x}$.
+so $P(x)=\frac{1-x}{x}$, $Q(x)=\frac{a}{x}$.
 
 $$
 \begin{aligned}
@@ -517,7 +517,7 @@ y''+\frac{-x}{1-x^2}y'+\frac{n^2}{1-x^2}y=0
 \end{aligned}
 $$
 
-so $P(x)=\frac{-x}{1-x^2}$,\; $Q(x)=\frac{n^2}{1-x^2}$.
+so $P(x)=\frac{-x}{1-x^2}$, $Q(x)=\frac{n^2}{1-x^2}$.
 
 $$
 \begin{aligned}
@@ -620,7 +620,7 @@ $$
 $$
 
 Because $\varphi(x_0)=\varphi'(x_0)=\cdots=\varphi^{(n-1)}(x_0)=0$, so $\sum_{j=1}^{n-1}a_j\varphi^{(j)}(x_0)=0$, which means $\varphi^{(n)}(x_0)=0$.
-So we know that $\varphi^{(n)}(x_0)=0$ for every $n$, while $\varphi(x)=\sum_{n=0}^\infty\frac{(x-x_0)^n}{n!}\varphi^{(n)}(x_0)$, so $\varphi(x)=0$, which means $y_1-y_2=0$,\; $y_1$ is unique. 
+So we know that $\varphi^{(n)}(x_0)=0$ for every $n$, while $\varphi(x)=\sum_{n=0}^\infty\frac{(x-x_0)^n}{n!}\varphi^{(n)}(x_0)$, so $\varphi(x)=0$, which means $y_1-y_2=0$, $y_1$ is unique. 
 
 -----
 
@@ -1114,7 +1114,7 @@ a\\b\\c
 \end{aligned}
 $$
 
-Let the square matrix be $\M{M}$.\; $a,b,c$ have non-trivial solution if and only if $\det(\M{M})=0$, so the sufficient and necessary condition for the vectors to be linearly independent is $\det(\M{M})\neq0$. Note that $\det(\M{M})=\V{A}\cdot\V{B}\times\V{C}$, so the two criterions is equivalent.
+Let the square matrix be $\M{M}$. $a,b,c$ have non-trivial solution if and only if $\det(\M{M})=0$, so the sufficient and necessary condition for the vectors to be linearly independent is $\det(\M{M})\neq0$. Note that $\det(\M{M})=\V{A}\cdot\V{B}\times\V{C}$, so the two criterions is equivalent.
 
 -----
 
@@ -1152,7 +1152,7 @@ y_1y_2'-y_1'y_2=0
 \end{aligned}
 $$
 
-so $\frac{y_1'}{y_1}=\frac{y_2'}{y_2}$, \;$\ln y_1=\ln y_2+\ln c$,\; $y_1=cy_2$.
+so $\frac{y_1'}{y_1}=\frac{y_2'}{y_2}$, $\ln y_1=\ln y_2+\ln c$, $y_1=cy_2$.
 
 -----
 
@@ -1189,7 +1189,7 @@ $$
 
 ### 7.6.7
 
-The functions must be differentiable for the Wronskian to be valid, but $|x|$ is not differentiable at $x=0$.
+The functions must be differentiable for the Wronskian to be valid, but $\vert x\vert$ is not differentiable at $x=0$.
 
 -----
 
@@ -1224,8 +1224,8 @@ W&=\begin{vmatrix}
 y_1 & y_2 & y_3 \\
 y'_1 & y'_2 & y'_3 \\
 y''_1 & y''_2 & y''_3 
-\end{vmatrix}=
-\begin{vmatrix}
+\end{vmatrix}\\
+&=\begin{vmatrix}
 y_1 & y_2 & y_3 \\
 y'_1 & y'_2 & y'_3 \\
 -P(x)y'_1-Q(x)y_1 & -P(x)y'_2-Q(x)y_2 & -P(x)y'_3-Q(x)y_3 
@@ -1320,10 +1320,10 @@ which corresponds to the results from Exercise 3.10.34.
 
 $$
 \begin{aligned}
-    & y_2(x)&&=y_1(x)\int^x\frac{e^{-\int^sP(t)dt}}{[y_1(s)]^2}ds\\
-    & y_2'(x)&&=y_1'(x)\int^x\frac{e^{-\int^sP(t)dt}}{[y_1(s)]^2}ds+y_1(x)\frac{e^{-\int^xP(t)dt}}{[y_1(x)]^2}\\
-    & y_2''(x)&&=y_1''(x)\int^x\frac{e^{-\int^sP(t)dt}}{[y_1(s)]^2}ds+2y_1'(x)\frac{e^{-\int^xP(t)dt}}{[y_1(x)]^2}+y_1(x)\frac{e^{-\int^xP(t)dt}\big[-P(x)[y_1(x)]^2-2y_1(x)y_1'(x)\big]}{[y_1(x)]^4}\\
-    & &&=y_1''(x)\int^x\frac{e^{-\int^sP(t)dt}}{[y_1(s)]^2}ds-\frac{e^{-\int^xP(t)dt}P(x)}{y_1(x)}
+y_2(x)&=y_1(x)\int^x\frac{e^{-\int^sP(t)dt}}{[y_1(s)]^2}ds\\
+y_2'(x)&=y_1'(x)\int^x\frac{e^{-\int^sP(t)dt}}{[y_1(s)]^2}ds+y_1(x)\frac{e^{-\int^xP(t)dt}}{[y_1(x)]^2}\\
+y_2''(x)&=y_1''(x)\int^x\frac{e^{-\int^sP(t)dt}}{[y_1(s)]^2}ds+2y_1'(x)\frac{e^{-\int^xP(t)dt}}{[y_1(x)]^2}+y_1(x)\frac{e^{-\int^xP(t)dt}\big[-P(x)[y_1(x)]^2-2y_1(x)y_1'(x)\big]}{[y_1(x)]^4}\\
+&=y_1''(x)\int^x\frac{e^{-\int^sP(t)dt}}{[y_1(s)]^2}ds-\frac{e^{-\int^xP(t)dt}P(x)}{y_1(x)}
 \end{aligned}
 $$
 
@@ -1878,8 +1878,8 @@ Let $y_p=u_1y_1+u_2y_2$ and use Eq 7.98,
 
 $$
 \begin{aligned}
-    & e^xu_1'+(1+x)&u_2'&=0\\
-    & e^xu_1'+&u_2'&=x
+e^xu_1'+(1+x)u_2'&=0\\
+e^xu_1'+&u_2'&=x
 \end{aligned}
 $$
 
