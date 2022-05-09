@@ -6,8 +6,6 @@ author_profile: false
 
 ---
 
-{% raw %}
-
 # Chapter 3 Vector Analysis
 
 ## 3.2 Vectors in 3-D Space
@@ -1347,72 +1345,111 @@ $$
 
 (b) 
 
-<img src="/files/math_physics_ch3_1.PNG" alt="drawing" width="200"/>
+<img src="/files/math_physics_ch3_1.PNG" alt="drawing" width="800"/>
 
-![](/files/math_physics_ch3_1.PNG)
-*The purple lines are $xy=0$, $xy=1$, $xy=2$. The orange lines are $x^2-y^2=0$, $x^2-y^2=1$, $x^2-y^2=2$.*
+The purple lines are $xy=0$, $xy=1$, $xy=2$. The orange lines are $x^2-y^2=0$, $x^2-y^2=1$, $x^2-y^2=2$.
 
 
 (c) Take the derivative of $xy=u$ we get $ydx+xdy=0$. That is, $(y,x)\cdot(dx,dy)=0$, so $(y,x)$ is a normal vector of $xy=u$ and therefore in the direction of $\VE_u$. Because $\pdv{u}{x}=y$, so $\VE_u$ should be in the direction of $(y,x)$, not $(-y,-x)$. Normalizing, we get $\VE_u=\frac{y}{\sqrt{x^2+y^2}}\VE_x+\frac{x}{\sqrt{x^2+y^2}}\VE_y$. By a similar process, from $2xdx-2ydy=0$, we get $\VE_v=\frac{x}{\sqrt{x^2+y^2}}\VE_x+\frac{-y}{\sqrt{x^2+y^2}}\VE_y$.
 
 (d) $\VE_u\times\VE_v=\frac{-x^2-y^2}{x^2+y^2}\VE_z=-\VE_z$, so it is a left-handed system.
 
-\paragraph{3.10.2}
+-----
 
-\,
+### 3.10.2
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{C.PNG}
-    \caption{The orange lines are $u=\frac{\pi}{6}$, $u=\frac{\pi}{4}$, $u=\frac{\pi}{3}$}the purple lines are $v=\frac{\pi}{6}$, $v=\frac{\pi}{4}$, $v=\frac{\pi}{3}$
-    \label{fig:C}
-\end{figure}
+<img src="/files/math_physics_ch3_2.PNG" alt="drawing" width="800"/>
+
+The orange lines are $u=\frac{\pi}{6}$, $u=\frac{\pi}{4}$, $u=\frac{\pi}{3}$. The purple lines are $v=\frac{\pi}{6}$, $v=\frac{\pi}{4}$, $v=\frac{\pi}{3}$
 
 The unit vectors $\VE_u$ and $\VE_v$ are perpendicular to the lines, and pointing right at $x>0$ and pointing left at $x<0$. 
 
-\paragraph{3.10.3}
-The unit vectors of orthogonal coordinates are perpendicular to each other, so we have $\VE_i\cdot\VE_j=\delta_{ij}$, and $\VE_i\times\VE_j=\VE_k$. Therefore, $(A_1\VE_1+A_2\VE_2+A_3\VE_3)\cdot(B_1\VE_1+B_2\VE_2+B_3\VE_3)=A_1B_1+A_2B_2+A_3B_3$, and \[(A_1\VE_1+A_2\VE_2+A_3\VE_3)\times(B_1\VE_1+B_2\VE_2+B_3\VE_3)=(A_2B_3-A_3B_2)\VE_1+(A_3B_1-A_1B_3)\VE_2+(A_1B_2-A_2B_1)\VE_3\]
+-----
 
-\paragraph{3.10.4}
-(a) $\VE_1=1\VE_1+0\VE_2+0\VE_3$. Using the divergence formula for curvilinear coordinates, \[\del\cdot\varphi=\frac{1}{h_1h_2h_3}\pdv{(h_2h_3)}{q_1}\]
+### 3.10.3
+
+The unit vectors of orthogonal coordinates are perpendicular to each other, so we have $\VE_i\cdot\VE_j=\delta_{ij}$, and $\VE_i\times\VE_j=\VE_k$. Therefore, $(A_1\VE_1+A_2\VE_2+A_3\VE_3)\cdot(B_1\VE_1+B_2\VE_2+B_3\VE_3)=A_1B_1+A_2B_2+A_3B_3$, and 
+
+$$
+\begin{aligned}
+(A_1\VE_1+A_2\VE_2+A_3\VE_3)\times(B_1\VE_1+B_2\VE_2+B_3\VE_3)=(A_2B_3-A_3B_2)\VE_1+(A_3B_1-A_1B_3)\VE_2+(A_1B_2-A_2B_1)\VE_3
+\end{aligned}
+$$
+
+-----
+
+### 3.10.4
+
+(a) $\VE_1=1\VE_1+0\VE_2+0\VE_3$. Using the divergence formula for curvilinear coordinates, 
+
+$$
+\begin{aligned}
+\del\cdot\varphi=\frac{1}{h_1h_2h_3}\pdv{(h_2h_3)}{q_1}
+\end{aligned}
+$$
+
 
 (b) 
-\[
-\del\times\VE_1=\frac{1}{h_1h_2h_3}
+
+$$
+\begin{aligned}
+\del\times\VE_1&=\frac{1}{h_1h_2h_3}
 \begin{vmatrix}
 \VE_1h_1&\VE_2h_2&\VE_3h_3\\
 \pdv{}{q_1}&\pdv{}{q_2}&\pdv{}{q_3}\\
 h_1&0&0
-\end{vmatrix}
-\]
-\[
-=\frac{1}{h_1h_2h_3}\left[\VE_2h_2\pdv{h_1}{q_3}-\VE_3h_3\pdv{h_1}{q_2} \right]
-\]
-\[
-=\frac{1}{h_1}\left[\VE_2\frac{1}{h_3}\pdv{h_1}{q_3}-\VE_3\frac{1}{h_2}\pdv{h_1}{q_2} \right]
-\]
+\end{vmatrix}\\
+&=\frac{1}{h_1h_2h_3}\left[\VE_2h_2\pdv{h_1}{q_3}-\VE_3h_3\pdv{h_1}{q_2} \right]\\
+&=\frac{1}{h_1}\left[\VE_2\frac{1}{h_3}\pdv{h_1}{q_3}-\VE_3\frac{1}{h_2}\pdv{h_1}{q_2} \right]
+\end{aligned}
+$$
 
-\paragraph{*3.10.5}
+-----
+
+### 3.10.5
+
 $\VE_i\cdot\VE_i=1=\frac{1}{h_i^2}\pdv{\V{r}}{q_i}\cdot\pdv{\V{r}}{q_i}=\frac{1}{h_i^2}\left((\pdv{x}{q_1})^2+(\pdv{y}{q_1})^2+(\pdv{x}{q_1})^2 \right)$, so $h_i^2=(\pdv{x}{q_i})^2+(\pdv{y}{q_i})^2+(\pdv{x}{q_i})^2$, in agreement with Eq. 3.131.
 
-From $h_i\VE_i=\pdv{\V{r}}{q_i}$, we can get \[\pdv{h_i}{q_j}\VE_i+h_i\pdv{\VE_i}{q_j}=\pdv{(h_i\VE_i)}{q_j}=\pdv{^2\V{r}}{q_j\partial q_i}
+From $h_i\VE_i=\pdv{\V{r}}{q_i}$, we can get 
+
+$$
+\begin{aligned}
+\pdv{h_i}{q_j}\VE_i+h_i\pdv{\VE_i}{q_j}=\pdv{(h_i\VE_i)}{q_j}=\pdv{^2\V{r}}{q_j\partial q_i}
 =\pdv{^2\V{r}}{q_i\partial q_j}=\pdv{(h_j\VE_j)}{q_i}=\pdv{h_j}{q_i}\VE_j+h_j\pdv{\VE_j}{q_i}
-\]
+\end{aligned}
+$$
+
 so
-\[
+
+$$
+\begin{aligned}
 h_i\pdv{\VE_i}{q_j}-\pdv{h_j}{q_i}\VE_j=h_j\pdv{\VE_j}{q_i}-\pdv{h_i}{q_j}\VE_i=\V{a}
-\]
+\end{aligned}
+$$
+
 If $\V{a}=0$, then $\pdv{\VE_i}{q_j}=\frac{1}{h_i}\pdv{h_j}{q_i}\VE_j$ can be proved. However, I don't know how to prove it. (I know $\V{a}\cdot\VE_i=\V{a}\cdot\VE_j=0$, and also by taking $\V{a}\cdot\V{a}$, it is equivalent to prove $\pdv{\VE_i}{q_j}\cdot\pdv{\VE_j}{q_i}=0$, however, I can't find a proof for this either)
 
-From $\VE_i\cdot\VE_j=0$, we have $\pdv{\VE_i}{q_i}\cdot\VE_j+\VE_i\cdot\pdv{\VE_j}{q_i}=0$, so we have \[\pdv{\VE_i}{q_i}\cdot\VE_j=-\VE_i\cdot\pdv{\VE_j}{q_i}=-\VE_i\cdot\VE_i\frac{1}{h_j}\pdv{h_i}{q_j}=-\frac{1}{h_j}\pdv{h_i}{q_j}\]
-Also, $\pdv{\VE_i}{q_i}\cdot\VE_j=\frac{1}{2}\pdv{(\VE_i\cdot\VE_i)}{q_i}=0$, so 
-\[
-\pdv{\VE_i}{q_i}=\sum_{j\neq i}\VE_j(\pdv{\VE_i}{q_i}\cdot\VE_j)=-\sum_{j\neq i}\VE_j\frac{1}{h_j}\pdv{h_i}{q_j}
-\]
+From $\VE_i\cdot\VE_j=0$, we have $\pdv{\VE_i}{q_i}\cdot\VE_j+\VE_i\cdot\pdv{\VE_j}{q_i}=0$, so we have 
 
-\paragraph{3.10.6}
+$$
+\begin{aligned}
+\pdv{\VE_i}{q_i}\cdot\VE_j=-\VE_i\cdot\pdv{\VE_j}{q_i}=-\VE_i\cdot\VE_i\frac{1}{h_j}\pdv{h_i}{q_j}=-\frac{1}{h_j}\pdv{h_i}{q_j}
+\end{aligned}
+$$
+
+Also, $\pdv{\VE_i}{q_i}\cdot\VE_j=\frac{1}{2}\pdv{(\VE_i\cdot\VE_i)}{q_i}=0$, so 
+
+$$
+\begin{aligned}
+\pdv{\VE_i}{q_i}=\sum_{j\neq i}\VE_j(\pdv{\VE_i}{q_i}\cdot\VE_j)=-\sum_{j\neq i}\VE_j\frac{1}{h_j}\pdv{h_i}{q_j}
+\end{aligned}
+$$
+
+-----
+
+### 3.10.6
+
 $\V{r}=\rho\cos\varphi\VE_x+\rho\sin\varphi\VE_y+z\VE_z$     
-\medskip
 
 $\pdv{\V{r}}{\rho}=\cos\varphi\VE_x+\sin\varphi\VE_y=h_\rho\VE_\rho$, so $h_\rho=1$ and $\VE_\rho=\cos\varphi\VE_x+\sin\varphi\VE_y$
 
@@ -1420,7 +1457,10 @@ $\pdv{\V{r}}{\varphi}=-\rho\sin\varphi\VE_x+\rho\cos\varphi\VE_y=h_\varphi\VE_\v
 
 $\pdv{\V{r}}{z}=\VE_z=h_z\VE_z$, so $h_z=1$ and $\VE_z=\VE_z$
 
-\paragraph{3.10.7}
+-----
+
+### 3.10.7
+
 From Exercise 3.10.6,
 
 $\cos\varphi\VE_\rho-\sin\varphi\VE_\varphi=(\cos^2\varphi+\sin^2\varphi)\VE_x=\VE_x$, so $\VE_x=\cos\varphi\VE_\rho-\sin\varphi\VE_\varphi$
@@ -1429,64 +1469,87 @@ $\sin\varphi\VE_\rho+\cos\varphi\VE_\varphi=(\sin^2\varphi+\cos^2\varphi)\VE_y=\
 
 $\VE_z=\VE_z$
 
-\paragraph{3.10.8}
+-----
+
+### 3.10.8
+
 From exercise 3.10.6,
 $\pdv{\VE_\rho}{\varphi}=-\VE_x\sin\varphi+\VE_y\cos\varphi=\VE_\varphi$, and $\pdv{\VE_\varphi}{\varphi}=-\VE_x\cos\varphi-\VE_y\sin\varphi=-\VE_\rho$. All the other derivatives vanish because $\VE_\rho$ and $\VE_\varphi$ are functions of $\varphi$ only, and $\VE_z$ is a constant vector.
 
-\paragraph{3.10.9}
-From exercise 3.10.8, $\pdv{\VE_\rho}{\varphi}=\VE_\varphi$ and $\pdv{\VE_\varphi}{\varphi}=-\VE_\rho$, so 
-\[
-\del\cdot\V{V}=(\VE_\rho\pdv{}{\rho}+\VE_\varphi\frac{1}{\rho}\pdv{}{\varphi}+\VE_z\pdv{}{z})\cdot(\VE_\rho V_\rho+\VE_\varphi V_\varphi+\VE_z V_z)
-\]
-\[
-=\VE_\rho\cdot(\VE_\rho\pdv{V_\rho}{\rho}+\VE_\varphi\pdv{V_\rho}{\rho}+\VE_z\pdv{V_z}{\rho})
-+\frac{1}{\rho}\VE_\varphi\cdot(\VE_\varphi V_\rho+\VE_\rho\pdv{V_\rho}{\varphi}-\VE_\rho V_\varphi+\VE_\varphi\pdv{V_\varphi}{\varphi}+\VE_z\pdv{V_z}{\varphi})+\VE_z\cdot(\VE_z\pdv{V_z}{z})
-\]
-\[
-=\pdv{V_\rho}{\rho}+\frac{V_\rho}{\rho}+\frac{1}{\rho}\pdv{V_\varphi}{\varphi}+\pdv{V_z}{z}
-\]
-\[
-=\frac{1}{\rho}\pdv{(\rho V_\rho)}{\rho}+\frac{1}{\rho}\pdv{V_\varphi}{\varphi}+\pdv{V_z}{z}
-\]
+-----
 
-\paragraph{3.10.10}
+### 3.10.9
+
+From exercise 3.10.8, $\pdv{\VE_\rho}{\varphi}=\VE_\varphi$ and $\pdv{\VE_\varphi}{\varphi}=-\VE_\rho$, so 
+
+$$
+\begin{aligned}
+\del\cdot\V{V}&=(\VE_\rho\pdv{}{\rho}+\VE_\varphi\frac{1}{\rho}\pdv{}{\varphi}+\VE_z\pdv{}{z})\cdot(\VE_\rho V_\rho+\VE_\varphi V_\varphi+\VE_z V_z)\\
+&=\VE_\rho\cdot(\VE_\rho\pdv{V_\rho}{\rho}+\VE_\varphi\pdv{V_\rho}{\rho}+\VE_z\pdv{V_z}{\rho})
++\frac{1}{\rho}\VE_\varphi\cdot(\VE_\varphi V_\rho+\VE_\rho\pdv{V_\rho}{\varphi}-\VE_\rho V_\varphi+\VE_\varphi\pdv{V_\varphi}{\varphi}+\VE_z\pdv{V_z}{\varphi})+\VE_z\cdot(\VE_z\pdv{V_z}{z})\\
+&=\pdv{V_\rho}{\rho}+\frac{V_\rho}{\rho}+\frac{1}{\rho}\pdv{V_\varphi}{\varphi}+\pdv{V_z}{z}\\
+&=\frac{1}{\rho}\pdv{(\rho V_\rho)}{\rho}+\frac{1}{\rho}\pdv{V_\varphi}{\varphi}+\pdv{V_z}{z}
+\end{aligned}
+$$
+
+-----
+
+### 3.10.10
+
 (a) From exercise 3.10.6, $\VE_\rho\rho+\VE_z z=\VE_x\rho\cos\varphi+\VE_y\rho\sin\varphi+\VE_z z=\VE_x x+\VE_y y+\VE_z z=\V{r}$
 
-(b) \[\del\cdot\V{r}=\frac{1}{\rho}\pdv{}{\rho}(\rho^2)+\pdv{V_z}{z}=2+1=3\] 
-\[
-\del\times\V{r}=\frac{1}{\rho}
+(b) 
+
+$$
+\begin{aligned}
+\del\cdot\V{r}&=\frac{1}{\rho}\pdv{}{\rho}(\rho^2)+\pdv{V_z}{z}=2+1=3\\
+\del\times\V{r}&=\frac{1}{\rho}
 \begin{vmatrix}
 \VE_\rho&\VE_\varphi\rho&\VE_z\\
 \pdv{}{\rho}&\pdv{}{\varphi}&\pdv{}{z}\\
 \rho&0&z
 \end{vmatrix}=0
-\]
+\end{aligned}
+$$
 
-\paragraph{3.10.11}
+-----
+
+### 3.10.11
+
 (a) A point $P=(\rho\cos\varphi,\rho\sin\varphi,z)$ after reflection would be $P'=(-\rho\cos\varphi,-\rho\sin\varphi,-z)=(\rho\cos(\varphi\pm\pi),\rho\sin(\varphi\pm\pi),-z)$, so it corresponds to the transformation 
-\[
+
+$$
+\begin{aligned}
 \rho\rightarrow\rho,\quad\varphi\rightarrow\varphi\pm\pi,\quad z\rightarrow-z
-\]
+\end{aligned}
+$$
 
 (b) 
-\[
-\VE_\rho'=\VE_x\cos(\varphi\pm\pi)+\VE_y\sin(\varphi\pm\pi)=-\VE_x\cos\varphi-\VE_y\sin\varphi=-\VE_\rho
-\]
-\[
-\VE_\varphi'=-\VE_x\sin(\varphi\pm\pi)+\VE_y\cos(\varphi\pm\pi)=\VE_x\sin\varphi-\VE_y\cos\varphi=-\VE_\varphi
-\]
-\[
-\VE_z'=\VE_z
-\]
 
-\paragraph{3.10.12}
+$$
+\begin{aligned}
+\VE_\rho'&=\VE_x\cos(\varphi\pm\pi)+\VE_y\sin(\varphi\pm\pi)=-\VE_x\cos\varphi-\VE_y\sin\varphi=-\VE_\rho\\
+\VE_\varphi'&=-\VE_x\sin(\varphi\pm\pi)+\VE_y\cos(\varphi\pm\pi)=\VE_x\sin\varphi-\VE_y\cos\varphi=-\VE_\varphi\\
+\VE_z'&=\VE_z
+\end{aligned}
+$$
+
+-----
+
+### 3.10.12
+
 (a) 
-\[
+
+$$
+\begin{aligned}
 \V{v}=\boldsymbol{\omega}\times\V{r}=(\omega\VE_z)\times(\rho\VE_\varphi+z\VE_z)=\omega\rho\VE_\varphi
-\]
+\end{aligned}
+$$
 
 (b)
-\[
+
+$$
+\begin{aligned}
 \del\times\V{v}=\frac{1}{\rho}
 \begin{vmatrix}
 \VE_\rho&\VE_\varphi\rho&\VE_z\\
@@ -1494,36 +1557,36 @@ From exercise 3.10.8, $\pdv{\VE_\rho}{\varphi}=\VE_\varphi$ and $\pdv{\VE_\varph
 0&\omega\rho^2&0
 \end{vmatrix}=
 \frac{1}{\rho}(2\omega\rho)\VE_z=2\boldsymbol{\omega}
-\]
+\end{aligned}
+$$
 
-\paragraph{3.10.13}
-\[
-\frac{d\VE_\rho}{dt}=-\VE_x\dot{\varphi}\sin\varphi+\VE_y\dot{\varphi}\cos\varphi=\VE_\varphi\dot{\varphi}
-\]
-\[
-\frac{d\VE_\varphi}{dt}=-\VE_x\dot{\varphi}\cos\varphi-\VE_y\dot{\varphi}\sin\varphi=-\VE_\rho\dot{\varphi}
-\]
-\[
-\frac{d\VE_z}{dt}=0
-\]
-\[
-\V{r}=\VE_\rho\rho+\VE_z z
-\]
-\[
-\V{v}=\dot{\V{r}}=\VE_\varphi\dot{\varphi}\rho+\VE_\rho\dot{\rho}+\VE_z\dot{z}\]
-\[
-=\VE_\rho\dot{\rho}+\VE_\varphi\rho\dot{\varphi}+\VE_z\dot{z}
-\]
-\[
-\V{a}=\dot{\V{v}}=\VE_\varphi\dot{\varphi}\dot{\rho}+\VE_\rho\Ddot{\rho}-\VE_\rho\dot{\varphi}\rho\dot{\varphi}+\VE_\rho(\dot{\rho}\dot{\varphi}+\rho\Ddot{\varphi})+\VE_z\Ddot{z}
-\]
-\[
-=\VE_\rho(\Ddot{\rho}-\rho\dot{\varphi
-}^2)+\VE_\varphi(\rho\Ddot{\varphi}+2\dot{\rho}\dot{\varphi})+\VE_z\Ddot{z}
-\]
 
-\paragraph{3.10.14}
-\[
+-----
+
+### 3.10.13
+
+$$
+\begin{aligned}
+\frac{d\VE_\rho}{dt}&=-\VE_x\dot{\varphi}\sin\varphi+\VE_y\dot{\varphi}\cos\varphi=\VE_\varphi\dot{\varphi}\\
+\frac{d\VE_\varphi}{dt}&=-\VE_x\dot{\varphi}\cos\varphi-\VE_y\dot{\varphi}\sin\varphi=-\VE_\rho\dot{\varphi}\\
+\frac{d\VE_z}{dt}&=0\\
+\V{r}&=\VE_\rho\rho+\VE_z z\\
+\V{v}&=\dot{\V{r}}=\VE_\varphi\dot{\varphi}\rho+\VE_\rho\dot{\rho}+\VE_z\dot{z}\\
+&=\VE_\rho\dot{\rho}+\VE_\varphi\rho\dot{\varphi}+\VE_z\dot{z}\\
+\V{a}&=\dot{\V{v}}=\VE_\varphi\dot{\varphi}\dot{\rho}+\VE_\rho\ddot{\rho}-\VE_\rho\dot{\varphi}\rho\dot{\varphi}+\VE_\rho(\dot{\rho}\dot{\varphi}+\rho\ddot{\varphi})+\VE_z\ddot{z}\\
+&=\VE_\rho(\ddot{\rho}-\rho\dot{\varphi
+}^2)+\VE_\varphi(\rho\ddot{\varphi}+2\dot{\rho}\dot{\varphi})+\VE_z\ddot{z}
+\end{aligned}
+$$
+
+
+-----
+
+### 3.10.14
+
+
+$$
+\begin{aligned}
 \del\times\V{v}=\frac{1}{\rho}
 \begin{vmatrix}
 \VE_\rho&\VE_\varphi\rho&\VE_z\\
@@ -1531,10 +1594,15 @@ From exercise 3.10.8, $\pdv{\VE_\rho}{\varphi}=\VE_\varphi$ and $\pdv{\VE_\varph
 V_\rho(\rho,\varphi)&\rho V_\varphi(\rho,\varphi)&0
 \end{vmatrix}
 =\frac{1}{\rho}\left[\VE_z\left(\pdv{(\rho V_\varphi)}{\rho}-\pdv{V_\rho}{\varphi}\right) \right]
-\]
+\end{aligned}
+$$
 
-\paragraph{3.10.15}
-\[
+-----
+
+### 3.10.15
+
+$$
+\begin{aligned}
 \V{B}=\del\times\V{A}=\frac{1}{\rho}
 \begin{vmatrix}
 \VE_\rho&\VE_\varphi\rho&\VE_z\\
@@ -1542,16 +1610,26 @@ V_\rho(\rho,\varphi)&\rho V_\varphi(\rho,\varphi)&0
 0&0&\frac{\mu I}{2\pi}\ln(\frac{1}{\rho})
 \end{vmatrix}
 =\frac{1}{\rho}\left[-\VE_\varphi\rho\frac{\mu I}{2\pi}\rho\frac{-1}{\rho^2} \right]=\VE_\varphi\frac{\mu I}{2\pi\rho}
-\]
+\end{aligned}
+$$
 
-\paragraph{3.10.16}
+-----
+
+### 3.10.16
+
 (a) From exercise 3.10.7, we have
-\[
+
+$$
+\begin{aligned}
 \V{F}=-(\VE_\rho\cos\varphi-\VE_\varphi\sin\varphi)\frac{\rho\sin\varphi}{\rho^2}+(\VE_\rho\sin\varphi+\VE_\varphi\cos\varphi)\frac{\rho\cos\varphi}{\rho^2}=\VE_\rho\frac{1}{\rho}
-\]
+\end{aligned}
+$$
+
 
 (b) 
-\[
+
+$$
+\begin{aligned}
 \del\times\V{F}=\frac{1}{\rho}
 \begin{vmatrix}
 \VE_\rho&\VE_\varphi\rho&\VE_z\\
@@ -1559,94 +1637,136 @@ V_\rho(\rho,\varphi)&\rho V_\varphi(\rho,\varphi)&0
 0&\rho\frac{1}{\rho}&0
 \end{vmatrix}
 =0
-\]
+\end{aligned}
+$$
 
 (c)
-\[
+
+$$
+\begin{aligned}
 \oint(\VE_\varphi\frac{1}{\rho})\cdot(\VE_\rho d\rho+\VE_\varphi\rho d\varphi+\VE_z dz)=\oint d\varphi=2\pi
-\]
+\end{aligned}
+$$
 
 (d) The range of $\varphi$ of cylindrical coordinates is $0\leq\varphi<2\pi$, so $\int_0^{2\pi}d\varphi$ is not defined.
 
-\paragraph{3.10.17}
-\[
+-----
+
+### 3.10.17
+
+$$
+\begin{aligned}
 (\V{B}\cdot\del)\V{B}=B_\varphi\frac{1}{\rho}\pdv{}{\varphi}(\VE_\varphi B_\varphi(\rho))=\frac{B_\varphi}{\rho}[-\VE_\rho B_\varphi+0]=-\VE_\rho\frac{B_\varphi^2}{\rho}
-\]
+\end{aligned}
+$$
 
-\paragraph{3.10.18}
-\[
-\pdv{\V{r}}{r}=\VE_x\sin\theta\cos\varphi+\VE_y\sin\theta\sin\varphi+\VE_z\cos\theta=h_r\VE_r\]
-so
-\[h_r=1,\quad \VE_r=\VE_x\sin\theta\cos\varphi+\VE_y\sin\theta\sin\varphi+\VE_z\cos\theta
-\]
-\[
-\pdv{\V{r}}{\theta}=\VE_xr\cos\theta\cos\varphi+\VE_y r\cos\theta\sin\varphi-\VE_z r\sin\theta=h_\theta\VE_\theta\]
-so
-\[h_\theta=r,\quad \VE_\theta=\VE_x\cos\theta\cos\varphi+\VE_y\cos\theta\sin\varphi-\VE_z\sin\theta
-\]
-\[
-\pdv{\V{r}}{\varphi}=-\VE_x r\sin\theta\sin\varphi+\VE_y r\sin\theta\cos\varphi=h_\varphi\VE_\varphi
-\]
-so
-\[
-h_\varphi=r\sin\theta,\quad\VE_\varphi=-\VE_x\sin\varphi+\VE_y\cos\varphi
-\]
+-----
 
-\paragraph{3.10.19}
+### 3.10.18
+
+$$
+\begin{aligned}
+\pdv{\V{r}}{r}&=\VE_x\sin\theta\cos\varphi+\VE_y\sin\theta\sin\varphi+\VE_z\cos\theta=h_r\VE_r\\
+h_r&=1,\quad \VE_r=\VE_x\sin\theta\cos\varphi+\VE_y\sin\theta\sin\varphi+\VE_z\cos\theta\\
+\pdv{\V{r}}{\theta}&=\VE_xr\cos\theta\cos\varphi+\VE_y r\cos\theta\sin\varphi-\VE_z r\sin\theta=h_\theta\VE_\theta\\
+h_\theta&=r,\quad \VE_\theta=\VE_x\cos\theta\cos\varphi+\VE_y\cos\theta\sin\varphi-\VE_z\sin\theta\\
+\pdv{\V{r}}{\varphi}&=-\VE_x r\sin\theta\sin\varphi+\VE_y r\sin\theta\cos\varphi=h_\varphi\VE_\varphi\\
+h_\varphi&=r\sin\theta,\quad\VE_\varphi=-\VE_x\sin\varphi+\VE_y\cos\varphi
+\end{aligned}
+$$
+
+-----
+
+### 3.10.19
+
+$$
 \begin{equation}
     \VE_r=\VE_x\sin\theta\cos\varphi+\VE_y\sin\theta\sin\varphi+\VE_z\cos\theta
 \end{equation}
+$$
+
+$$
 \begin{equation}
     \VE_\theta=\VE_x\cos\theta\cos\varphi+\VE_y\cos\theta\sin\varphi-\VE_z\sin\theta
 \end{equation}
+$$
+
+$$
 \begin{equation}
     \VE_\varphi=-\VE_x\sin\varphi+\VE_y\cos\varphi
 \end{equation}
+$$
+
 $\cos\theta\times(1)-\sin\theta\times(2)$, we get 
-\[
+
+$$
+\begin{aligned}
 \VE_z=\VE_r\cos\theta-\VE_\theta\sin\theta
-\]
+\end{aligned}
+$$
+
 $\sin\theta\times(1)+\cos\theta\times(2)$, we get 
+
+$$
 \begin{equation}
     \VE_r\sin\theta+\VE_\theta\cos\theta=\VE_x\cos\varphi+\VE_y\sin\varphi
 \end{equation}
-$\cos\varphi\times(4)-\sin\varphi\times(3)$, we get
-\[
-\VE_x=\VE_r\sin\theta\cos\varphi+\VE_\theta\cos\theta\cos\varphi-\VE_\varphi\sin\varphi
-\]
-$\cos\varphi\times(3)+\sin\varphi\times(4)$, we get
-\[
-\VE_y=\VE_r\sin\theta\sin\varphi+\VE_\theta\cos\theta\sin\varphi+\VE_\varphi\cos\varphi
-\]
+$$
 
-\paragraph{3.10.20}
-(a) The point $\V{r}=(0,0,0)$ is related to $\V{r'}=(0,\theta,\varphi)$ for any $0\leq\theta\leq\pi$ and $0\leq\varphi<2\pi$. If $\V{r'}=\M{B}\V{r}$, then $\V{r}=(0,0,0)$ can only be related to $\V{r'}=(0,0,0)$, a contradiction, so the matrix $\M{B}$ cannot exist.\\
+$\cos\varphi\times(4)-\sin\varphi\times(3)$, we get
+
+$$
+\begin{aligned}
+\VE_x=\VE_r\sin\theta\cos\varphi+\VE_\theta\cos\theta\cos\varphi-\VE_\varphi\sin\varphi
+\end{aligned}
+$$
+
+$\cos\varphi\times(3)+\sin\varphi\times(4)$, we get
+
+$$
+\begin{aligned}
+\VE_y=\VE_r\sin\theta\sin\varphi+\VE_\theta\cos\theta\sin\varphi+\VE_\varphi\cos\varphi
+\end{aligned}
+$$
+
+-----
+
+### 3.10.20
+
+(a) The point $\V{r}=(0,0,0)$ is related to $\V{r'}=(0,\theta,\varphi)$ for any $0\leq\theta\leq\pi$ and $0\leq\varphi<2\pi$. If $\V{r'}=\M{B}\V{r}$, then $\V{r}=(0,0,0)$ can only be related to $\V{r'}=(0,0,0)$, a contradiction, so the matrix $\M{B}$ cannot exist.
+
 (If $x,y,z\neq0$, then simply 
-\[\M{B}=
+
+$$
+\begin{aligned}
+\M{B}=
 \begin{pmatrix}
 \frac{r}{x}&0&0\\
 0&\frac{\theta}{y}&0\\
 0&0&\frac{\varphi}{z}
 \end{pmatrix}
-\]
+\end{aligned}
+$$
+
 satisfies the condition.)
 
 (b)
 From exercise 3.10.19,
-\[
-\V{V}=\VE_xV_x+\VE_yV_y+\VE_zV_z
-\]
-\[
-=(\VE_r\sin\theta\cos\varphi+\VE_\theta\cos\theta\cos\varphi-\VE_\varphi\sin\varphi)V_x
-\]
-\[+(\VE_r\sin\theta\sin\varphi+\VE_\theta\cos\theta\sin\varphi+\VE_\varphi\cos\varphi)V_y\]
-\[+(\VE_r\cos\theta-\VE_\theta\sin\theta)V_z
-\]
-\[
-=\VE_rV_r+\VE_\theta V_\theta+\VE_\varphi V_\varphi
-\]
+
+$$
+\begin{aligned}
+\V{V}&=\VE_xV_x+\VE_yV_y+\VE_zV_z\\
+&=(\VE_r\sin\theta\cos\varphi+\VE_\theta\cos\theta\cos\varphi-\VE_\varphi\sin\varphi)V_x\\
+&+(\VE_r\sin\theta\sin\varphi+\VE_\theta\cos\theta\sin\varphi\\
+&+\VE_\varphi\cos\varphi)V_y+(\VE_r\cos\theta-\VE_\theta\sin\theta)V_z\\
+&=\VE_rV_r+\VE_\theta V_\theta+\VE_\varphi V_\varphi
+\end{aligned}
+$$
+
 which is
-\[
+
+$$
+\begin{aligned}
 \begin{pmatrix}
 V_r\\V_\theta\\V_\varphi
 \end{pmatrix}=
@@ -1658,45 +1778,46 @@ V_r\\V_\theta\\V_\varphi
 \begin{pmatrix}
 V_x\\V_y\\V_z
 \end{pmatrix}
-\]
+\end{aligned}
+$$
+
 Let the matrix be $\M{M}$, and let its transpose be $\V{M}^T$, then it can be verified that $\M{M}\M{M}^T=\boldsymbol{1}$, so it is orthogonal.
 
-\paragraph{3.10.21}
+-----
+
+### 3.10.21
+
 (Let $\varphi$ of spherical coordinate be $\phi$, and $\varphi$ of cylindrical coordinate remain the same.)
 The relations between the two coordinates are $\rho=r\sin\theta$, $\varphi=\phi$, $z=r\cos\theta$.
-\[
-\VE_r=\pdv{\V{r}}{r}=\pdv{\V{r}}{\rho}\pdv{\rho}{r}+\pdv{\V{r}}{\varphi}\pdv{\varphi}{r}+\pdv{\V{r}}{z}\pdv{z}{r}
-=\VE_\rho\sin\theta+\VE_\varphi\rho\cdot0+\VE_z\cos\theta
-\]
-\[
-=\VE_\rho\sin\theta+\VE_z\cos\theta
-\]
-\[
-\VE_\theta=\frac{1}{r}\pdv{\V{r}}{\theta}=\frac{1}{r}(\pdv{\V{r}}{\rho}\pdv{\rho}{\theta}+\pdv{\V{r}}{\varphi}\pdv{\varphi}{\theta}+\pdv{\V{r}}{z}\pdv{z}{\theta})=
-\frac{1}{r}\VE_\rho r\cos\theta+\frac{1}{r}\VE_\varphi\rho\cdot0+\frac{1}{r}\VE_z(-r\sin\theta)
-\]
-\[
-=\VE_\rho\cos\theta-\VE_z\sin\theta
-\]
-\[
-\VE_\phi=\frac{1}{r\sin\theta}\pdv{\V{r}}{\phi}=\frac{1}{r\sin\theta}(\pdv{\V{r}}{\rho}\pdv{\rho}{\phi}+\pdv{\V{\phi}}{\varphi}\pdv{\varphi}{\phi}+\pdv{\V{r}}{z}\pdv{z}{\phi})=
-\frac{1}{r\sin\theta}\VE_\varphi\rho\cdot1
-\]
-\[
-=\VE_\varphi
-\]
+
+$$
+\begin{aligned}
+\VE_r&=\pdv{\V{r}}{r}=\pdv{\V{r}}{\rho}\pdv{\rho}{r}+\pdv{\V{r}}{\varphi}\pdv{\varphi}{r}+\pdv{\V{r}}{z}\pdv{z}{r}
+=\VE_\rho\sin\theta+\VE_\varphi\rho\cdot0+\VE_z\cos\theta\\
+&=\VE_\rho\sin\theta+\VE_z\cos\theta\\
+\VE_\theta&=\frac{1}{r}\pdv{\V{r}}{\theta}=\frac{1}{r}(\pdv{\V{r}}{\rho}\pdv{\rho}{\theta}+\pdv{\V{r}}{\varphi}\pdv{\varphi}{\theta}+\pdv{\V{r}}{z}\pdv{z}{\theta})=
+\frac{1}{r}\VE_\rho r\cos\theta+\frac{1}{r}\VE_\varphi\rho\cdot0+\frac{1}{r}\VE_z(-r\sin\theta)\\
+&=\VE_\rho\cos\theta-\VE_z\sin\theta\\
+\VE_\phi&=\frac{1}{r\sin\theta}\pdv{\V{r}}{\phi}=\frac{1}{r\sin\theta}(\pdv{\V{r}}{\rho}\pdv{\rho}{\phi}+\pdv{\V{\phi}}{\varphi}\pdv{\varphi}{\phi}+\pdv{\V{r}}{z}\pdv{z}{\phi})=
+\frac{1}{r\sin\theta}\VE_\varphi\rho\cdot1\\
+&=\VE_\varphi
+\end{aligned}
+$$
+
 so
-\[
-\V{V}=V_r\VE_r+V_\theta\VE_\theta+V_\phi\VE_\phi
-\]
-\[
-=V_r(\VE_\rho\sin\theta+\VE_z\cos\theta)+V_\theta(\VE_\rho\cos\theta-\VE_z\sin\theta)+V_\phi\VE_\varphi
-\]
-\[
-=V_\rho\VE_\rho+V_\varphi\VE_\varphi+V_z\VE_z
-\]
+
+$$
+\begin{aligned}
+\V{V}&=V_r\VE_r+V_\theta\VE_\theta+V_\phi\VE_\phi\\
+&=V_r(\VE_\rho\sin\theta+\VE_z\cos\theta)+V_\theta(\VE_\rho\cos\theta-\VE_z\sin\theta)+V_\phi\VE_\varphi\\
+&=V_\rho\VE_\rho+V_\varphi\VE_\varphi+V_z\VE_z
+\end{aligned}
+$$
+
 which is 
-\[
+
+$$
+\begin{aligned}
 \begin{pmatrix}
 V_\rho\\V_\varphi\\V_z
 \end{pmatrix}=
@@ -1708,20 +1829,29 @@ V_\rho\\V_\varphi\\V_z
 \begin{pmatrix}
 V_r\\V_\theta\\V_\phi
 \end{pmatrix}
-\]
+\end{aligned}
+$$
+
 Let the matrix be $\M{M}$. Note that it is orthogonal, so the inverse transformation is 
-\[
+
+$$
+\begin{aligned}
 \M{M}^{-1}=\M{M}^T=
 \begin{pmatrix}
 \sin\theta&0&\cos\theta\\
 \cos\theta&0&-\sin\theta\\
 0&1&0
 \end{pmatrix}
-\]
+\end{aligned}
+$$
 
-\paragraph{3.10.22}
+-----
+
+### 3.10.22
+
 (a) 
-\begin{align*}
+$$
+\begin{aligned}
     \pdv{\VE_r}{r}&=0 &
     \pdv{\VE_r}{\theta}&=\VE_\theta&
     \pdv{\VE_r}{\varphi}&=\VE_\varphi\sin\theta\\
@@ -1731,267 +1861,310 @@ Let the matrix be $\M{M}$. Note that it is orthogonal, so the inverse transforma
     \pdv{\VE_\varphi}{r}&=0 &
     \pdv{\VE_\varphi}{\theta}&=0&
     \pdv{\VE_\varphi}{\varphi}&=-\VE_r\sin\theta-\VE_\theta\cos\theta \\
-\end{align*}
+\end{aligned}
+$$
 
 (b)
-\[
-\del\cdot\del\psi=(\VE_r\pdv{}{r}+\VE_\theta\frac{1}{r}\pdv{}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi})\cdot(\VE_r\pdv{\psi}{r}+\VE_\theta\frac{1}{r}\pdv{\psi}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{\psi}{\varphi})
-\]
-\[
-=\VE_r\cdot\left(\VE_r\pdv{^2\psi}{r^2}+\VE_\theta(\cdots)+\VE_\varphi(\cdots) \right)
-+\frac{1}{r}\VE_\theta\cdot\left(\VE_\theta\pdv{\psi}{r}+\VE_\theta\frac{1}{r}\pdv{^2\psi}{\theta^2}+\VE_r(\cdots)+\VE_\varphi(\cdots) \right)
-\]
-\[
-+\frac{1}{r\sin\theta}\VE_\varphi\cdot\left(\VE_\varphi\sin\theta\pdv{\psi}{r}+\VE_\varphi\cos\theta\frac{1}{r}\pdv{\psi}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{^2\psi}{\varphi^2}+\VE_r(\cdots)+\VE_\theta(\cdots) \right)
-\]
-\[
-=\frac{2}{r}\pdv{\psi}{r}+\pdv{^2\psi}{r^2}+\frac{\cos\theta}{r^2\sin\theta}\pdv{\psi}{\theta}+\frac{1}{r^2}\pdv{^2\psi}{\theta^2}+\frac{1}{r^2\sin^2\theta}\pdv{^2\psi}{\varphi^2}
-\]
-\[
-=\frac{1}{r^2\sin\theta}\left[\sin\theta\pdv{}{r}(r^2\pdv{\psi}{r})+\pdv{}{\theta}(\sin\theta\pdv{\psi}{\theta})+\frac{1}{\sin\theta}\pdv{^2\psi}{\varphi^2} \right]
-\]
 
-\paragraph{3.10.23}
+$$
+\begin{aligned}
+\del\cdot\del\psi&=(\VE_r\pdv{}{r}+\VE_\theta\frac{1}{r}\pdv{}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi})\cdot(\VE_r\pdv{\psi}{r}+\VE_\theta\frac{1}{r}\pdv{\psi}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{\psi}{\varphi})\\
+&=\VE_r\cdot\left(\VE_r\pdv{^2\psi}{r^2}+\VE_\theta(\cdots)+\VE_\varphi(\cdots) \right)
++\frac{1}{r}\VE_\theta\cdot\left(\VE_\theta\pdv{\psi}{r}+\VE_\theta\frac{1}{r}\pdv{^2\psi}{\theta^2}+\VE_r(\cdots)+\VE_\varphi(\cdots) \right)\\
+&+\frac{1}{r\sin\theta}\VE_\varphi\cdot\left(\VE_\varphi\sin\theta\pdv{\psi}{r}+\VE_\varphi\cos\theta\frac{1}{r}\pdv{\psi}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{^2\psi}{\varphi^2}+\VE_r(\cdots)+\VE_\theta(\cdots) \right)\\
+&=\frac{2}{r}\pdv{\psi}{r}+\pdv{^2\psi}{r^2}+\frac{\cos\theta}{r^2\sin\theta}\pdv{\psi}{\theta}+\frac{1}{r^2}\pdv{^2\psi}{\theta^2}+\frac{1}{r^2\sin^2\theta}\pdv{^2\psi}{\varphi^2}\\
+&=\frac{1}{r^2\sin\theta}\left[\sin\theta\pdv{}{r}(r^2\pdv{\psi}{r})+\pdv{}{\theta}(\sin\theta\pdv{\psi}{\theta})+\frac{1}{\sin\theta}\pdv{^2\psi}{\varphi^2} \right]
+\end{aligned}
+$$
+
+-----
+
+### 3.10.23
+
 (a) $\boldsymbol{\omega}=\VE_z\omega=\VE_r\omega\cos\theta-\VE_\theta\omega\sin\theta$, so
-\[
+
+$$
+\begin{aligned}
 \V{v}=\boldsymbol{\omega}\times\V{r}=(\VE_r\omega\cos\theta-\VE_\theta\omega\sin\theta)\times(\VE_r r)=\VE_\varphi\omega r \sin\theta
-\]
+\end{aligned}
+$$
 
 (b)
-\[
-\del\times\V{v}=\frac{1}{r^2\sin\theta}
+
+$$
+\begin{aligned}
+\del\times\V{v}&=\frac{1}{r^2\sin\theta}
 \begin{vmatrix}
 \VE_r&\VE_\theta r&\VE_\varphi r\sin\theta\\
 \pdv{}{r}&\pdv{}{\theta}&\pdv{}{\varphi}\\
 0&0&\omega r^2\sin^2\theta
-\end{vmatrix}\]
-\[=\frac{1}{r^2\sin\theta}(\VE_r2\omega r^2\sin\theta\cos\theta-\VE_\theta2\omega r^2\sin^2\theta)\]
-\[=2\VE_r\omega\cos\theta-2\VE_\theta\omega\sin\theta=2\boldsymbol{\omega}
-\]
+\end{vmatrix}\\
+&=\frac{1}{r^2\sin\theta}(\VE_r2\omega r^2\sin\theta\cos\theta-\VE_\theta2\omega r^2\sin^2\theta)\\
+&=2\VE_r\omega\cos\theta-2\VE_\theta\omega\sin\theta=2\boldsymbol{\omega}
+\end{aligned}
+$$
 
-\paragraph{3.10.24}
-\[
-\del\times\V{V}=\frac{1}{r^2\sin\theta}
+-----
+
+### 3.10.24
+
+$$
+\begin{aligned}
+\del\times\V{V}&=\frac{1}{r^2\sin\theta}
 \begin{vmatrix}
 \VE_r&\VE_\theta r&\VE_\varphi r\sin\theta\\
 \pdv{}{r}&\pdv{}{\theta}&\pdv{}{\varphi}\\
 0&V_\theta&V_\varphi
-\end{vmatrix}
-\]
-\[
-=\frac{1}{r^2\sin\theta}\left[\VE_r(\pdv{V_\varphi}{\theta}-\pdv{V_\theta}{\varphi})-\VE_\theta r(\pdv{V_\varphi}{r})+\VE_\varphi r\sin\theta(\pdv{V_\theta}{r}) \right]
-\]
+\end{vmatrix}\\
+&=\frac{1}{r^2\sin\theta}\left[\VE_r(\pdv{V_\varphi}{\theta}-\pdv{V_\theta}{\varphi})-\VE_\theta r(\pdv{V_\varphi}{r})+\VE_\varphi r\sin\theta(\pdv{V_\theta}{r}) \right]
+\end{aligned}
+$$
+
 has no tangential components, so $\pdv{V_\varphi}{r}=\pdv{V_\theta}{r}=0$. That is, the tangential components of $\V{V}$ have no radial dependence.
 
-\paragraph{3.10.25}
+-----
+
+### 3.10.25
+
 (a) A point $P=(r\sin\theta\cos\varphi,r\sin\theta\sin\varphi,r\cos\theta)$ after reflection would become\\ $P'=(-r\sin\theta\cos\varphi,-r\sin\theta\sin\varphi,-r\cos\theta)=(r\sin(\pi-\theta)\cos(\varphi\pm\pi),r\sin(\pi-\theta)\sin(\varphi\pm\pi),r\cos(\pi-\theta))$, so it corresponds to the transformation 
-\[
+
+$$
+\begin{aligned}
 r\rightarrow r,\quad\theta\rightarrow\pi-\theta,\quad \varphi\rightarrow\varphi\pm\pi
-\]
+\end{aligned}
+$$
 
 (b) 
 
-\[\VE_r'=\VE_x\sin(\pi-\theta)\cos(\varphi\pm\pi)+\VE_y\sin(\pi-\theta)\sin(\varphi\pm\pi)+\VE_z\cos(\pi-\theta)=-\VE_r
-\]
-\[ \VE_\theta=\VE_x\cos(\pi-\theta)\cos(\varphi\pm\pi)+\VE_y\cos(\pi-\theta)\sin(\varphi\pm\pi)-\VE_z\sin(\pi-\theta)=\VE_\theta
-\]
-\[
-\VE_\varphi=-\VE_x\sin(\varphi\pm\pi)+\VE_y\cos(\varphi\pm\pi)=-\VE_\varphi
-\]
+$$
+\begin{aligned}
+\VE_r'&=\VE_x\sin(\pi-\theta)\cos(\varphi\pm\pi)+\VE_y\sin(\pi-\theta)\sin(\varphi\pm\pi)+\VE_z\cos(\pi-\theta)=-\VE_r\\
+\VE_\theta&=\VE_x\cos(\pi-\theta)\cos(\varphi\pm\pi)+\VE_y\cos(\pi-\theta)\sin(\varphi\pm\pi)-\VE_z\sin(\pi-\theta)=\VE_\theta\\
+\VE_\varphi&=-\VE_x\sin(\varphi\pm\pi)+\VE_y\cos(\varphi\pm\pi)=-\VE_\varphi
+\end{aligned}
+$$
 
-\paragraph{3.10.26}
+-----
+
+### 3.10.26
+
 (a)
-\[
-(\V{A}\cdot\del)\V{r}=(A_x\pdv{}{x}+A_y\pdv{}{y}+A_z\pdv{}{z})(x\VE_x+y\VE_y+z\VE_z)\]
-\[=A_x\VE_x+A_y\VE_y+A_z\VE_z=\V{A}
-\]
+
+$$
+\begin{aligned}
+(\V{A}\cdot\del)\V{r}&=(A_x\pdv{}{x}+A_y\pdv{}{y}+A_z\pdv{}{z})(x\VE_x+y\VE_y+z\VE_z)\\
+&=A_x\VE_x+A_y\VE_y+A_z\VE_z=\V{A}
+\end{aligned}
+$$
 
 (b) 
 From exercise 3.10.22
-\[
-(\V{A}\cdot\del)\V{r}=(A_r\pdv{}{r}+A_\theta\frac{1}{r}\pdv{}{\theta}+A_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi})(r\VE_r)=A_r\VE_r+A_\theta\frac{1}{r}r\VE_\theta+A_\varphi\frac{1}{r\sin\theta}r\sin\theta\VE_\varphi\]
-\[=A_r\VE_r+A_\theta\VE_\theta+A_\varphi\VE_\varphi=\V{A}
-\]
 
-\paragraph{3.10.27}
+$$
+\begin{aligned}
+(\V{A}\cdot\del)\V{r}=(A_r\pdv{}{r}+A_\theta\frac{1}{r}\pdv{}{\theta}+A_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi})(r\VE_r)=A_r\VE_r+A_\theta\frac{1}{r}r\VE_\theta+A_\varphi\frac{1}{r\sin\theta}r\sin\theta\VE_\varphi\\
+&=A_r\VE_r+A_\theta\VE_\theta+A_\varphi\VE_\varphi=\V{A}
+\end{aligned}
+$$
+
+-----
+
+### 3.10.27
+
 From exercise 3.10.22
-\[
-\frac{d\VE_r}{dt}=\pdv{\VE_r}{r}\pdv{r}{t}+\pdv{\VE_r}{\theta}\pdv{\theta}{t}+\pdv{\VE_r}{\varphi}\pdv{\varphi}{t}=\VE_\theta\dot{\theta}+\VE_\varphi\sin\theta\dot{\varphi}
-\]
-\[
-\frac{d\VE_\theta}{dt}=\pdv{\VE_\theta}{r}\pdv{r}{t}+\pdv{\VE_\theta}{\theta}\pdv{\theta}{t}+\pdv{\VE_\theta}{\varphi}\pdv{\varphi}{t}=-\VE_r\dot{\theta}+\VE_\varphi\cos\theta\dot{\varphi}
-\]
-\[
-\frac{d\VE_\varphi}{dt}=\pdv{\VE_\varphi}{r}\pdv{r}{t}+\pdv{\VE_\varphi}{\theta}\pdv{\theta}{t}+\pdv{\VE_\varphi}{\varphi}\pdv{\varphi}{t}=-\VE_r\sin\theta\dot{\varphi}-\VE_\theta\cos\theta\dot{\varphi}
-\]
-\[
-\V{r}=\VE_r r
-\]
-so
-\[
-\V{v}=\dot{\V{r}}=\VE_\theta\dot{\theta}r+\VE_\varphi\sin\theta\dot{\varphi}r+\VE_r\dot{r}
-\]
-\[
-=\VE_r\dot{r}+\VE_\theta r\dot{\theta}+\VE_\varphi r\sin\theta\dot{\varphi}
-\]
-\[
-\V{a}=\dot{\V{v}}=\VE_\theta\dot{r}\dot{\theta}+\VE_\varphi\dot{r}\sin\theta\dot{\varphi}+\VE_r\Ddot{r}-\VE_r r{\dot{\theta}}^2+\VE_\varphi r\cos\theta\dot{\theta}\dot{\varphi}+\VE_\theta\dot{r}\dot{\theta}+\VE_\theta r\Ddot{\theta}\]
-\[-\VE_r r\sin^2\theta{\dot{\varphi}}^2-\VE_\theta r\sin\theta\cos\theta{\dot{\varphi}}^2+\VE_\varphi\dot{r}\sin\theta\dot{\varphi}+\VE_\varphi r\cos\theta\dot{\theta}\dot{\varphi}+\VE_\varphi r\sin\theta\Ddot{\varphi}
-\]
-\[
-=\VE_r(\Ddot{r}-r{\dot{\theta}}^2-r\sin^2\theta{\dot{\varphi}}^2)+\VE_\theta(r\Ddot{\theta}+2\dot{r}\dot{\theta}-r\sin\theta\cos\theta{\dot{\varphi}}^2)+\VE_\varphi(r\sin\theta\Ddot{\varphi}+2\dot{r}\sin\theta\dot{\varphi}+2r\cos\theta\dot{\theta}\dot{\varphi})
-\]
 
-\paragraph{3.10.28}
-\[
-\del=\VE_x\pdv{}{x}+\VE_y\pdv{}{y}+\VE_z\pdv{}{z}
-\]
-\[
-=\VE_r\pdv{}{r}+\VE_\theta\frac{1}{r}\pdv{}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi}
-\]
-\[
-=(\VE_x\sin\theta\cos\varphi+\VE_y\sin\theta\sin\varphi+\VE_z\cos\theta)\pdv{}{r}
-\]
-\[
-+(\VE_x\cos\theta\cos\varphi+\VE_y\cos\theta\sin\varphi-\VE_z\sin\theta)\frac{1}{r}\pdv{}{\theta}
-\]
-\[
-+(-\VE_x\sin\varphi+\VE_y\cos\varphi)\frac{1}{r\sin\theta}\pdv{}{\varphi}
-\]
-\[
-=\VE_x(\sin\theta\cos\varphi\pdv{}{r}+\cos\theta\cos\varphi\frac{1}{r}\pdv{}{\theta}-\frac{\sin\varphi}{r\sin\theta}\pdv{}{\varphi})
-\]
-\[
-+\VE_y(\sin\theta\sin\varphi\pdv{}{r}+\cos\theta\sin\varphi\frac{1}{r}\pdv{}{\theta}+\frac{\cos\varphi}{r\sin\theta}\pdv{}{\varphi})
-\]
-\[
-+\VE_z(\cos\theta\pdv{}{r}-\sin\theta\frac{1}{r}\pdv{}{\theta})
-\]
+$$
+\begin{aligned}
+\frac{d\VE_r}{dt}&=\pdv{\VE_r}{r}\pdv{r}{t}+\pdv{\VE_r}{\theta}\pdv{\theta}{t}+\pdv{\VE_r}{\varphi}\pdv{\varphi}{t}=\VE_\theta\dot{\theta}+\VE_\varphi\sin\theta\dot{\varphi}\\
+\frac{d\VE_\theta}{dt}&=\pdv{\VE_\theta}{r}\pdv{r}{t}+\pdv{\VE_\theta}{\theta}\pdv{\theta}{t}+\pdv{\VE_\theta}{\varphi}\pdv{\varphi}{t}=-\VE_r\dot{\theta}+\VE_\varphi\cos\theta\dot{\varphi}\\
+\frac{d\VE_\varphi}{dt}&=\pdv{\VE_\varphi}{r}\pdv{r}{t}+\pdv{\VE_\varphi}{\theta}\pdv{\theta}{t}+\pdv{\VE_\varphi}{\varphi}\pdv{\varphi}{t}=-\VE_r\sin\theta\dot{\varphi}-\VE_\theta\cos\theta\dot{\varphi}\\
+\V{r}&=\VE_r r
+\end{aligned}
+$$
+
+so
+
+$$
+\begin{aligned}
+\V{v}&=\dot{\V{r}}=\VE_\theta\dot{\theta}r+\VE_\varphi\sin\theta\dot{\varphi}r+\VE_r\dot{r}\\
+&=\VE_r\dot{r}+\VE_\theta r\dot{\theta}+\VE_\varphi r\sin\theta\dot{\varphi}\\
+\V{a}&=\dot{\V{v}}=\VE_\theta\dot{r}\dot{\theta}+\VE_\varphi\dot{r}\sin\theta\dot{\varphi}+\VE_r\ddot{r}-\VE_r r{\dot{\theta}}^2+\VE_\varphi r\cos\theta\dot{\theta}\dot{\varphi}+\VE_\theta\dot{r}\dot{\theta}+\VE_\theta r\ddot{\theta}\\
+&-\VE_r r\sin^2\theta{\dot{\varphi}}^2-\VE_\theta r\sin\theta\cos\theta{\dot{\varphi}}^2+\VE_\varphi\dot{r}\sin\theta\dot{\varphi}+\VE_\varphi r\cos\theta\dot{\theta}\dot{\varphi}+\VE_\varphi r\sin\theta\ddot{\varphi}\\
+&=\VE_r(\Ddot{r}-r{\dot{\theta}}^2-r\sin^2\theta{\dot{\varphi}}^2)+\VE_\theta(r\Ddot{\theta}+2\dot{r}\dot{\theta}-r\sin\theta\cos\theta{\dot{\varphi}}^2)+\VE_\varphi(r\sin\theta\Ddot{\varphi}+2\dot{r}\sin\theta\dot{\varphi}+2r\cos\theta\dot{\theta}\dot{\varphi})
+\end{aligned}
+$$
+
+-----
+
+### 3.10.28
+
+$$
+\begin{aligned}
+\del&=\VE_x\pdv{}{x}+\VE_y\pdv{}{y}+\VE_z\pdv{}{z}\\
+&=\VE_r\pdv{}{r}+\VE_\theta\frac{1}{r}\pdv{}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi}\\
+&
+=(\VE_x\sin\theta\cos\varphi+\VE_y\sin\theta\sin\varphi+\VE_z\cos\theta)\pdv{}{r}\\
+&+(\VE_x\cos\theta\cos\varphi+\VE_y\cos\theta\sin\varphi-\VE_z\sin\theta)\frac{1}{r}\pdv{}{\theta}\\
+&+(-\VE_x\sin\varphi+\VE_y\cos\varphi)\frac{1}{r\sin\theta}\pdv{}{\varphi}\\
+&=\VE_x(\sin\theta\cos\varphi\pdv{}{r}+\cos\theta\cos\varphi\frac{1}{r}\pdv{}{\theta}-\frac{\sin\varphi}{r\sin\theta}\pdv{}{\varphi})\\
+&+\VE_y(\sin\theta\sin\varphi\pdv{}{r}+\cos\theta\sin\varphi\frac{1}{r}\pdv{}{\theta}+\frac{\cos\varphi}{r\sin\theta}\pdv{}{\varphi})\\
+&+\VE_z(\cos\theta\pdv{}{r}-\sin\theta\frac{1}{r}\pdv{}{\theta})
+\end{aligned}
+$$
+
 equating the $x,y,z$ components, we get
-\[
-\pdv{}{x}=\sin\theta\cos\varphi\pdv{}{r}+\cos\theta\cos\varphi\frac{1}{r}\pdv{}{\theta}-\frac{\sin\varphi}{r\sin\theta}\pdv{}{\varphi}
-\]
-\[
-\pdv{}{y}=\sin\theta\sin\varphi\pdv{}{r}+\cos\theta\sin\varphi\frac{1}{r}\pdv{}{\theta}+\frac{\cos\varphi}{r\sin\theta}\pdv{}{\varphi}
-\]
-\[
-\pdv{}{z}=\cos\theta\pdv{}{r}-\sin\theta\frac{1}{r}\pdv{}{\theta}
-\]
 
-\paragraph{3.10.29}
+$$
+\begin{aligned}
+\pdv{}{x}&=\sin\theta\cos\varphi\pdv{}{r}+\cos\theta\cos\varphi\frac{1}{r}\pdv{}{\theta}-\frac{\sin\varphi}{r\sin\theta}\pdv{}{\varphi}\\
+\pdv{}{y}&=\sin\theta\sin\varphi\pdv{}{r}+\cos\theta\sin\varphi\frac{1}{r}\pdv{}{\theta}+\frac{\cos\varphi}{r\sin\theta}\pdv{}{\varphi}\\
+\pdv{}{z}&=\cos\theta\pdv{}{r}-\sin\theta\frac{1}{r}\pdv{}{\theta}
+\end{aligned}
+$$
+
+-----
+
+### 3.10.29
+
 $x=r\sin\theta\cos\varphi$, $y=r\sin\theta\sin\varphi$. Using results from exercise 3.10.28, we can have
-\[
-x\pdv{}{y}-y\pdv{}{x}=r\sin\theta\cos\varphi(\sin\theta\sin\varphi\pdv{}{r}+\cos\theta\sin\varphi\frac{1}{r}\pdv{}{\theta}+\frac{\cos\varphi}{r\sin\theta}\pdv{}{\varphi})\]
-\[-r\sin\theta\sin\varphi(\sin\theta\cos\varphi\pdv{}{r}+\cos\theta\cos\varphi\frac{1}{r}\pdv{}{\theta}-\frac{\sin\varphi}{r\sin\theta}\pdv{}{\varphi})
+
+$$
+\begin{aligned}
+x\pdv{}{y}-y\pdv{}{x}&=r\sin\theta\cos\varphi(\sin\theta\sin\varphi\pdv{}{r}+\cos\theta\sin\varphi\frac{1}{r}\pdv{}{\theta}+\frac{\cos\varphi}{r\sin\theta}\pdv{}{\varphi})\\
+&-r\sin\theta\sin\varphi(\sin\theta\cos\varphi\pdv{}{r}+\cos\theta\cos\varphi\frac{1}{r}\pdv{}{\theta}-\frac{\sin\varphi}{r\sin\theta}\pdv{}{\varphi})
 =\pdv{}{\varphi}
-\]
-so 
-\[-i\left(x\pdv{}{y}-y\pdv{}{x}\right)=-i\pdv{}{\varphi}\]
+\end{aligned}
+$$
 
-\paragraph{3.10.30}
-\[
-\V{L}=-i(\V{r}\times\del)=-i(\VE_r r)\times(\VE_r\pdv{}{r}+\VE_\theta\frac{1}{r}\pdv{}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi})
-\]
-\[
-=\VE_\theta i\frac{1}{\sin\theta}\pdv{}{\varphi}-\VE_\varphi i\pdv{}{\theta}
-\]
-\[
-=(\VE_x\cos\theta\cos\varphi+\VE_y\cos\theta\sin\varphi-\VE_z\sin\theta)i\frac{1}{\sin\theta}\pdv{}{\varphi}+(\VE_x\sin\varphi-\VE_y\cos\varphi)i\pdv{}{\theta}
-\]
-\[
-=\VE_x(i\sin\varphi\pdv{}{\theta}+i\cot\theta\cos\varphi\pdv{}{\varphi})+\VE_y(-i\cos\varphi\pdv{}{\theta}+i\cot\theta\sin\varphi\pdv{}{\varphi})+\VE_z(-i\pdv{}{\varphi})
-\]
+so 
+
+$$
+\begin{aligned}
+-i\left(x\pdv{}{y}-y\pdv{}{x}\right)=-i\pdv{}{\varphi}
+\end{aligned}
+$$
+
+-----
+
+### 3.10.30
+
+$$
+\begin{aligned}
+\V{L}&=-i(\V{r}\times\del)=-i(\VE_r r)\times(\VE_r\pdv{}{r}+\VE_\theta\frac{1}{r}\pdv{}{\theta}+\VE_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi})\\
+&=\VE_\theta i\frac{1}{\sin\theta}\pdv{}{\varphi}-\VE_\varphi i\pdv{}{\theta}\\
+&=(\VE_x\cos\theta\cos\varphi+\VE_y\cos\theta\sin\varphi-\VE_z\sin\theta)i\frac{1}{\sin\theta}\pdv{}{\varphi}+(\VE_x\sin\varphi-\VE_y\cos\varphi)i\pdv{}{\theta}\\
+&=\VE_x(i\sin\varphi\pdv{}{\theta}+i\cot\theta\cos\varphi\pdv{}{\varphi})+\VE_y(-i\cos\varphi\pdv{}{\theta}+i\cot\theta\sin\varphi\pdv{}{\varphi})+\VE_z(-i\pdv{}{\varphi})
+\end{aligned}
+$$
+
 so
-\[
-L_x+iL_y=i\sin\varphi\pdv{}{\theta}+i\cot\theta\cos\varphi\pdv{}{\varphi}+\cos\varphi\pdv{}{\theta}-\cot\theta\sin\varphi\pdv{}{\varphi}
-\]
-\[
-=(\cos\varphi+i\sin\varphi)(\pdv{}{\theta}+i\cot\theta\pdv{}{\varphi})=e^{i\varphi}(\pdv{}{\theta}+i\cot\theta\pdv{}{\varphi})
-\]
-\[
-L_x-iL_y=i\sin\varphi\pdv{}{\theta}+i\cot\theta\cos\varphi\pdv{}{\varphi}-\cos\varphi\pdv{}{\theta}+\cot\theta\sin\varphi\pdv{}{\varphi}
-\]
-\[
-=(-\cos\varphi+i\sin\varphi)(\pdv{}{\theta}-i\cot\theta\pdv{}{\varphi})=-e^{-i\varphi}(\pdv{}{\theta}-i\cot\theta\pdv{}{\varphi})
-\]
 
-\paragraph{3.10.31}
+$$
+\begin{aligned}
+L_x+iL_y&=i\sin\varphi\pdv{}{\theta}+i\cot\theta\cos\varphi\pdv{}{\varphi}+\cos\varphi\pdv{}{\theta}-\cot\theta\sin\varphi\pdv{}{\varphi}\\
+&=(\cos\varphi+i\sin\varphi)(\pdv{}{\theta}+i\cot\theta\pdv{}{\varphi})=e^{i\varphi}(\pdv{}{\theta}+i\cot\theta\pdv{}{\varphi})\\
+L_x-iL_y&=i\sin\varphi\pdv{}{\theta}+i\cot\theta\cos\varphi\pdv{}{\varphi}-\cos\varphi\pdv{}{\theta}+\cot\theta\sin\varphi\pdv{}{\varphi}\\
+&=(-\cos\varphi+i\sin\varphi)(\pdv{}{\theta}-i\cot\theta\pdv{}{\varphi})=-e^{-i\varphi}(\pdv{}{\theta}-i\cot\theta\pdv{}{\varphi})
+\end{aligned}
+$$
+
+-----
+
+### 3.10.31
+
 From exercise 3.10.30
-\[
-\V{L}=\VE_xL_x+\VE_yL_y+\VE_zL_z\]
-\[=\VE_x(i\sin\varphi\pdv{}{\theta}+i\cot\theta\cos\varphi\pdv{}{\varphi})+\VE_y(-i\cos\varphi\pdv{}{\theta}+i\cot\theta\sin\varphi\pdv{}{\varphi})+\VE_z(-i\pdv{}{\varphi})
-\]
-so 
-\[
-\V{L}\times\V{L}=\VE_x(L_yL_z-L_zL_y)+\VE_y(L_zL_x-L_zL_z)+\VE_z(L_xL_y-L_yL_x)
-\]
-\[
-=\VE_x(-\sin\varphi\pdv{}{\theta}-\cot\theta\cos\varphi\pdv{}{\varphi})+\VE_y(\cos\varphi\pdv{}{\theta}-\cot\theta\sin\varphi\pdv{}{\varphi})+\VE_z(\pdv{}{\varphi})
-\]
-\[
-=\VE_xiL_x+\VE_yiL_y+\VE_ziL_z=i\V{L}
-\]
 
-\paragraph{3.10.32}
+$$
+\begin{aligned}
+\V{L}&=\VE_xL_x+\VE_yL_y+\VE_zL_z\\
+&=\VE_x(i\sin\varphi\pdv{}{\theta}+i\cot\theta\cos\varphi\pdv{}{\varphi})+\VE_y(-i\cos\varphi\pdv{}{\theta}+i\cot\theta\sin\varphi\pdv{}{\varphi})+\VE_z(-i\pdv{}{\varphi})
+\end{aligned}
+$$
+
+so 
+
+$$
+\begin{aligned}
+\V{L}\times\V{L}&=\VE_x(L_yL_z-L_zL_y)+\VE_y(L_zL_x-L_zL_z)+\VE_z(L_xL_y-L_yL_x)\\
+&=\VE_x(-\sin\varphi\pdv{}{\theta}-\cot\theta\cos\varphi\pdv{}{\varphi})+\VE_y(\cos\varphi\pdv{}{\theta}-\cot\theta\sin\varphi\pdv{}{\varphi})+\VE_z(\pdv{}{\varphi})\\
+&=\VE_xiL_x+\VE_yiL_y+\VE_ziL_z=i\V{L}
+\end{aligned}
+$$
+
+-----
+
+### 3.10.32
+
 (a)(b) It is the first half of exercise 3.10.30.
 
 (c) The author suggest to do it in Cartesian coordinate, but I think it's easier to do in spherical coordinate, with the help of results from 3.10.22(a).
-\[
-{\V{L}}^2=\V{L}\cdot\V{L}=-(\VE_\theta\frac{1}{\sin\theta}\pdv{}{\varphi}-\VE_\varphi\pdv{}{\theta})\cdot(\VE_\theta\frac{1}{\sin\theta}\pdv{}{\varphi}-\VE_\varphi\pdv{}{\theta})
-\]
-\[
-=-\left[\VE_\theta\frac{1}{\sin\theta}\cdot\pdv{}{\varphi}(\VE_\theta\frac{1}{\sin\theta}\pdv{}{\varphi}) +\VE_\varphi\cdot\pdv{}{\theta}(\VE_\varphi\pdv{}{\theta})-\VE_\theta\frac{1}{\sin\theta}\cdot\pdv{}{\varphi}(\VE_\varphi\pdv{}{\theta})-\VE_\varphi\cdot\pdv{}{\theta}(\VE_\theta\frac{1}{\sin\theta}\pdv{}{\varphi})\right]
-\]
-\[
-=-\left[\frac{1}{\sin^2\theta}\pdv{^2}{\varphi^2}+\pdv{^2}{\theta^2}+\frac{\cos\theta}{\sin\theta}\pdv{}{\theta} \right]
-\]
-\[
-=-\frac{1}{\sin\theta}\pdv{}{\theta}(\sin\theta\pdv{}{\theta})-\frac{1}{\sin^2\theta}\pdv{^2}{\varphi^2}
-\]
-\[
-=-r^2\del^2+\pdv{}{r}\left(r^2\pdv{}{r} \right)
-\]
+
+$$
+\begin{aligned}
+{\V{L}}^2&=\V{L}\cdot\V{L}=-(\VE_\theta\frac{1}{\sin\theta}\pdv{}{\varphi}-\VE_\varphi\pdv{}{\theta})\cdot(\VE_\theta\frac{1}{\sin\theta}\pdv{}{\varphi}-\VE_\varphi\pdv{}{\theta})\\
+&=-\left[\VE_\theta\frac{1}{\sin\theta}\cdot\pdv{}{\varphi}(\VE_\theta\frac{1}{\sin\theta}\pdv{}{\varphi}) +\VE_\varphi\cdot\pdv{}{\theta}(\VE_\varphi\pdv{}{\theta})-\VE_\theta\frac{1}{\sin\theta}\cdot\pdv{}{\varphi}(\VE_\varphi\pdv{}{\theta})-\VE_\varphi\cdot\pdv{}{\theta}(\VE_\theta\frac{1}{\sin\theta}\pdv{}{\varphi})\right]\\
+&=-\left[\frac{1}{\sin^2\theta}\pdv{^2}{\varphi^2}+\pdv{^2}{\theta^2}+\frac{\cos\theta}{\sin\theta}\pdv{}{\theta} \right]\\
+&=-\frac{1}{\sin\theta}\pdv{}{\theta}(\sin\theta\pdv{}{\theta})-\frac{1}{\sin^2\theta}\pdv{^2}{\varphi^2}\\
+&=-r^2\del^2+\pdv{}{r}\left(r^2\pdv{}{r} \right)
+\end{aligned}
+$$
+
 (We use Eq. 3.158 in the last equality.)
 
-\paragraph{3.10.33}
+-----
+
+### 3.10.33
+
 (a) 
-\[
+
+$$
+\begin{aligned}
 \VE_r\pdv{}{r}-i\frac{\V{r}\times\V{L}}{r^2}=\VE_r\pdv{}{r}-\frac{\V{r}\times(\V{r}\times\del)}{r^2}=\VE_r\pdv{}{r}-\frac{\V{r}(\V{r}\cdot\del)-(\V{r}\cdot\V{r})\del}{r^2}=\VE_r\pdv{}{r}-\frac{\VE_r r(r\pdv{}{r})-r^2\del}{r^2}=\del
-\]
+\end{aligned}
+$$
 
 (b) (\textit{There is probably a mistake:} $\del(1+r\pdv{}{r})$ \textit{should be} $\del+\del(r\pdv{}{r})$)
-\smallskip
 
 $r\pdv{}{r}=\V{r}\cdot\del$ in the spherical coordinate, so the left side of the equation is $\V{r}\del^2-\del-\del(\V{r}\cdot\del)$.
-\[
-\left[\V{r}\del^2-\del-\del(\V{r}\cdot\del) \right]_x=x(\pdv{^2}{x^2}+\pdv{^2}{y^2}+\pdv{^2}{z^2})-\pdv{}{x}-\pdv{}{x}(x\pdv{}{x}+y\pdv{}{y}+z\pdv{}{z})
-\]
-\[
-=-2\pdv{}{x}+x\pdv{^2}{y^2}+x\pdv{^2}{z^2}-y\pdv{^2}{x\partial y}-z\pdv{^2}{x\partial z}
-\]
-\[
-\left[i\del\times\V{L} \right]_x=\left[\del\times(\V{r}\times\del) \right]_x=\pdv{}{y}(x\pdv{}{y}-y\pdv{}{x})-\pdv{}{z}(z\pdv{}{x}-x\pdv{}{z})
-\]
-\[
-=-2\pdv{}{x}+x\pdv{^2}{y^2}+x\pdv{^2}{z^2}-y\pdv{^2}{x\partial y}-z\pdv{^2}{x\partial z}
-\]
-So the $x$-components of two side of the equation are equal. It can be verified that so are the $y$- and $z$-components. Therefore,
-\[
-\V{r}\del^2-\del-\del(\V{r}\cdot\del)=i\del\times\V{L}
-\]
 
-\paragraph{3.10.34}
-\[
-\frac{1}{r^2}\frac{d}{dr}\left[r^2\frac{d\psi}{dr} \right]=\frac{1}{r^2}(2r\frac{d\psi}{dr}+r^2\frac{d^2\psi}{dr^2})=\frac{d^2\psi}{dr^2}+\frac{2}{r}\frac{d\psi}{dr}
-\]
-\[
-\frac{1}{r}\frac{d^2}{dr^2}\left[r\psi\right]=\frac{1}{r}\frac{d}{dr}(\psi+r\frac{d\psi}{dr})=\frac{1}{r}(\frac{d\psi}{dr}+\frac{d\psi}{dr}+r\frac{d^2\psi}{dr^2})=\frac{d^2\psi}{dr^2}+\frac{2}{r}\frac{d\psi}{dr}
-\]
+$$
+\begin{aligned}
+\left[\V{r}\del^2-\del-\del(\V{r}\cdot\del) \right]_x&=x(\pdv{^2}{x^2}+\pdv{^2}{y^2}+\pdv{^2}{z^2})-\pdv{}{x}-\pdv{}{x}(x\pdv{}{x}+y\pdv{}{y}+z\pdv{}{z})\\
+&=-2\pdv{}{x}+x\pdv{^2}{y^2}+x\pdv{^2}{z^2}-y\pdv{^2}{x\partial y}-z\pdv{^2}{x\partial z}\\
+\left[i\del\times\V{L} \right]_x&=\left[\del\times(\V{r}\times\del) \right]_x=\pdv{}{y}(x\pdv{}{y}-y\pdv{}{x})-\pdv{}{z}(z\pdv{}{x}-x\pdv{}{z})\\
+&=-2\pdv{}{x}+x\pdv{^2}{y^2}+x\pdv{^2}{z^2}-y\pdv{^2}{x\partial y}-z\pdv{^2}{x\partial z}
+\end{aligned}
+$$
+
+So the $x$-components of two side of the equation are equal. It can be verified that so are the $y$- and $z$-components. Therefore,
+
+$$
+\begin{aligned}
+\V{r}\del^2-\del-\del(\V{r}\cdot\del)=i\del\times\V{L}
+\end{aligned}
+$$
+
+-----
+
+### 3.10.34
+
+$$
+\begin{aligned}
+\frac{1}{r^2}\frac{d}{dr}\left[r^2\frac{d\psi}{dr} \right]&=\frac{1}{r^2}(2r\frac{d\psi}{dr}+r^2\frac{d^2\psi}{dr^2})=\frac{d^2\psi}{dr^2}+\frac{2}{r}\frac{d\psi}{dr}\\
+\frac{1}{r}\frac{d^2}{dr^2}\left[r\psi\right]&=\frac{1}{r}\frac{d}{dr}(\psi+r\frac{d\psi}{dr})=\frac{1}{r}(\frac{d\psi}{dr}+\frac{d\psi}{dr}+r\frac{d^2\psi}{dr^2})=\frac{d^2\psi}{dr^2}+\frac{2}{r}\frac{d\psi}{dr}
+\end{aligned}
+$$
+
 so all the three form are equaivalant.
 
-\paragraph{3.10.35}
+-----
+
+### 3.10.35
+
 (a)
-\[
+
+$$
+\begin{aligned}
 \del\times\V{F}=\frac{1}{r^2\sin\theta}
 \begin{vmatrix}
 \VE_r&\VE_\theta r&\VE_\varphi r\sin\theta\\
@@ -1999,22 +2172,35 @@ so all the three form are equaivalant.
 \frac{2P\cos\theta}{r^3}&\frac{P}{r^2}\sin\theta&0\\
 \end{vmatrix}
 =\frac{1}{r^2\sin\theta}\left(\VE_\varphi r\sin\theta(-2\frac{P}{r^3}\sin\theta+\frac{2P\sin\theta}{r^3}) \right)=0
-\]
+\end{aligned}
+$$
 
 (b) $r=1$ and $\theta=\frac{\pi}{2}$, so $\V{F}=\VE_\theta P$ and $d\V{r}=\VE_r dr+\VE_\varphi d\varphi$. 
-\[
+
+$$
+\begin{aligned}
 \oint\V{F}\cdot d\V{r}=(\VE_\theta P)\cdot(\VE_r dr+\VE_\varphi d\varphi)=0
-\]
+\end{aligned}
+$$
+
 We cannot assert whether $\V{F}$ is conservative or not unless we evaluate every integral over closed loop.
 
 (c) $\int_a^b\V{F}\cdot d\V{r}=\psi(a)-\psi(b)$. Take the path $(r,\theta,\varphi)\rightarrow(\infty,\theta,\varphi)$, and define the potential at infinity $\psi(\infty)$ to be zero. Then we have
-\[
-\psi(\V{r})=\psi(\V{r})-\psi(\infty)=\int_r^\infty\frac{2P\cos\theta}{r^3}dr=-\frac{P\cos\theta}{r^2}\Big|_r^\infty=\frac{P\cos\theta}{r^2}
-\]
 
-\paragraph{3.10.36}
+$$
+\begin{aligned}
+\psi(\V{r})=\psi(\V{r})-\psi(\infty)=\int_r^\infty\frac{2P\cos\theta}{r^3}dr=-\frac{P\cos\theta}{r^2}\Big|_r^\infty=\frac{P\cos\theta}{r^2}
+\end{aligned}
+$$
+
+-----
+
+### 3.10.36
+
 (a)
-\[
+
+$$
+\begin{aligned}
 \del\times\V{A}=\frac{1}{r^2\sin\theta}
 \begin{vmatrix}
 \VE_r&\VE_\theta r&\VE_\varphi r\sin\theta\\
@@ -2022,15 +2208,21 @@ We cannot assert whether $\V{F}$ is conservative or not unless we evaluate every
 0&0&-\cos\theta
 \end{vmatrix}
 =\frac{1}{r^2\sin\theta}(\VE_r\sin\theta)=\frac{\VE_r}{r^2}
-\]
+\end{aligned}
+$$
 
 (b) $r=\sqrt{x^2+y^2+z^2}$, $\theta=\cos^{-1}\frac{z}{r}$, $\varphi=\tan^{-1}\frac{y}{x}$, $\VE_\varphi=-\VE_x\sin\varphi+\VE_y\cos\varphi$. So
-\[
+
+$$
+\begin{aligned}
 \V{A}=-(-\VE_x\frac{y}{\sqrt{x^2+y^2}}+\VE_y\frac{x}{\sqrt{x^2+y^2}})\frac{z}{\sqrt{x^2+y^2}}\frac{1}{r}=\VE_x\frac{yz}{r(x^2+y^2)}-\VE_y\frac{xz}{r(x^2+y^2)}
-\]
+\end{aligned}
+$$
 
 (c)
-\[
+
+$$
+\begin{aligned}
 \del\times\V{A}=\frac{1}{r^2\sin\theta}
 \begin{vmatrix}
 \VE_r&\VE_\theta r&\VE_\varphi r\sin\theta\\
@@ -2038,26 +2230,26 @@ We cannot assert whether $\V{F}$ is conservative or not unless we evaluate every
 0&-\varphi\sin\theta&0
 \end{vmatrix}
 =\frac{1}{r^2\sin\theta}(\VE_r\sin\theta)=\frac{\VE_r}{r^2}
-\]
+\end{aligned}
+$$
 
-\paragraph{3.10.37}
+-----
+
+### 3.10.37
+
 $\V{r}=\VE_r r$, so from exercise 3.10.22 we have $\pdv{\V{r}}{r}=\VE_r$, $\pdv{\V{r}}{\theta}=\VE_\theta r$, $\pdv{\V{r}}{\varphi}=\VE_\varphi r\sin\theta$. So
-\[
-\V{E}=-\del\psi=-\left[\VE_r\pdv{}{r}(\frac{\V{P}\cdot\V{r}}{4\pi\varepsilon_0r^3})+\VE_\theta\frac{1}{r}\pdv{}{\theta}(\frac{\V{P}\cdot\V{r}}{4\pi\varepsilon_0r^3})+\VE_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi}(\frac{\V{P}\cdot\V{r}}{4\pi\varepsilon_0r^3}) \right]
-\]
-\[
-=-\VE_r\left(\frac{1}{4\pi\varepsilon_0r^3}\V{P}\cdot\pdv{\V{r}}{r}+\frac{\V{P}\cdot\V{r}}{4\pi\varepsilon_0}\pdv{}{r}(\frac{1}{r^3})\right)-\VE_\theta\frac{1}{r}\frac{1}{4\pi\varepsilon_0r^3}\V{P}\cdot\pdv{\V{r}}{\theta}-\VE_\varphi\frac{1}{r\sin\theta}\frac{1}{4\pi\varepsilon_0r^3}\V{P}\cdot\pdv{\V{r}}{\varphi}
-\]
-\[
-=-\VE_r(-2)\frac{P_r}{4\pi\varepsilon_0r^3}-\VE_\theta\frac{P_\theta}{4\pi\varepsilon_0r^3}-\VE_\varphi\frac{P_\varphi}{4\pi\varepsilon_0r^3}
-\]
-\[
-=\frac{1}{4\pi\varepsilon_0r^3}(3\VE_rP_r-\VE_rP_r-\VE_\theta P_\theta-\VE_\varphi P_\varphi)
-\]
-\[
-=\frac{3\hat{\V{r}}(\V{P}\cdot\hat{\V{r}})}{4\pi\varepsilon_0r^3}
-\]
+
+$$
+\begin{aligned}
+\V{E}&=-\del\psi=-\left[\VE_r\pdv{}{r}(\frac{\V{P}\cdot\V{r}}{4\pi\varepsilon_0r^3})+\VE_\theta\frac{1}{r}\pdv{}{\theta}(\frac{\V{P}\cdot\V{r}}{4\pi\varepsilon_0r^3})+\VE_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi}(\frac{\V{P}\cdot\V{r}}{4\pi\varepsilon_0r^3}) \right]\\
+&=-\VE_r\left(\frac{1}{4\pi\varepsilon_0r^3}\V{P}\cdot\pdv{\V{r}}{r}+\frac{\V{P}\cdot\V{r}}{4\pi\varepsilon_0}\pdv{}{r}(\frac{1}{r^3})\right)-\VE_\theta\frac{1}{r}\frac{1}{4\pi\varepsilon_0r^3}\V{P}\cdot\pdv{\V{r}}{\theta}-\VE_\varphi\frac{1}{r\sin\theta}\frac{1}{4\pi\varepsilon_0r^3}\V{P}\cdot\pdv{\V{r}}{\varphi}\\
+&=-\VE_r(-2)\frac{P_r}{4\pi\varepsilon_0r^3}-\VE_\theta\frac{P_\theta}{4\pi\varepsilon_0r^3}-\VE_\varphi\frac{P_\varphi}{4\pi\varepsilon_0r^3}\\
+&=\frac{1}{4\pi\varepsilon_0r^3}(3\VE_rP_r-\VE_rP_r-\VE_\theta P_\theta-\VE_\varphi P_\varphi)\\
+&=\frac{3\hat{\V{r}}(\V{P}\cdot\hat{\V{r}})}{4\pi\varepsilon_0r^3}
+\end{aligned}
+$$
+
 where $\hat{\V{r}}=\VE_r$ is the unit vector in the $\V{r}$ direction.
 
 
-{% endraw %}
+
