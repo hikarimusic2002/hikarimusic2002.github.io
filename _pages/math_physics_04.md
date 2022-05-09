@@ -535,7 +535,7 @@ $$
 \end{aligned}
 $$
 
-so $|\vert\EE^i\vert^2\vert\EE_i\vert^2=1$, which means
+so $\vert\EE^i\vert^2\vert\EE_i\vert^2=1$, which means
 
 $$
 \begin{aligned}
@@ -705,7 +705,7 @@ which is another verification.)
 ### 4.3.8
 
 From Eq. 4.63, $\Gamma^n_{ij}=\frac{1}{2}g^{nk}\left[\pdv{g_{ik}}{q^j}+\pdv{g_{jk}}{q^i}-\pdv{g_{ij}}{q^k} \right]$. Because $g^{ij}$ has only diagonal components, $g^{nk}\neq0$ only when $n=k$, so $\Gamma^n_{ij}=\frac{1}{2}g^{nn}\left[\pdv{g_{in}}{q^j}+\pdv{g_{jn}}{q^i}-\pdv{g_{ij}}{q^n} \right]$ ($n$ is not summed). The only non-constant component of $(g_{ij})$ is $g_{22}=\rho=q^1$, so the only non-zero derivative of $g_{ij}$ is $\pdv{g_{22}}{q^1}=2\rho$. When $n=1$, $\pdv{g_{in}}{q^j}+\pdv{g_{jn}}{q^i}=0$, so $i,j$ must be $2$ to have non-zero $\Gamma^n_{ij}$. When $n=2$, $\pdv{g_{ij}}{q^n}=0$, so one of $i,j$ must be $1$ and the other must be $2$ to make $\pdv{g_{in}}{q^j}+\pdv{g_{jn}}{q^i}\neq0$. When $n=3$, none of the derivatives can be non-zero.
-Therefore, there are only three nonzero $\Gamma^n_{ij}$: $\Gamma^1_{22}$, $\Gamma^2_{12}$, $\Gamma^2_{21}$.
+Therefore, there are only three nonzero $\Gamma^n\_{ij}$: $\Gamma^1\_{22}$, $\Gamma^2\_{12}$, $\Gamma^2\_{21}$.
 
 $$
 \begin{aligned}
@@ -740,7 +740,7 @@ $$
 
 ### 4.3.10
 
-$g_{ij;k}$ and $g^{ij}_{;k}$ are not defined in the text, but I think they are probably defined as \\$\pdv{(g_{ij}\EE^i\cdot\EE^j)}{q^k}=g_{ij;k}\,\EE^i\cdot\EE^j$ and $\pdv{(g^{ij}\EE_i\cdot\EE_j)}{q^k}=g^{ij}_{;k}\,\EE_i\cdot\EE_j$. 
+$g_{ij;k}$ and $g^{ij}\_{;k}$ are not defined in the text, but I think they are probably defined as $\pdv{(g_{ij}\EE^i\cdot\EE^j)}{q^k}=g_{ij;k}\,\EE^i\cdot\EE^j$ and $\pdv{(g^{ij}\EE_i\cdot\EE_j)}{q^k}=g^{ij}\_{;k}\,\EE_i\cdot\EE_j$. 
 
 $$
 \begin{aligned}
@@ -770,7 +770,7 @@ g_{ij;k}&=\pdv{g_{ij}}{q^k}-g_{j\alpha }\Gamma^\alpha_{ik}-g_{i\beta}\Gamma^\bet
 \end{aligned}
 $$
 
-We can prove $g^{ij}_{;k}=0$ in a similar way. Or we can note that \[g^{lj}_{;k}\,\EE_l\cdot\EE_j=\pdv{(g^{lj}\EE_l\cdot\EE_j)}{q^k}=\pdv{(g_{lj}\EE^l\cdot\EE^j)}{q^k}=g_{lj;k}\,\EE^l\cdot\EE^j=0\]
+We can prove $g^{ij}\_{;k}=0$ in a similar way. Or we can note that \[g^{lj}\_{;k}\,\EE_l\cdot\EE_j=\pdv{(g^{lj}\EE_l\cdot\EE_j)}{q^k}=\pdv{(g_{lj}\EE^l\cdot\EE^j)}{q^k}=g_{lj;k}\,\EE^l\cdot\EE^j=0\]
 multiply both side with $\EE^j\cdot\EE^i$, and note that $(\EE_l\cdot\EE_j)(\EE^j\cdot\EE^i)=\delta^i_l$, we have
 
 $$
