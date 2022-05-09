@@ -21,7 +21,7 @@ $$
 \newcommand{\ppdv}[3]{\frac{\partial^2#1}{\partial#2\partial#3}}
 \newcommand{\dv}[2]{\frac{d #1}{d #2}}
 $$
-$\V{P}\times \V{Q}=\sum_i \hat{\V{e}}_i\sum_{jk}\varepsilon_{ijk}P_j Q_k$.  $P_z=Q_z=0$, so $\varepsilon_{ijk}P_j Q_k\neq0$ only when $i=z$. So $\sum_i \hat{\V{e}}_i\sum_{jk}\varepsilon_{ijk}P_j Q_k=\hat{\V{e}}_z(P_xQ_y-P_yQ_x)\neq0$ because $\V{P}$ and $\V{Q}$ are nonparallel.
+$\V{P}\times \V{Q}=\sum_i \hat{\V{e}}\_i\sum_{jk}\varepsilon_{ijk}P_j Q_k$.  $P_z=Q_z=0$, so $\varepsilon_{ijk}P_j Q_k\neq0$ only when $i=z$. So $\sum_i \hat{\V{e}}\_i\sum_{jk}\varepsilon_{ijk}P_j Q_k=\hat{\V{e}}\_z(P_xQ_y-P_yQ_x)\neq0$ because $\V{P}$ and $\V{Q}$ are nonparallel.
 
 -----
 
@@ -47,7 +47,7 @@ $$
 
 (a) $\V{U}\times\V{V}=-3\hat{\V{e}}_y-3\hat{\V{e}}_z$ is perpendicular with $\V{U}$ and $\V{V}$.
 
-(b) $\frac{\V{U}\times\V{V}}{|\V{U}\times\V{V}|}=\frac{1}{\sqrt{2}}\VE_y+\frac{1}{\sqrt{2}}\VE_z$
+(b) $\frac{\V{U}\times\V{V}}{\vert\V{U}\times\V{V}\vert}=\frac{1}{\sqrt{2}}\VE_y+\frac{1}{\sqrt{2}}\VE_z$
 
 -----
 
@@ -59,7 +59,7 @@ All the four vectors are in the same plane, so both $\V{a}\times\V{b}$ and $\V{c
 
 ### 3.2.6
 
-The area of the triangle $=\frac{1}{2}|\V{B}||\V{C}|\sin\alpha=\frac{1}{2}|\V{A}||\V{C}|\sin\beta=\frac{1}{2}|\V{A}||\V{B}|\sin\gamma$. Devided by $|\V{A}||\V{B}||\V{C}|/2$, we get $\frac{\sin\alpha}{|\V{A}|}=\frac{\sin\beta}{|\V{B}|}=\frac{\sin\gamma}{|\V{C}|}$.
+The area of the triangle $=\frac{1}{2}\vert\V{B}\vert\vert\V{C}\vert\sin\alpha=\frac{1}{2}\vert\V{A}\vert\vert\V{C}\vert\sin\beta=\frac{1}{2}\vert\V{A}\vert\vert\V{B}\vert\sin\gamma$. Devided by $\vert\V{A}\vert\vert\V{B}\vert\vert\V{C}\vert/2$, we get $\frac{\sin\alpha}{\vert\V{A}\vert}=\frac{\sin\beta}{\vert\V{B}\vert}=\frac{\sin\gamma}{\vert\V{C}\vert}$.
 
 -----
 
@@ -301,9 +301,9 @@ $$
 
 ### 3.4.5
 
-(a) Decompose $\V{r}$ into $\V{r}_{\parallel}$ parallel to $\hat{\V{n}}$ and $\V{r_{\perp}}$ perpendicular to $\hat{\V{n}}$. 
-$\V{r}_{\parallel}=\hat{\V{n}}(\hat{\V{n}}\cdot\V{r})$, $\V{r_{\perp}}=\V{r}-\hat{\V{n}}(\hat{\V{n}}\cdot\V{r})$.
-After rotation, $\V{r}_{\parallel}$ remains unchanged, and $\V{r_{\perp}}$ becomes $\frac{\V{r_{\perp}}}{|\V{r_{\perp}}|}\times\hat{\V{n}}(|\V{r_{\perp}}|\sin\V{\Phi})$ in the $\VE_{\V{\Phi}}$ direction and $\frac{\V{r_{\perp}}}{|\V{r_{\perp}}|}|\V{r_{\perp}}|\cos\V{\Phi}$ in the $\VE_{\V{r}_{\perp}}$ direction. So 
+(a) Decompose $\V{r}$ into $\V{r}\_{\parallel}$ parallel to $\hat{\V{n}}$ and $\V{r_{\perp}}$ perpendicular to $\hat{\V{n}}$. 
+$\V{r}\_{\parallel}=\hat{\V{n}}(\hat{\V{n}}\cdot\V{r})$, $\V{r_{\perp}}=\V{r}-\hat{\V{n}}(\hat{\V{n}}\cdot\V{r})$.
+After rotation, $\V{r}\_{\parallel}$ remains unchanged, and $\V{r_{\perp}}$ becomes $\frac{\V{r_{\perp}}}{|\V{r_{\perp}}|}\times\hat{\V{n}}(|\V{r_{\perp}}|\sin\V{\Phi})$ in the $\VE_{\V{\Phi}}$ direction and $\frac{\V{r_{\perp}}}{|\V{r_{\perp}}|}|\V{r_{\perp}}|\cos\V{\Phi}$ in the $\VE_{\V{r}\_{\perp}}$ direction. So 
 
 $$
 \begin{aligned}
@@ -402,16 +402,16 @@ $$
 
 ### 3.5.6
 
-(a) $\Dot{\V{r}}=\frac{d\V{r}}{dt}=-r\omega\sin{\omega t}\,\VE_x+r\omega\cos{\omega t}\,\VE_y$, so 
+(a) $\dot{\V{r}}=\frac{d\V{r}}{dt}=-r\omega\sin{\omega t}\,\VE_x+r\omega\cos{\omega t}\,\VE_y$, so 
 \[\V{r}\times\Dot{\V{r}}=(r\cos{\omega t}\,\VE_x+r\sin{\omega t}\,\VE_t)\times(-r\omega\sin{\omega t}\,\VE_x+r\omega\cos{\omega t}\,\VE_y)=r\omega^2(\cos^2{\omega t}+\sin^2{\omega t})\VE_z=r\omega^2\VE_z\]
 
-(b) $\Ddot{\V{r}}=-r\omega^2\cos{\omega t}\,\VE_x-r\omega^2\sin{\omega t}\,\VE_y$, so $\Ddot{\V{r}}+\omega^2\V{r}=0$.
+(b) $\ddot{\V{r}}=-r\omega^2\cos{\omega t}\,\VE_x-r\omega^2\sin{\omega t}\,\VE_y$, so $\ddot{\V{r}}+\omega^2\V{r}=0$.
 
 -----
 
 ### 3.5.7
 
-$\V{A'}=\M{S}\V{A}$, which means $A'_i=\sum_{j}\M{S}_{ij}A_j$. Because $\M{S}_{ij}$ is independent of $t$, so $\frac{dA'_i}{dt}=\sum_{j}\M{S}_{ij}\frac{dA_j}{dt}$, which means $\frac{d\V{A'}}{dt}=\M{S}\frac{d\V{A}}{dt}$.
+$\V{A'}=\M{S}\V{A}$, which means $A'_i=\sum_{j}\M{S}\_{ij}A_j$. Because $\M{S}\_{ij}$ is independent of $t$, so $\frac{dA'\_i}{dt}=\sum_{j}\M{S}\_{ij}\frac{dA_j}{dt}$, which means $\frac{d\V{A'}}{dt}=\M{S}\frac{d\V{A}}{dt}$.
 
 -----
 
@@ -541,7 +541,7 @@ $$
 
 $$
 \begin{aligned}
-[(\V{A}\times\del)\times\V{B}]_x&=A_z\pdv{B_z}{x}-A_x\pdv{B_z}{z}-A_x\pdv{B_y}{y}+A_y\pdv{B_y}{x}\\
+[][(\V{A}\times\del)\times\V{B}]_x&=A_z\pdv{B_z}{x}-A_x\pdv{B_z}{z}-A_x\pdv{B_y}{y}+A_y\pdv{B_y}{x}\\
 [(\V{B}\times\del)\times\V{A}]_x&=B_z\pdv{A_z}{x}-B_x\pdv{A_z}{z}-B_x\pdv{A_y}{y}+B_y\pdv{A_y}{x}\\
 [\V{A}(\del\cdot\V{B})]_x&=A_x\pdv{B_x}{x}+A_x\pdv{B_y}{y}+A_x\pdv{B_z}{z}\\
 [\V{B}(\del\cdot\V{A})]_x&=B_x\pdv{A_x}{x}+B_x\pdv{A_y}{y}+B_x\pdv{A_z}{z}
@@ -598,7 +598,7 @@ because $\V{A}\times\V{B}$ is constant, so $\pdv{[\V{A}\times\V{B}]_j}{x_i}=0$
 
 $$
 \begin{aligned}
-[\del\times(\del\times\V{V})]_x&=\ppdv{V_y}{y}{x}-\pdv{^2V_x}{z^2}-\pdv{^2V_x}{z^2}+\ppdv{V_z}{z}{x}\\
+[][\del\times(\del\times\V{V})]_x&=\ppdv{V_y}{y}{x}-\pdv{^2V_x}{z^2}-\pdv{^2V_x}{z^2}+\ppdv{V_z}{z}{x}\\
 [\del(\del\cdot\V{V})]_x&=\pdv{^2V_x}{x^2}+\ppdv{V_y}{x}{y}+\ppdv{V_z}{x}{z}\\
 -[\del\cdot\del\V{V}]_x&=-\pdv{^2V_x}{x^2}-\pdv{^2V_y}{y^2}-\pdv{^2V_z}{z^2}
 \end{aligned}
@@ -618,7 +618,7 @@ $$
 
 $$
 \begin{aligned}
-[\del\times(\varphi\del\varphi)]_x&=\pdv{}{y}\left(\varphi\pdv{\varphi}{z}\right)-\pdv{}{z}\left(\varphi\pdv{\varphi}{y}\right)\\
+[][\del\times(\varphi\del\varphi)]_x&=\pdv{}{y}\left(\varphi\pdv{\varphi}{z}\right)-\pdv{}{z}\left(\varphi\pdv{\varphi}{y}\right)\\
 &=\pdv{\varphi}{y}\pdv{\varphi}{z}+\varphi\ppdv{\varphi}{y}{z}-\pdv{\varphi}{z}\pdv{\varphi}{y}-\varphi\ppdv{\varphi}{z}{y}=0
 \end{aligned}
 $$
@@ -794,7 +794,7 @@ $$
 
 ### 3.7.4
 
-$\oint\V{r}\cdot d\V{r}=\oint(xdx+ydy+zdz)=(\frac{x^2}{2}+\frac{y^2}{2}+\frac{z^2}{2})\big|_{\V{a}}^{\V{a}}=0$ where $\V{a}$ is the starting point.
+$\oint\V{r}\cdot d\V{r}=\oint(xdx+ydy+zdz)=(\frac{x^2}{2}+\frac{y^2}{2}+\frac{z^2}{2})\big\vert_{\V{a}}^{\V{a}}=0$ where $\V{a}$ is the starting point.
 
 -----
 
@@ -1069,7 +1069,7 @@ $\V{F}=r^{2n}\V{r}$
 
 (b) $\del\times\V{F}=(\del r^{2n})\times\V{r}+r^{2n}(\del\times\V{r})=2nr^{2n-1}\frac{\V{r}}{r}\times\V{r}+0=0$
 
-(c) $\del\times\V{F}=0$, so the scalar potential exists. $\int_a^b\V{F}\cdot d\V{r}=-\int_a^b\del\varphi\cdot d\V{r}=-\varphi\big|_a^b=\varphi(a)-\varphi(b)$. Take the path $(0,0,0)\rightarrow(x,0,0)\rightarrow(x,y,0)\rightarrow(x,y,z)$. Then
+(c) $\del\times\V{F}=0$, so the scalar potential exists. $\int_a^b\V{F}\cdot d\V{r}=-\int_a^b\del\varphi\cdot d\V{r}=-\varphi\big\vert_a^b=\varphi(a)-\varphi(b)$. Take the path $(0,0,0)\rightarrow(x,0,0)\rightarrow(x,y,0)\rightarrow(x,y,z)$. Then
 
 $$
 \begin{aligned}
@@ -1990,7 +1990,7 @@ $$
 &=\VE_r\dot{r}+\VE_\theta r\dot{\theta}+\VE_\varphi r\sin\theta\dot{\varphi}\\
 \V{a}&=\dot{\V{v}}=\VE_\theta\dot{r}\dot{\theta}+\VE_\varphi\dot{r}\sin\theta\dot{\varphi}+\VE_r\ddot{r}-\VE_r r{\dot{\theta}}^2+\VE_\varphi r\cos\theta\dot{\theta}\dot{\varphi}+\VE_\theta\dot{r}\dot{\theta}+\VE_\theta r\ddot{\theta}\\
 &-\VE_r r\sin^2\theta{\dot{\varphi}}^2-\VE_\theta r\sin\theta\cos\theta{\dot{\varphi}}^2+\VE_\varphi\dot{r}\sin\theta\dot{\varphi}+\VE_\varphi r\cos\theta\dot{\theta}\dot{\varphi}+\VE_\varphi r\sin\theta\ddot{\varphi}\\
-&=\VE_r(\Ddot{r}-r{\dot{\theta}}^2-r\sin^2\theta{\dot{\varphi}}^2)+\VE_\theta(r\Ddot{\theta}+2\dot{r}\dot{\theta}-r\sin\theta\cos\theta{\dot{\varphi}}^2)+\VE_\varphi(r\sin\theta\Ddot{\varphi}+2\dot{r}\sin\theta\dot{\varphi}+2r\cos\theta\dot{\theta}\dot{\varphi})
+&=\VE_r(\ddot{r}-r{\dot{\theta}}^2-r\sin^2\theta{\dot{\varphi}}^2)+\VE_\theta(r\ddot{\theta}+2\dot{r}\dot{\theta}-r\sin\theta\cos\theta{\dot{\varphi}}^2)+\VE_\varphi(r\sin\theta\ddot{\varphi}+2\dot{r}\sin\theta\dot{\varphi}+2r\cos\theta\dot{\theta}\dot{\varphi})
 \end{aligned}
 $$
 
