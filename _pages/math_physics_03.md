@@ -684,7 +684,7 @@ $\del\cdot\del\varphi=\del^2\varphi=0$, and $\del\times\del\varphi=0$ for any $\
 
 ### 3.6.15
 
-By Equation (3.70), $\del\times(\del\times\V{A})=\del(\del\cdot\V{A})-(\del\cdot\del)\V{A}$, so the equation becomes\\ $\del(\del\cdot\V{A})-(\del\cdot\del)\V{A}-k^2\V{A}=0$. Let $\del\cdot$ operate on both side of the equation, and note that\\ $\del\cdot\big((\del\cdot\del)\V{A} \big)=(\del\cdot\del)(\del\cdot\V{A})$ because $\pdv{}{x_i}\left(\pdv{^2A_k}{x_j^2} \right)=\pdv{^2}{x_j^2}\left(\pdv{A_k}{x_i} \right)$. So the equation becomes\\ $(\del\cdot\del)(\del\cdot\V{A})-(\del\cdot\del)(\del\cdot\V{A})-k^2(\del\cdot\V{A})=-k^2(\del\cdot\V{A})=0$, so $\del\cdot\V{A}=0$. Substituting back to the second equation, we get  $(\del\cdot\del)\V{A}+k^2\V{A}=\del^2\V{A}+k^2\V{A}=0$
+By Equation (3.70), $\del\times(\del\times\V{A})=\del(\del\cdot\V{A})-(\del\cdot\del)\V{A}$, so the equation becomes\\ $\del(\del\cdot\V{A})-(\del\cdot\del)\V{A}-k^2\V{A}=0$. Let $\del\cdot$ operate on both side of the equation, and note that $\del\cdot\big((\del\cdot\del)\V{A} \big)=(\del\cdot\del)(\del\cdot\V{A})$ because $\pdv{}{x_i}\left(\pdv{^2A_k}{x_j^2} \right)=\pdv{^2}{x_j^2}\left(\pdv{A_k}{x_i} \right)$. So the equation becomes $(\del\cdot\del)(\del\cdot\V{A})-(\del\cdot\del)(\del\cdot\V{A})-k^2(\del\cdot\V{A})=-k^2(\del\cdot\V{A})=0$, so $\del\cdot\V{A}=0$. Substituting back to the second equation, we get  $(\del\cdot\del)\V{A}+k^2\V{A}=\del^2\V{A}+k^2\V{A}=0$
 
 -----
 
