@@ -127,7 +127,7 @@ $$
 \end{aligned}
 $$
 
-which is the transformation law for tensors of rank $n+1$, so $\left(\pdv{T}{x} \right)_{\cdots ij}=\pdv{T_{\cdots i}}{x_j}$ is a tensor of rank $n+1$.
+which is the transformation law for tensors of rank $n+1$, so $\left(\pdv{T}{x} \right)\_{\cdots ij}=\pdv{T_{\cdots i}}{x_j}$ is a tensor of rank $n+1$.
 
 -----
 
