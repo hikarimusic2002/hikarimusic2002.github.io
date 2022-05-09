@@ -95,7 +95,7 @@ $$
 \end{aligned}
 $$
 
-Let $\int_0^1x^{i+j}dx=A_{ij}$,\quad $\int_0^1x^if(x)dx=b_i$, then the equation becomes
+Let $\int_0^1x^{i+j}dx=A_{ij}$, $\int_0^1x^if(x)dx=b_i$, then the equation becomes
 
 $$
 \begin{aligned}
@@ -225,7 +225,7 @@ Rearranging the terms we get the identity.
 
 ### 5.1.7
 
-The basis are orthonormal, so $\langle a_i\varphi_i|a_j\varphi_j \rangle$ is zero when $i\neq j$ and is $|a_i|^2$ when $i=j$. Let $f=\sum_ka_k\varphi_k$, $k$ can be infinite, and let $\sum_na_n\varphi_n$ be an incomplete expansion of $f$, then 
+The basis are orthonormal, so $\langle a_i\varphi_i\vert a_j\varphi_j \rangle$ is zero when $i\neq j$ and is $\vert a_i\vert^2$ when $i=j$. Let $f=\sum_ka_k\varphi_k$, $k$ can be infinite, and let $\sum_na_n\varphi_n$ be an incomplete expansion of $f$, then 
 
 $$
 \begin{aligned}
@@ -351,7 +351,7 @@ $$
 \end{aligned}
 $$
 
-so $k-1>0$,\; $k>1$.
+so $k-1>0$, $k>1$.
 
 $$
 \begin{aligned}
@@ -974,7 +974,7 @@ i & \textit{when $a=k,\;b=j$}
 \end{aligned}
 $$
 
-The components of $L_i$ are $(L_i)_{ab}=\br{\varphi_a|L_i}{\varphi_b}$, so in matrix form,
+The components of $L_i$ are $(L_i)\_{ab}=\br{\varphi_a\vert L_i}{\varphi_b}$, so in matrix form,
 
 $$
 \begin{aligned}
@@ -1044,7 +1044,7 @@ i & \textit{when $a=k,\;b=j$}
 \end{aligned}
 $$
 
-is equivalent with $(L_i)_{ab}=-i\varepsilon_{iab}$.
+is equivalent with $(L_i)\_{ab}=-i\varepsilon_{iab}$.
 Let $i,j,k$ be a cyclic permutation of $x,y,z$, then
 
 $$
@@ -1067,7 +1067,7 @@ which means $[L_i,L_j]=iL_k$ )
 
 ### 5.5.1
 
-(There are mistakes in the matrix $\M{U}$ given in the text: $\M{U}_{33}$ should be $\frac{-i}{\sqrt{2}}$ and $\M{U}_{43}$ should be $\frac{i}{\sqrt{2}}$. It can be verified by checking $\chi_3=U_{33}\chi_3'+U_{43}\chi_4'$. The author probably forget to take the complex conjugate of $\chi_3'$ when calculating $\br{\chi_3'}{\chi_3}=\int_0^\pi\int_0^{2\pi}\sin\theta\,d\theta d\varphi(\chi_3')^*\chi_3$, as well as $\br{\chi_4'}{\chi_3}$. )
+(There are mistakes in the matrix $\M{U}$ given in the text: $\M{U}\_{33}$ should be $\frac{-i}{\sqrt{2}}$ and $\M{U}\_{43}$ should be $\frac{i}{\sqrt{2}}$. It can be verified by checking $\chi_3=U_{33}\chi_3'+U_{43}\chi_4'$. The author probably forget to take the complex conjugate of $\chi_3'$ when calculating $\br{\chi_3'}{\chi_3}=\int_0^\pi\int_0^{2\pi}\sin\theta\,d\theta d\varphi(\chi_3')^\star\chi_3$, as well as $\br{\chi_4'}{\chi_3}$. )
 
 (a) 
 
@@ -1358,7 +1358,7 @@ $$
 \end{aligned}
 $$
 
-(b) $U_{ij}=\II{F_i^*P_j}$. Note that except $U_{00},U_{02},U_{11},U_{20},U_{22}$, all the other $U_{ij}$ vanish because $F_i^*P_j$ are odd functions for these $i,j$.
+(b) $U_{ij}=\II{F_i^star P_j}$. Note that except $U_{00},U_{02},U_{11},U_{20},U_{22}$, all the other $U_{ij}$ vanish because $F_i^\star P_j$ are odd functions for these $i,j$.
 
 $$
 \begin{aligned}
@@ -1383,7 +1383,7 @@ $$
 \end{aligned}
 $$
 
-(c)$V_{ij}=\II{P_i^*F_j}$. Note that except $V_{00},V_{02},V_{11},V_{20},V_{22}$, all the other $V_{ij}$ vanish because $P_i^*F_j$ are odd functions for these $i,j$.
+(c)$V_{ij}=\II{P_i^\star F_j}$. Note that except $V_{00},V_{02},V_{11},V_{20},V_{22}$, all the other $V_{ij}$ vanish because $P_i^\star F_j$ are odd functions for these $i,j$.
 
 $$
 \begin{aligned}
@@ -1736,7 +1736,7 @@ D_3&=
 \end{aligned}
 $$
 
-Note that $S_{ij}^*=\br{\chi_j}{\chi_1}$, $D_n^*=D_n$. In this problem when $|A|^2=k$, let $A=\sqrt{k}$, without the phase factor.
+Note that $S_{ij}^\star =\br{\chi_j}{\chi_1}$, $D_n^\star =D_n$. In this problem when $\vert A\vert^2=k$, let $A=\sqrt{k}$, without the phase factor.
 
 From Eq. 5.79 we have
 
