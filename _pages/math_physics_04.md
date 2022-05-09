@@ -12,6 +12,8 @@ author_profile: false
 
 ### 4.1.1
 
+{% raw %}
+
 $$
 \newcommand{\T}{\mathrm}
 \newcommand{\V}{\mathbf}
@@ -1084,3 +1086,4 @@ f=\int_{x_0}^x(x+iy)dx+\int_{y_0}^y(-y+ix_0)dy=\frac{x^2-y^2}{2}+ixy
 \end{aligned}
 $$
 
+{% endraw %}
