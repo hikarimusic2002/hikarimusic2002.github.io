@@ -406,7 +406,7 @@ $$
 
 $$
 \begin{aligned}
-\V{r}\times\Dot{\V{r}}=(r\cos{\omega t}\,\VE_x+r\sin{\omega t}\,\VE_t)\times(-r\omega\sin{\omega t}\,\VE_x+r\omega\cos{\omega t}\,\VE_y)=r\omega^2(\cos^2{\omega t}+\sin^2{\omega t})\VE_z=r\omega^2\VE_z
+\V{r}\times\dot{\V{r}}=(r\cos{\omega t}\,\VE_x+r\sin{\omega t}\,\VE_t)\times(-r\omega\sin{\omega t}\,\VE_x+r\omega\cos{\omega t}\,\VE_y)=r\omega^2(\cos^2{\omega t}+\sin^2{\omega t})\VE_z=r\omega^2\VE_z
 \end{aligned}
 $$
 
