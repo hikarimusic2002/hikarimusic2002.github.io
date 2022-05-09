@@ -6,6 +6,8 @@ author_profile: false
 
 ---
 
+{% raw %}
+
 # Chapter 3 Vector Analysis
 
 ## 3.2 Vectors in 3-D Space
@@ -2056,4 +2058,4 @@ $\V{r}=\VE_r r$, so from exercise 3.10.22 we have $\pdv{\V{r}}{r}=\VE_r$, $\pdv{
 where $\hat{\V{r}}=\VE_r$ is the unit vector in the $\V{r}$ direction.
 
 
-
+{% endraw %}
