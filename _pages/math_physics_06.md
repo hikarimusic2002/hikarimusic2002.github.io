@@ -1081,7 +1081,7 @@ $$
 \cos\theta_1&\sin\theta_1 e^{i\varphi_1}\\
 \sin\theta_1 e^{-i\varphi_1}& -\cos\theta_1
 \end{pmatrix}\\
-=\begin{pmatrix}
+=&\begin{pmatrix}
 2\cos\theta_1\cos\theta_2+2\sin\theta_1\sin\theta_2\cos(\varphi_1-\varphi_2)& 0\\
 0& 2\cos\theta_1\cos\theta_2+2\sin\theta_1\sin\theta_2\cos(\varphi_1-\varphi_2)
 \end{pmatrix}
