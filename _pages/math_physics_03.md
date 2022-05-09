@@ -403,7 +403,12 @@ $$
 ### 3.5.6
 
 (a) $\dot{\V{r}}=\frac{d\V{r}}{dt}=-r\omega\sin{\omega t}\,\VE_x+r\omega\cos{\omega t}\,\VE_y$, so 
-\[\V{r}\times\Dot{\V{r}}=(r\cos{\omega t}\,\VE_x+r\sin{\omega t}\,\VE_t)\times(-r\omega\sin{\omega t}\,\VE_x+r\omega\cos{\omega t}\,\VE_y)=r\omega^2(\cos^2{\omega t}+\sin^2{\omega t})\VE_z=r\omega^2\VE_z\]
+
+$$
+\begin{aligned}
+\V{r}\times\Dot{\V{r}}=(r\cos{\omega t}\,\VE_x+r\sin{\omega t}\,\VE_t)\times(-r\omega\sin{\omega t}\,\VE_x+r\omega\cos{\omega t}\,\VE_y)=r\omega^2(\cos^2{\omega t}+\sin^2{\omega t})\VE_z=r\omega^2\VE_z
+\end{aligned}
+$$
 
 (b) $\ddot{\V{r}}=-r\omega^2\cos{\omega t}\,\VE_x-r\omega^2\sin{\omega t}\,\VE_y$, so $\ddot{\V{r}}+\omega^2\V{r}=0$.
 
