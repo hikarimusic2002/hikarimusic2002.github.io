@@ -491,14 +491,14 @@ The problem is ill-defined because the way of vector multiplication has not been
 
 $$
 \begin{aligned}
-[\V{a}\cdot\V{L},\V{b}\cdot\V{L}] &=[a_xL_x+a_yL_y+a_zL_z,b_xL_x+b_yL_y+b_zL_z]\\
+[][\V{a}\cdot\V{L},\V{b}\cdot\V{L}] &=[a_xL_x+a_yL_y+a_zL_z,b_xL_x+b_yL_y+b_zL_z]\\
 &=\sum_{i=1}^3\sum_{j=1}^3[a_iL_i,b_jL_j]\\
 &=\sum_{i=1}^3\sum_{j=1}^3 (a_iL_ib_jL_j-b_jL_ja_iL_i)\\
 &=\sum_{i=1}^3\sum_{j=1}^3(a_ib_jL_iL_j-b_ja_iL_jL_i)\\
 &=\scriptstyle a_xb_y(L_xL_y-L_yL_x)+a_xb_z(L_xL_z-L_zL_x)+a_yb_x(L_yL_x-L_xL_y)+a_yb_z(L_yL_z-L_zL_y)+a_zb_x(L_zL_x-L_xL_z)+a_zb_y(L_zL_y-L_yL_z)\\
 &=a_xb_yiL_z-a_xb_ziL_y-a_yb_xiL_z+a_yb_ziL_x+a_zb_xiL_y-a_zb_yiL_x\\
 &=i(a_yb_z-a_zb_y)L_x+i(a_zb_x-a_xb_z)L_y+i(a_xb_y-a_yb_x)L_z\\
-=i(\V{a}\times\V{b})\cdot\V{L}
+&=i(\V{a}\times\V{b})\cdot\V{L}
 \end{aligned}
 $$
 
