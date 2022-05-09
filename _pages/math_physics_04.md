@@ -285,16 +285,16 @@ $C_i$ is a pseudovector, so the transformation law gives
 
 $$
 \begin{aligned}
-(C')_i&=\det{(\T{A})}\pdv{x^m}{(x')^i}C_m=\det{(\T{A)}}\pdv{x^m}{(x')^i}\frac{1}{2}\varepsilon_{mnp}C^{np}\quad \textit{(combine $\det{(\T{A})}$ and $\varepsilon_{mnp}$)}\\
-&=\frac{1}{2}\pdv{x^m}{(x')^i}(\varepsilon_{mnp}\det{(\T{A})})C^{np}\quad\textit{(use equation 1)}\\
-&=\frac{1}{2}\pdv{x^m}{(x')^i}\varepsilon_{ljk}\pdv{(x')^l}{x^m}\pdv{(x')^j}{x^n}\pdv{(x')^k}{x^p}C^{np}\quad\textit{(combine $\pdv{x^m}{(x')^i}$ and $\pdv{(x')^l}{x^m}$)}\\
+(C')_i&=\det{(\T{A})}\pdv{x^m}{(x')^i}C_m=\det{(\T{A)}}\pdv{x^m}{(x')^i}\frac{1}{2}\varepsilon_{mnp}C^{np}\quad &\textit{(combine $\det{(\T{A})}$ and $\varepsilon_{mnp}$)}\\
+&=\frac{1}{2}\pdv{x^m}{(x')^i}(\varepsilon_{mnp}\det{(\T{A})})C^{np}\quad &\textit{(use equation 1)}\\
+&=\frac{1}{2}\pdv{x^m}{(x')^i}\varepsilon_{ljk}\pdv{(x')^l}{x^m}\pdv{(x')^j}{x^n}\pdv{(x')^k}{x^p}C^{np}\quad &\textit{(combine $\pdv{x^m}{(x')^i}$ and $\pdv{(x')^l}{x^m}$)}\\
 &=\frac{1}{2}\delta^l_i\varepsilon_{ljk}\pdv{(x')^j}{x^n}\pdv{(x')^k}{x^p}C^{np}\\
 &=\frac{1}{2}\varepsilon_{ijk}\pdv{(x')^j}{x^n}\pdv{(x')^k}{x^p}C^{np}
 =\frac{1}{2}\varepsilon_{ijk}(C')^{jk}
 \end{aligned}
 $$
 
-the last equality holds because $C_i=\frac{1}{2}\varepsilon_{ijk}C^{jk}$ holds in all coordinate systems, so $(C')_i=\frac{1}{2}\varepsilon_{ijk}(C')^{jk}$.
+the last equality holds because $C_i=\frac{1}{2}\varepsilon_{ijk}C^{jk}$ holds in all coordinate systems, so $(C')\_i=\frac{1}{2}\varepsilon_{ijk}(C')^{jk}$.
 
 If $j\neq k$, let $i$ be the remaining value other than $j,k$, then $\varepsilon_{ijk}\neq0$, so we have 
 
@@ -510,9 +510,9 @@ $g_{ji}=0$ when $i\neq j$, so
 
 $$
 \begin{aligned}
-&g^{ii}g_{ii}\quad\textit{(no summation on i)}\\
-=&g^{ij}g_{ji}\quad\textit{(summation on $j$)}\\
-=&\delta^i_i\quad\textit{(by definition of $g^{ij}$)}\\
+&g^{ii}g_{ii}\quad &\textit{(no summation on i)}\\
+=&g^{ij}g_{ji}\quad &\textit{(summation on $j$)}\\
+=&\delta^i_i\quad &\textit{(by definition of $g^{ij}$)}\\
 =&1
 \end{aligned}
 $$
@@ -529,9 +529,9 @@ $$
 
 $$
 \begin{aligned}
-&(\EE^i\cdot\EE^i)(\EE_i\cdot\EE_i)\quad\textit{(no summation on i)}\\
-=&(\EE^i\cdot\EE^j)(\EE_j\cdot\EE_i)\quad\textit{(summation on $j$)}\\
-=&\delta^i_i=1\quad\textit{(by Eq. $4.46$)}
+&(\EE^i\cdot\EE^i)(\EE_i\cdot\EE_i)\quad &\textit{(no summation on i)}\\
+=&(\EE^i\cdot\EE^j)(\EE_j\cdot\EE_i)\quad &\textit{(summation on $j$)}\\
+=&\delta^i_i=1\quad &\textit{(by Eq. $4.46$)}
 \end{aligned}
 $$
 
@@ -745,20 +745,13 @@ $g_{ij;k}$ and $g^{ij}\_{;k}$ are not defined in the text, but I think they are 
 $$
 \begin{aligned}
 \pdv{(g_{ij}\EE^i\cdot\EE^j)}{q^k}&=\pdv{g_{ij}}{q^k}\EE^i\cdot\EE^j+g_{ij}\pdv{\EE^i}{q^k}\cdot\EE^j+g_{ij}\EE^i\cdot\pdv{\EE^j}{q^k}\\
-&=\pdv{g_{ij}}{q^k}\EE^i\cdot\EE^j+g_{ij}(-\Gamma^i_{k\alpha}\EE^\alpha)\cdot\EE^j+g_{ij}\EE^i\cdot(-\Gamma^j_{k\beta}\EE^\beta)
-\end{aligned}
-$$
-
-(_interchange_ $i$ _and_ $\alpha$ _in the second term, and interchange_ $j$ _and_ $\beta$ _in the last term_)
-
-$$
-\begin{aligned}
+&=\pdv{g_{ij}}{q^k}\EE^i\cdot\EE^j+g_{ij}(-\Gamma^i_{k\alpha}\EE^\alpha)\cdot\EE^j+g_{ij}\EE^i\cdot(-\Gamma^j_{k\beta}\EE^\beta)\\
 &=\pdv{g_{ij}}{q^k}\EE^i\cdot\EE^j-g_{\alpha j}\Gamma^\alpha_{ki}\EE^i\cdot\EE^j-g_{i\beta}\Gamma^\beta_{kj}\EE^i\cdot\EE^j\\
 &=\left[\pdv{g_{ij}}{q^k}-g_{j\alpha }\Gamma^\alpha_{ik}-g_{i\beta}\Gamma^\beta_{jk}\right]\EE^i\cdot\EE^j
 \end{aligned}
 $$
 
-so 
+(_interchange_ $i$ _and_ $\alpha$ _in the second term, and interchange_ $j$ _and_ $\beta$ _in the last term_). So 
 
 $$
 \begin{aligned}
@@ -834,7 +827,7 @@ $A_i=\pdv{\varphi}{q^i}$ bexause it is the gradient of a scalar. From Exercise 4
 
 $$
 \begin{aligned}
-A_{i;j}=\pdv{A_i}{q^j}-A_k\Gamma^k_{ij}&=\pdv{^2\varphi}{q^j\partial q^i}-A_k\Gamma^k_{ij}\\
+A_{i;j}&=\pdv{A_i}{q^j}-A_k\Gamma^k_{ij}=\pdv{^2\varphi}{q^j\partial q^i}-A_k\Gamma^k_{ij}\\
 &=\pdv{^2\varphi}{q^i\partial q^j}-A_k\Gamma^k_{ji}=\pdv{A_j}{q^i}-A_k\Gamma^k_{ji}=A_{j;i}
 \end{aligned}
 $$
@@ -864,7 +857,7 @@ $$
 
 which means $\pdv{u}{x}:\pdv{v}{x}=\pdv{u}{y}:\pdv{v}{y}=\pdv{u}{z}:\pdv{v}{z}=(-\pdv{f}{v}):\pdv{f}{u}$, so $\del u=(\pdv{u}{x},\pdv{u}{y},\pdv{u}{z})$ are parallel to $\del v=(\pdv{v}{x},\pdv{v}{y},\pdv{v}{z})$, and therefore $(\del u)\times(\del v)=0$
 
-If $(\del u)\times(\del v)=0$, then $(\pdv{u}{x},\pdv{u}{y},\pdv{u}{z})=a(\pdv{v}{x},\pdv{v}{y},\pdv{v}{z})$ (or $u$,$v$ being interchanged, and $a$ can be zero for one or both of $\del u$,$\del v$ being zero). So $\pdv{(u-av)}{x}=\pdv{(u-av)}{y}=\pdv{(u-av)}{z}=0$, means that $u-av=b$, \\a constant, so $u-av-b=0$ is the relation for $u$ and $v$.
+If $(\del u)\times(\del v)=0$, then $(\pdv{u}{x},\pdv{u}{y},\pdv{u}{z})=a(\pdv{v}{x},\pdv{v}{y},\pdv{v}{z})$ (or $u$,$v$ being interchanged, and $a$ can be zero for one or both of $\del u$,$\del v$ being zero). So $\pdv{(u-av)}{x}=\pdv{(u-av)}{y}=\pdv{(u-av)}{z}=0$, means that $u-av=b$, a constant, so $u-av-b=0$ is the relation for $u$ and $v$.
 
 (b) 
 
@@ -1085,7 +1078,7 @@ f=\int_{x_0}^x\frac{-y}{x^2+y^2}dx+\int_{y_0}^y\frac{x_0}{{x_0}^2+y^2}dy=-\tan^{
 \end{aligned}
 $$
 
-(5) $f(z)dx=(x+iy)dx+(-y+ix)dy$.\quad$\pdv{(x+iy)}{y}=\pdv{(-y+ix)}{x}=i$, so $(x+iy)dx+(-y+ix)dy$ is closed and exact. Let $x_0=y_0=0$, then
+(5) $f(z)dx=(x+iy)dx+(-y+ix)dy$. $\pdv{(x+iy)}{y}=\pdv{(-y+ix)}{x}=i$, so $(x+iy)dx+(-y+ix)dy$ is closed and exact. Let $x_0=y_0=0$, then
 
 $$
 \begin{aligned}
