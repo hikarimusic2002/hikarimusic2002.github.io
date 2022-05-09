@@ -722,8 +722,7 @@ i\pdv{}{z}&\frac{1}{c}\pdv{}{t}&-i\pdv{}{x}\\
 B_x-i\frac{E_x}{c}\\
 B_y-i\frac{E_y}{c}\\
 B_z-i\frac{E_z}{c}\\
-\end{pmatrix}\\
-=&\begin{pmatrix}
+\end{pmatrix}=\begin{pmatrix}
 \left(\frac{1}{c}\pdv{B_x}{t}-\frac{1}{c}\pdv{E_y}{z}+\frac{1}{c}\pdv{E_z}{y} \right)+i\left(-\frac{1}{c^2}\pdv{E_x}{t}-\pdv{B_y}{z}+\pdv{B_z}{y} \right)\\
 \left(\frac{1}{c}\pdv{B_y}{t}-\frac{1}{c}\pdv{E_z}{x}+\frac{1}{c}\pdv{E_x}{z} \right)+i\left(-\frac{1}{c^2}\pdv{E_y}{t}-\pdv{B_z}{x}+\pdv{B_x}{z} \right)\\
 \left(\frac{1}{c}\pdv{B_z}{t}-\frac{1}{c}\pdv{E_x}{y}+\frac{1}{c}\pdv{E_y}{x} \right)+i\left(-\frac{1}{c^2}\pdv{E_z}{t}-\pdv{B_x}{y}+\pdv{B_y}{x} \right)\\
@@ -763,7 +762,7 @@ $$
 
 ### 3.7.2
 
-(a) $x^2+y^2=1$, so $y=\sqrt{1-x^2}$\,; $2xdx+2ydy=0$, so $dy=-\frac{x}{y}dx=-\frac{x}{\sqrt{1-x^2}}dx$. So
+(a) $x^2+y^2=1$, so $y=\sqrt{1-x^2}$; $2xdx+2ydy=0$, so $dy=-\frac{x}{y}dx=-\frac{x}{\sqrt{1-x^2}}dx$. So
 
 $$
 \begin{aligned}
@@ -776,7 +775,7 @@ w&=\int(-\V{F})\cdot d\V{r}\\
 $$
 
 
-(b) $x^2+y^2=1$, so $y=-\sqrt{1-x^2}$\,; $2xdx+2ydy=0$, so $dy=-\frac{x}{y}dx=\frac{x}{\sqrt{1-x^2}}dx$. So
+(b) $x^2+y^2=1$, so $y=-\sqrt{1-x^2}$; $2xdx+2ydy=0$, so $dy=-\frac{x}{y}dx=\frac{x}{\sqrt{1-x^2}}dx$. So
 
 $$
 \begin{aligned}
@@ -833,7 +832,14 @@ $$
 
 ### 3.8.1
 
-Let $\V{a}$ be a constant vector, then \[\V{a}\cdot\oint\displaylimits_{\partial V}d\boldsymbol{\sigma}=\oint\displaylimits_{\partial V}\V{a}\cdot d\boldsymbol{\sigma}=\int\displaylimits_V(\del\cdot\V{a})d\tau=0\]
+Let $\V{a}$ be a constant vector, then 
+
+$$
+\begin{aligned}
+\V{a}\cdot\oint\displaylimits_{\partial V}d\boldsymbol{\sigma}=\oint\displaylimits_{\partial V}\V{a}\cdot d\boldsymbol{\sigma}=\int\displaylimits_V(\del\cdot\V{a})d\tau=0
+\end{aligned}
+$$
+
 Because $\V{a}$ can be in arbitrary direction, $\oint_{\delta V}d\boldsymbol{\sigma}$ must be zero.
 
 -----
@@ -916,9 +922,8 @@ $$
 ### 3.8.7
 
 (a) $\oint\V{r}\times d\V{r}=\oint(xdy-ydx)\VE_z=2A\VE_z$ from Exercise 3.8.6 .
-\medskip
 
-(b) $\V{r}=a\cos\theta\VE_x+b\sin\theta\VE_y$, so $d\V{r}=-a\sin\theta d\theta\VE_x+b\cos\theta d\theta\VE_y$, and 
+(b) $\V{r}=a\cos\theta\VE_x+b\sin\theta\VE_y$, so $d\V{r}=-a\sin\theta\,d\theta\VE_x+b\cos\theta\,d\theta\VE_y$, and 
 
 $$
 \begin{aligned}
@@ -1264,11 +1269,11 @@ where the volume $V$ is a sphere centered at $(0,0,0)$ with radius $r$. Because 
 $$
 \begin{aligned}
 \oint\limits_{\partial V}\frac{1}{r}\del\varphi\cdot d\boldsymbol{\sigma}&=\frac{1}{r}\int\limits_V\del\cdot(\del\varphi)d\tau=\frac{1}{r}\int\limits_V\del^2\varphi d\tau=0\\
--\oint\limits_V\varphi\del(\frac{1}{r})\cdot d\boldsymbol{\sigma}&=\oint\limits_V\varphi\frac{1}{r^2}\hat{\V{r}}\cdot d\boldsymbol{\sigma}=\frac{\oint\limits_V\varphi d\sigma}{r^2}
+-\oint\limits_V\varphi\del(\frac{1}{r})\cdot d\boldsymbol{\sigma}&=\oint\limits_V\varphi\frac{1}{r^2}\hat{\V{r}}\cdot d\boldsymbol{\sigma}=\frac{\oint_V\varphi d\sigma}{r^2}
 \end{aligned}
 $$
 
-so the equation becomes $4\pi\varphi(0)=\frac{\oint\limits_V\varphi d\sigma}{r^2}$, so $\varphi(0)=\frac{\oint\limits_V\varphi d\sigma}{4\pi r^2}$, which means the potential at $P$ is the average of the potential over the spherical surface centered on $P$ with radius $r$.
+so the equation becomes $4\pi\varphi(0)=\frac{\oint_V\varphi d\sigma}{r^2}$, so $\varphi(0)=\frac{\oint_V\varphi d\sigma}{4\pi r^2}$, which means the potential at $P$ is the average of the potential over the spherical surface centered on $P$ with radius $r$.
 
 -----
 
@@ -1805,14 +1810,11 @@ The relations between the two coordinates are $\rho=r\sin\theta$, $\varphi=\phi$
 $$
 \begin{aligned}
 \VE_r&=\pdv{\V{r}}{r}=\pdv{\V{r}}{\rho}\pdv{\rho}{r}+\pdv{\V{r}}{\varphi}\pdv{\varphi}{r}+\pdv{\V{r}}{z}\pdv{z}{r}
-=\VE_\rho\sin\theta+\VE_\varphi\rho\cdot0+\VE_z\cos\theta\\
-&=\VE_\rho\sin\theta+\VE_z\cos\theta\\
+=\VE_\rho\sin\theta+\VE_\varphi\rho\cdot0+\VE_z\cos\theta=\VE_\rho\sin\theta+\VE_z\cos\theta\\
 \VE_\theta&=\frac{1}{r}\pdv{\V{r}}{\theta}=\frac{1}{r}(\pdv{\V{r}}{\rho}\pdv{\rho}{\theta}+\pdv{\V{r}}{\varphi}\pdv{\varphi}{\theta}+\pdv{\V{r}}{z}\pdv{z}{\theta})=
-\frac{1}{r}\VE_\rho r\cos\theta+\frac{1}{r}\VE_\varphi\rho\cdot0+\frac{1}{r}\VE_z(-r\sin\theta)\\
-&=\VE_\rho\cos\theta-\VE_z\sin\theta\\
+\frac{1}{r}\VE_\rho r\cos\theta+\frac{1}{r}\VE_\varphi\rho\cdot0+\frac{1}{r}\VE_z(-r\sin\theta)=\VE_\rho\cos\theta-\VE_z\sin\theta\\
 \VE_\phi&=\frac{1}{r\sin\theta}\pdv{\V{r}}{\phi}=\frac{1}{r\sin\theta}(\pdv{\V{r}}{\rho}\pdv{\rho}{\phi}+\pdv{\V{\phi}}{\varphi}\pdv{\varphi}{\phi}+\pdv{\V{r}}{z}\pdv{z}{\phi})=
-\frac{1}{r\sin\theta}\VE_\varphi\rho\cdot1\\
-&=\VE_\varphi
+\frac{1}{r\sin\theta}\VE_\varphi\rho\cdot1=\VE_\varphi
 \end{aligned}
 $$
 
@@ -1862,6 +1864,7 @@ $$
 ### 3.10.22
 
 (a) 
+
 $$
 \begin{aligned}
     \pdv{\VE_r}{r}&=0 &
@@ -1938,7 +1941,7 @@ has no tangential components, so $\pdv{V_\varphi}{r}=\pdv{V_\theta}{r}=0$. That 
 
 ### 3.10.25
 
-(a) A point $P=(r\sin\theta\cos\varphi,r\sin\theta\sin\varphi,r\cos\theta)$ after reflection would become\\ $P'=(-r\sin\theta\cos\varphi,-r\sin\theta\sin\varphi,-r\cos\theta)=(r\sin(\pi-\theta)\cos(\varphi\pm\pi),r\sin(\pi-\theta)\sin(\varphi\pm\pi),r\cos(\pi-\theta))$, so it corresponds to the transformation 
+(a) A point $P=(r\sin\theta\cos\varphi,r\sin\theta\sin\varphi,r\cos\theta)$ after reflection would become $P'=(-r\sin\theta\cos\varphi,-r\sin\theta\sin\varphi,-r\cos\theta)=(r\sin(\pi-\theta)\cos(\varphi\pm\pi),r\sin(\pi-\theta)\sin(\varphi\pm\pi),r\cos(\pi-\theta))$, so it corresponds to the transformation 
 
 $$
 \begin{aligned}
@@ -1974,7 +1977,8 @@ From exercise 3.10.22
 
 $$
 \begin{aligned}
-(\V{A}\cdot\del)\V{r}=(A_r\pdv{}{r}+A_\theta\frac{1}{r}\pdv{}{\theta}+A_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi})(r\VE_r)=A_r\VE_r+A_\theta\frac{1}{r}r\VE_\theta+A_\varphi\frac{1}{r\sin\theta}r\sin\theta\VE_\varphi\\
+(\V{A}\cdot\del)\V{r}&=(A_r\pdv{}{r}+A_\theta\frac{1}{r}\pdv{}{\theta}+A_\varphi\frac{1}{r\sin\theta}\pdv{}{\varphi})(r\VE_r)\\
+&=A_r\VE_r+A_\theta\frac{1}{r}r\VE_\theta+A_\varphi\frac{1}{r\sin\theta}r\sin\theta\VE_\varphi\\
 &=A_r\VE_r+A_\theta\VE_\theta+A_\varphi\VE_\varphi=\V{A}
 \end{aligned}
 $$
@@ -1998,9 +2002,11 @@ so
 
 $$
 \begin{aligned}
-\V{v}&=\dot{\V{r}}=\VE_\theta\dot{\theta}r+\VE_\varphi\sin\theta\dot{\varphi}r+\VE_r\dot{r}\\
+\V{v}&=\dot{\V{r}}\\
+&=\VE_\theta\dot{\theta}r+\VE_\varphi\sin\theta\dot{\varphi}r+\VE_r\dot{r}\\
 &=\VE_r\dot{r}+\VE_\theta r\dot{\theta}+\VE_\varphi r\sin\theta\dot{\varphi}\\
-\V{a}&=\dot{\V{v}}=\VE_\theta\dot{r}\dot{\theta}+\VE_\varphi\dot{r}\sin\theta\dot{\varphi}+\VE_r\ddot{r}-\VE_r r{\dot{\theta}}^2+\VE_\varphi r\cos\theta\dot{\theta}\dot{\varphi}+\VE_\theta\dot{r}\dot{\theta}+\VE_\theta r\ddot{\theta}\\
+\V{a}&=\dot{\V{v}}\\
+&=\VE_\theta\dot{r}\dot{\theta}+\VE_\varphi\dot{r}\sin\theta\dot{\varphi}+\VE_r\ddot{r}-\VE_r r{\dot{\theta}}^2+\VE_\varphi r\cos\theta\dot{\theta}\dot{\varphi}+\VE_\theta\dot{r}\dot{\theta}+\VE_\theta r\ddot{\theta}\\
 &-\VE_r r\sin^2\theta{\dot{\varphi}}^2-\VE_\theta r\sin\theta\cos\theta{\dot{\varphi}}^2+\VE_\varphi\dot{r}\sin\theta\dot{\varphi}+\VE_\varphi r\cos\theta\dot{\theta}\dot{\varphi}+\VE_\varphi r\sin\theta\ddot{\varphi}\\
 &=\VE_r(\ddot{r}-r{\dot{\theta}}^2-r\sin^2\theta{\dot{\varphi}}^2)+\VE_\theta(r\ddot{\theta}+2\dot{r}\dot{\theta}-r\sin\theta\cos\theta{\dot{\varphi}}^2)+\VE_\varphi(r\sin\theta\ddot{\varphi}+2\dot{r}\sin\theta\dot{\varphi}+2r\cos\theta\dot{\theta}\dot{\varphi})
 \end{aligned}
@@ -2135,7 +2141,7 @@ $$
 \end{aligned}
 $$
 
-(b) (\textit{There is probably a mistake:} $\del(1+r\pdv{}{r})$ \textit{should be} $\del+\del(r\pdv{}{r})$)
+(b) (_There is probably a mistake:_ $\del(1+r\pdv{}{r})$ _should be_ $\del+\del(r\pdv{}{r})$)
 
 $r\pdv{}{r}=\V{r}\cdot\del$ in the spherical coordinate, so the left side of the equation is $\V{r}\del^2-\del-\del(\V{r}\cdot\del)$.
 
