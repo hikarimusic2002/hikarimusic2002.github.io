@@ -27,7 +27,14 @@ $\V{P}\times \V{Q}=\sum_i \hat{\V{e}}\_i\sum_{jk}\varepsilon_{ijk}P_j Q_k$.  $P_
 
 ### 3.2.2
 
-$(\V{A}\times \V{B})\cdot(\V{A}\times \V{B})=(A_xB_y-A_yB_x)^2+(A_xB_z-A_zB_x)^2+(A_yB_z-A_zB_y)^2=A_x^2B_y^2+A_x^2B_z^2+A_y^2B_x^2+A_y^2B_z^2+A_z^2B_x^2+A_z^2B_y^2-2A_xB_xA_yB_y-2A_xB_xA_zB_z-2A_yB_yA_zB_z$. $(AB)^2-(\V{A}\cdot \V{B})^2=(A_x^2+A_y^2+A_z^2)(B_x^2+B_y^2+B_z^2)-(A_xB_x+A_yB_y+A_zB_z)^2=A_x^2B_y^2+A_x^2B_z^2+A_y^2B_x^2+A_y^2B_z^2+A_z^2B_x^2+A_z^2B_y^2-2A_xB_xA_yB_y-2A_xB_xA_zB_z-2A_yB_yA_zB_z$, so $(\V{A}\times \V{B})\cdot(\V{A}\times \V{B})=(AB)^2-(\V{A}\cdot \V{B})^2$.
+$$
+\begin{aligned}
+(\V{A}\times \V{B})\cdot(\V{A}\times \V{B})&=(A_xB_y-A_yB_x)^2+(A_xB_z-A_zB_x)^2+(A_yB_z-A_zB_y)^2=A_x^2B_y^2+A_x^2B_z^2+A_y^2B_x^2+A_y^2B_z^2+A_z^2B_x^2+A_z^2B_y^2-2A_xB_xA_yB_y-2A_xB_xA_zB_z-2A_yB_yA_zB_z\\
+(AB)^2-(\V{A}\cdot \V{B})^2&=(A_x^2+A_y^2+A_z^2)(B_x^2+B_y^2+B_z^2)-(A_xB_x+A_yB_y+A_zB_z)^2=A_x^2B_y^2+A_x^2B_z^2+A_y^2B_x^2+A_y^2B_z^2+A_z^2B_x^2+A_z^2B_y^2-2A_xB_xA_yB_y-2A_xB_xA_zB_z-2A_yB_yA_zB_z
+\end{aligned}
+$$
+ 
+So $(\V{A}\times \V{B})\cdot(\V{A}\times \V{B})=(AB)^2-(\V{A}\cdot \V{B})^2$.
 
 -----
 
