@@ -330,9 +330,9 @@ holds, which implies that $C^{jk}$ is a tensor.
 
 ### 4.2.2
 
-If there is a one-to-one correspondence between two sets, then the numbers of elements of the two sets need to be the same. If there is a one-to-one correspondence between the components of a vector $C_i$ and the components of a tensor $(AB)^{jk}$, because the numbers of components of $C_i$ and $(AB)^{jk}$ are different ($n$ and $n^2$), it should mean that the one-to-one correspondence exists between \textit{independent} components of $C_i$ and $(AB)^{jk}$, so the number of _independent_ components of $C_i$ and $(AB)^{jk}$ should be the same.
+If there is a one-to-one correspondence between two sets, then the numbers of elements of the two sets need to be the same. If there is a one-to-one correspondence between the components of a vector $C_i$ and the components of a tensor $(AB)^{jk}$, because the numbers of components of $C_i$ and $(AB)^{jk}$ are different ($n$ and $n^2$), it should mean that the one-to-one correspondence exists between _independent_ components of $C_i$ and $(AB)^{jk}$, so the number of _independent_ components of $C_i$ and $(AB)^{jk}$ should be the same.
 
-By the antisymmetry property of ${AB}^{jk}$, ${AB}^{jj}=-{AB}^{jj}$, so ${AB}^{jj}=0$, and ${AB}^{jk}=-{AB}^{kj}$. So the  the number of \textit{independent} components of and $(AB)^{jk}=\frac{n\times n-n}{2}$, should be equal to $n$,  the number of _independent_ components of $C_i$. So
+By the antisymmetry property of ${AB}^{jk}$, ${AB}^{jj}=-{AB}^{jj}$, so ${AB}^{jj}=0$, and ${AB}^{jk}=-{AB}^{kj}$. So the  the number of _independent_ components of and $(AB)^{jk}=\frac{n\times n-n}{2}$, should be equal to $n$,  the number of _independent_ components of $C_i$. So
 
 $$
 \begin{aligned}
@@ -423,7 +423,7 @@ $$
 \end{aligned}
 $$
 
-which is the transformation equation for a second-rank pseudotensor, Therefore $\varepsilon_{ij}$ is a second-rank pseudotensor. It does not contradict the uniqueness of $\delta^i_j$ because we proved $\delta^i_j$ is the only isotropic second rank \textit{tensor} (with a coefficient), while $\varepsilon_{ij}$ is an isotropic second-rank \textit{pseudotensor} (it fails to keep the transformation law under improper rotation). 
+which is the transformation equation for a second-rank pseudotensor, Therefore $\varepsilon_{ij}$ is a second-rank pseudotensor. It does not contradict the uniqueness of $\delta^i_j$ because we proved $\delta^i_j$ is the only isotropic second rank _tensor_ (with a coefficient), while $\varepsilon_{ij}$ is an isotropic second-rank _pseudotensor_ (it fails to keep the transformation law under improper rotation). 
 
 -----
 
@@ -770,7 +770,14 @@ g_{ij;k}&=\pdv{g_{ij}}{q^k}-g_{j\alpha }\Gamma^\alpha_{ik}-g_{i\beta}\Gamma^\bet
 \end{aligned}
 $$
 
-We can prove $g^{ij}\_{;k}=0$ in a similar way. Or we can note that \[g^{lj}\_{;k}\,\EE_l\cdot\EE_j=\pdv{(g^{lj}\EE_l\cdot\EE_j)}{q^k}=\pdv{(g_{lj}\EE^l\cdot\EE^j)}{q^k}=g_{lj;k}\,\EE^l\cdot\EE^j=0\]
+We can prove $g^{ij}\_{;k}=0$ in a similar way. Or we can note that 
+
+$$
+\begin{aligned}
+g^{lj}\_{;k}\,\EE_l\cdot\EE_j=\pdv{(g^{lj}\EE_l\cdot\EE_j)}{q^k}=\pdv{(g_{lj}\EE^l\cdot\EE^j)}{q^k}=g_{lj;k}\,\EE^l\cdot\EE^j=0
+\end{aligned}
+$$
+
 multiply both side with $\EE^j\cdot\EE^i$, and note that $(\EE_l\cdot\EE_j)(\EE^j\cdot\EE^i)=\delta^i_l$, we have
 
 $$
