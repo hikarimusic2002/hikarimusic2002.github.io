@@ -307,11 +307,11 @@ $r=r_0-kt$.
 ### 7.2.15
 
 (a) 
-$\frac{1}{v}dv=-adt$,$\ln\frac{v}{v_0}=-at$,$v=v_0e^{-at}$.
+$\frac{1}{v}dv=-adt$, $\ln\frac{v}{v_0}=-at$, $v=v_0e^{-at}$.
 
 (b) $\frac{1}{v}dv+adt=0$, $\varphi=\int\frac{1}{v}dv+\int adt=constant$, $\ln v+at=\ln v_0$, $v=v_0\,e^{-at}$.
 
-(c) $v(t)=\frac{C}{\alpha(t)}$,$\alpha(t)=e^{\int adt}=e^{at}$, $v=Ce^{-at}$, $v=v_0e^{-at}$.
+(c) $v(t)=\frac{C}{\alpha(t)}$, $\alpha(t)=e^{\int adt}=e^{at}$, $v=Ce^{-at}$, $v=v_0e^{-at}$.
 
 ----- 
 
@@ -603,7 +603,7 @@ $$
 \end{aligned}
 $$
 
-The second and third terms vanish, so $\varphi''(x_0)=0$. Differentiate the equation and let $x=x_0$, we have 
+The second and third terms vanish, so $\varphi'' (x_0)=0$. Differentiate the equation and let $x=x_0$, we have 
 
 $$
 \begin{aligned}
@@ -1879,7 +1879,7 @@ Let $y_p=u_1y_1+u_2y_2$ and use Eq 7.98,
 $$
 \begin{aligned}
 e^xu_1'+(1+x)u_2'&=0\\
-e^xu_1'+&u_2'&=x
+e^xu_1'+u_2'&=x
 \end{aligned}
 $$
 
