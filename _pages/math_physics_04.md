@@ -89,7 +89,7 @@ which is $k\delta^i_j$.
 ### 4.1.5
 
 [First raletion]
-If $i=k$, then $R_{iklm}=-R_{kilm}=-R_{iklm}$, so $R_{iklm}=0$. The same is for $l=m$, so $R_{iklm}\neq0$ only if $i\neq k$ and $l\neq m$. $R_{ik{\_}{\_}}$ will determine $R_{ki\_\_}$, and $R_{\_\_lm}$ will determine $R_{\_\_ml}$, so if we let $(i,k),(l,m)\in\{(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)\}$, then all the other components are determined. So the number of independent components is $6\times6=36$.
+If $i=k$, then $R_{iklm}=-R_{kilm}=-R_{iklm}$, so $R_{iklm}=0$. The same is for $l=m$, so $R_{iklm}\neq0$ only if $i\neq k$ and $l\neq m$. $R_{ik\\_\\_}$ will determine $R_{ki\_\_}$, and $R_{\_\_lm}$ will determine $R_{\_\_ml}$, so if we let $(i,k),(l,m)\in\{(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)\}$, then all the other components are determined. So the number of independent components is $6\times6=36$.
 
 [Second relation]
 If $(i,k)\neq(l,m)$, then $R_{iklm}$ determines $R_{lmik}$. So the number of components reduced is $C^6_2=15$, and the number of independent components becomes $36-15=21$.
