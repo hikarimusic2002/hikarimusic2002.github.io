@@ -22,8 +22,8 @@ $$
 \newcommand{\M}{\mathrm}
 \newcommand{\VE}{\hat{\V{e}}}
 \begin{aligned}
-\frac{1}{I}dI&=-\frac{1}{RC}dt\
-\ln\frac{I}{I_0}&=-\frac{t}{RC} \\
+\frac{1}{I}dI&=-\frac{1}{RC}dt\\
+ln\frac{I}{I_0}&=-\frac{t}{RC} \\
 I&=I_0e^{-\frac{t}{RC}}
 \end{aligned}
 $$
@@ -55,9 +55,9 @@ $$
 
 $$
 \begin{aligned}
--\frac{1}{N^2}dN&=kdt\\
-\frac{1}{N}-\frac{1}{N_0}&=kt\\
-N&=N_0(1+N_0kt)^{-1}=(1+\frac{t}{\tau_0})^{-1}
+&-\frac{1}{N^2}dN=kdt\\
+&\frac{1}{N}-\frac{1}{N_0}=kt\\
+&N=N_0(1+N_0kt)^{-1}=(1+\frac{t}{\tau_0})^{-1}
 \end{aligned}
 $$
 
@@ -571,7 +571,7 @@ so $x=\infty$ is an irregular singularity.
 
 (The $+c$ in the hypergeometric function in Table 7.1 should be $-c$.)
 
-Note that $y''=\frac{d^2y}{dx^2}$, so $y''$ should be transformed to $\frac{1}{(-\frac{1}{2})^2}y''=4y''$. Similarly $y'$ should be transformed to $\frac{1}{-\frac{1}{2}}y'=-2y'$.  Substitute $x,y'',y',a,b,c$ into the hypergeometric function:
+Note that $y''=\frac{d^2y}{dx^2}$, so $y''$ should be transformed to $\frac{1}{(-\frac{1}{2})^2}y'' =4y''$. Similarly $y'$ should be transformed to $\frac{1}{-\frac{1}{2}}y'=-2y'$.  Substitute $x,y'' ,y',a,b,c$ into the hypergeometric function:
 
 $$
 \begin{aligned}
@@ -593,7 +593,7 @@ which is the Legendre's equation.
 
 ## 7.5.1
 
-(Let the equation be $y''+P(x)y'+Q(x)y=\mathcal{L}y=0$. There should be more conditions for theorem to hold, for example, $P(x)$ and $Q(x)$ being continuous or analytic at $x=x_0$, or $x_0$ is a regular singular point. We prove for the "analytic" case, while I don't know the correctness or the proof for other cases. $P(x)$ being analytic at $x_0$ means that it is infinitely differentiable at $x_0$, that is, $P^{(n)}(x_0)$ is finite for every $n$.)
+(Let the equation be $y'' +P(x)y'+Q(x)y=\mathcal{L}y=0$. There should be more conditions for theorem to hold, for example, $P(x)$ and $Q(x)$ being continuous or analytic at $x=x_0$, or $x_0$ is a regular singular point. We prove for the "analytic" case, while I don't know the correctness or the proof for other cases. $P(x)$ being analytic at $x_0$ means that it is infinitely differentiable at $x_0$, that is, $P^{(n)}(x_0)$ is finite for every $n$.)
 
 If $y_1$ and $y_2$ are two functions satisfying $\mathcal{L}y=0$ and $y(x_0)=y_0$, $y'(x_0)=y'_0$, then $\varphi=y_1-y_2$ satisfies $\mathcal{L}\varphi=0$ and $\varphi(x_0)=0$, $\varphi'(x_0)=0$. Let $x=x_0$, we have 
 
@@ -611,7 +611,7 @@ $$
 \end{aligned}
 $$
 
-All except the first term vanish, so $\varphi'''(x_0)=0$. Continue the process by differentiate the equation $n$ times and let $x=x_0$, we will get the equation of the form 
+All except the first term vanish, so $\varphi''' (x_0)=0$. Continue the process by differentiate the equation $n$ times and let $x=x_0$, we will get the equation of the form 
 
 $$
 \begin{aligned}
@@ -977,7 +977,7 @@ $$
 \end{aligned}
 $$
 
-Let $b_0=1$, then $b_1=\frac{1}{8}b_0=\frac{1}{8}$,\; $b_2=\frac{9}{16}b_1=\frac{9}{128}$.
+Let $b_0=1$, then $b_1=\frac{1}{8}b_0=\frac{1}{8}$, $b_2=\frac{9}{16}b_1=\frac{9}{128}$.
 
 -----
 
@@ -1216,7 +1216,7 @@ $$
 
 ### 7.6.10
 
-Let $y_1,y_2,y_3$ be three solutions of the equation, so $y''_i+P(x)y'_i+Q(x)y_i=0$, \;$i=1,2,3$. The wronskian is
+Let $y_1,y_2,y_3$ be three solutions of the equation, so $y''_i+P(x)y'_i+Q(x)y_i=0$, $i=1,2,3$. The wronskian is
 
 $$
 \begin{aligned}
@@ -1592,7 +1592,7 @@ y_2''(x)&=y_1''(x)f(x)+2y_1'(x)f'(x)+y_1(x)f''(x)
 \end{aligned}
 $$
 
-Substitute into $y_2''+P(x)y_2'+Q(x)y_2=0$ and rearrange:
+Substitute into $y_2'' +P(x)y_2'+Q(x)y_2=0$ and rearrange:
 
 $$
 \begin{aligned}
@@ -1600,7 +1600,7 @@ y_1(x)f''(x)+\big[2y_1'(x)+P(x)y_1(x)\big]f'(x)+\big[y_1''(x)+P(x)y_1'(x)+Q(x)y_
 \end{aligned}
 $$
 
-Note that $y_1''(x)+P(x)y_1'(x)+Q(x)y_1(x)=0$, so the equation becomes
+Note that $y_1'' (x)+P(x)y_1'(x)+Q(x)y_1(x)=0$, so the equation becomes
 
 $$
 \begin{aligned}
@@ -1953,8 +1953,8 @@ which is a Bernoulli equation, so let $v=u^{1-2}=u^{-1}$ and substitute:
 
 $$
 \begin{aligned}
-v'=-u^{-2}u'=-(\frac{1}{x}v+\frac{1}{x^3})\\
-v'+\frac{1}{x}v=-\frac{1}{x^3}
+v'&=-u^{-2}u'=-(\frac{1}{x}v+\frac{1}{x^3})\\
+v'+\frac{1}{x}v&=-\frac{1}{x^3}
 \end{aligned}
 $$
 
