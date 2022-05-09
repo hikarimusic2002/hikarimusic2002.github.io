@@ -1347,6 +1347,8 @@ $$
 
 (b) 
 
+<img src="/files/math_physics_ch3_1.PNG" alt="drawing" width="200"/>
+
 ![](/files/math_physics_ch3_1.PNG)
 *The purple lines are $xy=0$, $xy=1$, $xy=2$. The orange lines are $x^2-y^2=0$, $x^2-y^2=1$, $x^2-y^2=2$.*
 
