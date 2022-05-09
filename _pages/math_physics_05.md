@@ -1358,7 +1358,7 @@ $$
 \end{aligned}
 $$
 
-(b) $U_{ij}=\II{F_i^star P_j}$. Note that except $U_{00},U_{02},U_{11},U_{20},U_{22}$, all the other $U_{ij}$ vanish because $F_i^\star P_j$ are odd functions for these $i,j$.
+(b) $U_{ij}=\II{F_i^\star P_j}$. Note that except $U_{00},U_{02},U_{11},U_{20},U_{22}$, all the other $U_{ij}$ vanish because $F_i^\star P_j$ are odd functions for these $i,j$.
 
 $$
 \begin{aligned}
