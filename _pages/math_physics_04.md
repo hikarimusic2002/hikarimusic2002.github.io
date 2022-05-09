@@ -117,7 +117,7 @@ $$
 \end{aligned}
 $$
 
-Defining $\left(\pdv{T}{x} \right)_{\cdots ij}=\pdv{T_{\cdots i}}{x_j}$. If the transformation is linear, then $\pdv{^2x^\mu}{(x')^j(x')^i}=0$ for all $\mu$. So
+Defining $\left(\pdv{T}{x} \right)\_{\cdots ij}=\pdv{T_{\cdots i}}{x_j}$. If the transformation is linear, then $\pdv{^2x^\mu}{(x')^j(x')^i}=0$ for all $\mu$. So
 
 $$
 \begin{aligned}
@@ -774,7 +774,7 @@ We can prove $g^{ij}\_{;k}=0$ in a similar way. Or we can note that
 
 $$
 \begin{aligned}
-g^{lj}\_{;k}\,\EE_l\cdot\EE_j=\pdv{(g^{lj}\EE_l\cdot\EE_j)}{q^k}=\pdv{(g_{lj}\EE^l\cdot\EE^j)}{q^k}=g_{lj;k}\,\EE^l\cdot\EE^j=0
+g^{lj}_{;k}\,\EE_l\cdot\EE_j=\pdv{(g^{lj}\EE_l\cdot\EE_j)}{q^k}=\pdv{(g_{lj}\EE^l\cdot\EE^j)}{q^k}=g_{lj;k}\,\EE^l\cdot\EE^j=0
 \end{aligned}
 $$
 
