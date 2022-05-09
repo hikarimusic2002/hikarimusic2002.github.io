@@ -477,9 +477,9 @@ $$
 \end{aligned}
 $$
 
-the same is for the transformation from $\M{A}'$ to $\M{A}$. So if $\n$ is an eigenvalue of $\M{A}$, it is an eigenvalue of $\M{A}'$, and vice versa. So $\M{A}'$ and $\M{A}$ have the same eigenvalues (though the eigenvectors may be different.)
+The same is for the transformation from $\M{A}'$ to $\M{A}$. So if $\n$ is an eigenvalue of $\M{A}$, it is an eigenvalue of $\M{A}'$, and vice versa. So $\M{A}'$ and $\M{A}$ have the same eigenvalues (though the eigenvectors may be different.)
 
-The invariance of trace and determinant under similarity transformation can be shown by the invariance of eigenvalues along with the fact that sum of eigenvalues equals trace (compare the coefficient of $\n^{n-1}$ in $\det(\M{A}-\n \M{I})=(-1)^n(\n^n-(\mathrm{tr} \M{A})\n^{n-1}+\cdots)=(-1)^n(\n-\n_1)\cdots(\n-\n_n)$\;) and product of eigenvalues equals determinant (let $\n=0$ in $\det(\M{A}-\n \M{I})=(\n_1-\n)\cdots(\n_n-\n)$). However, they can be proved more simply by
+The invariance of trace and determinant under similarity transformation can be shown by the invariance of eigenvalues along with the fact that sum of eigenvalues equals trace (compare the coefficient of $\n^{n-1}$ in $\det(\M{A}-\n \M{I})=(-1)^n(\n^n-(\mathrm{tr} \M{A})\n^{n-1}+\cdots)=(-1)^n(\n-\n_1)\cdots(\n-\n_n)$) and product of eigenvalues equals determinant (let $\n=0$ in $\det(\M{A}-\n \M{I})=(\n_1-\n)\cdots(\n_n-\n)$). However, they can be proved more simply by
 
 $$
 \newcommand{\tr}{\mathrm{tr}}
