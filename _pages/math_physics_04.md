@@ -89,7 +89,7 @@ which is $k\delta^i_j$.
 ### 4.1.5
 
 [First raletion]
-If $i=k$, then $R_{iklm}=-R_{kilm}=-R_{iklm}$, so $R_{iklm}=0$. The same is for $l=m$, so $R_{iklm}\neq0$ only if $i\neq k$ and $l\neq m$. $R_{ik\textit{__}}$ will determine $R_{ki\_\_}$, and $R_{\_\_lm}$ will determine $R_{\_\_ml}$, so if we let $(i,k),(l,m)\in\{(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)\}$, then all the other components are determined. So the number of independent components is $6\times6=36$.
+If $i=k$, then $R_{iklm}=-R_{kilm}=-R_{iklm}$, so $R_{iklm}=0$. The same is for $l=m$, so $R_{iklm}\neq0$ only if $i\neq k$ and $l\neq m$. $R_{ik--}$ will determine $R_{ki--}$, and $R_{--lm}$ will determine $R_{--ml}$, so if we let $(i,k),(l,m)\in\{(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)\}$, then all the other components are determined. So the number of independent components is $6\times6=36$.
 
 [Second relation]
 If $(i,k)\neq(l,m)$, then $R_{iklm}$ determines $R_{lmik}$. So the number of components reduced is $C^6_2=15$, and the number of independent components becomes $36-15=21$.
@@ -208,7 +208,7 @@ $$
 \end{aligned}
 $$
 
-Because $\T{A'}$ and $\T{B'}$ are arbitrary, the coefficient must vanish. (For example, to prove $(K')_{12}-K_{mn}\pdv{x^m}{(x')^1}\pdv{x^n}{(x')^2}$=0, set $(A')^1=(B')^2=1$, all the other components of $\T{A'}$ and $\T{B'}=0$.) Therefore,
+Because $\T{A'}$ and $\T{B'}$ are arbitrary, the coefficient must vanish. (For example, to prove $(K')\_{12}-K_{mn}\pdv{x^m}{(x')^1}\pdv{x^n}{(x')^2}$=0, set $(A')^1=(B')^2=1$, all the other components of $\T{A'}$ and $\T{B'}=0$.) Therefore,
 
 $$
 \begin{aligned}
@@ -332,7 +332,7 @@ holds, which implies that $C^{jk}$ is a tensor.
 
 If there is a one-to-one correspondence between two sets, then the numbers of elements of the two sets need to be the same. If there is a one-to-one correspondence between the components of a vector $C_i$ and the components of a tensor $(AB)^{jk}$, because the numbers of components of $C_i$ and $(AB)^{jk}$ are different ($n$ and $n^2$), it should mean that the one-to-one correspondence exists between \textit{independent} components of $C_i$ and $(AB)^{jk}$, so the number of _independent_ components of $C_i$ and $(AB)^{jk}$ should be the same.
 
-By the antisymmetry property of ${AB}^{jk}$, ${AB}^{jj}=-{AB}^{jj}$, so ${AB}^{jj}=0$, and ${AB}^{jk}=-{AB}^{kj}$. So the  the number of \textit{independent} components of and $(AB)^{jk}=\frac{n\times n-n}{2}$, should be equal to $n$,  the number of \textit{independent} components of $C_i$. So
+By the antisymmetry property of ${AB}^{jk}$, ${AB}^{jj}=-{AB}^{jj}$, so ${AB}^{jj}=0$, and ${AB}^{jk}=-{AB}^{kj}$. So the  the number of \textit{independent} components of and $(AB)^{jk}=\frac{n\times n-n}{2}$, should be equal to $n$,  the number of _independent_ components of $C_i$. So
 
 $$
 \begin{aligned}
@@ -412,7 +412,7 @@ $$
 \tag{1}
 $$
 
-$\varepsilon_{ij}$ is defined as $\varepsilon_{11}=\varepsilon_{22}=0$, $\varepsilon_{12}=1$, $\varepsilon_{21}=-1$, regardless of which coordinate system it is in. So it is invariant in all coordinate systms, and $(\varepsilon')_{kl}=\varepsilon_{kl}$. (We will use it later.)
+$\varepsilon_{ij}$ is defined as $\varepsilon_{11}=\varepsilon_{22}=0$, $\varepsilon_{12}=1$, $\varepsilon_{21}=-1$, regardless of which coordinate system it is in. So it is invariant in all coordinate systms, and $(\varepsilon')\_{kl}=\varepsilon_{kl}$. (We will use it later.)
 
 $$
 \begin{aligned}
@@ -535,7 +535,7 @@ $$
 \end{aligned}
 $$
 
-so $|\EE^i|^2|\EE_i|^2=1$, which means
+so $|\vert\EE^i\vert^2\vert\EE_i\vert^2=1$, which means
 
 $$
 \begin{aligned}
