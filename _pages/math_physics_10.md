@@ -132,7 +132,7 @@ $$
 \end{aligned}
 $$
 
-so the equation $y''+y=f(x)$ is satisfied, and the initial conditions $y(0)=y'(0)=0$ are also satisfied.
+so the equation $y'' +y=f(x)$ is satisfied, and the initial conditions $y(0)=y'(0)=0$ are also satisfied.
 
 -----
 
@@ -175,7 +175,7 @@ $$
 
 ### 10.1.5
 
-Let $u=kx$, then the equation becomes Bessel's equation with order $n=1$, so the solution is $J_1(kx)$ and $Y_1(kx)$. \;$J_1(kx)$ satisfies $y(0)=0$, and $Y_1(k)J_1(kx)-J_1(k)Y_1(kx)$ satisfies $y(1)=0$. To find the Green's function, we must put it into the self-sdjoint form:
+Let $u=kx$, then the equation becomes Bessel's equation with order $n=1$, so the solution is $J_1(kx)$ and $Y_1(kx)$. $J_1(kx)$ satisfies $y(0)=0$, and $Y_1(k)J_1(kx)-J_1(k)Y_1(kx)$ satisfies $y(1)=0$. To find the Green's function, we must put it into the self-sdjoint form:
 
 $$
 \begin{aligned}
@@ -232,7 +232,7 @@ $$
 
 ### 10.1.6
 
-The equation is Legendre's differential equation of order $n=0$, so the solution is $P_0(x)=1$ and $Q_0(x)=\frac{1}{2}\ln\frac{1+x}{1-x}$. \;$Q_0(x)$ is infinite at $x=\pm1$, so the function for $x<t$ and $x>t$ that satisfies the boundary conditions will both be a multiple of $P_0(x)$, which results in the absence of the discontinuity in $\frac{dG(x,t)}{dx}\big\vert_{x=t}$. So no Green's function can be constructed.
+The equation is Legendre's differential equation of order $n=0$, so the solution is $P_0(x)=1$ and $Q_0(x)=\frac{1}{2}\ln\frac{1+x}{1-x}$.  $Q_0(x)$ is infinite at $x=\pm1$, so the function for $x<t$ and $x>t$ that satisfies the boundary conditions will both be a multiple of $P_0(x)$, which results in the absence of the discontinuity in $\frac{dG(x,t)}{dx}\big\vert_{x=t}$. So no Green's function can be constructed.
 
 -----
 
@@ -379,7 +379,7 @@ t(1-x),\quad & t<x\leq1
 \end{aligned}
 $$
 
-is the Green's function of the equation $-y''=f(x)$, with boundary conditions $y(0)=y(1)=0$. The operator $\mathcal{L}=-\frac{d^2}{dx^2}$ and boundary conditions $y(0)=y(1)=0$ have the orthonormal eigenfunctions $\varphi_n=\sqrt{2}\sin n\pi x$ with eigenvalues $\lambda_n=n^2\pi^2$, so by Equation 10.14, the Green's function is given by
+is the Green's function of the equation $-y'' =f(x)$, with boundary conditions $y(0)=y(1)=0$. The operator $\mathcal{L}=-\frac{d^2}{dx^2}$ and boundary conditions $y(0)=y(1)=0$ have the orthonormal eigenfunctions $\varphi_n=\sqrt{2}\sin n\pi x$ with eigenvalues $\lambda_n=n^2\pi^2$, so by Equation 10.14, the Green's function is given by
 
 $$
 \begin{aligned}
@@ -399,7 +399,7 @@ t,\quad & t<x\leq1
 \end{aligned}
 $$
 
-is the Green's function of the equation $-y''=f(x)$, with boundary conditions $y(0)=0,\,y'(1)=0$. The operator $\mathcal{L}=-\frac{d^2}{dx^2}$ and boundary conditions $y(0)=0,\,y'(1)=0$ have the orthonormal eigenfunctions $\varphi_n=\sqrt{2}\sin(n+\frac{1}{2})\pi x$ with eigenvalues $\lambda_n=(n+\frac{1}{2})^2\pi^2$, so by Equation 10.14, the Green's function is given by
+is the Green's function of the equation $-y'' =f(x)$, with boundary conditions $y(0)=0,\,y'(1)=0$. The operator $\mathcal{L}=-\frac{d^2}{dx^2}$ and boundary conditions $y(0)=0,\,y'(1)=0$ have the orthonormal eigenfunctions $\varphi_n=\sqrt{2}\sin(n+\frac{1}{2})\pi x$ with eigenvalues $\lambda_n=(n+\frac{1}{2})^2\pi^2$, so by Equation 10.14, the Green's function is given by
 
 $$
 \begin{aligned}
@@ -424,7 +424,7 @@ y(x)-y(-1)&=c\int_{-1}^xdx+\int_{-1}^xds\int_{-1}^sy(t)dt\\
 \end{aligned}
 $$
 
-where we change the order of integration in the last three equation (the area to be integrated is an upper triangle in the \textit{t-s} surface). Substitute $y(1)=1$ and $y(-1)=1$:
+where we change the order of integration in the last three equation (the area to be integrated is an upper triangle in the _t-s_ surface). Substitute $y(1)=1$ and $y(-1)=1$:
 
 $$
 \begin{aligned}
@@ -456,7 +456,7 @@ K(x,t)=
 \end{aligned}
 $$
 
-(b) Let $u(x)=y(x)-1$, then the equation becomes $u''(x)=u(x)+1$, and the boundary conditions becomes $u(1)=u(-1)=0$. \;$u(x)=x+1$ satisfies the homogeneous equation and $u(-1)=0$, and $u(x)=x-1$ satisfies the homogeneous equation and $u(1)=0$. So the Green's function has the form
+(b) Let $u(x)=y(x)-1$, then the equation becomes $u'' (x)=u(x)+1$, and the boundary conditions becomes $u(1)=u(-1)=0$. $u(x)=x+1$ satisfies the homogeneous equation and $u(-1)=0$, and $u(x)=x-1$ satisfies the homogeneous equation and $u(1)=0$. So the Green's function has the form
 
 $$
 \begin{aligned}
@@ -560,7 +560,7 @@ $$
 \end{aligned}
 $$
 
-The solution of the homogeneous equation has the form $c_1e^{kr}+c_2e^{-kr}$. \;$\sinh kr=\frac{1}{2}(e^{kr}-e^{-kr})$ satisfies the homogeneous equation and y(0)=0, and $e^{-kr}$ satisfies the homogeneous equation and $y(\infty)=0$. So the Green's function has the form
+The solution of the homogeneous equation has the form $c_1e^{kr}+c_2e^{-kr}$. $\sinh kr=\frac{1}{2}(e^{kr}-e^{-kr})$ satisfies the homogeneous equation and $y(0)=0$, and $e^{-kr}$ satisfies the homogeneous equation and $y(\infty)=0$. So the Green's function has the form
 
 $$
 \begin{aligned}
