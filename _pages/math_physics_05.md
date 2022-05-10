@@ -6,7 +6,7 @@ author_profile: false
 
 ---
 
-# Chapter 5 Vector Spaces
+# Chapter 5: Vector Spaces
 
 ## 5.1 Vectors in Function Spaces
 
