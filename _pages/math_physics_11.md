@@ -16,7 +16,7 @@ author_profile: false
 
 $$
 \def\dint{{\int}\kern-8.0pt{-}}
-\dint\limits_0^1
+\dint_0^1
 $$
 
 $$
