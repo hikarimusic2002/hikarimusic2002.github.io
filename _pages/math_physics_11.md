@@ -1046,7 +1046,7 @@ where we substitute $t$ for $z+1$ in the second equation, so both the residues a
 
 $$
 \begin{aligned}
-\def\dint{{\int_{-\infty}^x}\kern-15.0pt{-}}
+\def\dint{{\int_{-\infty}^x}\kern-18.0pt{-}}
 \dint\quad\frac{e^t}{t}dt&=
 \lim_{\delta\to0}\left[\int_{-\infty}^{-\delta}\frac{e^t}{t}dt+\int_{\delta}^x\frac{e^t}{t}dt \right]\\
 &=\lim_{\delta\to0}\left[-\int_{\delta}^{\infty}\frac{e^{-t}}{t}dt+\int_{\delta}^x\frac{e^t}{t}dt
@@ -1062,7 +1062,7 @@ where the first integral exists because $\frac{e^t-e^{-t}}{t}$ is finite as  $t\
 ### 11.7.4
 
 $$
-\def\ddint{{\int_0^\infty}\kern-15.0pt{-}}
+\def\ddint{{\int_0^\infty}\kern-18.0pt{-}}
 \begin{aligned}
 \ddint\quad\frac{x^{-p}}{x-1}dx&=\lim_{\delta\to0}\left[\int_0^{1-\delta}\frac{x^{-p}}{x-1}dx+\int_{1+\delta}^\infty\frac{x^{-p}}{x-1}dx \right]\\
 &=\lim_{\delta\to0}\left[-\int_0^{1-\delta}x^{-p}\sum_{n=0}^\infty x^ndx+\int_{1+\delta}^\infty x^{-p}x^{-1}\sum_{n=0}^\infty x^{-n}dx \right]\\
