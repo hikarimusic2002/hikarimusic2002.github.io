@@ -6,7 +6,7 @@ author_profile: false
 
 ---
 
-# Chapter 8 Sturm-Liouville Theory
+# Chapter 8: Sturm-Liouville Theory
 
 {% raw %}
 
