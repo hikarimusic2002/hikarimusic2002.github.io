@@ -15,8 +15,8 @@ author_profile: false
 ### 11.2.1
 
 $$
-\def\dint{{\int}\kern-0.5pt{-}}
-\dint
+\def\myHearts{\color{purple}{\heartsuit}\kern-2.5pt\color{green}{\heartsuit}}
+\myHearts\myHearts
 $$
 
 $$
