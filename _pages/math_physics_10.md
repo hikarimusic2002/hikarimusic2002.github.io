@@ -232,7 +232,7 @@ $$
 
 ### 10.1.6
 
-The equation is Legendre's differential equation of order $n=0$, so the solution is $P_0(x)=1$ and $Q_0(x)=\frac{1}{2}\ln\frac{1+x}{1-x}$. \;$Q_0(x)$ is infinite at $x=\pm1$, so the function for $x<t$ and $x>t$ that satisfies the boundary conditions will both be a multiple of $P_0(x)$, which results in the absence of the discontinuity in $\frac{dG(x,t)}{dx}\big|_{x=t}$\,. So no Green's function can be constructed.
+The equation is Legendre's differential equation of order $n=0$, so the solution is $P_0(x)=1$ and $Q_0(x)=\frac{1}{2}\ln\frac{1+x}{1-x}$. \;$Q_0(x)$ is infinite at $x=\pm1$, so the function for $x<t$ and $x>t$ that satisfies the boundary conditions will both be a multiple of $P_0(x)$, which results in the absence of the discontinuity in $\frac{dG(x,t)}{dx}\big\vert_{x=t}$. So no Green's function can be constructed.
 
 -----
 
@@ -644,7 +644,11 @@ $$
 \end{aligned}
 $$
 
-which implies $\mathcal{L}$ is Hermitian. \\(The surface integral vanishes by the Dirichlet boundary conditions.) \\($\del\cdot(f\V{V})=(\del f)\cdot\V{V}+f\del\cdot\V{V}$ and $\int_V\del\cdot\V{V}\,d\tau=\oint_A\V{V}\cdot d\boldsymbol{\sigma}$ have been used several times.)
+which implies $\mathcal{L}$ is Hermitian. 
+                           
+(The surface integral vanishes by the Dirichlet boundary conditions.) 
+                           
+($\del\cdot(f\V{V})=(\del f)\cdot\V{V}+f\del\cdot\V{V}$ and $\int_V\del\cdot\V{V}\,d\tau=\oint_A\V{V}\cdot d\boldsymbol{\sigma}$ have been used several times.)
 
 -----
 
@@ -654,11 +658,10 @@ which implies $\mathcal{L}$ is Hermitian. \\(The surface integral vanishes by th
 
 $$
 \begin{aligned}
-\lim_{|\V{r}_1-\V{r}_2|\to0}\int k^2G(\V{r}_1,\V{r}_2)d^3r_2\\
-&=\lim_{a\to0}\int\displaylimits_{|\V{r}_1-\V{r}_2|<a}-k^2\,\frac{e^{ik|\V{r}_1-\V{r}_2|}}{4\pi |\V{r}_1-\V{r}_2|}\,d^3r_2\\
-&=-\lim_{a\to0}\int_0^a\int_0^\pi\int_0^{2\pi}k^2\,\frac{e^{ikr}}{4\pi r}\,r^2\sin\theta\,d\theta\,d\varphi\\
-&=-\lim_{a\to0}k^2\int_0^a re^{ikr}dr
-=\lim_{a\to0}(ika\,e^{ika}-e^{ika}+1)=0
+&\lim_{|\V{r}_1-\V{r}_2|\to0}\int k^2G(\V{r}_1,\V{r}_2)d^3r_2\\
+=&\lim_{a\to0}\int\limits_{|\V{r}_1-\V{r}_2|<a}-k^2\,\frac{e^{ik|\V{r}_1-\V{r}_2|}}{4\pi |\V{r}_1-\V{r}_2|}\,d^3r_2\\
+=&-\lim_{a\to0}\int_0^a\int_0^\pi\int_0^{2\pi}k^2\,\frac{e^{ikr}}{4\pi r}\,r^2\sin\theta\,d\theta\,d\varphi\\
+=&-\lim_{a\to0}k^2\int_0^a re^{ikr}dr=\lim_{a\to0}(ika\,e^{ika}-e^{ika}+1)=0
 \end{aligned}
 $$
 
@@ -694,10 +697,10 @@ For $\V{r}_1=\V{r}_2$, the function diverges, but for every $a>0$,
 
 $$
 \begin{aligned}
-&\int\displaylimits_{r_{12}<a}(\del^2+k^2)G(\V{r}_1,\V{r}_2)d^3r_1\\
-=&-\int\displaylimits_{r_{12}<a}\del\cdot\del\frac{e^{ikr_{12}}}{4\pi r_{12}}d^3r_{12}-\int\displaylimits_{r_{12}<a}k^2\frac{e^{ikr_{12}}}{4\pi r_{12}}d^3r_{12}\\
-=&-\oint\displaylimits_{r_{12}=a}\del\frac{e^{ikr_{12}}}{4\pi r_{12}}\cdot d\boldsymbol{\sigma}_{12}-\int_0^a\int_0^\pi\int_0^{2\pi}k^2\frac{e^{ikr}}{4\pi r}r^2\sin\theta\,d\theta\,d\varphi\\
-=&-\oint\displaylimits_{r_{12}=a}\left(\frac{ike^{ikr_{12}}}{4\pi r_{12}}-\frac{e^{ikr_{12}}}{4\pi r_{12}^2} \right)\hat{\V{r}}\cdot d\boldsymbol{\sigma}_{12}-k^2\int_0^a re^{ikr}dr\\
+&\int\limits_{r_{12}<a}(\del^2+k^2)G(\V{r}_1,\V{r}_2)d^3r_1\\
+=&-\int\limits_{r_{12}<a}\del\cdot\del\frac{e^{ikr_{12}}}{4\pi r_{12}}d^3r_{12}-\int\limits_{r_{12}<a}k^2\frac{e^{ikr_{12}}}{4\pi r_{12}}d^3r_{12}\\
+=&-\oint\limits_{r_{12}=a}\del\frac{e^{ikr_{12}}}{4\pi r_{12}}\cdot d\boldsymbol{\sigma}_{12}-\int_0^a\int_0^\pi\int_0^{2\pi}k^2\frac{e^{ikr}}{4\pi r}r^2\sin\theta\,d\theta\,d\varphi\\
+=&-\oint\limits_{r_{12}=a}\left(\frac{ike^{ikr_{12}}}{4\pi r_{12}}-\frac{e^{ikr_{12}}}{4\pi r_{12}^2} \right)\hat{\V{r}}\cdot d\boldsymbol{\sigma}_{12}-k^2\int_0^a re^{ikr}dr\\
 =&-\left(\frac{ike^{ika}}{4\pi a}-\frac{e^{ika}}{4\pi a^2} \right)4\pi a^2-k^2\left(\frac{ae^{ika}}{ik}+\frac{e^{ika}-1}{k^2} \right)\\
 =&-ika\,e^{ika}+e^{ika}+ika\,e^{ika}-e^{ika}+1=1
 \end{aligned}
@@ -794,7 +797,7 @@ Note that
 
 $$
 \begin{aligned}
-\int\displaylimits_{r<R}\frac{Za^2}{4\pi}\frac{e^{-ar}}{r}d^3r=\int_0^R\frac{Za^2}{4\pi}\frac{e^{-ar}}{r}4\pi r^2\,dr=Za^2\int_0^R re^{-ar}dr=-ZaR\,e^{-aR}-Ze^{-aR}+Z
+\int\limits_{r<R}\frac{Za^2}{4\pi}\frac{e^{-ar}}{r}d^3r=\int_0^R\frac{Za^2}{4\pi}\frac{e^{-ar}}{r}4\pi r^2\,dr=Za^2\int_0^R re^{-ar}dr=-ZaR\,e^{-aR}-Ze^{-aR}+Z
 \end{aligned}
 $$
 
@@ -802,7 +805,7 @@ so for every $R$,
 
 $$
 \begin{aligned}
-\int\displaylimits_{r<R}\left[\rho(\V{r})+\frac{Za^2}{4\pi}\frac{e^{-ar}}{r} \right]d^3r=Z
+\int\limits_{r<R}\left[\rho(\V{r})+\frac{Za^2}{4\pi}\frac{e^{-ar}}{r} \right]d^3r=Z
 \end{aligned}
 $$
 
