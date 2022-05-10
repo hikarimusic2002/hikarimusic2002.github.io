@@ -1364,7 +1364,7 @@ $$
 
 (b) 
 
-<img src="/files/math_physics_ch3_1.PNG" alt="drawing" width="800"/>
+<img src="/files/math_physics_ch3_1.PNG" alt="drawing" width="500"/>
 
 The purple lines are $xy=0$, $xy=1$, $xy=2$. The orange lines are $x^2-y^2=0$, $x^2-y^2=1$, $x^2-y^2=2$.
 
@@ -1377,7 +1377,7 @@ The purple lines are $xy=0$, $xy=1$, $xy=2$. The orange lines are $x^2-y^2=0$, $
 
 ### 3.10.2
 
-<img src="/files/math_physics_ch3_2.PNG" alt="drawing" width="800"/>
+<img src="/files/math_physics_ch3_2.PNG" alt="drawing" width="500"/>
 
 The orange lines are $u=\frac{\pi}{6}$, $u=\frac{\pi}{4}$, $u=\frac{\pi}{3}$. The purple lines are $v=\frac{\pi}{6}$, $v=\frac{\pi}{4}$, $v=\frac{\pi}{3}$
 
