@@ -1840,7 +1840,7 @@ I=\pm(\pi i\cdot\frac{1}{2i}-\pi i\cdot\frac{1}{2i})=0
 \end{aligned}
 $$
 
-For $\abs{p}<1$,\; $p+1>0$ and $p-1<0$, so
+For $\abs{p}<1$, $p+1>0$ and $p-1<0$, so
 
 $$
 \begin{aligned}
@@ -2031,7 +2031,7 @@ Using the residue theorem, we have
 $$
 \begin{aligned}
 I+I-\frac{\pi^3}{2}&=2\pi i\cdot\frac{\pi^2i}{8}\\
-I=\frac{\pi^3}{8}
+I&=\frac{\pi^3}{8}
 \end{aligned}
 $$
 
