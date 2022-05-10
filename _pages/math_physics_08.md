@@ -88,7 +88,7 @@ which means the ODE will be self-adjoint if we let $\frac{1}{\sqrt{1-x^2}}$ be t
 
 ### 8.2.4
 
-The boundary condition for $p_0(x)y''+p_1(x)y'+p_2(x)=0$ to be self-adjoint is
+The boundary condition for $p_0(x)y'' +p_1(x)y'+p_2(x)=0$ to be self-adjoint is
 
 $$
 \begin{aligned}
@@ -175,7 +175,7 @@ $$
 \end{aligned}
 $$
 
-which means $u_m',u_n'$ are orthogonal, as long as the boundary condition $u_m^*pu_n'\big|_a^b=0$ is satisfied. 
+which means $u_m',u_n'$ are orthogonal, as long as the boundary condition $u_m^\star pu_n'\big\vert_a^b=0$ is satisfied. 
 
 (Or equivalently $(u_m^\star)'pu_n\big\vert_a^b=0$, because we have $\big[u_m^\star pu_n'-(u_m^\star)'pu_n \big]\_a^b=0$ from the boundary conditions making  $u_m,u_n$ orthogonal.)
 
