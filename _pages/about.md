@@ -31,7 +31,7 @@ Algorithm
 
 {% capture written_label %}'None'{% endcapture %}
 
-{% for collection in site.collections %}
+{% for collection in site.collections reversed %}
 {% unless collection.output == false or collection.label == "posts" %}
   {% capture label %}{{ collection.label }}{% endcapture %}
   {% if label != written_label %}
