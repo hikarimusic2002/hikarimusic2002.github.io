@@ -15,7 +15,7 @@ author_profile: false
 ### 11.2.1
 
 $$
-\def\myHearts{\color{purple}{\int}\kern-5.0pt\color{green}{-}}
+\def\myHearts{{\int}\kern-10.0pt{-}}
 \myHearts\myHearts
 $$
 
