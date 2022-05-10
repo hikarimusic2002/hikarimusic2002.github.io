@@ -15,6 +15,11 @@ author_profile: false
 ### 11.2.1
 
 $$
+\def\dint{{\int}\kern-0.5pt{-}}
+\dint
+$$
+
+$$
 \newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
 \newcommand{\V}{\mathbf}
 \newcommand{\del}{\boldsymbol{\nabla}}
