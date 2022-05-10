@@ -6,7 +6,7 @@ author_profile: false
 
 ---
 
-# Chapter 1: Determinants and Matrices
+# Chapter 2: Determinants and Matrices
 
 ## 2.1 Determinants
 
