@@ -184,11 +184,11 @@ $$
 
 $$
 \begin{aligned}
-    & \pdv{\varphi}{x}=\pdv{\varphi}{\xi}\pdv{\xi}{x}+\pdv{\varphi}{\eta}\pdv{\eta}{x}=c^{\frac{1}{2}}\pdv{\varphi}{\xi}\\
-    & \pdv{^2\varphi}{x^2}=c^{\frac{1}{2}}\left(\pdv{^2\varphi}{\xi^2}\pdv{\xi}{x}+\pdv{^2\varphi}{\xi\partial\eta}\pdv{\eta}{x}\right)=c\pdv{^2\varphi}{\xi^2}\\
-    & \pdv{^2\varphi}{x\partial y}=c^{\frac{1}{2}}\left(\pdv{^2\varphi}{\xi^2}\pdv{\xi}{y}+\pdv{^2\varphi}{\xi\partial\eta}\pdv{\eta}{y} \right)=-b\pdv{^2\varphi}{\xi^2}+\pdv{^2\varphi}{\xi\partial\eta}\\
-    & \pdv{\varphi}{y}=\pdv{\varphi}{\xi}\pdv{\xi}{y}+\pdv{\varphi}{\eta}\pdv{\eta}{y}=-c^{-\frac{1}{2}}b\pdv{\varphi}{\xi}+c^{-\frac{1}{2}}\pdv{\varphi}{\eta}\\
-   & \pdv{^2\varphi}{y^2}=-c^{-\frac{1}{2}}b\left(\pdv{^2\varphi}{\xi^2}\pdv{\xi}{y}+\pdv{^2\varphi}{\xi\partial\eta}\pdv{\eta}{y} \right)+c^{-\frac{1}{2}}\left(\pdv{^2\varphi}{\xi\partial\eta}\pdv{\xi}{y}+\pdv{^2\varphi}{\eta^2}\pdv{\eta}{y} \right)=c^{-1}b^2\pdv{^2\varphi}{\xi^2}-2c^{-1}b\pdv{^2\varphi}{\xi\partial\eta}+c^{-1}\pdv{^2\varphi}{\eta^2}
+\pdv{\varphi}{x}&=\pdv{\varphi}{\xi}\pdv{\xi}{x}+\pdv{\varphi}{\eta}\pdv{\eta}{x}=c^{\frac{1}{2}}\pdv{\varphi}{\xi}\\
+\pdv{^2\varphi}{x^2}&=c^{\frac{1}{2}}\left(\pdv{^2\varphi}{\xi^2}\pdv{\xi}{x}+\pdv{^2\varphi}{\xi\partial\eta}\pdv{\eta}{x}\right)=c\pdv{^2\varphi}{\xi^2}\\
+\pdv{^2\varphi}{x\partial y}&=c^{\frac{1}{2}}\left(\pdv{^2\varphi}{\xi^2}\pdv{\xi}{y}+\pdv{^2\varphi}{\xi\partial\eta}\pdv{\eta}{y} \right)=-b\pdv{^2\varphi}{\xi^2}+\pdv{^2\varphi}{\xi\partial\eta}\\
+\pdv{\varphi}{y}&=\pdv{\varphi}{\xi}\pdv{\xi}{y}+\pdv{\varphi}{\eta}\pdv{\eta}{y}=-c^{-\frac{1}{2}}b\pdv{\varphi}{\xi}+c^{-\frac{1}{2}}\pdv{\varphi}{\eta}\\
+\pdv{^2\varphi}{y^2}&=-c^{-\frac{1}{2}}b\left(\pdv{^2\varphi}{\xi^2}\pdv{\xi}{y}+\pdv{^2\varphi}{\xi\partial\eta}\pdv{\eta}{y} \right)+c^{-\frac{1}{2}}\left(\pdv{^2\varphi}{\xi\partial\eta}\pdv{\xi}{y}+\pdv{^2\varphi}{\eta^2}\pdv{\eta}{y} \right)=c^{-1}b^2\pdv{^2\varphi}{\xi^2}-2c^{-1}b\pdv{^2\varphi}{\xi\partial\eta}+c^{-1}\pdv{^2\varphi}{\eta^2}
 \end{aligned}
 $$
 
