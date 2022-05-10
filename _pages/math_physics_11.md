@@ -15,8 +15,8 @@ author_profile: false
 ### 11.2.1
 
 $$
-\def\myHearts{{\int}\kern-10.0pt{-}}
-\myHearts\myHearts
+\def\dint{{\int}\kern-8.0pt{-}}
+\dint\limits_0^1
 $$
 
 $$
