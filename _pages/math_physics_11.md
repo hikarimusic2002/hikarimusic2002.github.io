@@ -1595,7 +1595,7 @@ $$
 
 $$
 \begin{aligned}
-\int\limits_{-\infty}^\infty\frac{\cos bx-\cos ax}{x^2}dx=\int\limits_{-\infty}^\infty\frac{(e^{ibx}+e^{-ibx})-(e^{iax}-e^{-iax})}{2x^2}dx=\ddashint\limits_{-\infty}^\infty\frac{e^{ibx}-e^{iax}}{2x^2}dx+\ddashint\limits_{-\infty}^\infty\frac{e^{-ibx}-e^{-iax}}{2x^2}dx
+\int\limits_{-\infty}^\infty\frac{\cos bx-\cos ax}{x^2}dx=\int\limits_{-\infty}^\infty\frac{(e^{ibx}+e^{-ibx})-(e^{iax}-e^{-iax})}{2x^2}dx=\ddashint_{-\infty}^\infty\frac{e^{ibx}-e^{iax}}{2x^2}dx+\ddashint_{-\infty}^\infty\frac{e^{-ibx}-e^{-iax}}{2x^2}dx
 \end{aligned}
 $$
 
