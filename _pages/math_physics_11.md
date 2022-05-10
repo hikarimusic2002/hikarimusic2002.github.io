@@ -15,24 +15,10 @@ author_profile: false
 ### 11.2.1
 
 $$
-\def\dint{{\int\limits_\infty^\infty}\kern-10.0pt{-}}
-\dint
-$$
-
-$$
 \newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
 \newcommand{\V}{\mathbf}
 \newcommand{\del}{\boldsymbol{\nabla}}
-\def\Xint#1{\mathchoice
-   {\XXint\displaystyle\textstyle{#1}}%
-   {\XXint\textstyle\scriptstyle{#1}}%
-   {\XXint\scriptstyle\scriptscriptstyle{#1}}%
-   {\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
-   \!\int}
-\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$}
-     \vcenter{\hbox{$#2#3$}}\kern-.5\wd0}}
-\def\ddashint{\Xint{\;\,-}}
-\def\dashint{\Xint-}
+\def\ddashint{{\int\limits_\infty^\infty}\kern-10.0pt{-}}
 \begin{aligned}
 \pdv{u}{x}=1\neq\pdv{v}{y}=0
 \end{aligned}
