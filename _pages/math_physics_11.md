@@ -15,7 +15,7 @@ author_profile: false
 ### 11.2.1
 
 $$
-\def\dint{{\int}\kern-8.0pt{-}}
+\def\dint{{\int_0^1}\kern-8.0pt{-}}
 \dint_0^1
 $$
 
