@@ -483,11 +483,11 @@ Suppose $\psi_1$ and $\psi_2$ are distinct solutions to the Laplace or Poisson e
 
 $$
 \begin{aligned}
-\int\displaylimits_S\psi\pdv{\psi}{\V{n}}dS=\int\displaylimits_V\psi\nabla^2\psi\,d\tau+\int\displaylimits_V   \nabla\psi\cdot\nabla\psi\,d\tau
+\int\limits_S\psi\pdv{\psi}{\V{n}}dS=\int\limits_V\psi\nabla^2\psi\,d\tau+\int\limits_V   \nabla\psi\cdot\nabla\psi\,d\tau
 \end{aligned}
 $$
 
-$\int\displaylimits_S\psi\pdv{\psi}{\V{n}}dS$ vanishes because $\psi$ vanishes on the boundary. $\int\displaylimits_V\psi\nabla^2\psi\,d\tau$ vanishes because $\psi$ is a solution to the Laplace equation. Therefore $\int\displaylimits_V   \nabla\psi\cdot\nabla\psi\,d\tau$ must vanish, which means $\nabla\psi=0$ everywhere, so $\psi=constant=0$ because it is zero on the boundary. So $\psi_1=\psi_2$, which means the solution is unique.
+$\int\limits_S\psi\pdv{\psi}{\V{n}}dS$ vanishes because $\psi$ vanishes on the boundary. $\int\limits_V\psi\nabla^2\psi\,d\tau$ vanishes because $\psi$ is a solution to the Laplace equation. Therefore $\int\limits_V   \nabla\psi\cdot\nabla\psi\,d\tau$ must vanish, which means $\nabla\psi=0$ everywhere, so $\psi=constant=0$ because it is zero on the boundary. So $\psi_1=\psi_2$, which means the solution is unique.
 
 ## 9.6 Wave Equation 
 
