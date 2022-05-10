@@ -6,7 +6,7 @@ author_profile: false
 
 ---
 
-# Chapter 4 Tensors and Differential Forms
+# Chapter 4: Tensors and Differential Forms
 
 ## 4.1 Tensor Analysis
 
