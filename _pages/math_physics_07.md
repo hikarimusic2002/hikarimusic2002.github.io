@@ -6,7 +6,7 @@ author_profile: false
 
 ---
 
-# Chapter 7 Ordinary Differential Equations
+# Chapter 7: Ordinary Differential Equations
 
 {% raw %}
 
