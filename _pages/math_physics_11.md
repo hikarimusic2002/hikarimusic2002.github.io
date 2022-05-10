@@ -15,7 +15,7 @@ author_profile: false
 ### 11.2.1
 
 $$
-\def\myHearts{\color{purple}{\heartsuit}\kern-2.5pt\color{green}{\heartsuit}}
+\def\myHearts{\color{purple}{\int}\kern-2.5pt\color{green}{\heartsuit}}
 \myHearts\myHearts
 $$
 
