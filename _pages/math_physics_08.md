@@ -27,7 +27,7 @@ e^{-x}xy''+e^{-x}(1-x)y'+e^{-x}ay=0
 \end{aligned}
 $$
 
-Then $\frac{d}{dx}(e^{-x}x)=e^{-x}(1-x)$, so the ODE is self-adjoint if the boundary term $e^{-x}x\big[v^*u'-(v^*)'u\big]_a^b$ vanishes. 
+Then $\frac{d}{dx}(e^{-x}x)=e^{-x}(1-x)$, so the ODE is self-adjoint if the boundary term $e^{-x}x\big[v^\star u'-(v^\star)'u\big]\_a^b$ vanishes. 
 The inner product becomes
 
 $$
@@ -50,7 +50,7 @@ e^{-x^2}y''-2xe^{-x^2}y'+2\alpha e^{-x^2}y=0
 \end{aligned}
 $$
 
-Then $\frac{d}{dx}(e^{-x^2})=-2xe^{-x^2}$, so the ODE is self-adjoint if the boundary term $e^{-x^2}\big[v^*u'-(v^*)'u\big]_a^b$ vanishes. 
+Then $\frac{d}{dx}(e^{-x^2})=-2xe^{-x^2}$, so the ODE is self-adjoint if the boundary term $e^{-x^2}\big[v^\star u'-(v^\star)'u\big]\_a^b$ vanishes. 
 The inner product becomes
 
 $$
@@ -113,7 +113,7 @@ $$
 
 ### 8.2.5
 
-The eigenvectors of an Hermitian operator with different eigenvalues are orthogonal (chapter 6) and therefore linearly independent (because if $au_1+bu_2=0$, then $\br{au_1+bu_2}{au_1+bu_2}=|a|^2\br{u_1}{u_1}+|b|^2\br{u_2}{u_2}=0$, which means $a=b=0$).
+The eigenvectors of an Hermitian operator with different eigenvalues are orthogonal (chapter 6) and therefore linearly independent (because if $au_1+bu_2=0$, then $\br{au_1+bu_2}{au_1+bu_2}=\vert a\vert^2\br{u_1}{u_1}+\vert b\vert^2\br{u_2}{u_2}=0$, which means $a=b=0$).
 
 -----
 
@@ -175,7 +175,9 @@ $$
 \end{aligned}
 $$
 
-which means $u_m',u_n'$ are orthogonal, as long as the boundary condition $u_m^*pu_n'\big|_a^b=0$ is satisfied. \\(Or equivalently $(u_m^*)'pu_n\big|_a^b=0$, because we have $\big[u_m^*pu_n'-(u_m^*)'pu_n \big]_a^b=0$ from the boundary conditions making  $u_m,u_n$ orthogonal.)
+which means $u_m',u_n'$ are orthogonal, as long as the boundary condition $u_m^*pu_n'\big|_a^b=0$ is satisfied. 
+
+(Or equivalently $(u_m^\star)'pu_n\big\vert_a^b=0$, because we have $\big[u_m^\star pu_n'-(u_m^\star)'pu_n \big]\_a^b=0$ from the boundary conditions making  $u_m,u_n$ orthogonal.)
 
 -----
 
@@ -531,8 +533,8 @@ For $s=1$, $a_1=0$, and
 
 $$
 \begin{aligned}
-a_{j+2}=a_j\frac{(j+1-n)(j+1+n)}{(j+2)(j+3)}\\
-y_{odd}=\sum_{j\;even}a_jx^{1+j}=a_0\left[x+\frac{(1-n)(1+n)}{3!}x^3+\frac{(3-n)(1-n)(1+n)(3+n)}{5!}x^5+\cdots \right]
+a_{j+2}&=a_j\frac{(j+1-n)(j+1+n)}{(j+2)(j+3)}\\
+y_{odd}&=\sum_{j\;even}a_jx^{1+j}=a_0\left[x+\frac{(1-n)(1+n)}{3!}x^3+\frac{(3-n)(1-n)(1+n)(3+n)}{5!}x^5+\cdots \right]
 \end{aligned}
 $$
 
