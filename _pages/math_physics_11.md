@@ -19,7 +19,7 @@ $$
 \newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
 \newcommand{\V}{\mathbf}
 \newcommand{\del}{\boldsymbol{\nabla}}
-\def\dashint{{\int\limits_{-\infty}^\infty}\kern-10.0pt{-}}
+\def\dashint{{\int\limits_{-\infty}^\infty}\kern-10.0pt{-}\;}
 \begin{aligned}
 \pdv{u}{x}=1\neq\pdv{v}{y}=0
 \end{aligned}
