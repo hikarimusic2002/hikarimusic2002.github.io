@@ -73,7 +73,7 @@ $$
 \end{aligned}
 $$
 
-Then $\frac{d}{dx}(\sqrt{1-x^2})=-\frac{x}{\sqrt{1-x^2}}$, so the ODE is self-adjoint if the boundary term $\sqrt{1-x^2}\big[v^*u'-(v^*)'u\big]_a^b$ vanishes. 
+Then $\frac{d}{dx}(\sqrt{1-x^2})=-\frac{x}{\sqrt{1-x^2}}$, so the ODE is self-adjoint if the boundary term $\sqrt{1-x^2}\big[v^\star u'-(v^\star)'u\big]\_a^b$ vanishes. 
 The inner product becomes 
 
 $$
