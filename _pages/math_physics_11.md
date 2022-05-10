@@ -15,6 +15,7 @@ author_profile: false
 ### 11.2.1
 
 $$
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
 \newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
 \newcommand{\V}{\mathbf}
 \newcommand{\del}{\boldsymbol{\nabla}}
@@ -284,7 +285,7 @@ $$
 
 ### 11.3.2
 
-As the infinite version of $\big|\sum_k a_k\big|\leq\sum_k|a_k|$, we have
+As the infinite version of $\abs{\sum_k a_k}\leq\sum_k\abs{a_k}$, we have
 
 $$
 \begin{aligned}
@@ -304,7 +305,7 @@ $$
 \end{aligned}
 $$
 
-(b) The path is described by $z=5e^{i\theta}$ where $\theta$ ranges from $\theta_1$ to $\theta_2$, with $e^{i\theta_1}=\frac{3+4i}{5}$,\; $e^{i\theta_2}=\frac{4-3i}{5}$. Substituting, the integral becomes
+(b) The path is described by $z=5e^{i\theta}$ where $\theta$ ranges from $\theta_1$ to $\theta_2$, with $e^{i\theta_1}=\frac{3+4i}{5}$, $e^{i\theta_2}=\frac{4-3i}{5}$. Substituting, the integral becomes
 
 $$
 \begin{aligned}
@@ -452,7 +453,7 @@ which means the equation also holds for $n=k+1$. The proof follows by induction.
 
 ### 11.4.5
 
-(The problem should be $|f(z)|\geq M$ in order to be in accordance with the hint and (b), while to prove that we still need to prove the case of $|f(z)|\leq M$ first)
+(The problem should be $\abs{f(z)}\geq M$ in order to be in accordance with the hint and (b), while to prove that we still need to prove the case of $\abs{f(z)}\leq M$ first)
 
 (a)
 We first prove if $|f(z)|\leq M$ on $C$, then $|f(z)|\leq M$ for all points within $C$. It is obvious because for every $z_0$ within $C$,
@@ -463,9 +464,9 @@ $$
 \end{aligned}
 $$
 
-where $M'$ is the maximum of $|f(z)|$ on the circle $|z-z_0|=r$, so $|f(z_0)|$ cannot be maximum, which means the maximum is always on the boundary, which is $M$.
+where $M'$ is the maximum of $\abs{f(z)}$ on the circle $\abs{z-z_0}=r$, so $\abs{f(z_0)}$ cannot be maximum, which means the maximum is always on the boundary, which is $M$.
 
-To prove the case of $|f(z)|\geq M$, note that $w(z)=\frac{1}{f(z)}$ is also analytic because $f(z)\neq0$, so $|w(z)|\leq\frac{1}{M}$ on $C$ implies $|w(z)|\leq\frac{1}{M}$ for all points within $C$, so $|f(z)|=\frac{1}{|w(z)|}\geq M$ for all points within $C$.
+To prove the case of $\abs{f(z)}\geq M$, note that $w(z)=\frac{1}{f(z)}$ is also analytic because $f(z)\neq0$, so $\abs{w(z)}\leq\frac{1}{M}$ on $C$ implies $\abs{w(z)}\leq\frac{1}{M}$ for all points within $C$, so $\abs{f(z)}=\frac{1}{\abs{w(z)}}\geq M$ for all points within $C$.
 
 (b)
 Simply take $f(z)=z$ and the contour $|z|=1$, then $|f(0)|=0$ but $|f(z)|=1>0$ over the entire contour.
@@ -534,13 +535,13 @@ $$
 \end{aligned}
 $$
 
-$z=-1$ is the nearest singular point if $m$ is negative or non-integer, so $|z|=1$ is the circle of convergence.
+$z=-1$ is the nearest singular point if $m$ is negative or non-integer, so $\abs{z}=1$ is the circle of convergence.
  
 -----
 
 ### 11.5.3
 
-$f(0)=0$ means that $f(z)=zg(z)$ where $g(z)$ is analytic, so $\frac{f(z)}{z}$ is analytic in $|z|\leq1$. The maximum modulus of an analytic function can only be on the boundary (Exercise 11.4.5), so
+$f(0)=0$ means that $f(z)=zg(z)$ where $g(z)$ is analytic, so $\frac{f(z)}{z}$ is analytic in $\abs{z}\leq1$. The maximum modulus of an analytic function can only be on the boundary (Exercise 11.4.5), so
 
 $$
 \begin{aligned}
@@ -548,7 +549,7 @@ $$
 \end{aligned}
 $$
 
-which means $|f(z)|<|z|$ for $|z|\leq1$.
+which means $\abs{f(z)}<\abs{z}$ for $\abs{z}\leq1$.
 
 (
 Or follow the hint, for every $|z_0|<1$,
@@ -560,7 +561,7 @@ $$
 \end{aligned}
 $$
 
-which holds for every positive $n$. Let $n\to\infty$, then we have $\left|\frac{f(z_0)}{z_0}\right|<1$ )
+which holds for every positive $n$. Let $n\to\infty$, then we have $\abs{\frac{f(z_0)}{z_0}}<1$ )
     
 -----
 
@@ -623,7 +624,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{ze^z}{z-1}=\frac{(t+1)e^{t+1}}{t}\\
+\frac{ze^z}{z-1}&=\frac{(t+1)e^{t+1}}{t}\\
 &=e\left[\sum_{n=0}^\infty\frac{t^n}{n!}+\frac{1}{t}+\sum_{n=0}^\infty\frac{t^n}{(n+1)!} \right]\\
 &=e\left[\frac{1}{t}+\sum_{n=0}^\infty\frac{(n+2)}{(n+1)!}t^n \right]\\
 &=\frac{e}{z-1}+\sum_{n=0}^\infty\frac{e(n+2)}{(n+1)!}(z-1)^n
@@ -753,7 +754,7 @@ $$
 \end{aligned}
 $$
 
-so the function $f(z)=(1+z)^m$ must take the branch in which $f(0)=1$. An appropriate branch cut is from $(-1,0)$ to $(-\infty,0)$, while all the branch cuts starting from $(-1,0)$ and lying in the left side of $x=-1$ are valid. If $|z|\geq1$, then it will contain a part of the branch cut and therefore result in discontinuity, while the expansion contains no discontinuity, so the domain must be restricted to $|z|<1$.
+so the function $f(z)=(1+z)^m$ must take the branch in which $f(0)=1$. An appropriate branch cut is from $(-1,0)$ to $(-\infty,0)$, while all the branch cuts starting from $(-1,0)$ and lying in the left side of $x=-1$ are valid. If $\abs{z}\geq1$, then it will contain a part of the branch cut and therefore result in discontinuity, while the expansion contains no discontinuity, so the domain must be restricted to $\abs{z}<1$.
 
 -----
 
@@ -796,7 +797,7 @@ f(z)&=\frac{1}{z-1}-\frac{1}{z}=\frac{1}{z-1}-\frac{1}{1+(z-1)}\\
 \end{aligned}
 $$
 
-The expansion holds in the range $0<|z-1|<1$.
+The expansion holds in the range $0<\abs{z-1}<1$.
 
 (b)
 
@@ -807,7 +808,7 @@ f(z)&=\frac{1}{z-1}-\frac{1}{z}=\frac{1}{z-1}-\frac{1}{(z-1)}\frac{1}{1+(z-1)^{-
 \end{aligned}
 $$
 
-The expansion holds in the range $|z-1|>1$.
+The expansion holds in the range $\abs{z-1}>1$.
 
 -----
 
@@ -861,7 +862,7 @@ $$
 \end{aligned}
 $$
 
-The expansion is valid in $|z+i|<1$.
+The expansion is valid in $\abs{z+i}<1$.
 
 ## 11.7 Calculus of Residues
 
@@ -932,7 +933,7 @@ $$
 \end{aligned}
 $$
 
-The residue at $z=\infty$ is obtained by substituting $z=\frac{1}{w}$,\; $f(z)=g(w)$ and note that
+The residue at $z=\infty$ is obtained by substituting $z=\frac{1}{w}$, $f(z)=g(w)$ and note that
 
 $$
 \begin{aligned}
@@ -1045,7 +1046,8 @@ where we substitute $t$ for $z+1$ in the second equation, so both the residues a
 
 $$
 \begin{aligned}
-\dashint_{-\infty}^x\frac{e^t}{t}dt&=
+\def\dint1{{\int_{-\infty}^x}\kern-10.0pt{-}}
+\dint1\frac{e^t}{t}dt&=
 \lim_{\delta\to0}\left[\int_{-\infty}^{-\delta}\frac{e^t}{t}dt+\int_{\delta}^x\frac{e^t}{t}dt \right]\\
 &=\lim_{\delta\to0}\left[-\int_{\delta}^{\infty}\frac{e^{-t}}{t}dt+\int_{\delta}^x\frac{e^t}{t}dt
 \right]\\
@@ -1060,8 +1062,9 @@ where the first integral exists because $\frac{e^t-e^{-t}}{t}$ is finite as  $t\
 ### 11.7.4
 
 $$
+\def\dint2{{\int_0^\infty}\kern-10.0pt{-}}
 \begin{aligned}
-\dashint_0^\infty\frac{x^{-p}}{x-1}dx&=\lim_{\delta\to0}\left[\int_0^{1-\delta}\frac{x^{-p}}{x-1}dx+\int_{1+\delta}^\infty\frac{x^{-p}}{x-1}dx \right]\\
+\dint2\frac{x^{-p}}{x-1}dx&=\lim_{\delta\to0}\left[\int_0^{1-\delta}\frac{x^{-p}}{x-1}dx+\int_{1+\delta}^\infty\frac{x^{-p}}{x-1}dx \right]\\
 &=\lim_{\delta\to0}\left[-\int_0^{1-\delta}x^{-p}\sum_{n=0}^\infty x^ndx+\int_{1+\delta}^\infty x^{-p}x^{-1}\sum_{n=0}^\infty x^{-n}dx \right]\\
 &=\lim_{\delta\to0}\left[-\sum_{n=0}^\infty\frac{(1-\delta)^{-p+n+1}}{-p+n+1}+\sum_{n=0}^\infty\frac{-(1+\delta)^{-p-n}}{-p-n} \right]\\
 &=\sum_{n=0}^\infty\frac{1}{p-n-1}+\sum_{n=0}^\infty\frac{1}{p+n}\\
@@ -1081,7 +1084,7 @@ $$
 
 ### 11.7.5
 
-The conditions for Equation 1.88 to hold is that $f(z)$ being an entire function, and $\frac{f'(z)}{f(z)}$ being analytic at $z=0$. If $f(z)=\sin x$, then $\left[\frac{f'(z)}{f(z)}\right]_{z\to0}=\left[\frac{\cos z}{\sin z}\right]_{z\to0}=\infty$, which does not meet the second condition. If $f(z)=\frac{\sin z}{z}$, then $\left[\frac{\sin z}{z}\right]_{z\to0}=1$, so $f(z)$ is an entire function, and 
+The conditions for Equation 1.88 to hold is that $f(z)$ being an entire function, and $\frac{f'(z)}{f(z)}$ being analytic at $z=0$. If $f(z)=\sin x$, then $\left[\frac{f'(z)}{f(z)}\right]\_{z\to0}=\left[\frac{\cos z}{\sin z}\right]\_{z\to0}=\infty$, which does not meet the second condition. If $f(z)=\frac{\sin z}{z}$, then $\left[\frac{\sin z}{z}\right]\_{z\to0}=1$, so $f(z)$ is an entire function, and 
 
 $$
 \begin{aligned}
@@ -1111,15 +1114,15 @@ $$
 
 ### 11.7.6
 
-For a polynomial $\sum_{k=1}^n a_kz^k$, let $f(z)=a_nz^n$, and $g(z)=\sum_{k=1}^{n-1}a_kz^k$. On the contour of radius $R$ which is sufficiently large, we have $|f(z)|>|g(z)|$, so by Rouché’s theorem, the polynomial which is $f(z)+g(z)$, has the same number of zeros with $f(z)$, which is $n$. 
+For a polynomial $\sum_{k=1}^n a_kz^k$, let $f(z)=a_nz^n$, and $g(z)=\sum_{k=1}^{n-1}a_kz^k$. On the contour of radius $R$ which is sufficiently large, we have $\abs{f(z)}>\abs{g(z)}$, so by Rouché’s theorem, the polynomial which is $f(z)+g(z)$, has the same number of zeros with $f(z)$, which is $n$. 
 
 -----
 
 ### 11.7.7
 
-First consider the contour $|z|=1$, and let $f(z)=10$, $g(z)=z^6-4z^3$ (more precisely the radius should be $\lim_{\delta\to0^+}(1-\delta)$ to eliminate the zero on $|z|=1$). Because $|f(z)|>|g(z)|$ on $|z|=1$, by Rouché’s theorem, $z^6-4z^3+10=f(z)+g(z)$ has the same number of zeros with $f(z)$, which is no zero.
+First consider the contour $\abs{z}=1$, and let $f(z)=10$, $g(z)=z^6-4z^3$ (more precisely the radius should be $\lim_{\delta\to0^+}(1-\delta)$ to eliminate the zero on $\abs{z}=1$). Because $\abs{f(z)}>\abs{g(z)}$ on $\abs{z}=1$, by Rouché’s theorem, $z^6-4z^3+10=f(z)+g(z)$ has the same number of zeros with $f(z)$, which is no zero.
 
-Then consider the contour $|z|=2$, and let $f(z)=z^6$, $g(z)=-4z^3+10$. Because $|f(z)|>|g(z)|$ on $|z|=2$, by Rouché’s theorem, $z^6-4z^3+10=f(z)+g(z)$ has the same number of zeros with $f(z)$, which is six zeros. By the fundamental theorem of algebra, $z^6-4z^3+10$ has six zeros, so all the zeros lie between $|z|=1$ and $|z|=2$.
+Then consider the contour $\abs{z}=2$, and let $f(z)=z^6$, $g(z)=-4z^3+10$. Because $\abs{f(z)}>\abs{g(z)}$ on $\abs{z}=2$, by Rouché’s theorem, $z^6-4z^3+10=f(z)+g(z)$ has the same number of zeros with $f(z)$, which is six zeros. By the fundamental theorem of algebra, $z^6-4z^3+10$ has six zeros, so all the zeros lie between $\abs{z}=1$ and $\abs{z}=2$.
 
 -----
 
@@ -1286,7 +1289,7 @@ $$
 \end{aligned}
 $$
 
-Because $\lim_{|z|\to\infty}\frac{e^{izs}}{z-i\varepsilon}=0$ in the lower half-plane, so $\int_{C_R}\frac{e^{izs}}{z-i\varepsilon}dz=0$ by Equation 11.102. Therefore,
+Because $\lim_{\abs{z}\to\infty}\frac{e^{izs}}{z-i\varepsilon}=0$ in the lower half-plane, so $\int_{C_R}\frac{e^{izs}}{z-i\varepsilon}dz=0$ by Equation 11.102. Therefore,
 
 $$
 \begin{aligned}
@@ -1310,7 +1313,7 @@ $$
 \end{aligned}
 $$
 
-Because $\lim_{|z|\to\infty}\frac{e^{izs}}{z-i\varepsilon}=0$ in the upper half-plane, so $\int_{C_R}\frac{e^{izs}}{z-i\varepsilon}dz=0$ by Equation 11.102. Therefore,
+Because $\lim_{\abs{z}\to\infty}\frac{e^{izs}}{z-i\varepsilon}=0$ in the upper half-plane, so $\int_{C_R}\frac{e^{izs}}{z-i\varepsilon}dz=0$ by Equation 11.102. Therefore,
 
 $$
 \begin{aligned}
@@ -1332,7 +1335,7 @@ For $s<0$, let the contour be a semicircle in the lower half-plane with radius $
 
 $$
 \begin{aligned}
-\oint\limits_C\frac{e^{izs}}{z}dz=\dashint_{-\infty}^\infty\frac{e^{ixs}}{x}dx+\int\limits_{C_r}\frac{e^{izs}}{z}dz+\int\limits_{C_R}\frac{e^{izs}}{z}dz=0
+\oint\limits_C\frac{e^{izs}}{z}dz=\dashint\frac{e^{ixs}}{x}dx+\int\limits_{C_r}\frac{e^{izs}}{z}dz+\int\limits_{C_R}\frac{e^{izs}}{z}dz=0
 \end{aligned}
 $$
 
@@ -1340,7 +1343,7 @@ Because $\lim_{|z|\to\infty}\frac{e^{izs}}{z}=0$ in the lower half-plane, so $\i
 
 $$
 \begin{aligned}
-\dashint_{-\infty}^\infty\frac{e^{ixs}}{x}dx=-\pi i
+\dashint\frac{e^{ixs}}{x}dx=-\pi i
 \end{aligned}
 $$
 
@@ -1356,7 +1359,7 @@ For $s>0$, let the contour be a semicircle in the upper half-plane with radius $
 
 $$
 \begin{aligned}
-\oint\limits_C\frac{e^{izs}}{z}dz=\dashint_{-\infty}^\infty\frac{e^{ixs}}{x}dx+\int\limits_{C_r}\frac{e^{izs}}{z}dz+\int\limits_{C_R}\frac{e^{izs}}{z}dz=0
+\oint\limits_C\frac{e^{izs}}{z}dz=\dashint\frac{e^{ixs}}{x}dx+\int\limits_{C_r}\frac{e^{izs}}{z}dz+\int\limits_{C_R}\frac{e^{izs}}{z}dz=0
 \end{aligned}
 $$
 
@@ -1416,7 +1419,7 @@ $$
 
 Note that because $\cos\theta$ is periodic, the integral will not change as long at the range of integration is $2\pi$.
 
-If $|b|>|a|$, then there will be a singularity at $\theta=\cos^{-1}\pm\frac{a}{b}$ or $\theta=\sin^{-1}\pm\frac{a}{b}$, and therefore the integral does not exists.
+If $\abs{b}>\abs{a}$, then there will be a singularity at $\theta=\cos^{-1}\pm\frac{a}{b}$ or $\theta=\sin^{-1}\pm\frac{a}{b}$, and therefore the integral does not exists.
 
 -----
 
@@ -1450,7 +1453,7 @@ $$
 
 ### 11.8.3
 
-For $|t|<1$, we have $1+t^2>|2t|$, so we can use the results from Exercise 11.8.1:
+For $\abs{t}<1$, we have $1+t^2>\abs{2t}$, so we can use the results from Exercise 11.8.1:
 
 $$
 \begin{aligned}
@@ -1458,7 +1461,7 @@ $$
 \end{aligned}
 $$
 
-For $|t|>1$, we still have $1+t^2>|2t|$, but the integral becomes
+For $\abs{t}>1$, we still have $1+t^2>\abs{2t}$, but the integral becomes
 
 $$
 \begin{aligned}
@@ -1466,7 +1469,7 @@ $$
 \end{aligned}
 $$
 
-For $|t|=1$, there will be a singularity at $\theta=0$ or $\theta=\pi$, and therefore the integral does not exists.
+For $\abs{t}=1$, there will be a singularity at $\theta=0$ or $\theta=\pi$, and therefore the integral does not exists.
 
 -----
 
@@ -1586,7 +1589,7 @@ $$
 
 $$
 \begin{aligned}
-\int\limits_{-\infty}^\infty\frac{\cos bx-\cos ax}{x^2}dx=\int\limits_{-\infty}^\infty\frac{(e^{ibx}+e^{-ibx})-(e^{iax}-e^{-iax})}{2x^2}dx=\ddashint_{-\infty}^\infty\frac{e^{ibx}-e^{iax}}{2x^2}dx+\ddashint_{-\infty}^\infty\frac{e^{-ibx}-e^{-iax}}{2x^2}dx
+\int\limits_{-\infty}^\infty\frac{\cos bx-\cos ax}{x^2}dx=\int\limits_{-\infty}^\infty\frac{(e^{ibx}+e^{-ibx})-(e^{iax}-e^{-iax})}{2x^2}dx=\dashint\frac{e^{ibx}-e^{iax}}{2x^2}dx+\dashint\frac{e^{-ibx}-e^{-iax}}{2x^2}dx
 \end{aligned}
 $$
 
@@ -1598,12 +1601,12 @@ $$
 \end{aligned}
 $$
 
-and Equation 11.102 is applicable because the function vanishes when $|z|\to\infty$. Take the contour to be the semicircle with $R\to\infty$ in the upper half-plane, then
+and Equation 11.102 is applicable because the function vanishes when $\abs{z}\to\infty$. Take the contour to be the semicircle with $R\to\infty$ in the upper half-plane, then
 
 $$
 \begin{aligned}
-\oint\frac{e^{ibz}-e^{iaz}}{2z^2}dz&=\ddashint\limits_{-\infty}^\infty\frac{e^{ibx}-e^{iax}}{2x^2}dx+\int\limits_{C_r}\frac{e^{ibz}-e^{iaz}}{2z^2}dz+\int\limits_{C_R}\frac{e^{ibz}-e^{iaz}}{2z^2}dz\\
-&=\ddashint\limits_{-\infty}^\infty\frac{e^{ibx}-e^{iax}}{2x^2}dx-\frac{2\pi i}{2}\cdot\frac{i(b-a)}{2}+0=0
+\oint\frac{e^{ibz}-e^{iaz}}{2z^2}dz&=\dashint\frac{e^{ibx}-e^{iax}}{2x^2}dx+\int\limits_{C_r}\frac{e^{ibz}-e^{iaz}}{2z^2}dz+\int\limits_{C_R}\frac{e^{ibz}-e^{iaz}}{2z^2}dz\\
+&=\dashint\frac{e^{ibx}-e^{iax}}{2x^2}dx-\frac{2\pi i}{2}\cdot\frac{i(b-a)}{2}+0=0
 \end{aligned}
 $$
 
@@ -1611,7 +1614,7 @@ so
 
 $$
 \begin{aligned}
-\ddashint\limits_{-\infty}^\infty\frac{e^{ibx}-e^{iax}}{2x^2}dx=\frac{\pi(a-b)}{2}
+\dashint\frac{e^{ibx}-e^{iax}}{2x^2}dx=\frac{\pi(a-b)}{2}
 \end{aligned}
 $$
 
@@ -1623,12 +1626,12 @@ $$
 \end{aligned}
 $$
 
-and the lower half-plane version of Equation 11.102 is applicable because the function vanishes when $|z|\to\infty$. Take the contour to be the semicircle with $R\to\infty$ in the lower half-plane, then
+and the lower half-plane version of Equation 11.102 is applicable because the function vanishes when $\abs{z}\to\infty$. Take the contour to be the semicircle with $R\to\infty$ in the lower half-plane, then
 
 $$
 \begin{aligned}
-\oint\frac{e^{-ibz}-e^{-iaz}}{2z^2}dz&=\ddashint\limits_{-\infty}^\infty\frac{e^{-ibx}-e^{-iax}}{2x^2}dx+\int\limits_{C_r}\frac{e^{-ibz}-e^{-iaz}}{2z^2}dz+\int\limits_{C_R}\frac{e^{-ibz}-e^{-iaz}}{2z^2}dz\\
-&=\ddashint\limits_{-\infty}^\infty\frac{e^{-ibx}-e^{-iax}}{2x^2}dx+\frac{2\pi i}{2}\cdot\frac{i(a-b)}{2}+0=0
+\oint\frac{e^{-ibz}-e^{-iaz}}{2z^2}dz&=\dashint\frac{e^{-ibx}-e^{-iax}}{2x^2}dx+\int\limits_{C_r}\frac{e^{-ibz}-e^{-iaz}}{2z^2}dz+\int\limits_{C_R}\frac{e^{-ibz}-e^{-iaz}}{2z^2}dz\\
+&=\dashint\frac{e^{-ibx}-e^{-iax}}{2x^2}dx+\frac{2\pi i}{2}\cdot\frac{i(a-b)}{2}+0=0
 \end{aligned}
 $$
 
@@ -1636,7 +1639,7 @@ so
 
 $$
 \begin{aligned}
-\ddashint\limits_{-\infty}^\infty\frac{e^{-ibx}-e^{-iax}}{2x^2}dx=\frac{\pi(a-b)}{2}
+\dashint\frac{e^{-ibx}-e^{-iax}}{2x^2}dx=\frac{\pi(a-b)}{2}
 \end{aligned}
 $$
 
@@ -1644,7 +1647,7 @@ Therefore,
 
 $$
 \begin{aligned}
-\int\limits_{-\infty}^\infty\frac{\cos bx-\cos ax}{x^2}dx=\ddashint\limits_{-\infty}^\infty\frac{e^{ibx}-e^{iax}}{2x^2}dx+\ddashint\limits_{-\infty}^\infty\frac{e^{-ibx}-e^{-iax}}{2x^2}dx=\pi(a-b)
+\int\limits_{-\infty}^\infty\frac{\cos bx-\cos ax}{x^2}dx=\dashint\frac{e^{ibx}-e^{iax}}{2x^2}dx+\dashint\frac{e^{-ibx}-e^{-iax}}{2x^2}dx=\pi(a-b)
 \end{aligned}
 $$
 
@@ -1680,7 +1683,7 @@ $$
 \end{aligned}
 $$
 
-and Equation 11.102 is applicable because the function vanishes when $|z|\to\infty$. Take the contour to be the semicircle with $R\to\infty$ in the upper half-plane, then
+and Equation 11.102 is applicable because the function vanishes when $\abs{z}\to\infty$. Take the contour to be the semicircle with $R\to\infty$ in the upper half-plane, then
 
 $$
 \begin{aligned}
@@ -1798,7 +1801,7 @@ $$
 
 $$
 \begin{aligned}
-\int\limits_{-\infty}^\infty\frac{\sin x}{x}dx=\int\limits_{-\infty}^\infty\frac{e^{ix}-e^{-ix}}{2ix}dx=\ddashint\limits_{-\infty}^\infty\frac{e^{ix}}{ix}dx
+\int\limits_{-\infty}^\infty\frac{\sin x}{x}dx=\int\limits_{-\infty}^\infty\frac{e^{ix}-e^{-ix}}{2ix}dx=\dashint\frac{e^{ix}}{ix}dx
 \end{aligned}
 $$
 
@@ -1814,8 +1817,8 @@ Integrate along the given contour and note that the segments at $R\to\infty$ hav
 
 $$
 \begin{aligned}
-\oint\frac{e^{iz}}{iz}dz&=\ddashint\limits_{-\infty}^\infty\frac{e^{ix}}{ix}dx-\frac{2\pi i}{2}\cdot\frac{1}{i}=0\\
-\int\limits_{-\infty}^\infty\frac{\sin x}{x}dx&=\ddashint\limits_{-\infty}^\infty\frac{e^{ix}}{ix}dx=\pi
+\oint\frac{e^{iz}}{iz}dz&=\dashint\frac{e^{ix}}{ix}dx-\frac{2\pi i}{2}\cdot\frac{1}{i}=0\\
+\int\limits_{-\infty}^\infty\frac{\sin x}{x}dx&=\dashint\frac{e^{ix}}{ix}dx=\pi
 \end{aligned}
 $$
 
@@ -1825,11 +1828,11 @@ $$
 
 $$
 \begin{aligned}
-I=\int\limits_{-\infty}^\infty\frac{\sin t}{t}e^{ipt}dt=\int\limits_{-\infty}^\infty\frac{e^{it}-e^{-it}}{2it}e^{ipt}dt=\ddashint\limits_{-\infty}^\infty\frac{e^{i(p+1)t}}{2it}dt-\ddashint\limits_{-\infty}^\infty\frac{e^{i(p-1)t}}{2it}dt
+I=\int\limits_{-\infty}^\infty\frac{\sin t}{t}e^{ipt}dt=\int\limits_{-\infty}^\infty\frac{e^{it}-e^{-it}}{2it}e^{ipt}dt=\dashint\frac{e^{i(p+1)t}}{2it}dt-\dashint\frac{e^{i(p-1)t}}{2it}dt
 \end{aligned}
 $$
 
-For $|p|>1$,\; $p+1$ and $p-1$ have the same sign, so
+For $\abs{p}>1$, $p+1$ and $p-1$ have the same sign, so
 
 $$
 \begin{aligned}
@@ -1837,7 +1840,7 @@ I=\pm(\pi i\cdot\frac{1}{2i}-\pi i\cdot\frac{1}{2i})=0
 \end{aligned}
 $$
 
-For $|p|<1$,\; $p+1>0$ and $p-1<0$, so
+For $\abs{p}<1$,\; $p+1>0$ and $p-1<0$, so
 
 $$
 \begin{aligned}
@@ -1849,7 +1852,7 @@ For $p=1$,
 
 $$
 \begin{aligned}
-I=\ddashint\limits_{-\infty}^\infty\frac{e^{2it}}{2it}dt-\ddashint\limits_{-\infty}^\infty\frac{1}{2it}dt=\frac{\pi}{2}-0=\frac{\pi}{2}
+I=\dashint\frac{e^{2it}}{2it}dt-\dashint\frac{1}{2it}dt=\frac{\pi}{2}-0=\frac{\pi}{2}
 \end{aligned}
 $$
 
@@ -1857,7 +1860,7 @@ For $p=-1$,
 
 $$
 \begin{aligned}
-I=\ddashint\limits_{-\infty}^\infty\frac{1}{2it}dt-\ddashint\limits_{-\infty}^\infty\frac{e^{-2it}}{2it}dt=0-(-\frac{\pi}{2})=\frac{\pi}{2}
+I=\dashint\frac{1}{2it}dt-\dashint\frac{e^{-2it}}{2it}dt=0-(-\frac{\pi}{2})=\frac{\pi}{2}
 \end{aligned}
 $$
 
@@ -2236,7 +2239,7 @@ $$
 \end{aligned}
 $$
 
-Take the contour to be that in Figure 11.29. Integral on the two vertical segments vanishes as $R\to\infty$ and  $|b|<1$. Integral on the lower horizontal segment is
+Take the contour to be that in Figure 11.29. Integral on the two vertical segments vanishes as $R\to\infty$ and  $\abs{b}<1$. Integral on the lower horizontal segment is
 
 $$
 \begin{aligned}
@@ -2723,7 +2726,7 @@ f^*(z)&=-i(x-iy)=-y-ix
 \end{aligned}
 $$
 
-so $f(z^*)=-f^*(z)$.
+so $f(z^\star)=-f^\star(z)$.
 
 -----
 
@@ -2756,7 +2759,7 @@ $$
 \end{aligned}
 $$
 
-If $r^2>1$, it is an ellipse. If $r^2<1$, it is a hyperbola. If $r^2=1$, it is a straight line, which is the $u-axis$.
+If $r^2>1$, it is an ellipse. If $r^2<1$, it is a hyperbola. If $r^2=1$, it is a straight line, which is the _u-axis_.
 
 (b)
 
@@ -2776,7 +2779,7 @@ $$
 \end{aligned}
 $$
 
-If $r^2>1$, it is an ellipse. If $r^2<1$, it is a hyperbola. If $r^2=1$, it is a straight line, which is the $v-axis$.
+If $r^2>1$, it is an ellipse. If $r^2<1$, it is a hyperbola. If $r^2=1$, it is a straight line, which is the _v-axis_.
 
 -----
 
@@ -2866,4 +2869,4 @@ $$
 
 which means the angle at which two curves intersect does not change after mapping.
 
-{% endraw %}}
+{% endraw %}
