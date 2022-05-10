@@ -6,7 +6,7 @@ author_profile: false
 
 ---
 
-# Chapter 6 Eigenvalue Problems
+# Chapter 6: Eigenvalue Problems
 
 {% raw %}
 
