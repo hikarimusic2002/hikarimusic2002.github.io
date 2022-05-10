@@ -6,7 +6,7 @@ author_profile: false
 
 ---
 
-# Chapter 3 Vector Analysis
+# Chapter 3: Vector Analysis
 
 ## 3.2 Vectors in 3-D Space
 
