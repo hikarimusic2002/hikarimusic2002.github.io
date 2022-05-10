@@ -8,12 +8,6 @@ author_profile: false
 
 # Chapter 10: Green’s Functions
 
-\newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
-\newcommand{\V}{\mathbf}
-\newcommand{\br}[2]{\langle#1|#2\rangle}
-\newcommand{\del}{\boldsymbol{\nabla}}
-
-
 {% raw %}
 
 ## 10.1 One-Dimensional Problems
@@ -23,6 +17,10 @@ author_profile: false
 The solution given by the Green's function is
 
 $$
+\newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\V}{\mathbf}
+\newcommand{\br}[2]{\langle#1|#2\rangle}
+\newcommand{\del}{\boldsymbol{\nabla}}
 \begin{aligned}
 y(x)=\int_0^xt\cdot f(t)\,dt+x\int_x^1f(t)\,dt
 \end{aligned}
