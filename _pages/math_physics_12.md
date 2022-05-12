@@ -19,6 +19,7 @@ $$
 \newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
 \newcommand{\V}{\mathbf}
 \newcommand{\del}{\boldsymbol{\nabla}}
+\newcommand{\abs}[1]{\left\vert #1\right\vert}
 \newcommand{\lfpr}[1]{\left(#1\right)}
 \newcommand{\lfbr}[1]{\left[#1\right]}
 \def\dashint{{\int\limits_{-\infty}^\infty}\kern-10.0pt{-}\;}
@@ -547,7 +548,7 @@ so
 
 $$
 \begin{aligned}
-\zeta(2)+\beta(2)=2\lfpr{1+\frac{1}{5^2}+\frac{1}{9^2}+\cdots}+\lfpr{\frac{1}{2^2}+\frac{1}{4^2}+\frac{1}{6^2}+\cdots}\\
+\zeta(2)+\beta(2)&=2\lfpr{1+\frac{1}{5^2}+\frac{1}{9^2}+\cdots}+\lfpr{\frac{1}{2^2}+\frac{1}{4^2}+\frac{1}{6^2}+\cdots}\\
 &=2\sum_{k=1}^\infty(4k-3)^{-2}+\frac{1}{4}\zeta(2)
 \end{aligned}
 $$
@@ -556,7 +557,7 @@ Therefore
 
 $$
 \begin{aligned}
-\beta(2)=2\sum_{k=1}^\infty(4k-3)^{-2}-\frac{3}{4}\zeta(2)\\
+\beta(2)&=2\sum_{k=1}^\infty(4k-3)^{-2}-\frac{3}{4}\zeta(2)\\
 &=2\sum_{k=1}^\infty(4k-3)^{-2}-\frac{\pi^2}{8}
 \end{aligned}
 $$
@@ -621,7 +622,7 @@ $$
 
 $$
 \begin{aligned}
-\sum_{s=2}^n 2^{-s}\zeta(s)&=\sum_{s=2}^n 2^{-s}\sum_{p=1}^\infty\frac{1}{p^s}=\sum_{s=2}^n\sum_{p=1}^\infty\frac{1}{(2p)^s}\\
+&\sum_{s=2}^n 2^{-s}\zeta(s)&=\sum_{s=2}^n 2^{-s}\sum_{p=1}^\infty\frac{1}{p^s}=\sum_{s=2}^n\sum_{p=1}^\infty\frac{1}{(2p)^s}\\
 &\sum_{p=1}^\infty(2p)^{-n-1}\left[1-\frac{1}{2p} \right]^{-1}=\sum_{p=1}^\infty\sum_{s=n+1}^\infty\frac{1}{(2p)^s}
 \end{aligned}
 $$
@@ -663,8 +664,8 @@ $$
 
 $$
 \begin{aligned}
-\sum_{s=1}^n 4^{-2s}\zeta(2s)=\sum_{s=1}^n 4^{-2s}\sum_{p=1}^\infty\frac{1}{p^{2s}}=\sum_{s=1}^n\sum_{p=1}^\infty\frac{1}{(4p)^{2s}}\\
-\sum_{p=1}^\infty(4p)^{-2n-2}\lfbr{1-\frac{1}{(4p)^2}}^{-1}=\sum_{p=1}^\infty\sum_{s=n+1}^\infty\frac{1}{(4p)^{2s}}
+&\sum_{s=1}^n 4^{-2s}\zeta(2s)=\sum_{s=1}^n 4^{-2s}\sum_{p=1}^\infty\frac{1}{p^{2s}}=\sum_{s=1}^n\sum_{p=1}^\infty\frac{1}{(4p)^{2s}}\\
+&\sum_{p=1}^\infty(4p)^{-2n-2}\lfbr{1-\frac{1}{(4p)^2}}^{-1}=\sum_{p=1}^\infty\sum_{s=n+1}^\infty\frac{1}{(4p)^{2s}}
 \end{aligned}
 $$
 
@@ -815,7 +816,7 @@ $$
 \end{aligned}
 $$
 
-The convergence of the infinite product requires the condition $|z|<1$ because $\sum z^n$ converges when $|z|<1$.
+The convergence of the infinite product requires the condition $\abs{z}<1$ because $\sum z^n$ converges when $\abs{z}<1$.
 
 -----
 
@@ -1063,9 +1064,9 @@ where we have used $\binom{-2}{n}=(-1)^n(n+1)$ and $\int_0^\infty e^{-u}u^ndu=n!
 
 ### 12.7.1
 
-_The statement that "$|F(z)|^2$ can have no extremum in the interior of a region in which $F$ is analytic" is incorrect. Let $F(z)=z$, then $|F(z)|^2$ has a minimum at $z=0$. However, the fact used in the text is that "$\ln|F|$" has no extremum in the interior where $F$ is analytic (Equation 12.100), and it is a true statement which we are going to prove._
+_The statement that "$\abs{F(z)}^2$ can have no extremum in the interior of a region in which $F$ is analytic" is incorrect. Let $F(z)=z$, then $\abs{F(z)}^2$ has a minimum at $z=0$. However, the fact used in the text is that "$\ln\abs{F}$" has no extremum in the interior where $F$ is analytic (Equation 12.100), and it is a true statement which we are going to prove._
 
-We first prove that $\ln|F(z)|$ is harmonic (satisfies the Laplace equation) if $F(z)$ is analytic. Let $F(z)=u(z)+iv(z)$, then
+We first prove that $\ln\abs{F(z)}$ is harmonic (satisfies the Laplace equation) if $F(z)$ is analytic. Let $F(z)=u(z)+iv(z)$, then
 
 $$
 \begin{aligned}
@@ -1096,7 +1097,7 @@ $$
 \end{aligned}
 $$
 
-which means $\ln|F|$ is harmonic. By the mean value property of harmonic function (the 3D version of which has been proved in Exercise 3.9.9), we have
+which means $\ln\abs{F}$ is harmonic. By the mean value property of harmonic function (the 3D version of which has been proved in Exercise 3.9.9), we have
 
 $$
 \begin{aligned}
@@ -1104,7 +1105,7 @@ $$
 \end{aligned}
 $$
 
-so the mean value of $\ln|F|$ on a circle about any point $z_0$ is equal to $\ln|F|$. Therefore, there cannot be an extremum of $\ln|F|$ at $z_0$, otherwise the mean value on an circle around $z_0$ will be less than or greater than $\ln|F(z_0)|$ (For the case $z_0$ being an maximum or minimum, respectively.)
+so the mean value of $\ln\abs{F}$ on a circle about any point $z_0$ is equal to $\ln\abs{F}$. Therefore, there cannot be an extremum of $\ln\abs{F}$ at $z_0$, otherwise the mean value on an circle around $z_0$ will be less than or greater than $\ln\abs{F(z_0)}$ (For the case $z_0$ being an maximum or minimum, respectively.)
 
 -----
 
@@ -1116,7 +1117,7 @@ $$
 \end{aligned}
 $$
 
-Let $w(z)=itz^2$, then $w'(z)=2itz$,\; $w''(z)=2it$. So the saddle point is $z=0$, and the direction of steepest descent is
+Let $w(z)=itz^2$, then $w'(z)=2itz$, $w''(z)=2it$. So the saddle point is $z=0$, and the direction of steepest descent is
 
 $$
 \begin{aligned}
@@ -1145,7 +1146,7 @@ $$
 
 ### 12.7.3
 
-Let $s=|s|e^{i\alpha}$, then
+Let $s=\abs{s}e^{i\alpha}$, then
 
 $$
 \begin{aligned}
@@ -1153,7 +1154,7 @@ $$
 \end{aligned}
 $$
 
-Proceeding as in Example 12.7.1, the saddle point is still $z=1$, and since $w''(1,s)=-s=-|s|e^{\alpha}$, we have
+Proceeding as in Example 12.7.1, the saddle point is still $z=1$, and since $w''(1,s)=-s=-\abs{s}e^{\alpha}$, we have
 
 $$
 \begin{aligned}
@@ -1169,13 +1170,13 @@ $$
 \end{aligned}
 $$
 
-Note that at the vicinity of the saddle point $z=1$,\; $\mathfrak{Im}[s(\ln z-z)]=-|s|\cos\alpha$ is constant.
+Note that at the vicinity of the saddle point $z=1$, $\mathfrak{Im}[s(\ln z-z)]=-\abs{s}\cos\alpha$ is constant.
 
 ## 12.8 Dispersion Relations
 
 ### 12.8.1
 
-Let $f(z)=u(z)+iv(z)$ be a function meeting the conditions of Schwarz reflection principle. For real number $x$,\; $f(x)=f^*(x^*)=f^*(x)$, which means $f(z)$ is real when $x$ is real, so $v(x)=0$. By the dispersion relation, $u(x)=0$, so $f(x)=0$. Therefore,
+Let $f(z)=u(z)+iv(z)$ be a function meeting the conditions of Schwarz reflection principle. For real number $x$, $f(x)=f^\star(x^\star)=f^\star(x)$, which means $f(z)$ is real when $x$ is real, so $v(x)=0$. By the dispersion relation, $u(x)=0$, so $f(x)=0$. Therefore,
 
 $$
 \begin{aligned}
@@ -1303,7 +1304,7 @@ $$
 \end{aligned}
 $$
 
-$u(x)$ is even, so the first integral becomes $2\int_0^\infty u(x)dx$.\; $xu(x)$ is odd, so the second integral vanishes. Therefore,
+$u(x)$ is even, so the first integral becomes $2\int_0^\infty u(x)dx$. $xu(x)$ is odd, so the second integral vanishes. Therefore,
 
 $$
 \begin{aligned}
@@ -1430,7 +1431,7 @@ $$
 \end{aligned}
 $$
 
-Note that $|u(x)|^2+|v(x)|^2=\frac{1}{x^2+1}$, and
+Note that $\abs{u(x)}^2+\abs{v(x)}^2=\frac{1}{x^2+1}$, and
 
 $$
 \begin{aligned}
@@ -1461,7 +1462,7 @@ $$
 $$
 
 (b)
-Changing the variables $w=s-t$,\; $x=y+t$, so $y=x-t$,\; $y-w=x-s$, then the equation becomes
+Changing the variables $w=s-t$, $x=y+t$, so $y=x-t$, $y-w=x-s$, then the equation becomes
 
 $$
 \begin{aligned}
