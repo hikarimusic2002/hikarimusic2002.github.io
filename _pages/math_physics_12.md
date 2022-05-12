@@ -538,10 +538,10 @@ $$
 ### 12.4.4
 
 $$
-\begin{alignat*}{4}
+\begin{aligned}{4}
     & \beta(2)=1 && -\frac{1}{3^2} && +\frac{1}{5^2} && -\frac{1}{7^2}+\cdots \\
     & \zeta(2)=1+\frac{1}{2^2} && +\frac{1}{3^2}+\frac{1}{4^2} && +\frac{1}{5^2}+\frac{1}{6^2} && +\frac{1}{7^2}+\cdots
-\end{alignat*}
+\end{aligned}
 $$
 
 so
@@ -823,9 +823,9 @@ The convergence of the infinite product requires the condition $\abs{z}<1$ becau
 ### 12.5.8
 
 $$
-\begin{align}
+\begin{aligned}
 \prod_{r=1}^\infty\lfpr{1+\frac{x}{r}}e^{-\frac{x}{r}}=\prod_{r=1}^\infty\lfpr{1+\frac{x}{r}}\lfpr{1-\frac{x}{r}+\sum_{n=2}^\infty a_n\left(\frac{x}{r}\right)^n}=\prod_{r=1}^\infty\lfpr{1+\sum_{n=2}^\infty b_n\left(\frac{x}{r}\right)^n }
-\end{align}
+\end{aligned}
 $$
 
 To verify the convergence, evaluate the sum:
