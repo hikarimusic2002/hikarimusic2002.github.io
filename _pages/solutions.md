@@ -21,7 +21,7 @@ redirect_from:
   * [Chapter 10: Green's Functions](https://hikarimusic2002.github.io/solutions/math_physics_10)
   * [Chapter 11: Complex Variable Theory](https://hikarimusic2002.github.io/solutions/math_physics_11)
   * [Chapter 12: Further Topics in Analysis](https://hikarimusic2002.github.io/solutions/math_physics_12)
-  * [Chapter 13: Gamma Function (Part)](https://hikarimusic2002.github.io/solutions/math_physics_13)
+  * [_Chapter 13: Gamma Function_](https://hikarimusic2002.github.io/solutions/math_physics_13)
 
 ## Mathematics
 
