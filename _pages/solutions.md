@@ -10,6 +10,18 @@ redirect_from:
 
 ### [Mathematical Methods for Physicists](https://www.amazon.com/Mathematical-Methods-Physicists-Comprehensive-Guide/dp/0123846544)
   * [Chapter 1: Mathematical Preliminaries](https://hikarimusic2002.github.io/solutions/math_physics_01)
+  * [Chapter 2: Determinants and Matrices](https://hikarimusic2002.github.io/solutions/math_physics_02)
+  * [Chapter 3: Vector Analysis](https://hikarimusic2002.github.io/solutions/math_physics_03)
+  * [Chapter 4: Tensors and Differential Forms](https://hikarimusic2002.github.io/solutions/math_physics_04)
+  * [Chapter 5: Vector Spaces](https://hikarimusic2002.github.io/solutions/math_physics_05)
+  * [Chapter 6: Eigenvalue  Problems](https://hikarimusic2002.github.io/solutions/math_physics_06)
+  * [Chapter 7: Ordinary Differential Equations](https://hikarimusic2002.github.io/solutions/math_physics_07)
+  * [Chapter 8: Strum-Liouville Theory](https://hikarimusic2002.github.io/solutions/math_physics_08)
+  * [Chapter 9: Partial Differential Equations](https://hikarimusic2002.github.io/solutions/math_physics_09)
+  * [Chapter 10: Green's Functions](https://hikarimusic2002.github.io/solutions/math_physics_10)
+  * [Chapter 11: Complex Variable Theory](https://hikarimusic2002.github.io/solutions/math_physics_11)
+  * [Chapter 12: Further Topics in Analysis](https://hikarimusic2002.github.io/solutions/math_physics_12)
+  * [Chapter 13: Gamma Function](https://hikarimusic2002.github.io/solutions/math_physics_13)
 
 ## Mathematics
 
