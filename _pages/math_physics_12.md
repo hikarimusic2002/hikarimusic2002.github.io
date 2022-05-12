@@ -472,7 +472,7 @@ which is the same with the second integral. By another substitution $z=e^t$, we 
 $$
 \begin{aligned}
 \int\limits_1^\infty\frac{(\ln z)^2}{1+z^2}dz
-=\int\limits_0^\infty\frac{t^2e^t}{1+e^{2t}}dt=\int\limits_0^\infty\frac{t^2e^{-t}}{1+e^{-2t}}dt\\
+&=\int\limits_0^\infty\frac{t^2e^t}{1+e^{2t}}dt=\int\limits_0^\infty\frac{t^2e^{-t}}{1+e^{-2t}}dt\\
 &=\int\limits_0^\infty\left(\sum_{n=0}^\infty(-1)^n\,t^2\, e^{-(2n+1)t} \right)dt\\
 &=\sum_{n=0}^\infty(-1)^n\int\limits_0^\infty t^2\,e^{-(2n+1)t}dt\\
 &=\sum_{n=0}^\infty(-1)^n\left[\frac{2e^{-(2n+1)t}}{-(2n+1)^3} \right]_0^\infty\\
@@ -538,10 +538,10 @@ $$
 ### 12.4.4
 
 $$
-\begin{alignat}{4}
+\begin{alignat*}{4}
     & \beta(2)=1 && -\frac{1}{3^2} && +\frac{1}{5^2} && -\frac{1}{7^2}+\cdots \\
     & \zeta(2)=1+\frac{1}{2^2} && +\frac{1}{3^2}+\frac{1}{4^2} && +\frac{1}{5^2}+\frac{1}{6^2} && +\frac{1}{7^2}+\cdots
-\end{alignat}
+\end{alignat*}
 $$
 
 so
@@ -622,7 +622,7 @@ $$
 
 $$
 \begin{aligned}
-&\sum_{s=2}^n 2^{-s}\zeta(s)&=\sum_{s=2}^n 2^{-s}\sum_{p=1}^\infty\frac{1}{p^s}=\sum_{s=2}^n\sum_{p=1}^\infty\frac{1}{(2p)^s}\\
+&\sum_{s=2}^n 2^{-s}\zeta(s)=\sum_{s=2}^n 2^{-s}\sum_{p=1}^\infty\frac{1}{p^s}=\sum_{s=2}^n\sum_{p=1}^\infty\frac{1}{(2p)^s}\\
 &\sum_{p=1}^\infty(2p)^{-n-1}\left[1-\frac{1}{2p} \right]^{-1}=\sum_{p=1}^\infty\sum_{s=n+1}^\infty\frac{1}{(2p)^s}
 \end{aligned}
 $$
@@ -1078,7 +1078,7 @@ $$
 \end{aligned}
 $$
 
-Summing the two equations, and noting that by  Cauchy-Riemann conditions $\pdv{u}{x}=\pdv{v}{y}$,\; $\pdv{u}{y}=-\pdv{v}{x}$, we have
+Summing the two equations, and noting that by  Cauchy-Riemann conditions $\pdv{u}{x}=\pdv{v}{y}$, $\pdv{u}{y}=-\pdv{v}{x}$, we have
 
 $$
 \begin{aligned}
@@ -1154,7 +1154,7 @@ $$
 \end{aligned}
 $$
 
-Proceeding as in Example 12.7.1, the saddle point is still $z=1$, and since $w''(1,s)=-s=-\abs{s}e^{\alpha}$, we have
+Proceeding as in Example 12.7.1, the saddle point is still $z=1$, and since $w'' (1,s)=-s=-\abs{s}e^{\alpha}$, we have
 
 $$
 \begin{aligned}
