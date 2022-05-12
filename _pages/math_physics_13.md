@@ -58,7 +58,7 @@ $$
 \end{aligned}
 $$
 
-Use the substitution $s=t^2$,\; $ds=2t\,dt$, we have
+Use the substitution $s=t^2$, $ds=2t\,dt$, we have
 
 $$
 \begin{aligned}
@@ -66,7 +66,7 @@ $$
 \end{aligned}
 $$
 
-Use the substitution $e^{-s}=t$,\; $-e^{-s}ds=dt$, we have
+Use the substitution $e^{-s}=t$, $-e^{-s}ds=dt$, we have
 
 $$
 \begin{aligned}
@@ -78,7 +78,7 @@ $$
 
 ### 13.1.4
 
-Using the substitution $t=\frac{mv^2}{2kT}$, so $v=\lfpr{\frac{2kT}{m}}^{\frac{1}{2}}t^{\frac{1}{2}}$,\; $dv=\frac{1}{2}\lfpr{\frac{2kT}{m}}^{\frac{1}{2}}t^{-\frac{1}{2}}dt$, then
+Using the substitution $t=\frac{mv^2}{2kT}$, so $v=\lfpr{\frac{2kT}{m}}^{\frac{1}{2}}t^{\frac{1}{2}}$, $dv=\frac{1}{2}\lfpr{\frac{2kT}{m}}^{\frac{1}{2}}t^{-\frac{1}{2}}dt$, then
 
 $$
 \begin{aligned}
@@ -140,7 +140,7 @@ $$
 
 ### 13.1.9
 
-As is Figure 13.1, $\Gamma(x)$ is a continuous function on the segment $x\in(-N,-N+1)$ where $N\in\mathbb{N}$. For even $N$,\; $\Gamma(x)$ ranges from $\Gamma(-N+\frac{1}{2})$ to $+\infty$, and for odd $N$,\; $\Gamma(x)$ ranges from $-\infty$ to $\Gamma(-N+\frac{1}{2})$. Therefore, if we prove that $\Gamma(-N+\frac{1}{2})\to0$ as $N\to\infty$, then for every $k\neq0$, there are infinite many segments $(-N,-N+1)$ in which $y=\Gamma(x)$ intersects with $y=k$.
+As is Figure 13.1, $\Gamma(x)$ is a continuous function on the segment $x\in(-N,-N+1)$ where $N\in\mathbb{N}$. For even $N$,\; $\Gamma(x)$ ranges from $\Gamma(-N+\frac{1}{2})$ to $+\infty$, and for odd $N$, $\Gamma(x)$ ranges from $-\infty$ to $\Gamma(-N+\frac{1}{2})$. Therefore, if we prove that $\Gamma(-N+\frac{1}{2})\to0$ as $N\to\infty$, then for every $k\neq0$, there are infinite many segments $(-N,-N+1)$ in which $y=\Gamma(x)$ intersects with $y=k$.
 
 From Equation 13.23, we have
 
@@ -855,8 +855,8 @@ Differentiating, we have
 
 $$
 \begin{aligned}
-    & \frac{d\Gamma(z+1)}{dx}&& =\Gamma'(z+1)\frac{dz}{dx} \\
-    & \frac{d^2\Gamma(z+1)}{dx^2} && =\Gamma''(z+1)\lfpr{\frac{dz}{dx} }^2+\Gamma'(z+1)\frac{d^2z}{dx^2}
+\frac{d\Gamma(z+1)}{dx} &=\Gamma'(z+1)\frac{dz}{dx} \\
+\frac{d^2\Gamma(z+1)}{dx^2} &=\Gamma''(z+1)\lfpr{\frac{dz}{dx} }^2+\Gamma'(z+1)\frac{d^2z}{dx^2}
 \end{aligned}
 $$
 
@@ -1036,7 +1036,7 @@ $$
 
 ### 13.3.4
 
-Using the substitution $x=\cos2\theta$, so $1+x=2\cos^2\theta$,\, $1-x=2\sin^2\theta$, and $dx=-4\sin\theta\cos\theta d\theta$, we have
+Using the substitution $x=\cos2\theta$, so $1+x=2\cos^2\theta$, $1-x=2\sin^2\theta$, and $dx=-4\sin\theta\cos\theta d\theta$, we have
 
 $$
 \begin{aligned}
@@ -1053,7 +1053,7 @@ where we used Equation 13.47.
 
 ### 13.3.5
 
-To make the range of integral becomes from $0$ to $1$, use the substitution $u=\frac{x-t}{z-t}$, so $du=\frac{dx}{z-t}$, $x-t=(z-t)u$,\, $z-x=(z-t)(1-u)$. Substituting, 
+To make the range of integral becomes from $0$ to $1$, use the substitution $u=\frac{x-t}{z-t}$, so $du=\frac{dx}{z-t}$, $x-t=(z-t)u$, $z-x=(z-t)(1-u)$. Substituting, 
 
 $$
 \begin{aligned}
@@ -1078,7 +1078,7 @@ $$
 
 ### 13.3.7
 
-Use the substitutions $u=x+y\cos\theta$ and $v=y\sin\theta$, which is a transformation from the oblique coordinates x-y to the orthogonal coordinates u-v. We have
+Use the substitutions $u=x+y\cos\theta$ and $v=y\sin\theta$, which is a transformation from the oblique coordinates _x-y_ to the orthogonal coordinates _u-v_. We have
 
 $$
 \renewcommand\arraystretch{1.5}
