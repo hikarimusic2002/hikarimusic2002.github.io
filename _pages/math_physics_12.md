@@ -542,6 +542,7 @@ $$
     & \beta(2)=1 && -\frac{1}{3^2} && +\frac{1}{5^2} && -\frac{1}{7^2}+\cdots \notag \\
     & \zeta(2)=1+\frac{1}{2^2} && +\frac{1}{3^2}+\frac{1}{4^2} && +\frac{1}{5^2}+\frac{1}{6^2} && +\frac{1}{7^2}+\cdots \notag
 \end{alignat}
+\notag
 $$
 
 so
