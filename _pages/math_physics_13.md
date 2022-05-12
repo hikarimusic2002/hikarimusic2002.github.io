@@ -17,6 +17,7 @@ author_profile: false
 $$
 \newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
 \newcommand{\V}{\mathbf}
+\newcommand{\abs}[1]{\left\vert #1\right\vert}
 \newcommand{\lfpr}[1]{\left(#1\right)}
 \newcommand{\lfbr}[1]{\left[#1\right]}
 \newcommand{\lfab}[1]{\left|#1\right|}
@@ -127,7 +128,7 @@ $$
 
 ### 13.1.8
 
-From Equation 13.1,\; $\Gamma(z)$ has simple poles at every non-negative integer $z=-N$. Note that $\Gamma(z+N)=(z+N-1)\cdots(z)\Gamma(z)$, so the residue at $z=-N$ is
+From Equation 13.1, $\Gamma(z)$ has simple poles at every non-negative integer $z=-N$. Note that $\Gamma(z+N)=(z+N-1)\cdots(z)\Gamma(z)$, so the residue at $z=-N$ is
 
 $$
 \begin{aligned}
@@ -386,7 +387,7 @@ $$
 \end{aligned}
 $$
 
-so $|\Gamma(x)|\geq|\Gamma(x+iy)|$.
+so $\abs{\Gamma(x)}\geq\abs{\Gamma(x+iy)}$.
 
 -----
 
@@ -412,9 +413,9 @@ so
 
 $$
 \begin{aligned}
-
+|\Gamma(\frac{1}{2}+iy)|^2=\frac{\pi}{\cosh\pi y}
 \end{aligned}
-$$|\Gamma(\frac{1}{2}+iy)|^2=\frac{\pi}{\cosh\pi y}
+$$
 
 -----
 
@@ -528,7 +529,7 @@ $$
 \end{aligned}
 $$
 
-so by ratio test, the series converges when $|x|<1$ and diverges at $|x|>1$. At $x=1$, the series is an alternative series and converges since $\lim_{n\to\infty}\frac{\zeta(n)}{n}=0$. At $x=-1$, 
+so by ratio test, the series converges when $\abs{x}<1$ and diverges at $\abs{x}>1$. At $x=1$, the series is an alternative series and converges since $\lim_{n\to\infty}\frac{\zeta(n)}{n}=0$. At $x=-1$, 
 
 $$
 \begin{aligned}
@@ -1052,7 +1053,7 @@ where we used Equation 13.47.
 
 ### 13.3.5
 
-To make the range of integral becomes from $0$ to $1$, use the substitution $u=\frac{x-t}{z-t}$, so $du=\frac{dx}{z-t}$,\, $x-t=(z-t)u$,\, $z-x=(z-t)(1-u)$. Substituting, 
+To make the range of integral becomes from $0$ to $1$, use the substitution $u=\frac{x-t}{z-t}$, so $du=\frac{dx}{z-t}$, $x-t=(z-t)u$,\, $z-x=(z-t)(1-u)$. Substituting, 
 
 $$
 \begin{aligned}
