@@ -14,15 +14,14 @@ author_profile: false
 
 {% raw %}
 
-$$
+Let all the components of a tensor $
 \newcommand{\T}{\mathrm}
 \newcommand{\V}{\mathbf}
 \newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
 \newcommand{\del}{\boldsymbol{\nabla}}
 \newcommand{\VE}{\mathbf{\hat{e}}}
 \newcommand{\EE}{\pmb{\varepsilon}}
-$$
-Let all the components of a tensor $\T{A}$ vanish in a coordinate system $K$. For any coordinate system $K'$, the components of $\T{A}$ in $K'$ are linear combinations of components of $\T{A}$ in $K$ according to the transformation laws of tensors, and is therefore zero. So in every coordinate systems, all the components of $\T{A}$ vanish.
+\T{A}$ vanish in a coordinate system $K$. For any coordinate system $K'$, the components of $\T{A}$ in $K'$ are linear combinations of components of $\T{A}$ in $K$ according to the transformation laws of tensors, and is therefore zero. So in every coordinate systems, all the components of $\T{A}$ vanish.
 
 -----
 
