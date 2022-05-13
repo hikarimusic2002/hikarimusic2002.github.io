@@ -12,7 +12,7 @@ author_profile: false
 
 ### 3.2.1
 
-$$
+$
 \newcommand{\V}{\mathbf}
 \newcommand{\M}{\mathrm}
 \newcommand{\VE}{\hat{\V{e}}}
@@ -20,8 +20,7 @@ $$
 \newcommand{\pdv}[2]{\frac{\partial#1}{\partial#2}}
 \newcommand{\ppdv}[3]{\frac{\partial^2#1}{\partial#2\partial#3}}
 \newcommand{\dv}[2]{\frac{d #1}{d #2}}
-$$
-$\V{P}\times \V{Q}=\sum_i \hat{\V{e}}\_i\sum_{jk}\varepsilon_{ijk}P_j Q_k$.  $P_z=Q_z=0$, so $\varepsilon_{ijk}P_j Q_k\neq0$ only when $i=z$. So $\sum_i \hat{\V{e}}\_i\sum_{jk}\varepsilon_{ijk}P_j Q_k=\hat{\V{e}}\_z(P_xQ_y-P_yQ_x)\neq0$ because $\V{P}$ and $\V{Q}$ are nonparallel.
+\V{P}\times \V{Q}=\sum_i \hat{\V{e}}\_i\sum_{jk}\varepsilon_{ijk}P_j Q_k$.  $P_z=Q_z=0$, so $\varepsilon_{ijk}P_j Q_k\neq0$ only when $i=z$. So $\sum_i \hat{\V{e}}\_i\sum_{jk}\varepsilon_{ijk}P_j Q_k=\hat{\V{e}}\_z(P_xQ_y-P_yQ_x)\neq0$ because $\V{P}$ and $\V{Q}$ are nonparallel.
 
 -----
 
