@@ -76,10 +76,10 @@ When $\delta\to0$, we have $M\to f(0)$ and $m\to f(0)$, so $\lowintt f\,d\beta_1
 
 (b) _statement:_ $f\in\mathscr{R}(\beta_2)$ if and only if $f(0-)=f(0)$.
 
-\textit{proof:} The proof is similar with (a) if we instead consider the interval $[-\delta,0]$.
+_proof:_ The proof is similar with (a) if we instead consider the interval $[-\delta,0]$.
 
 
-(c) If $f$ is continuous at $0$, then for every $\varepsilon>0$ there is a $\delta>0$ such that $\vert f(x)-f(0)\vert <\frac{\varepsilon}{2}$ for $\vert x-0\vert <\delta$. Consider the partition $P=\{-1,-\delta,\delta,1\}$, then we have
+(c) If $f$ is continuous at $0$, then for every $\varepsilon>0$ there is a $\delta>0$ such that $\vert f(x)-f(0)\vert <\frac{\varepsilon}{2}$ for $\vert x-0\vert <\delta$. Consider the partition $P=\\{-1,-\delta,\delta,1\\}$, then we have
 
 $$
 \begin{aligned} 
