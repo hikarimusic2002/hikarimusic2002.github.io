@@ -51,7 +51,7 @@ which is a contradiction. Therefore, $\int_a^bf(x)dx=0$ implies $f(x)=0$ for all
 
 ### 3.
 
-If $f(0+)=f(0)$, then for every $\varepsilon>0$ there is a $\delta>0$ such that $\vert f(x)-f(0)\vert <\frac{\varepsilon}{2}$ for $x-0<\delta$. Consider the partition $P=\{-1,0,\delta,1\}$, then we have
+If $f(0+)=f(0)$, then for every $\varepsilon>0$ there is a $\delta>0$ such that $\vert f(x)-f(0)\vert <\frac{\varepsilon}{2}$ for $x-0<\delta$. Consider the partition $P=\\{-1,0,\delta,1\\}$, then we have
 
 $$
 \begin{aligned} 
