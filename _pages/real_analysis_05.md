@@ -92,8 +92,8 @@ so $g(x)\to0$ as $x\to+\infty$.
 $$
 \begin{aligned}
 g'(x)=\frac{f'(x)}{x}-\frac{f(x)}{x^2}=\frac{1}{x}\left(f'(x)-\frac{f(x)-f(0)}{x-0} \right)=\frac{1}{x}\left(f'(x)-f'(x_1) \right)>0
-\end{aligned
-}$$
+\end{aligned}
+$$
 
 where $0<x_1<x$, so $f'(x)>f'(x_1)$. By Theorem 5.11,  $g$ is monotonically increasing.
 
@@ -184,15 +184,15 @@ $$
 
 $$
 \begin{aligned}
-f''(x)=\frac{f''(x)}{2}+\frac{f''(x)}{2}=\frac{1}{2}\lim_{h\to0}\frac{f'(x+h)-f'(x)}{h}+\frac{1}{2}\lim_{h\to0}\frac{f'(x-h)-f'(x)}{-h}=\lim_{h\to0}\frac{f'(x+h)-f'(x-h)}{2h}
+f'' (x)=\frac{f'' (x)}{2}+\frac{f'' (x)}{2}=\frac{1}{2}\lim_{h\to0}\frac{f'(x+h)-f'(x)}{h}+\frac{1}{2}\lim_{h\to0}\frac{f'(x-h)-f'(x)}{-h}=\lim_{h\to0}\frac{f'(x+h)-f'(x-h)}{2h}
 \end{aligned}
 $$
 
-$f''(x)$ exists, so $f'(x)$ exists in a neighborhood of $x$, which means $f(x)$ is differentiable in the neighborhood. Let $A(h)=f(x+h)+f(x-h)-2f(x)$,  $B(h)=h^2$, then $A(h)$ is differentiable in a neighborhood of $h=0$ with $A'(h)=f'(x+h)-f'(x-h)$, and $B(h)$ is differentiable in a neighborhood of $h=0$ with $B'(h)=2h$. As $h\to0$,  $A(h)\to0$ and $B(h)\to0$, so by Theorem 5.13,
+$f'' (x)$ exists, so $f'(x)$ exists in a neighborhood of $x$, which means $f(x)$ is differentiable in the neighborhood. Let $A(h)=f(x+h)+f(x-h)-2f(x)$,  $B(h)=h^2$, then $A(h)$ is differentiable in a neighborhood of $h=0$ with $A'(h)=f'(x+h)-f'(x-h)$, and $B(h)$ is differentiable in a neighborhood of $h=0$ with $B'(h)=2h$. As $h\to0$,  $A(h)\to0$ and $B(h)\to0$, so by Theorem 5.13,
 
 $$
 \begin{aligned}
-\lim_{h\to0}\frac{f(x+h)+f(x-h)-2f(x)}{h^2}=\lim_{h\to0}\frac{A(h)}{B(h)}=\lim_{h\to0}\frac{A'(h)}{B'(h)}=\lim_{h\to0}\frac{f'(x+h)-f'(x-h)}{2h}=f''(x)
+\lim_{h\to0}\frac{f(x+h)+f(x-h)-2f(x)}{h^2}=\lim_{h\to0}\frac{A(h)}{B(h)}=\lim_{h\to0}\frac{A'(h)}{B'(h)}=\lim_{h\to0}\frac{f'(x+h)-f'(x-h)}{2h}=f'' (x)
 \end{aligned}
 $$
 
@@ -217,13 +217,13 @@ $$
 \end{aligned}
 $$
 
-while $f'(0)$ and $f''(0)$ do not exist.
+while $f'(0)$ and $f'' (0)$ do not exist.
 
 -----
 
 ### 12.
 
-For $x>0$,  $f(x)=x^3$,  $f'(x)=3x^2$,  $f''(x)=6x$,  $f^{(3)}(x)=6$. For $x<0$,  $f(x)=-x^3$,  $f'(x)=-3x^2$,  $f''(x)=-6x$,  $f^{(3)}(x)=-6$. For $x=0$,
+For $x>0$,  $f(x)=x^3$,  $f'(x)=3x^2$,  $f'' (x)=6x$,  $f^{(3)}(x)=6$. For $x<0$,  $f(x)=-x^3$,  $f'(x)=-3x^2$,  $f'' (x)=-6x$,  $f^{(3)}(x)=-6$. For $x=0$,
 
 $$
 \begin{aligned}
@@ -235,7 +235,7 @@ where $p\in(0,t)$ or $(t,0)$.
 
 $$
 \begin{aligned}
-f''(0)=\lim_{t\to0}\frac{f'(t)-f'(0)}{t-0}=\lim_{t\to0}f''(q)=\lim_{q\to0}\pm6q=0
+f'' (0)=\lim_{t\to0}\frac{f'(t)-f'(0)}{t-0}=\lim_{t\to0}f'' (q)=\lim_{q\to0}\pm6q=0
 \end{aligned}
 $$
 
@@ -333,7 +333,7 @@ so $\lim_{t\to0}f'(t)=0=f'(0)$.
 
 $$
 \begin{aligned}
-f''(0)=\lim_{t\to0}\frac{f'(t)-f'(0)}{t-0}=\lim_{t\to0}a  t^{a-2}\sin(  \vert t  \vert ^{-c})-\lim_{t\to0}c  t^{a}  \vert t  \vert ^{-c-2}\cos(  \vert t  \vert ^{-c})
+f'' (0)=\lim_{t\to0}\frac{f'(t)-f'(0)}{t-0}=\lim_{t\to0}a  t^{a-2}\sin(  \vert t  \vert ^{-c})-\lim_{t\to0}c  t^{a}  \vert t  \vert ^{-c-2}\cos(  \vert t  \vert ^{-c})
 \end{aligned}
 $$
 
@@ -341,7 +341,7 @@ If $a\leq 2+c$, consider $t>0$, then
 
 $$
 \begin{aligned}
-f''(0)=\lim_{t\to0}t^{a-c-2}\left(a  t^c\sin(t^{-c})-c\cos(t^{-c}) \right)=\lim_{t\to0}-c  t^{a-c-2}\cos(t^{-c})
+f'' (0)=\lim_{t\to0}t^{a-c-2}\left(a  t^c\sin(t^{-c})-c\cos(t^{-c}) \right)=\lim_{t\to0}-c  t^{a-c-2}\cos(t^{-c})
 \end{aligned}
 $$
 
@@ -351,11 +351,11 @@ If $a>2+c$, then
 
 $$
 \begin{aligned}
-  \vert f''(0)  \vert \leq \lim_{t\to0}  \vert a  \vert   \vert t  \vert ^{a-2}+\lim_{t\to0}c  \vert t  \vert ^{a-c-2}=0
+  \vert f'' (0)  \vert \leq \lim_{t\to0}  \vert a  \vert   \vert t  \vert ^{a-2}+\lim_{t\to0}c  \vert t  \vert ^{a-c-2}=0
 \end{aligned}
 $$
 
-so $f''(0)=0$.
+so $f'' (0)=0$.
   
 
 (f)
@@ -363,7 +363,7 @@ For $x\neq0$,
 
 $$
 \begin{aligned}
-      f''(x) & =\left(a(a-1)x^{a-2}-c^2x^{a+2}  \vert x  \vert ^{-2c-4} \right)\sin(  \vert x  \vert ^{-c})\\  
+      f'' (x) & =\left(a(a-1)x^{a-2}-c^2x^{a+2}  \vert x  \vert ^{-2c-4} \right)\sin(  \vert x  \vert ^{-c})\\  
       & +\left(-acx^a  \vert x  \vert ^{-c-2}-c(a+1)x^a  \vert x  \vert ^{-c-2}-c(-c-2)x^{a+2}  \vert x  \vert ^{-c-4} \right)\cos(  \vert x  \vert ^{-c})
 \end{aligned}
 $$
@@ -372,48 +372,48 @@ If $a<2+2c$, consider $x>0$ and $  \vert x  \vert ^{-c}=(2n+\frac{1}{2})\pi$ whe
 
 $$
 \begin{aligned}
-f''(x)=x^{a-2c-2}\left(a(a-1)x^{2c}-c^2 \right)\to\infty
+f'' (x)=x^{a-2c-2}\left(a(a-1)x^{2c}-c^2 \right)\to\infty
 \end{aligned}
 $$
 
-as $x\to0$, so $f''$ is not bounded.
+as $x\to0$, so $f'' $ is not bounded.
 
 If $a\geq 2+2c$, then
 
 $$
 \begin{aligned}
-  \vert f''(x)  \vert \leq   \vert a(a-1)  \vert +  \vert c^2  \vert +  \vert ac  \vert +  \vert c(a+1)  \vert +  \vert c(c+2)  \vert 
+  \vert f'' (x)  \vert \leq   \vert a(a-1)  \vert +  \vert c^2  \vert +  \vert ac  \vert +  \vert c(a+1)  \vert +  \vert c(c+2)  \vert 
 \end{aligned}
 $$
 
-so $f''$ is bounded.
+so $f'' $ is bounded.
   
 
 (g)
-$f''$ is continuous for all $x\neq0$. At $x=0$,  $f''$ is continuous if and only if $\lim_{t\to0}f''(t)=f''(0)=0$.
+$f'' $ is continuous for all $x\neq0$. At $x=0$,  $f'' $ is continuous if and only if $\lim_{t\to0}f'' (t)=f'' (0)=0$.
 
 If $a\leq2+2c$, consider $t>0$ and $  \vert t  \vert ^{-c}=(2n+\frac{1}{2})\pi$ where $n$ is an integer, then
 
 $$
 \begin{aligned}
-\lim_{t\to0}f''(t)=\lim_{t\to0}t^{a-2c-2}\left(a(a-1)t^{2c}-c^2 \right)=\begin{cases}
+\lim_{t\to0}f'' (t)=\lim_{t\to0}t^{a-2c-2}\left(a(a-1)t^{2c}-c^2 \right)=\begin{cases}
 \infty\qquad & \textit{if $a-2c-2<0$}\\
 -c^2\neq0\qquad & \textit{if $a-2c-2=0$}
 \end{cases}
 \end{aligned}
 $$
 
-so $f''$ is not continuous.
+so $f'' $ is not continuous.
 
 If $a>2+2c$, 
 
 $$
 \begin{aligned}
-\lim_{t\to0}  \vert f''(t)  \vert \leq \lim_{t\to0}\left(  \vert a(a-1)  \vert   \vert t  \vert ^{a-2}+  \vert c^2+c-2ac  \vert   \vert t  \vert ^{a-c-2}+  \vert c^2  \vert   \vert t  \vert ^{a-2c-2} \right)=0
+\lim_{t\to0}  \vert f'' (t)  \vert \leq \lim_{t\to0}\left(  \vert a(a-1)  \vert   \vert t  \vert ^{a-2}+  \vert c^2+c-2ac  \vert   \vert t  \vert ^{a-c-2}+  \vert c^2  \vert   \vert t  \vert ^{a-2c-2} \right)=0
 \end{aligned}
 $$
 
-so $\lim_{t\to0}f''(t)=0=f''(0)$.
+so $\lim_{t\to0}f'' (t)=0=f'' (0)$.
 
 -----
 
@@ -448,7 +448,7 @@ $$
 
 which means $f$ is convex.
 
-$f''(x)\geq0$ if and only if $f'(x)$ is monotonically increasing, if and only if $f$ is convex.
+$f'' (x)\geq0$ if and only if $f'(x)$ is monotonically increasing, if and only if $f$ is convex.
 
 -----
 
@@ -458,7 +458,7 @@ For every $x\in(a,\infty)$ and $h>0$, by Taylor's theorem,
 
 $$
 \begin{aligned}
-f(x+2h)=f(x)+f'(x)\cdot2h+\frac{f''(\xi)}{2}(2h)^2
+f(x+2h)=f(x)+f'(x)\cdot2h+\frac{f'' (\xi)}{2}(2h)^2
 \end{aligned}
 $$
 
@@ -466,7 +466,7 @@ where $\xi\in(x,x+2h)$, so
 
 $$
 \begin{aligned}
-f'(x)=\frac{1}{2h}\left[f(x+2h)-f(x) \right]-hf''(\xi)\\
+f'(x)=\frac{1}{2h}\left[f(x+2h)-f(x) \right]-hf'' (\xi)\\
   \vert f'(x)  \vert \leq\frac{1}{2h}\left[M_0-(-M_0) \right]+hM_2=\frac{M_0}{h}+hM_2
 \end{aligned}
 $$
@@ -492,7 +492,7 @@ f'(x)&=\begin{cases}
 4x\qquad & (-1<x<0)\\
 \frac{4x}{(x^2+1)^2}\qquad & (0<x<\infty)
 \end{cases}\\
-f''(x)&=\begin{cases}
+f'' (x)&=\begin{cases}
 4\qquad & (-1<x<0)\\
 \frac{4(1-3x^2)}{(x^2+1)^3}\qquad & (0<x<\infty)
 \end{cases}\\
@@ -503,7 +503,7 @@ f^{(3)}(x)&=\begin{cases}
 \end{aligned}
 $$
 
-$f'(0+)=f'(0-)=\lim_{t\to0}f'(t)=0$, so $f'(0)=0$ by Exercise 9.  $f''(0+)=f''(0-)=\lim_{t\to0}f''(t)=4$, so $f''(0)=4$ by Exercise 9. So $f$ is twice-differentiable. $f'(x)$ has a root at $x=0$ only, so 
+$f'(0+)=f'(0-)=\lim_{t\to0}f'(t)=0$, so $f'(0)=0$ by Exercise 9.  $f'' (0+)=f'' (0-)=\lim_{t\to0}f'' (t)=4$, so $f'' (0)=4$ by Exercise 9. So $f$ is twice-differentiable. $f'(x)$ has a root at $x=0$ only, so 
 
 $$
 \begin{aligned}
@@ -511,7 +511,7 @@ M_0=\max\left(  \vert f(-1)  \vert ,  \vert f(0)  \vert ,  \vert f(\infty)  \ver
 \end{aligned}
 $$
 
-$f''(x)$ has a root at $x=\frac{1}{\sqrt{3}}$ only, so
+$f'' (x)$ has a root at $x=\frac{1}{\sqrt{3}}$ only, so
 
 $$
 \begin{aligned}
@@ -523,13 +523,13 @@ $f^{(3)}(x)$ has roots at $-1<x\leq0$ and $x=1$, so
 
 $$
 begin{aligned}
-M_2=\max\left(4,  \vert f''(1)  \vert ,  \vert f''(\infty)  \vert  \right)=4
+M_2=\max\left(4,  \vert f'' (1)  \vert ,  \vert f'' (\infty)  \vert  \right)=4
 \end{aligned}
 $$
 
 Therefore, $M_1^2=4M_0M_2$
 
-Let $\V{f}$ be a twice-differentiable vector-valued function on $(a,\infty)$, and let $M_0,M_1,M_2$ be the least upper bound of $  \vert \V{f}(x)  \vert ,  \vert \V{f'}(x)  \vert ,  \vert \V{f''}(x)  \vert $. For every $0<\alpha<M_1$, there is a $x_0$ such that $\alpha<  \vert \V{f'}(x_0)  \vert <M_1$.Let $\V{u}=\frac{\V{f'}(x_0)}{  \vert \V{f'}(x_0)  \vert }$ and $\phi(x)=\V{f'}(x)\cdot\V{u}$, and let $N_0,N_1,N_2$ be the least upper bound of $  \vert \phi(x)  \vert ,  \vert \phi'(x)  \vert ,  \vert \phi''(x)  \vert $. We have
+Let $\V{f}$ be a twice-differentiable vector-valued function on $(a,\infty)$, and let $M_0,M_1,M_2$ be the least upper bound of $  \vert \V{f}(x)  \vert ,  \vert \V{f'}(x)  \vert ,  \vert \V{f'' }(x)  \vert $. For every $0<\alpha<M_1$, there is a $x_0$ such that $\alpha<  \vert \V{f'}(x_0)  \vert <M_1$.Let $\V{u}=\frac{\V{f'}(x_0)}{  \vert \V{f'}(x_0)  \vert }$ and $\phi(x)=\V{f'}(x)\cdot\V{u}$, and let $N_0,N_1,N_2$ be the least upper bound of $  \vert \phi(x)  \vert ,  \vert \phi'(x)  \vert ,  \vert \phi'' (x)  \vert $. We have
 
 $$
 \begin{aligned}
@@ -545,7 +545,7 @@ N_1^2\leq4N_0N_2
 \end{aligned}
 $$
 
-Since $  \vert \phi(x)  \vert =  \vert \V{f}(x)\cdot\V{u}  \vert \leq  \vert \V{f}(x)  \vert \cdot  \vert \V{u}  \vert =  \vert \V{f}(x)  \vert \leq M_0$, and $  \vert \phi''(x)  \vert =  \vert \V{f''}(x)\cdot\V{u}  \vert \leq  \vert \V{f''}(x)  \vert \cdot  \vert \V{u}  \vert =  \vert \V{f''}(x)  \vert \leq M_2$, we have
+Since $  \vert \phi(x)  \vert =  \vert \V{f}(x)\cdot\V{u}  \vert \leq  \vert \V{f}(x)  \vert \cdot  \vert \V{u}  \vert =  \vert \V{f}(x)  \vert \leq M_0$, and $  \vert \phi'' (x)  \vert =  \vert \V{f'' }(x)\cdot\V{u}  \vert \leq  \vert \V{f'' }(x)  \vert \cdot  \vert \V{u}  \vert =  \vert \V{f'' }(x)  \vert \leq M_2$, we have
 
 $$
 \begin{aligned}
@@ -573,7 +573,7 @@ $$
 
 ### 16.
 
-Let $M_0,M_1,M_2$ be the upper bounds of $  \vert f(x)  \vert ,  \vert f'(x)  \vert ,  \vert f''(x)  \vert $ on $(a,\infty)$. Then by Exercise 15,
+Let $M_0,M_1,M_2$ be the upper bounds of $  \vert f(x)  \vert ,  \vert f'(x)  \vert ,  \vert f'' (x)  \vert $ on $(a,\infty)$. Then by Exercise 15,
 
 $$
 \begin{aligned}
@@ -591,8 +591,8 @@ By Taylor's Theorem,
 
 $$
 \begin{aligned}
-        f(1) & =f(0)+f'(0)+\frac{f''(0)}{2}+\frac{f^{(3)}(s)}{6}\\
-        f(-1) & =f(0)-f'(0)+\frac{f''(0)}{2}-\frac{f^{(3)}(t)}{6}
+        f(1) & =f(0)+f'(0)+\frac{f'' (0)}{2}+\frac{f^{(3)}(s)}{6}\\
+        f(-1) & =f(0)-f'(0)+\frac{f'' (0)}{2}-\frac{f^{(3)}(t)}{6}
 \end{aligned}
 $$
 
@@ -895,7 +895,7 @@ $$
 \end{aligned}
 $$
 
-since $f'$ is monotonically increasing by $f''(x)>0$. Rearranging, 
+since $f'$ is monotonically increasing by $f'' (x)>0$. Rearranging, 
 
 $$
 \begin{aligned}
@@ -919,7 +919,7 @@ By Taylor's Theorem, there is $t_n\in(\xi,x_n)$ such that
 
 $$
 \begin{aligned}
-f(\xi)=f(x_n)+f'(x_n)(\xi-x_n)+\frac{f''(t_n)}{2}(\xi-x_n)^2
+f(\xi)=f(x_n)+f'(x_n)(\xi-x_n)+\frac{f'' (t_n)}{2}(\xi-x_n)^2
 \end{aligned}
 $$
 
@@ -927,7 +927,7 @@ Rearranging,
 
 $$
 \begin{aligned}
-x_{n+1}-\xi=x_n-\frac{f(x_n)}{f'(x_n)}-\xi=\frac{f''(t_n)}{2f'(x_n)}(x_n-\xi^2)
+x_{n+1}-\xi=x_n-\frac{f(x_n)}{f'(x_n)}-\xi=\frac{f'' (t_n)}{2f'(x_n)}(x_n-\xi^2)
 \end{aligned}
 $$
 
@@ -965,7 +965,7 @@ $g(x)=x$ is equivalent to $f(x)=0$, so finding a fixed point of $g$ is finding t
 
 $$
 \begin{aligned}
-g'(x)=1-\frac{\left[f'(x) \right]^2-f(x)f''(x)}{\left[f'(x) \right]^2}=\frac{f(x)f''(x)}{\left[f'(x) \right]^2}\leq\frac{f(x)M}{\delta^2}\to0
+g'(x)=1-\frac{\left[f'(x) \right]^2-f(x)f'' (x)}{\left[f'(x) \right]^2}=\frac{f(x)f'' (x)}{\left[f'(x) \right]^2}\leq\frac{f(x)M}{\delta^2}\to0
 \end{aligned}
 $$
 
