@@ -3,8 +3,7 @@ layout: splash
 title: "Principles of Mathematical Analysis Ch2"
 permalink: /solutions/real_analysis_02
 author_profile: false
-redirect_from:
-  - /resume
+
 ---
 
 # Chapter 2: Basic Topology
