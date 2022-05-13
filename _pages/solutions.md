@@ -31,7 +31,7 @@ redirect_from:
   * [Chapter 3: Numerical Sequences and Series](https://hikarimusic2002.github.io/solutions/real_analysis_03)
   * [Chapter 4: Continuity](https://hikarimusic2002.github.io/solutions/real_analysis_04)
   * [Chapter 5: Differentiation](https://hikarimusic2002.github.io/solutions/real_analysis_05)
-  * [Chapter 6: The Riemenn-Stieltjes Integral](https://hikarimusic2002.github.io/solutions/real_analysis_06)
+  * [_Chapter 6: The Riemenn-Stieltjes Integral_](https://hikarimusic2002.github.io/solutions/real_analysis_06)
 
 
 ## Algorithm
