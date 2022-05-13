@@ -16,9 +16,9 @@ For every partition $P$, since there are points $
 \newcommand{\lfpr}[1]{\left(#1\right)}
 \newcommand{\lfbr}[1]{\left[#1\right]}
 \def\upint{\int\limits^{-}\kern-11.9pt\int}
-\def\upintt{\int\limits^{-}\kern-7.0pt\int}
+\def\upintt{\int\limits^{-}\kern-8.6pt\int}
 \def\lowint{\int\limits_{-}\kern-11.9pt\int}
-\def\lowintt{\int\limits_{-}\kern-7.0pt\int}
+\def\lowintt{\int\limits_{-}\kern-8.6pt\int}
 x_i\neq x_0$ in every interval of the partition, we have $L(P,f,\alpha)=\sum f(x_i)\Delta\alpha_i=0$, and therefore $\lowintt_a^bfd\alpha=0$.
 
 For every $\varepsilon>0$, since $\alpha$ is continuous at $x_0$, there is a $\delta>0$ such that $\vert \alpha(x)-\alpha(x_0)\vert <\frac{\varepsilon}{2}$ for $\vert x-x_0\vert <\delta$. Let $I$ be the intersection of $[x_0-\delta,x_0-\delta]$ and $[a,b]$, and let its end points be $x_1,x_2$. Consider the partition $P=\{a,x_1,x_2,b\}$, then 
