@@ -3,8 +3,7 @@ layout: splash
 title: "Principles of Mathematical Analysis Ch1"
 permalink: /solutions/real_analysis_01
 author_profile: false
-redirect_from:
-  - /resume
+
 ---
 
 # Chapter 1: Mathematical Preliminaries
