@@ -18,7 +18,7 @@ author_profile: false
 
 ### 2.
 
-Let $S$ be the set of equations of the form $a_0z^n+a_1z^{n-1}+\cdots+a_{n-1}z+a_n=0$ with $a_0,\cdots,a_n$ being integers. Let $A_N$ be the set of equations in $S$ such that $n+\vert a_0\vert +\vert a_1\vert +\cdots+\vert a_n\vert =N$ with $N$ being positive integer. By \textit{Hint}, $A_N$ is finite (it has less than $\frac{(N+n+1)!}{N!(n+1)!}2^{n+1}$ elements). It is obvious that
+Let $S$ be the set of equations of the form $a_0z^n+a_1z^{n-1}+\cdots+a_{n-1}z+a_n=0$ with $a_0,\cdots,a_n$ being integers. Let $A_N$ be the set of equations in $S$ such that $n+\vert a_0\vert +\vert a_1\vert +\cdots+\vert a_n\vert =N$ with $N$ being positive integer. By _Hint_, $A_N$ is finite (it has less than $\frac{(N+n+1)!}{N!(n+1)!}2^{n+1}$ elements). It is obvious that
 
 $$
 \begin{aligned}
@@ -241,7 +241,7 @@ For $x\in E$, $2<x^2<3$. There exists $y_1,y_2$ such that $\sqrt{2}<y_1<x<y_2<\s
 
 _countable_: If $E$ is countable, let its elements be enumerated as $s_1,s_2,\cdots$. Construct a sequence $s$ by making the $n^{th}$ digit of $s$ be $4$ if the $n^{th}$ digit of $s_n$ is $7$, and the $n^{th}$ digit of $s$ be $7$ if the $n^{th}$ digit of $s_n$ is $4$. Then $s$ is different with every $s_i$, but $s$ is a element of $E$, a contradiction. So $E$ is uncountable.
 
-_dense_: $E$ is not dense in $[0,1]$ because there are many points in $[0,1]$ that are neither a point or a limit point of $E$, for example, $0.5$\,.
+_dense_: $E$ is not dense in $[0,1]$ because there are many points in $[0,1]$ that are neither a point or a limit point of $E$, for example, $0.5$.
 
 _compact_: It is obvious that $E$ is bounded. If there is a limit point of $E$ that is not an element of $E$, whose $n^{th}$ digit is neither $4$ nor $7$, consider the neighborhood with radius $r=10^{-(n+1)}$, then the neighborhood cannot contain any element of $E$ because the $n^{th}$ and $(n+1)^{th}$ digit cannot be $44,47,74$ or $77$, a contradiction. So every limit point of $E$ belongs to $E$, which means $E$ is closed. Being bounded and closed implies being compact in $R^1$ (Theorem 2.41).
 
@@ -253,7 +253,7 @@ _perfect_: We have proved that $E$ is closed. If there is a element $x$ of $E$ t
 
 Let $E_0=[a_0,b_0]$, $a_0,b_0$ are irrational. Enumerate all the rational number in $[a_0,b_0]$ as $r_1,r_2,\cdots$. For $a_0<r_1<b_0$, found irrational number $a_1,b_1$ that such that $a_0<b_1<r_1<a_1<b_0$, and remove $(b_1,a_1)$ to get $E_1=[a_0,b_1]\cup[a_1,b_0]$. Continue in this way to construct $E_2,E_3,\cdots$ by removing segments around $r_2,r_3,\cdots$ with irrational numbers being the end points, then $E_1\supset E_2\supset E_3\supset\cdots$. Let $P=\bigcap_{n=1}^\infty E_n$. It is obvious that $E_n$ is compact, so by Theorem 2.36, $P$ is not empty. From the construction, $P$ contains no rational number. 
 
-It is obvious that $P$ is closed. If $x\in P$, let $S$ be a neighborhood of $x$. Let $I_n$ be that interval of $E_n$ which contains x. Choose $n$ large enough so that $I_n\subset S$ (It is possible because the length of $I_n$ can be arbitrary small, due to the fact that rational numbers are dense). Let $x_n$ be an endpoint of $I_n$, such that $x_n\neq x$. It follows from the construction of $P$ that $x_n\in P$. Hence $x$ is a limit point of $P$, and $P$ is perfect. Therefore, $P$ is not empty, perfect and contains no rational number, which satisfies the conditions.
+It is obvious that $P$ is closed. If $x\in P$, let $S$ be a neighborhood of $x$. Let $I_n$ be that interval of $E_n$ which contains $x$. Choose $n$ large enough so that $I_n\subset S$ (It is possible because the length of $I_n$ can be arbitrary small, due to the fact that rational numbers are dense). Let $x_n$ be an endpoint of $I_n$, such that $x_n\neq x$. It follows from the construction of $P$ that $x_n\in P$. Hence $x$ is a limit point of $P$, and $P$ is perfect. Therefore, $P$ is not empty, perfect and contains no rational number, which satisfies the conditions.
 
 -----
 
@@ -284,7 +284,7 @@ $$
 
 If $A\cap E=\phi$, then $A\subset E'$ and $E\subset B$, so $A\subset E'\subset\bar{E}\subset\bar{B}$, which means $A\cap\bar{B}\neq\phi$, a contradiction. So $A\cap E\neq\phi$, and similarly $B\cap E\neq\phi$. 
 
-$A\cap E\subset A$,\; $\overline{(A\cap E)}\subset\overline{A}$,\; $B\cap E\subset B$,\; $\overline{(B\cap E)}\subset\overline{B}$. So $\overline{(A\cap E)}\cap(B\cap E)\subset\overline{A}\cap B=\phi$, and $(A\cap E)\cap\overline{(B\cap E)}\subset A\cap\overline{B}=\phi$, which means $A\cap E$ and $B\cap E$ are two nonempty separated sets, so $E$, being the union of them, is not connected, a contradiction. So $\bar{E}$ must be connected.
+$A\cap E\subset A$, $\overline{(A\cap E)}\subset\overline{A}$, $B\cap E\subset B$, $\overline{(B\cap E)}\subset\overline{B}$. So $\overline{(A\cap E)}\cap(B\cap E)\subset\overline{A}\cap B=\phi$, and $(A\cap E)\cap\overline{(B\cap E)}\subset A\cap\overline{B}=\phi$, which means $A\cap E$ and $B\cap E$ are two nonempty separated sets, so $E$, being the union of them, is not connected, a contradiction. So $\bar{E}$ must be connected.
 
 The interior of a connected set can be not connected. Consider a set $E$ in $R^2:$
 
