@@ -1,7 +1,7 @@
 ---
 layout: splash
-title: "Principles of Mathematical Analysis Ch2"
-permalink: /solutions/real_analysis_02
+title: "Principles of Mathematical Analysis Ch3"
+permalink: /solutions/real_analysis_03
 author_profile: false
 
 ---
