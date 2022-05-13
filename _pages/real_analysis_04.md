@@ -136,7 +136,7 @@ $$
 then the graph of $f$ is $\phi(E)$. Since both the functions  $\phi_1(x)=x$ and $\phi_2(x)=f(x)$ are continuous, $\phi$ is continuous by Theorem 4.10. Since $E$ is compact, $\phi(E)$ is compact by Theorem 4.14.
 
 
-If $f$ is not continuous at some point $p$, then there is a sequence $\{p_n\}$ in $E$ such that $\{p_n\}$ converges to $p$, but $\{f(p_n)\}$ does not converge to $f(p)$. Consider the sequence $\{q_n\}$ in $\phi(E)$ such that $q_n=(p_n,f(p_n))$. If a subsequence $\{q_{n_k}\}$ converges to $(a,b)$, then $\{p_{n_k}\}\to a$ and $\{f(p_{n_k})\}\to b$. Since $\{p_n\}$ converges to $p$,\; $a=p$, but since $\{f(p_n)\}$ does not converge to $f(p)$,\; $b\neq f(p)$,* so $(a,b)\not\in \phi(E)$. Therefore, there is no subsequence of $\{q_n\}$ in $\phi(E)$ converges to a point of $\phi(E)$, which means $\phi(E)$ is not compact by Theorem 3.6. 
+If $f$ is not continuous at some point $p$, then there is a sequence $\{p_n\}$ in $E$ such that $\{p_n\}$ converges to $p$, but $\{f(p_n)\}$ does not converge to $f(p)$. Consider the sequence $\{q_n\}$ in $\phi(E)$ such that $q_n=(p_n,f(p_n))$. If a subsequence $\{q_{n_k}\}$ converges to $(a,b)$, then $\{p_{n_k}\}\to a$ and $\{f(p_{n_k})\}\to b$. Since $\{p_n\}$ converges to $p$, $a=p$, but since $\{f(p_n)\}$ does not converge to $f(p)$, $b\neq f(p)$,* so $(a,b)\not\in \phi(E)$. Therefore, there is no subsequence of $\{q_n\}$ in $\phi(E)$ converges to a point of $\phi(E)$, which means $\phi(E)$ is not compact by Theorem 3.6. 
 
 -----
 
@@ -161,7 +161,7 @@ g(x,y)=\frac{y^3\cdot y^2}{y^6+y^6}=\frac{1}{2y}
 \end{aligned}
 $$
 
-since $\frac{1}{2y}\to\infty$ as $y\to0$,\; $g(x,y)$ is unbounded in every neighborhood of $(0,0)$.
+since $\frac{1}{2y}\to\infty$ as $y\to0$, $g(x,y)$ is unbounded in every neighborhood of $(0,0)$.
 
 
 Let $x=y^2$, then
@@ -175,7 +175,7 @@ $$
 For $\varepsilon<\frac{1}{2}$, in every neighborhood $\vert (x,y)-(0,0)\vert <\delta$ there is a point $(a^2,a)$ such that $\vert f(a^2,a)-f(0,0)\vert =\frac{1}{2}>\varepsilon$, so $f$ is not continuous at $(0,0)$.
 
 
-If $f(x,y)$ and $g(x,y)$ are restricted to a straight line not passing $(0,0)$, then the denominators of $f(x,y)$ and $g(x,y)$ are not zero, which implies that they are continuous by Theorem 4.9. If f(x,y) and $g(x,y)$ are restricted to a straight line $y=mx$ passing $(0,0)$, then
+If $f(x,y)$ and $g(x,y)$ are restricted to a straight line not passing $(0,0)$, then the denominators of $f(x,y)$ and $g(x,y)$ are not zero, which implies that they are continuous by Theorem 4.9. If $f(x,y)$ and $g(x,y)$ are restricted to a straight line $y=mx$ passing $(0,0)$, then
 
 $$
 \begin{aligned}
@@ -201,7 +201,7 @@ y(x),\quad & \textit{if $x\in \overline{E}\setminus E$}
 \end{aligned}
 $$
 
-By the construction of $y$,\; $F$ is continuous. Since $\overline{E}$ is closed and bounded, it is compact, so $F(\overline{E})$ is compact and therefore bounded by Theorem 4.14. Note that $f(E)=F(E)\subset F(\overline{E})$, so $f(E)$ is bounded.
+By the construction of $y$, $F$ is continuous. Since $\overline{E}$ is closed and bounded, it is compact, so $F(\overline{E})$ is compact and therefore bounded by Theorem 4.14. Note that $f(E)=F(E)\subset F(\overline{E})$, so $f(E)$ is bounded.
 
 
 Let $f(x)=x$ be a function from $E=R^1$ to $R^1$. It is uniformly continuous if we let $\delta=\varepsilon$, since $\vert f(x)-f(y)\vert =\vert x-y\vert <\delta=\varepsilon$. But $E$ is not bounded. $f(E)=f(R^1)=R^1$ is not bounded.
@@ -261,10 +261,10 @@ _proof:_ For $\varepsilon>0$, there is a $\eta>0$ such that $d_Y(x,y)<\eta$ impl
 
 ### 13.
 
-For each $p\in X$ and each positive integer $n$, let $V_n(p)$ be the set of all $q\in E$ with $d(p,q)<\frac{1}{n}$. For every $n$,\; $V_n(p)$ is nonempty since $E$ is dense in $X$, so $f(V_n(p))$ is nonepmty for every $n$. For $\varepsilon>0$, there is a $\delta>0$ such that $E\subset X$ with $\diam{E}<\delta$ implies $\diam{f(E)}<\varepsilon$; for $\delta>0$, let $N$ be the positive integer such that $\frac{1}{N}<\delta$, then $\diam{V_n(p)}<\delta$ for $n\geq N$. Therefore, for $\varepsilon>0$ there is a positive integer $N$ such that $n\geq N$ implies $\diam{f(V_n(p))}<\varepsilon$, which means $\diam{f(V_n(p))}\to0$. Let $M$ be the positive integer such that $\diam{f(V_n(p))}<1$ for $n\geq M$. Then $\overline{f(V_M(p))},\overline{f(V_{M+1}(p))},\overline{f(V_{M+2}(p))},\cdots$ are closed and bounded, so they are compact. From Theorem 3.10,\; $\overline{f(V_M(p))}\supset\overline{f(V_{M+1}(p))}\supset\cdots$ and $\diam{\overline{f(V_n(p))}}\to0$ implies there is exactly one point contained in every $\overline{f(V_n(p))}$, let it be $g(p)$.
+For each $p\in X$ and each positive integer $n$, let $V_n(p)$ be the set of all $q\in E$ with $d(p,q)<\frac{1}{n}$. For every $n$, $V_n(p)$ is nonempty since $E$ is dense in $X$, so $f(V_n(p))$ is nonepmty for every $n$. For $\varepsilon>0$, there is a $\delta>0$ such that $E\subset X$ with $\diam{E}<\delta$ implies $\diam{f(E)}<\varepsilon$; for $\delta>0$, let $N$ be the positive integer such that $\frac{1}{N}<\delta$, then $\diam{V_n(p)}<\delta$ for $n\geq N$. Therefore, for $\varepsilon>0$ there is a positive integer $N$ such that $n\geq N$ implies $\diam{f(V_n(p))}<\varepsilon$, which means $\diam{f(V_n(p))}\to0$. Let $M$ be the positive integer such that $\diam{f(V_n(p))}<1$ for $n\geq M$. Then $\overline{f(V_M(p))},\overline{f(V_{M+1}(p))},\overline{f(V_{M+2}(p))},\cdots$ are closed and bounded, so they are compact. From Theorem 3.10, $\overline{f(V_M(p))}\supset\overline{f(V_{M+1}(p))}\supset\cdots$ and $\diam{\overline{f(V_n(p))}}\to0$ implies there is exactly one point contained in every $\overline{f(V_n(p))}$, let it be $g(p)$.
 
 
-$g$ is a function defined on $X$, and for $x\in E$,\; $g(x)=f(x)$, so $g$ is an extension of $f$ from $E$ to $X$. For every $\varepsilon>0$, there is a $\delta>0$ such that $p,q\in E$ and $d(p,q)<\delta$ implies $d(f(p),f(q))<\frac{\varepsilon}{3}$. For $x,y\in X$ such that $d(x,y)<\delta$, let $N,M$ be positive integers such that $\overline{f(V_N(x))}<\frac{\varepsilon}{3}$ and $\overline{f(V_M(y))}<\frac{\varepsilon}{3}$. Let $p$ be an element of $E$ such that $d(p,x)<\min(\frac{1}{N},\frac{\delta-d(x,y)}{2})$, and let $q$ be an element of $E$ such that $d(p,y)<\min(\frac{1}{M},\frac{\delta-d(x,y)}{2})$ ($p,q$ exist because $E$ is dense in $X$). Then we have
+$g$ is a function defined on $X$, and for $x\in E$, $g(x)=f(x)$, so $g$ is an extension of $f$ from $E$ to $X$. For every $\varepsilon>0$, there is a $\delta>0$ such that $p,q\in E$ and $d(p,q)<\delta$ implies $d(f(p),f(q))<\frac{\varepsilon}{3}$. For $x,y\in X$ such that $d(x,y)<\delta$, let $N,M$ be positive integers such that $\overline{f(V_N(x))}<\frac{\varepsilon}{3}$ and $\overline{f(V_M(y))}<\frac{\varepsilon}{3}$. Let $p$ be an element of $E$ such that $d(p,x)<\min(\frac{1}{N},\frac{\delta-d(x,y)}{2})$, and let $q$ be an element of $E$ such that $d(p,y)<\min(\frac{1}{M},\frac{\delta-d(x,y)}{2})$ ($p,q$ exist because $E$ is dense in $X$). Then we have
 
 $$
 \begin{aligned}
@@ -297,13 +297,13 @@ If $f(0)=0$ or $f(1)=1$, then we are done, so supposed $f(0)>0$ and $f(1)< 1$. L
 
 ### 15.
 
-Let $f$ be a continuous mapping of $R^1$ into $R^1$. If it is not monotonic, then there are $a<b<c$ such that $f(a)<f(b)$ and $f(b)>f(c)$, or $f(a)>f(b)$ and $f(b)<f(c)$. Consider the first case only, since the second case can be proved similarly. The interval $I=[a,c]$ is compact, so $f(I)$ is compact, and therefore $\sup f(I)$ exists and $\sup f(I)\in f(I)$. Let $u$ be the point in $[a,c]$ such that $f(u)=\sup f(I)$. Since $f(a),f(c)<f(b)\leq f(u)$,\; $u\neq a,b$, so $u\in (a,b)$. Consider the segment $S=(a,b)$ which is open. $f(u)\in f(S)$ while it is not an interior point of $f(S)$, since every neighborhood $N_\varepsilon(f(u))$ contains a point $p$ such that $f(u)<p<f(u)+\varepsilon$, which is not in $f(S)$. So $f(S)$ is not open, which means $f$ is not an open mapping. Therefore, every continuous open mapping of $R^1$ into $R^1$ is monotonic.
+Let $f$ be a continuous mapping of $R^1$ into $R^1$. If it is not monotonic, then there are $a<b<c$ such that $f(a)<f(b)$ and $f(b)>f(c)$, or $f(a)>f(b)$ and $f(b)<f(c)$. Consider the first case only, since the second case can be proved similarly. The interval $I=[a,c]$ is compact, so $f(I)$ is compact, and therefore $\sup f(I)$ exists and $\sup f(I)\in f(I)$. Let $u$ be the point in $[a,c]$ such that $f(u)=\sup f(I)$. Since $f(a),f(c)<f(b)\leq f(u)$, $u\neq a,b$, so $u\in (a,b)$. Consider the segment $S=(a,b)$ which is open. $f(u)\in f(S)$ while it is not an interior point of $f(S)$, since every neighborhood $N_\varepsilon(f(u))$ contains a point $p$ such that $f(u)<p<f(u)+\varepsilon$, which is not in $f(S)$. So $f(S)$ is not open, which means $f$ is not an open mapping. Therefore, every continuous open mapping of $R^1$ into $R^1$ is monotonic.
 
 -----
 
 ### 16.
 
-Let $f(x)=[x]$ and $g(x)=(x)$. Both the functions are continuous on segments $(n,n+1)$, where $n$ is an integer. At $x=n$,\; $f(n-)=n-1$,\; $f(n+)=n$,\; $g(n-)=1$,\; $g(n+)=0$, so both the functions have simple discontinuity at integer points.
+Let $f(x)=[x]$ and $g(x)=(x)$. Both the functions are continuous on segments $(n,n+1)$, where $n$ is an integer. At $x=n$, $f(n-)=n-1$, $f(n+)=n$, $g(n-)=1$, $g(n+)=0$, so both the functions have simple discontinuity at integer points.
 
 -----
 
@@ -327,7 +327,7 @@ Let $x$ be a point in $R^1$. For every $\varepsilon>0$, let $N$ be the positive 
 
 ### 19.
 
-Suppose $f$ is a real function with domain $R^1$ which has the intermediate value property. If $f$ is not continuous at a point $x_0$, then there is a sequence $\{p_n\}$ such that $\{p_n\}\to x_0$ but $\{f(p_n)\}$ does not converge to $f(x_0)$. Either the set of $p_n$ such that $f(p_n)>f(x_0)$ or the set of $p_n$ such that $f(p_n)<f(x_0)$ are infinite. Consider the first case only since the second case can be proved similarly. Let $\{x_n\}$ be the subsequence of $\{p_n\}$ such that $f(x_n)>f(x_0)$ for every $n$.\; $\{f(x_n)\}$ does not converge to $f(x_0)$, so there is a $r'$ such that $f(x_n)>r'>f(x_0)$ for every $n$. Let $r$ be a rational number such that $r'>r>f(x_0)$. Let $t_n$ be the point such that $x_0<t_n<x_n$ and $f(t_n)=r$.\; $x_0$ is a limit point of the set of $t_n$, which is a subset of $E=\{x\,\vert \,f(x)=r\}$, so $x_0$ is a limit point of $E$. But $f(x_0)\neq r$, so $x_0\not\in E$, which means $E$ is not closed. Therefore, if $f$ is a real function with domain $R^1$ which has the intermediate value property, and for every rational $r$, the set of all $x$ with $f(x)=r$ is closed, then $f$ is continuous.
+Suppose $f$ is a real function with domain $R^1$ which has the intermediate value property. If $f$ is not continuous at a point $x_0$, then there is a sequence $\{p_n\}$ such that $\{p_n\}\to x_0$ but $\{f(p_n)\}$ does not converge to $f(x_0)$. Either the set of $p_n$ such that $f(p_n)>f(x_0)$ or the set of $p_n$ such that $f(p_n)<f(x_0)$ are infinite. Consider the first case only since the second case can be proved similarly. Let $\{x_n\}$ be the subsequence of $\{p_n\}$ such that $f(x_n)>f(x_0)$ for every $n$. $\{f(x_n)\}$ does not converge to $f(x_0)$, so there is a $r'$ such that $f(x_n)>r'>f(x_0)$ for every $n$. Let $r$ be a rational number such that $r'>r>f(x_0)$. Let $t_n$ be the point such that $x_0<t_n<x_n$ and $f(t_n)=r$. $x_0$ is a limit point of the set of $t_n$, which is a subset of $E=\{x\,\vert \,f(x)=r\}$, so $x_0$ is a limit point of $E$. But $f(x_0)\neq r$, so $x_0\not\in E$, which means $E$ is not closed. Therefore, if $f$ is a real function with domain $R^1$ which has the intermediate value property, and for every rational $r$, the set of all $x$ with $f(x)=r$ is closed, then $f$ is continuous.
 
 -----
 
@@ -341,10 +341,10 @@ Suppose $f$ is a real function with domain $R^1$ which has the intermediate valu
 
 ### 21.
 
-$K$ is compact and $\rho_F$ is continuous, so $\rho_F(K)$ is compact by Theorem 4.14. So $\inf\rho_F(K)\in\rho_F(K)$, which means there is a $u\in K$ such that $\rho_F(u)=\inf \rho_F(K)$. If $\rho_F(u)=0$, then by Exercise 20, $u\in\overline{F}$ and therefore $u\in F$ since $F$ is closed, a contradiction to $K$ and $F$ being disjoint. So $\inf\rho_F(K)=\rho_F(u)>0$. Let $\delta$ be a number such that $0<\delta<\inf\rho_F(K)$. For a point $p\in K$ and all points $q\in F$,\; $d(p,q)\geq \rho_F(p)$, and for all $p\in K$,\; $\rho_F(p)\geq \inf\rho_F(K)>\delta$, so $d(p,q)>\delta$ for all $p\in K$ and $q\in F$.
+$K$ is compact and $\rho_F$ is continuous, so $\rho_F(K)$ is compact by Theorem 4.14. So $\inf\rho_F(K)\in\rho_F(K)$, which means there is a $u\in K$ such that $\rho_F(u)=\inf \rho_F(K)$. If $\rho_F(u)=0$, then by Exercise 20, $u\in\overline{F}$ and therefore $u\in F$ since $F$ is closed, a contradiction to $K$ and $F$ being disjoint. So $\inf\rho_F(K)=\rho_F(u)>0$. Let $\delta$ be a number such that $0<\delta<\inf\rho_F(K)$. For a point $p\in K$ and all points $q\in F$, $d(p,q)\geq \rho_F(p)$, and for all $p\in K$, $\rho_F(p)\geq \inf\rho_F(K)>\delta$, so $d(p,q)>\delta$ for all $p\in K$ and $q\in F$.
 
 
-Let $A=\{n\,\vert \,n\in \mathbb{N}\}$ and $B=\{n+\frac{1}{n+1}\vert n\in \mathbb{N}\}$.\; $A$ and $B$ are disjoint, and both of which are closed but not compact. For every $\varepsilon>0$, let $N$ be the positive integer such that $N+1>\frac{1}{\delta}$, then $p=N\in A$ and $q=N+\frac{1}{N+1}\in B$ satisfy $d(p,q)=\frac{1}{N+1}<\delta$.
+Let $A=\{n\,\vert \,n\in \mathbb{N}\}$ and $B=\{n+\frac{1}{n+1}\vert n\in \mathbb{N}\}$. $A$ and $B$ are disjoint, and both of which are closed but not compact. For every $\varepsilon>0$, let $N$ be the positive integer such that $N+1>\frac{1}{\delta}$, then $p=N\in A$ and $q=N+\frac{1}{N+1}\in B$ satisfy $d(p,q)=\frac{1}{N+1}<\delta$.
 
 -----
 
@@ -358,9 +358,9 @@ $$
 \end{aligned}
 $$
 
-for all $p\in X$, so the range of $f$ lies in $[0,1]$.\; $f(p)=0$ if and only if $\rho_A(p)=0$, if and only if $p\in\overline{A}=A$.\; $f(p)=1$ if and only if $\rho_B(p)=0$, if and only if $p\in\overline{B}=B$.
+for all $p\in X$, so the range of $f$ lies in $[0,1]$. $f(p)=0$ if and only if $\rho_A(p)=0$, if and only if $p\in\overline{A}=A$. $f(p)=1$ if and only if $\rho_B(p)=0$, if and only if $p\in\overline{B}=B$.
 
-$f$ is a continuous function from $X$ to $Y=[0,1]$.\; $[0,\frac{1}{2})$ is open in $Y$, so $V=f^{-1}([0,\frac{1}{2}))$ is open in $X$ by Theorem 4.8. Similarly, $W=f^{-1}((\frac{1}{2},1])$ is open in $X$.\; $f(p)=0\in[0,\frac{1}{2})$ for all $p\in A$, so $A\subset V$. Similarly, $B\subset W$.
+$f$ is a continuous function from $X$ to $Y=[0,1]$. $[0,\frac{1}{2})$ is open in $Y$, so $V=f^{-1}([0,\frac{1}{2}))$ is open in $X$ by Theorem 4.8. Similarly, $W=f^{-1}((\frac{1}{2},1])$ is open in $X$. $f(p)=0\in[0,\frac{1}{2})$ for all $p\in A$, so $A\subset V$. Similarly, $B\subset W$.
 
 -----
 
@@ -468,7 +468,7 @@ $$
 \end{aligned}
 $$
 
-so the inequality holds for $\lambda=\frac{r}{2^{n+1}}$. Therefore, by induction, the inequality holds for all $\lambda\in A$ where $A=\{\frac{k}{2^n}\,\vert \,n,k\in\mathbb{N},\,0\leq k\leq 2^n\}$. For $x,y\in(a,b)$, consider the function $g$ from $[0,1]$ to $R^1$ that maps $\lambda$ to $\lambda f(x)+(1-\lambda)f(y)-f(\lambda x+(1-\lambda)y)$. For all $\lambda \in A$,\; $\lambda f(x)+(1-\lambda)f(y)-f(\lambda x+(1-\lambda)y)\geq0$, so $g(\lambda)\geq0$, which means $A\subset g^{-1}([0,\infty))$. Since $f$ is continuous, $g$ is continuous, and since $[0,\infty)$ is closed in $R^1$,\; $g^{-1}([0,\infty))$ is closed in $[0,1]$ by Theorem 4.8. For $\lambda\in[0,1]$, every neighborhood of $\lambda$ contains a point of $A$ and therefore a point of  $g^{-1}([0,\infty))$, so $\lambda$ is a point or a limit point of $g^{-1}([0,\infty))$, and since $g^{-1}([0,\infty))$ is closed, $\lambda\in g^{-1}([0,\infty))$, which is $g(\lambda)\geq0$. Therefore, for every $x,y\in(a,b)$ and $\lambda\in[0,1]$, the inequality $f(\lambda x+(1-\lambda)y)\leq\lambda f(x)+(1-\lambda)f(y)$ holds, so $f$ is convex.
+so the inequality holds for $\lambda=\frac{r}{2^{n+1}}$. Therefore, by induction, the inequality holds for all $\lambda\in A$ where $A=\{\frac{k}{2^n}\,\vert \,n,k\in\mathbb{N},\,0\leq k\leq 2^n\}$. For $x,y\in(a,b)$, consider the function $g$ from $[0,1]$ to $R^1$ that maps $\lambda$ to $\lambda f(x)+(1-\lambda)f(y)-f(\lambda x+(1-\lambda)y)$. For all $\lambda \in A$, $\lambda f(x)+(1-\lambda)f(y)-f(\lambda x+(1-\lambda)y)\geq0$, so $g(\lambda)\geq0$, which means $A\subset g^{-1}([0,\infty))$. Since $f$ is continuous, $g$ is continuous, and since $[0,\infty)$ is closed in $R^1$, $g^{-1}([0,\infty))$ is closed in $[0,1]$ by Theorem 4.8. For $\lambda\in[0,1]$, every neighborhood of $\lambda$ contains a point of $A$ and therefore a point of  $g^{-1}([0,\infty))$, so $\lambda$ is a point or a limit point of $g^{-1}([0,\infty))$, and since $g^{-1}([0,\infty))$ is closed, $\lambda\in g^{-1}([0,\infty))$, which is $g(\lambda)\geq0$. Therefore, for every $x,y\in(a,b)$ and $\lambda\in[0,1]$, the inequality $f(\lambda x+(1-\lambda)y)\leq\lambda f(x)+(1-\lambda)f(y)$ holds, so $f$ is convex.
 
 -----
 
@@ -486,7 +486,7 @@ $$
 \end{aligned}
 $$
 
-which means $\alpha$ is rational, a contradiction. Therefore, $\beta_i\neq\beta_j$ for $i\neq j$, so there are infinitely many different elements of $\{\beta_k\}$ in $(0,1)$. For every integer $N$, consider the disjoint sets $(\frac{0}{N},\frac{1}{N}),\,[\frac{1}{N},\frac{2}{N}),\cdots,[\frac{N-1}{N},\frac{N}{N})$ whose union is $(0,1)$. There are only $N$ sets but infinitely many elements of $\{\beta_k\}$ in $(0,1)$, which means there are at least two elements $\beta_i,\beta_j$ in the same set, so $0<\beta_i-\beta_j<\frac{1}{N}$. Note that $\beta_i-\beta_j=(i+j)\alpha-([i\alpha]+[j\alpha])$ is an element of $C_1+C_2$, so for every positive integer $N$ there is an element $y$ of $C_1+C_2$ such that $0<y<\frac{1}{N}$. For every $x\in R^1$ and $\varepsilon>0$, let $N$ be a positive integer such that $N>\frac{1}{\varepsilon}$, then the segment $(\frac{k}{N},\frac{k+1}{N})$ for some integer $k$ is in the neighborhood of $x$ with radius $\varepsilon$. Let $n$ be the integer such that $n\leq\frac{k}{N}<n+1$, and let $y$ be an element of $C_1+C_2$ such that $0<y<\frac{1}{N}$, then there is an integer $m$ such that $\frac{k}{N}<n+my<\frac{k+1}{N}$, while $n+my\in C_1+C_2$, so $(\frac{k}{N},\frac{k+1}{N})$ contains a point of $C_1+C_2$. Therefore, every neighborhood of $x\in R^1$ contains a point of $C_1+C_2$, which means $C_1+C_2$ is dense in $R^1$.\; $C_1+C_2$ is countable but $R^1$ is uncountable, so there exists $x\in R^1$ but $x\not\in C_1+C_2$, which means $x$ is a limit point of $C_1+C_2$ while not in $C_1+C_2$, so $C_1+C_2$ is not closed.
+which means $\alpha$ is rational, a contradiction. Therefore, $\beta_i\neq\beta_j$ for $i\neq j$, so there are infinitely many different elements of $\{\beta_k\}$ in $(0,1)$. For every integer $N$, consider the disjoint sets $(\frac{0}{N},\frac{1}{N}),\,[\frac{1}{N},\frac{2}{N}),\cdots,[\frac{N-1}{N},\frac{N}{N})$ whose union is $(0,1)$. There are only $N$ sets but infinitely many elements of $\{\beta_k\}$ in $(0,1)$, which means there are at least two elements $\beta_i,\beta_j$ in the same set, so $0<\beta_i-\beta_j<\frac{1}{N}$. Note that $\beta_i-\beta_j=(i+j)\alpha-([i\alpha]+[j\alpha])$ is an element of $C_1+C_2$, so for every positive integer $N$ there is an element $y$ of $C_1+C_2$ such that $0<y<\frac{1}{N}$. For every $x\in R^1$ and $\varepsilon>0$, let $N$ be a positive integer such that $N>\frac{1}{\varepsilon}$, then the segment $(\frac{k}{N},\frac{k+1}{N})$ for some integer $k$ is in the neighborhood of $x$ with radius $\varepsilon$. Let $n$ be the integer such that $n\leq\frac{k}{N}<n+1$, and let $y$ be an element of $C_1+C_2$ such that $0<y<\frac{1}{N}$, then there is an integer $m$ such that $\frac{k}{N}<n+my<\frac{k+1}{N}$, while $n+my\in C_1+C_2$, so $(\frac{k}{N},\frac{k+1}{N})$ contains a point of $C_1+C_2$. Therefore, every neighborhood of $x\in R^1$ contains a point of $C_1+C_2$, which means $C_1+C_2$ is dense in $R^1$. $C_1+C_2$ is countable but $R^1$ is uncountable, so there exists $x\in R^1$ but $x\not\in C_1+C_2$, which means $x$ is a limit point of $C_1+C_2$ while not in $C_1+C_2$, so $C_1+C_2$ is not closed.
 
 -----
 
@@ -494,6 +494,6 @@ which means $\alpha$ is rational, a contradiction. Therefore, $\beta_i\neq\beta_
 
 $g$ is a continuous one-to-one mapping of the compact metric space $Y$ onto $g(Y)$, so $g^{-1}$ is a continuous mapping of $g(Y)$ onto $Y$ by Theorem 4.17. Since $Y$ is compact and $g$ is continuous, $g(Y)$ is compact by Theorem 4.14, and since $g^{-1}$ is continuous, $g^{-1}$ is uniformly continuous by Theorem 4.19. Therefore, if $h$ is uniformly continuous, then $f=g^{-1}\circ h$ is uniformly continuous by Exercise 12. If $h$ is continuous, then $f=g^{-1}\circ h$ is continuous by Theorem 4.7.
 
-Let $X=Z=\{\V{x}\in R^2\,\vert \; \vert \V{x}\vert =1\}$ and $Y=\{x\in R^1\,\vert \,0\leq x<2\pi\}$. Let $g$ be the function from $Y$ onto $Z$ such that $g(t)=(\cos t,\sin t)$. Since $g$ is a one-to-one mapping onto $Z$,\; $g^{-1}$ is a well-defined function from $Z$ to $Y$. Let $f$ be the same as $g^{-1}$ with the domain replaced by $X$.\; $h=g\circ f$ is the identity function and therefore uniformly continuous, but $f$ is not continuous at $\V{x}=(0,1)$. Note that $Y$ is not compact while $X$ and $Z$ are compact.
+Let $X=Z=\{\V{x}\in R^2\,\vert \; \vert \V{x}\vert =1\}$ and $Y=\{x\in R^1\,\vert \,0\leq x<2\pi\}$. Let $g$ be the function from $Y$ onto $Z$ such that $g(t)=(\cos t,\sin t)$. Since $g$ is a one-to-one mapping onto $Z$, $g^{-1}$ is a well-defined function from $Z$ to $Y$. Let $f$ be the same as $g^{-1}$ with the domain replaced by $X$. $h=g\circ f$ is the identity function and therefore uniformly continuous, but $f$ is not continuous at $\V{x}=(0,1)$. Note that $Y$ is not compact while $X$ and $Z$ are compact.
 
 {% endraw %}
