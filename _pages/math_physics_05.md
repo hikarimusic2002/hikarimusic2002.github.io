@@ -14,6 +14,8 @@ author_profile: false
 
 {% raw %}
 
+If there are two expansions of $f(x)$, so
+
 $$
 \newcommand{\br}[2]{\langle#1|#2\rangle}
 \newcommand{\brr}[2]{\left\langle#1|#2\right\rangle}
@@ -24,10 +26,6 @@ $$
 \newcommand{\PP}[1]{\mathcal{P}_{#1}}
 \newcommand{\FF}[1]{\mathcal{F}_{#1}}
 \newcommand{\II}[1]{\int_{-1}^1#1\,dx}
-$$
-If there are two expansions of $f(x)$, so
-
-$$
 \begin{aligned}
 f(x)=\sum_{n=0}^\infty a_n\varphi_n(x)=\sum_{n=0}^\infty b_n\varphi_n(x)
 \end{aligned}
