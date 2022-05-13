@@ -31,7 +31,7 @@ $$
 
 since $\varepsilon$ can be arbitrarily small, we have $\upintt_a^bfd\alpha=0$.
 
-Therefore, $\lowintt_a^bfd\alpha=\upintt_a^bfd\alpha=\int_a^bfd\alpha=0\,$, and $f\in \mathscr R(\alpha)$.
+Therefore, $\lowintt_a^bfd\alpha=\upintt_a^bfd\alpha=\int_a^bfd\alpha=0\;$, and $f\in \mathscr R(\alpha)$.
 
 -----
 
