@@ -14,6 +14,8 @@ author_profile: false
 
 "$\newcommand{\V}{\mathbf} x\in\phi $" is always false, so "$x\in\phi \Rightarrow x\in S$" in always true, by mathematical logic.
 
+-----
+
 ### 2.
 
 Let $S$ be the set of equations of the form $a_0z^n+a_1z^{n-1}+\cdots+a_{n-1}z+a_n=0$ with $a_0,\cdots,a_n$ being integers. Let $A_N$ be the set of equations in $S$ such that $n+\vert a_0\vert +\vert a_1\vert +\cdots+\vert a_n\vert =N$ with $N$ being positive integer. By \textit{Hint}, $A_N$ is finite (it has less than $\frac{(N+n+1)!}{N!(n+1)!}2^{n+1}$ elements). It is obvious that
@@ -34,17 +36,25 @@ $$
 
 is countable by Corollary of Theorem 2.12, and the set of algebraic numbers is a subset of $T$, so the set of algebraic numbers is countable.
 
+-----
+
 ### 3.
 
 If every real number is algebraic, then the set of real numbers is a subset of the set of algebraic numbers and is therefore at most countable by Exercise 2, which contradicts the fact that the set of real numbers is uncountable (Corollary of Theorem 2.43).
+
+-----
 
 ### 4.
 
 Not countable. If the set of irrational numbers is countable, then because the set of rational numbers is also countable, the set of real numbers, which is the union of rational and irrational numbers, will be countable, contradicting to the fact that the set of real numbers is uncountable.
 
+-----
+
 ### 5.
 
 Let $A=\{\frac{1}{n}\vert n\in\mathbb{N}\}$, $B=\{1+\frac{1}{n}\vert n\in\mathbb{N}\}$, $C=\{2+\frac{1}{n}\vert n\in\mathbb{N}\}$. Then the set $A\cup B\cup C$ is bounded and has only three limit points: $0,1,2$. 
+
+-----
 
 ### 6.
 
@@ -68,6 +78,8 @@ From the above two statements we know $E$ and $\bar{E}$ have the same limit poin
 
 $E$ and $E'$ do not necessary have the same limit points. Let $E$ be $\{\frac{1}{n}\vert n\in\mathbb{N}\}$, then $0$ is a limit point of $E$, but that also means $E'$ has only $0$ as its element, so $E'$ has no limit point.
 
+-----
+
 ### 7.
 
 (a) $B_n\supset A_i$, so $\bar{B}_n\supset A_i$. By Theorem 2.27(a) we know $\bar{B}_n$ is closed, so by Theorem 2.27(c) we have $\bar{B}_n\supset\bar{A}_i$. Therefore $\bar{B}_n\supset\bigcup_{i=1}^n\bar{A}_i$.
@@ -81,11 +93,15 @@ The above two statements implies $\bar{B}_n=\bigcup_{i=1}^n\bar{A}_i$.
 
 Let $A_n=\{x\vert x>\frac{1}{n}\}$. Then $B=\{x\vert x>0\}$, $\bar{B}=\{x\vert x\geq0\}$, $\bar{A}_n=\{x\vert x\geq\frac{1}{n}\}$, $\bigcup_{n=1}^\infty\bar{A}_n=\{x\vert x>0\}$. So $0$ is a element of $\bar{B}_n$ but not $\bigcup_{i=1}^\infty\bar{A}_i$.
 
+-----
+
 ### 8.
 
 Every point $p$ of an open set $E$ is an interior point of $E$, which means there is a neighborhood $\{x:\vert \V{x}-\V{p}\vert <r_1\}\subset E$. For every neighborhood of $p$, $N_r(p)=\{x:\vert \V{x}-\V{p}\vert <r_2\}$, let $y$ be a point such that $0<\vert \V{y}-\V{p}\vert <\min(r_1,r_2)$, then $y\neq p$ and $y$ is in both $E$ and $N_r(p)$. So every neighborhood of $p$ contains a point of $E$ , which means $p$ is a limit point of $E$.
 
 The statement does not hold for closed set when the closed set contains isolated points, for example $E=\{(0,0)\}$.
+
+-----
 
 ### 9.
 
@@ -112,6 +128,8 @@ Combining the above two statements we have $(E^\circ)^c=\overline{(E^c)}$.
 
 (f) No. Let $E$ contains only a single point, then $\bar{E}$ also contains that point. But $E^\circ$ is empty, and therefore $\overline{(E^\circ)}$ is empty. So $\overline{E}\neq\overline{(E^\circ)}$.
 
+-----
+
 ### 10.
 
 We verify the three definitions of metric. 
@@ -129,6 +147,8 @@ For every subset $E$ in $X$, let $p$ be any point of $E$, then the neighborhood 
 For every subset of $E$ in $X$, because there is no limit point in $X$ (the neighborhood of $p$ with radius $r<1$ contains only $p$), the statement "every limit point of $E$ is a point of $E$ " is always true, so $E$ is closed. So every subset in $X$ is closed.
 
 For every finite subset $E$ in $X$, let $\{G_\alpha\}$ be an open cover of $E$. Choose one $G_\alpha$ for each element that contains that element, then the resulting subcover is finite and contains E, so $E$ is compact. For every infinite subset $E'$ in $X$, let $G_\alpha$ contains only $\alpha$, $\alpha\in E'$, then $\bigcup_\alpha G_\alpha$ is an open cover of $E'$, while any finite subcover contains only finite elements of $E'$ and therefore cannot contains $E'$, so $E'$ is not compact. In conclusion, a subset in $X$ is compact if and only if it is finite.
+
+-----
 
 ### 11.
 
@@ -160,9 +180,13 @@ $$
 
 so Definition (c) is satisfied, and $d_5$ is a metric.
 
+-----
+
 ### 12.
 
 If an open cover $\bigcup_\alpha G_\alpha$ contains $K$, then there is an open set $G_0$ contains $0$, which means $0$ is an interior point of $G_0$, so there is a neighborhood $N_r(0)=\{x\vert -r<x<r\}$ be included in $G_0$. According to the archimedean property of $R$, there is a $N$ such that $Nr>1$, and if $n>N$, $\frac{1}{n}$ is included in $N_r(0)$ and therefore included in $G_0$ beacause $\frac{1}{n}<\frac{1}{N}<r$. So take the union of $G_0$ and the other $N$ open sets that contain $1,\frac{1}{2},\cdots,\frac{1}{N}$, then we formed a finite subcover of $K$, so $K$ is compact.
+
+-----
 
 ### 13.
 
@@ -184,9 +208,13 @@ So the limit points of $K$ are $0$ and $\frac{1}{2^i}$, $i=1,2,\cdots$, which ar
 
 By Theorem 2.41, $K$ being closed and bounded implies $K$ is compact, and the limit points $0,\frac{1}{2^1},\frac{1}{2^2},\cdots$ form a countable set, so the $K$ we constructed satisfy the condition.
 
+-----
+
 ### 14.
 
 Let $G_n=(\frac{1}{n},1)$, then $\bigcup_{n=1}^\infty G_n$ is a open cover of $(0,1)$ because for every $0<x<1$, $x$ is included in $G_N$ if $Nx>1$. Let $\bigcup_{i=1}^kG_{n_i}\;(n_1<n_2\cdots<n_k)$ be a finite subcover of the open cover, then the element $0<x<\frac{1}{n_k}$ is not included in this subcover, a contradiction. So $\bigcup_{n=1}^\infty G_n$ is an open cover of $(0,1)$ but has no finite subcover.
+
+-----
 
 ### 15.
 
@@ -194,6 +222,8 @@ For the "closed" case, let $K_n=\{x\vert x\geq n\}$, then $K_n$ is closed and ev
 
 
 For the "bounded" case, let $K_n=\{x\vert 0<x<\frac{1}{n}\}$, then $K_n$ is bounded and every finite subcollection of $\{K_n\}$ is nonempty, but $\bigcap_1^\infty K_n$ is empty because for every $x$, let $Nx>1$, then $x$ is not included in $K_N$.
+
+-----
 
 ### 16.
 
@@ -205,6 +235,8 @@ Let $G_n=\{p\,\vert \,2+\frac{1}{n}<p^2<3\}$, then $\bigcup_{n=1}^\infty G_n$ is
 
 For $x\in E$, $2<x^2<3$. There exists $y_1,y_2$ such that $\sqrt{2}<y_1<x<y_2<\sqrt{3}$, so the neighborhood $N_r(x)$ with $r=\min(\vert x-y_1\vert ,\vert x-y_2\vert )$ is included in $E$, which means $x$ is an interior point of $E$, so $E$ is open.
 
+-----
+
 ### 17.
 
 _countable_: If $E$ is countable, let its elements be enumerated as $s_1,s_2,\cdots$. Construct a sequence $s$ by making the $n^{th}$ digit of $s$ be $4$ if the $n^{th}$ digit of $s_n$ is $7$, and the $n^{th}$ digit of $s$ be $7$ if the $n^{th}$ digit of $s_n$ is $4$. Then $s$ is different with every $s_i$, but $s$ is a element of $E$, a contradiction. So $E$ is uncountable.
@@ -215,11 +247,15 @@ _compact_: It is obvious that $E$ is bounded. If there is a limit point of $E$ t
 
 _perfect_: We have proved that $E$ is closed. If there is a element $x$ of $E$ that is not a limit point of $E$, which means there is a neighborhood $N_r(x)$ contains no element of $E$, let $N$ be large enough so $10^{-N}<r$, and let $y$ be an element of $E$ that is the same with $x$ at the first $N$ digit but different at the $(N+1)^{th}$ digit, then $\vert y-x\vert <10^{-N}<r$, so $y\in E$ is in $N_r(x)$, a contradiction. So every element of $E$ is a limit point of $E$. Together with the fact that $E$ is closed, we proved that $E$ is perfect.
 
+-----
+
 ### 18.
 
 Let $E_0=[a_0,b_0]$, $a_0,b_0$ are irrational. Enumerate all the rational number in $[a_0,b_0]$ as $r_1,r_2,\cdots$. For $a_0<r_1<b_0$, found irrational number $a_1,b_1$ that such that $a_0<b_1<r_1<a_1<b_0$, and remove $(b_1,a_1)$ to get $E_1=[a_0,b_1]\cup[a_1,b_0]$. Continue in this way to construct $E_2,E_3,\cdots$ by removing segments around $r_2,r_3,\cdots$ with irrational numbers being the end points, then $E_1\supset E_2\supset E_3\supset\cdots$. Let $P=\bigcap_{n=1}^\infty E_n$. It is obvious that $E_n$ is compact, so by Theorem 2.36, $P$ is not empty. From the construction, $P$ contains no rational number. 
 
 It is obvious that $P$ is closed. If $x\in P$, let $S$ be a neighborhood of $x$. Let $I_n$ be that interval of $E_n$ which contains x. Choose $n$ large enough so that $I_n\subset S$ (It is possible because the length of $I_n$ can be arbitrary small, due to the fact that rational numbers are dense). Let $x_n$ be an endpoint of $I_n$, such that $x_n\neq x$. It follows from the construction of $P$ that $x_n\in P$. Hence $x$ is a limit point of $P$, and $P$ is perfect. Therefore, $P$ is not empty, perfect and contains no rational number, which satisfies the conditions.
+
+-----
 
 ### 19.
 
@@ -233,6 +269,8 @@ It is obvious that $P$ is closed. If $x\in P$, let $S$ be a neighborhood of $x$.
 
 
 (d) Let $E$ be a connected metric space with at least two points. Assume $E$ is countable. Find two points $a$ and $b$. The set of real number between $0$ and $d(a,b)$ is uncountable, but the set of distances between $a$ and other elements are countable, so there exist a $\delta$ such that $0<\delta<d(a,b)$ and $\delta$ is not equal to any distance between $a$ and other elements. So $E=\{x\vert d(a,x)<\delta\}\cup\{x\vert d(a,x)>\delta\}$, which means $E$ is not connected by (c), a contradiction. So $E$ must be uncountable.
+
+-----
 
 ### 20.
 
@@ -258,6 +296,8 @@ $$
 
 which means $E$ consists of two balls and a line connecting them. It is obvious that $E$ is connected, but its interior, being $\{\V{x}:\vert \V{x}-(-2,0)\vert <1\}\cup\{\V{x}:\vert \V{x}-(2,0)\vert <1\}$, is not connected.
 
+-----
+
 ### 21.
 
 (a) If $x\in A_0'$, so $x$ is a limit point of $A_0$, then every neighborhood $N_{r_0}(x)$ contains a point $y\neq x$ such that $y\in A_0$. Consider a neighborhood of $\V{p}(x)$ with radius $r$. Let $r_0=\frac{r}{\vert \V{a}\vert +\vert \V{b}\vert }$, then there is a $y\in A_0$ such that $\vert y-x\vert <r_0=\frac{r}{\vert \V{a}\vert +\vert \V{b}\vert }$. Then $\vert \V{p}(y)-\V{p}(x)\vert =\vert -(y-x)\V{a}+(y-x)\V{b}\vert \leq\vert y-x\vert (\vert \V{a}\vert +\vert \V{b}\vert )<r$, so $\V{p}(y)\in A$ is in the neighborhood of $P(x)$, which means $\V{p}(x)$ is a limit point of $A$. Therefore, if $x\in A_0'$, then $\V{p}(x)\in A'$. It implies that if $x\in\bar{A}_0$, then $\V{p}(x)\in\bar{A}$. Similarly, if $x\in\bar{B}_0$, then $\V{p}(x)\in\bar{B}$.
@@ -271,9 +311,13 @@ Let $(0,1)=I$. $(A_0\cup B_0)\cap I=(A_0\cap I)\cup(B_0\cap I)\subset I$. Becaus
 
 (c) If a subset $E$ of $R^k$ is not connected, then $E$ is the union of two nonempty separated sets $A$ and $B$. Let $\V{a}\in A\in E$, $\V{b}\in B\in E$, then by (b) there is a $t_0\in(0,1)$ such that $(1-t)\V{a}+t\V{b}\not\in A\cup B=E$. However, if $E$ is convex, then whenever $\V{a}\in E$, $\V{b}\in E$ and $0<t<1$, we must have $(1-t)\V{a}+t\V{b}\in E$, which means that $E$ is connected.
 
+-----
+
 ### 22.
 
 Consider the set of points which have only rational coordinates, $Q^k$. Because the set of rational numbers is countable, so by Theorem 2.13 we knows $Q^k$ is countable. Consider any point $\V{x}=(x_1,x_2,\cdots,x_k)\in R^k$, and consider a neighborhood of $\V{x}$ with radius $r$. Find rational numbers $a_i$ such that $x_i-\frac{r}{\sqrt{k}}<a_i<x_i+\frac{r}{\sqrt{k}},\;i=1,2,\cdots,k$ (They exist by Theorem 1.20(b)). Then $\vert \V{a}-\V{x}\vert =\sqrt{\sum_k(a_i -x_i)^2}<r$, so $\V{a}\in Q^k$ is in the neighborhood of $\V{x}$, which means $\V{x}$ is a limit point of $Q^k$, so $Q^k$ is dense in $R^k$. Therefore, $Q^k$ is a countable dense subset of $R^k$, which means $R^k$ is separable.
+
+-----
 
 ### 23.
 
@@ -290,6 +334,8 @@ $Q$ and $C$ are countable, so $\mathcal{B}$ is countable by Corollary of Theorem
 If $G$ is an open set in $X$ and $x\in G$, then there is a neighborhood $N_{\varepsilon}(x)\subset G$. Let $h$ be a rational number such that $0<h<\frac{\varepsilon}{2}$ (it exists by Theorem 1.20 (b)). $C$ is dense in $X$, so $x\in C$ or $x$ is a limit point of $C$, in either cases there is a $q\in C$ such that $q\in N_h(x)$. So $x\in N_h(q)$ (because $d(x,q)<h$), and $N_h(q)\subset N_\varepsilon(x)\subset G$ (because if $y\in N_h(q)$, then $d(y,x)\leq d(y,q)+d(q,x)<h+h=2h<\varepsilon$). Also note that $N_h(q)\in\mathcal{B}$ (because $h\in Q$ and $q\in C$).
 
 Therefore, for every $x\in X$ and every open set $G\subset X$ such that $x\in G$, we have $N_h(q)\in\mathcal{B}$ such that $x\in N_h(q)\subset G$, so $\mathcal{B}$ is a countable base of $X$. So every separable metric space has a countable base.
+
+-----
 
 ### 24.
 
@@ -315,6 +361,8 @@ Because $E_{\frac{1}{n}}$ is finite, $E$ is countable by Theorem 2.12.
 
 For every $x\in X$, let $N_r(x)$ be any neighborhood of $x$, and let $N$ be a positive integer such that $\frac{1}{N}<r$, then $x\in N_{\frac{1}{N}}(y)$ for some $y\in E_{\frac{1}{N}}\subset E$ (because $X$ is covered by neighborhoods of radius $\frac{1}{N}$), and therefore $y\in N_r(x)$ (because $d(y,x)<\frac{1}{N}<r$). So for every $x\in X$, every neighborhood of $x$ contains a point $y\in E$, which means  $x\in E$ or $x$ is a limit point of $E$, and that means $E$ is dense in $X$. So $X$ contains a countable dense subset $E$, which means $X$ is separable.
 
+-----
+
 ### 25.
 
 For every compact metric space $K$, the collection of neighborhoods centered at every $x\in K$ with radius $\frac{1}{n}$ forms a open cover of $K$, so it has a finite subcover covering $K$. Let $E_{\frac{1}{n}}$ be the finite subcover, and let 
@@ -332,10 +380,13 @@ Let $C$ be the set of centers of neighborhoods in $E$. $C$ is countable because 
 
 (Or alternatively, note that every infinite subset of $K$ has a limit point in $K$ (Theorem 2.37), so $K$ is separable (Exercise 24), and therefore has a countable base (Exercise 23).)
 
+-----
 
 ### 26.
 
 Every infinite subset of $X$ has a limit point, so $X$ is separable (Exercise 24), and therefore has a countable base (Exercise 23). It follows that every open cover of $X$ has a countable subcover $\{G_n\},\,n=1,2,3,\cdots$ (because every open set is in the union of a subcollection of the countable base). If no finite subcollection of $\{G_n\}$ covers $X$, then the complement $F_n$ of $G_1\cup\cdots\cup G_n$ is nonempty for each $n$, but $\bigcap F_n$ is empty. Let $E$ be a set contains a point from each $F_n$, which means $E=\{x_1,x_2,\cdots\}$ with $x_n\in F_n$, then $E$ is obviously infinite (otherwise there will be an element of $E$ belongs to infinitely many $F_n$, which implies $\bigcap F_n$ being non-empty). So $E$ being infinite implies there is a limit point $p$ of $E$, let $p\in G_k$, and there is a neighborhood $N_r(p)\in G_k\subset G_1\cup\cdots\cup G_k$. For $i\geq k$, $x_i\in F_i$ so $x_i\not\in G_1\cup\cdots\cup G_k$, which means there are at most $k$ elements of $E$ belongs to $G_1\cup\cdots\cup G_k$ and therefore possibly belongs to $N_r(p)$, contradicts to the fact that $p$ is a limit point of $E$ (Theorem 2.20).  So there must be a finite subcollection of $\{G_n\}$ covers $X$, which means $X$ is compact.
+
+-----
 
 ### 27.
 
@@ -361,6 +412,8 @@ Let $x\in P$ and $N_r(x)$ be a neighborhood of $x$, then $N_r(x)$ contains uncou
 
 Therefore, $P$ is closed, and every point of $P$ is a limit point of $P$, which means $P$ is perfect.
 
+-----
+
 ### 28.
 
 Let $P$ be defined as in Exercise 27. Every point of $P$ is a limit point of $E$, and $E$ is closed, so $P\subset E$, which means $P\cap E=P$.
@@ -375,9 +428,13 @@ The result in Exercise 27 is not restricted to $R^k$, so $P$ is perfect, and $P^
 
 _Corollary_: Let $E$ be a closed set in $R^k$. If it has no isolated point, then it is perfect and is therefore uncountable (Theorem 2.43). So every countable closed set in $R^k$ has isolated point.
 
+-----
+
 ### 29.
 
 From Theorem 22 and 23, $R^1$ is separable and has a countable base $\{V_\alpha\}$. For every open set $E$, let $\{V_{\alpha'}\}$ be the collection of all $V_{\alpha'}$ such that $x\in V_{\alpha'}\subset E$ for some $x\in E$. Every $V_{\alpha'}\subset E$, so $\bigcup_{\alpha'}V_{\alpha'}\subset E$. For every $x\in E$, $x\in V_{\alpha'}$ for some $\alpha'$, so $E\subset\bigcup_{\alpha'}V_{\alpha'}$. Therefore $E=\bigcup_{\alpha'}V_{\alpha'}$. $\{V_{\alpha}\}$ is countable, so  $\{V_{\alpha'}\}$ is also countable, and note that $V_{\alpha'}$ is a segment, so $\bigcup_{\alpha'}V_{\alpha'}$ is the union of at most countable collection of disjoint segments.
+
+-----
 
 ### 30.
 
