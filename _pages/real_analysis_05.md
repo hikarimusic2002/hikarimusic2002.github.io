@@ -466,8 +466,8 @@ where $\xi\in(x,x+2h)$, so
 
 $$
 \begin{aligned}
-f'(x)=\frac{1}{2h}\left[f(x+2h)-f(x) \right]-hf'' (\xi)\\
-  \vert f'(x)  \vert \leq\frac{1}{2h}\left[M_0-(-M_0) \right]+hM_2=\frac{M_0}{h}+hM_2
+f'(x)&=\frac{1}{2h}\left[f(x+2h)-f(x) \right]-hf'' (\xi)\\
+  \vert f'(x)  \vert &\leq\frac{1}{2h}\left[M_0-(-M_0) \right]+hM_2=\frac{M_0}{h}+hM_2
 \end{aligned}
 $$
 
@@ -522,14 +522,14 @@ $$
 $f^{(3)}(x)$ has roots at $-1<x\leq0$ and $x=1$, so
 
 $$
-begin{aligned}
-M_2=\max\left(4,  \vert f'' (1)  \vert ,  \vert f'' (\infty)  \vert  \right)=4
+\begin{aligned}
+M_2=\max\left(4,\vert f'' (1)  \vert ,  \vert f'' (\infty)  \vert  \right)=4
 \end{aligned}
 $$
 
 Therefore, $M_1^2=4M_0M_2$
 
-Let $\V{f}$ be a twice-differentiable vector-valued function on $(a,\infty)$, and let $M_0,M_1,M_2$ be the least upper bound of $  \vert \V{f}(x)  \vert ,  \vert \V{f'}(x)  \vert ,  \vert \V{f'' }(x)  \vert $. For every $0<\alpha<M_1$, there is a $x_0$ such that $\alpha<  \vert \V{f'}(x_0)  \vert <M_1$.Let $\V{u}=\frac{\V{f'}(x_0)}{  \vert \V{f'}(x_0)  \vert }$ and $\phi(x)=\V{f'}(x)\cdot\V{u}$, and let $N_0,N_1,N_2$ be the least upper bound of $  \vert \phi(x)  \vert ,  \vert \phi'(x)  \vert ,  \vert \phi'' (x)  \vert $. We have
+Let $\V{f}$ be a twice-differentiable vector-valued function on $(a,\infty)$, and let $M_0,M_1,M_2$ be the least upper bound of $  \vert \V{f}(x)  \vert ,  \vert \V{f'}(x)  \vert ,  \vert \V{f'' }(x)  \vert $. For every $0<\alpha<M_1$, there is a $x_0$ such that $\alpha<  \vert \V{f'}(x_0)  \vert <M_1$. Let $\V{u}=\frac{\V{f'}(x_0)}{  \vert \V{f'}(x_0)  \vert }$ and $\phi(x)=\V{f'}(x)\cdot\V{u}$, and let $N_0,N_1,N_2$ be the least upper bound of $  \vert \phi(x)  \vert ,  \vert \phi'(x)  \vert ,  \vert \phi'' (x)  \vert $. We have
 
 $$
 \begin{aligned}
@@ -861,14 +861,12 @@ $$
 
 $\lim_{x_n\to\sqrt{\alpha}}\frac{1}{2}\left(1-\frac{\sqrt{\alpha}}{x_n} \right)=0$, while $\lim_{x_n\to\sqrt{\alpha}}\frac{1-\sqrt{\alpha}}{1+x_n}=\frac{1-\sqrt{\alpha}}{1+\sqrt{\alpha}}\neq0$, so $\{x_n\}$ obtained by $x_{n+1}=f(x_n)$ converges to $\sqrt{\alpha}$ faster than $\{x_n\}$ obtained by $x_{n+1}=g(x_n)$.
 
-The zig-zag paths of $f$ and $g$ when $\alpha=2$ are shown in Figure \ref{fig:f}.
+The zig-zag paths of $f$ and $g$ when $\alpha=2$:
 
 <img src="/files/real_analysis_ch5_pic1.PNG " alt="drawing" width="500"/>
 
 
 <img src="/files/real_analysis_ch5_pic2.PNG " alt="drawing" width="500"/>
-
-The zig-zag paths of $f$ and $g$ in Exercise 24.
 
 -----
 
