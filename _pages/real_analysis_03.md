@@ -63,8 +63,9 @@ For the rest of the case, we have $\limsup_{n\to\infty}a_n<+\infty$ and $\limsup
 
 $$
 \begin{aligned}
-    \limsup_{n\to\infty}(a_n+b_n)=\lim_{k\to\infty}(a_{n_k}+b_{n_k}) \tag{1}
+    \limsup_{n\to\infty}(a_n+b_n)=\lim_{k\to\infty}(a_{n_k}+b_{n_k})
 \end{aligned}
+\tag{1}
 $$
 
 $\limsup_{k\to\infty}a_{n_k}$, the upper limit of $\{a_{n_k}\}$, is also a subsequential limit of $\{a_{n_k}\}$, so there is a subsequence $\{a_{n_{k_j}}\}$ such that
@@ -79,8 +80,9 @@ $\{a_{n_k}+b_{n_k}\}$ converges, so every subsequential limit equals to $\lim_{k
 
 $$
 \begin{aligned}
-    \lim_{k\to\infty}(a_{n_k}+b_{n_k})=\lim_{j\to\infty}(a_{n_{k_j}}+b_{n_{k_j}}) \tag{2}
+    \lim_{k\to\infty}(a_{n_k}+b_{n_k})=\lim_{j\to\infty}(a_{n_{k_j}}+b_{n_{k_j}})
 \end{aligned}
+\tag{2}
 $$
 
 
@@ -88,8 +90,9 @@ Both $\{a_{n_{k_j}}+b_{n_{k_j}}\}$ and $\{a_{n_{k_j}}\}$ converge, so $\{b_{n_{k
 
 $$
 \begin{aligned}
-    \lim_{j\to\infty}(a_{n_{k_j}}+b_{n_{k_j}})=\lim_{j\to\infty}a_{n_{k_j}}+\lim_{j\to\infty}b_{n_{k_j}} \tag{3}
+    \lim_{j\to\infty}(a_{n_{k_j}}+b_{n_{k_j}})=\lim_{j\to\infty}a_{n_{k_j}}+\lim_{j\to\infty}b_{n_{k_j}}
 \end{aligned}
+\tag{3}
 $$
 
 $\lim_{j\to\infty}b_{n_{k_j}}$ is a subsequential limit of $\{b_{n_k}\}$, so we have
@@ -104,8 +107,9 @@ Therefore, we have
 
 $$
 \begin{aligned}
-    \lim_{j\to\infty}a_{n_{k_j}}+\lim_{j\to\infty}b_{n_{k_j}}\leq\limsup_{k\to\infty}a_{n_k}+\limsup_{k\to\infty}b_{n_k} \tag{4}
+    \lim_{j\to\infty}a_{n_{k_j}}+\lim_{j\to\infty}b_{n_{k_j}}\leq\limsup_{k\to\infty}a_{n_k}+\limsup_{k\to\infty}b_{n_k}
 \end{aligned}
+\tag{4}
 $$
 
 It is obvious that 
@@ -128,8 +132,9 @@ so we have
 
 $$
 \begin{aligned}
-    \limsup_{k\to\infty}a_{n_k}+\limsup_{k\to\infty}b_{n_k}\leq\limsup_{n\to\infty}a_n+\limsup_{n\to\infty}b_n \tag{5}
+    \limsup_{k\to\infty}a_{n_k}+\limsup_{k\to\infty}b_{n_k}\leq\limsup_{n\to\infty}a_n+\limsup_{n\to\infty}b_n
 \end{aligned}
+\tag{5}
 $$
 
 Combining equation (1) to (5), we have
@@ -485,9 +490,7 @@ $$
 \sigma_n-s=\frac{(s_0-s)+\cdots+(s_n-s)}{n+1}<\frac{(s_0-s)+\cdots+(s_N-s)}{M}+\frac{(s_{N+1}-s)+\cdots+(s_n-s)}{n-N}<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon
 \end{aligned}
 $$
-$$\begin{aligned}
 
-\end{aligned}$$
 which means $\lim\sigma_n=s$.
 
 
@@ -945,7 +948,7 @@ which implies $\{p_n\}$ converges to $p$.
 -----
 
 ### 21.
-Construct a sequence $\{x_n\}$ such that $x_n\in E_n$ for each $n$. Because $E_n\supset E_{n+1}$,\;\;$E_n$ contains the points $x_n,x_{n+1},x_{n+2},\cdots$, and therefore $\lim\mathrm{diam}\,E_n=0$ implies that $\{x_n\}$ is a Cauchy sequence. Since the metric space is complete, $\{x_n\}$ converges to a point $x$. Since $x$ is a limit point of the set of $\{x_n\}$, it is a limit point of every $E_n$, and since $E_n$ is closed, $x\in E_n$ for every $n$. Therefore,
+Construct a sequence $\{x_n\}$ such that $x_n\in E_n$ for each $n$. Because $E_n\supset E_{n+1}$, $E_n$ contains the points $x_n,x_{n+1},x_{n+2},\cdots$, and therefore $\lim\mathrm{diam}\,E_n=0$ implies that $\{x_n\}$ is a Cauchy sequence. Since the metric space is complete, $\{x_n\}$ converges to a point $x$. Since $x$ is a limit point of the set of $\{x_n\}$, it is a limit point of every $E_n$, and since $E_n$ is closed, $x\in E_n$ for every $n$. Therefore,
 
 $$
 \begin{aligned}
@@ -1067,10 +1070,10 @@ $$
 \end{aligned}
 $$
     
-So $\Delta$ is a distance function in $X^*$.
+So $\Delta$ is a distance function in $X^\star $.
 
 (c)
-Let $\{P_n\}$ be a Cauchy sequence in $X^*$, so every $P_n$ is an equivalence class. Let $p_n=\{p_{n,m}\}$ be an element of $P_n$. so $p_n$ is a Cauchy sequence in $X$. By the definition of Cauchy sequence, there is a positive integer $N_n$ such that for $s,t\geq N_n$,
+Let $\{P_n\}$ be a Cauchy sequence in $X^\star $, so every $P_n$ is an equivalence class. Let $p_n=\{p_{n,m}\}$ be an element of $P_n$. so $p_n$ is a Cauchy sequence in $X$. By the definition of Cauchy sequence, there is a positive integer $N_n$ such that for $s,t\geq N_n$,
 
 $$
 \begin{aligned}
@@ -1124,7 +1127,7 @@ $$
 \end{aligned}
 $$
 
-Therefore, for $\varepsilon>0$, there is a positive integer $M$ such that for $m,n\geq M$, \;$d(q_m,q_n)<\varepsilon$, which means that $q=\{q_n\}$ is a Cauchy sequence. Let $Q\in X^*$ be the equivalence class containing $q$.
+Therefore, for $\varepsilon>0$, there is a positive integer $M$ such that for $m,n\geq M$, \;$d(q_m,q_n)<\varepsilon$, which means that $q=\{q_n\}$ is a Cauchy sequence. Let $Q\in X^\star $ be the equivalence class containing $q$.
 
 $$
 \begin{aligned}
@@ -1132,7 +1135,7 @@ $$
 \end{aligned}
 $$
 
-For $m\geq N_n$, \;$d(p_{n,m},q_n)<\frac{1}{2^n}$, so
+For $m\geq N_n$, $d(p_{n,m},q_n)<\frac{1}{2^n}$, so
 
 $$
 \begin{aligned}
@@ -1148,7 +1151,7 @@ $$
 \end{aligned}
 $$
 
-which means that $\{P_n\}$ converges to $Q$. So every Cauchy sequence in $X^*$ converges, which means that $X^*$ is complete.
+which means that $\{P_n\}$ converges to $Q$. So every Cauchy sequence in $X^\star $ converges, which means that $X^\star $ is complete.
 
 
 (d)
@@ -1161,7 +1164,7 @@ $$
 
 
 (e)
-Let $P$ be an element of $X^*$, which contains a Cauchy sequence $p=\{p_n\}$. For $\varepsilon>0$, there is a positive integer $N$ such that for $n,m\geq N$,
+Let $P$ be an element of $X^\star $, which contains a Cauchy sequence $p=\{p_n\}$. For $\varepsilon>0$, there is a positive integer $N$ such that for $n,m\geq N$,
 
 $$
 \begin{aligned}
@@ -1177,7 +1180,7 @@ $$
 \end{aligned}
 $$
 
-which means $\varphi(p_N)$ is contained in the neighborhood of $P$ with radius $\varepsilon$. Therefore, every neighborhood centered at any point of $X^*$ contains an element of $\varphi(X)$, which means $\varphi(X)$ is dense in $X^*$.
+which means $\varphi(p_N)$ is contained in the neighborhood of $P$ with radius $\varepsilon$. Therefore, every neighborhood centered at any point of $X^\star $ contains an element of $\varphi(X)$, which means $\varphi(X)$ is dense in $X^\star $.
 
 If $X$ is complete, then $\{p_n\}$ converges. Let $\lim_{n\to\infty}p_n=a$, then
 
@@ -1187,7 +1190,7 @@ $$
 \end{aligned}
 $$
 
-so $P=\varphi(a)\in\varphi(X)$. Therefore, $X^*\subset\varphi(X)$, and obviously $\varphi(X)\subset X^*$, so $\varphi(X)=X^*$.
+so $P=\varphi(a)\in\varphi(X)$. Therefore, $X^\star \subset\varphi(X)$, and obviously $\varphi(X)\subset X^\star $, so $\varphi(X)=X^\star $.
 
 -----
 
