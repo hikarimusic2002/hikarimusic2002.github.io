@@ -82,16 +82,16 @@ $E$ and $E'$ do not necessary have the same limit points. Let $E$ be $\{\frac{1}
 
 ### 7.
 
-(a) $B_n\supset A_i$, so $\bar{B}_n\supset A_i$. By Theorem 2.27(a) we know $\bar{B}_n$ is closed, so by Theorem 2.27(c) we have $\bar{B}_n\supset\bar{A}_i$. Therefore $\bar{B}_n\supset\bigcup_{i=1}^n\bar{A}_i$.
+(a) $B_n\supset A_i$, so $\bar{B}\_n\supset A_i$. By Theorem 2.27(a) we know $\bar{B}\_n$ is closed, so by Theorem 2.27(c) we have $\bar{B}\_n\supset\bar{A}\_i$. Therefore $\bar{B}\_n\supset\bigcup_{i=1}^n\bar{A}\_i$.
 
-$B_n\subset\bigcup_{i=1}^n\bar{A}_i$. Because $\bar{A}_i$ is closed, by Theorem 2.24(d) we know $\bigcup_{i=1}^n\bar{A}_i$ is closed. So by Theorem 2.27(c) we have $\bar{B}_n\subset\bigcup_{i=1}^n\bar{A}_i$.
+$B_n\subset\bigcup_{i=1}^n\bar{A}\_i$. Because $\bar{A}\_i$ is closed, by Theorem 2.24(d) we know $\bigcup_{i=1}^n\bar{A}\_i$ is closed. So by Theorem 2.27(c) we have $\bar{B}\_n\subset\bigcup_{i=1}^n\bar{A}\_i$.
 
-The above two statements implies $\bar{B}_n=\bigcup_{i=1}^n\bar{A}_i$.
+The above two statements implies $\bar{B}\_n=\bigcup_{i=1}^n\bar{A}\_i$.
 
 
-(b) The first result in (a) still holds, but the second does not because when $n$ becomes infinity, Theorem 2.24(d) no longer applies. So we have only $\bar{B}_n\supset\bigcup_{i=1}^\infty\bar{A}_i$. 
+(b) The first result in (a) still holds, but the second does not because when $n$ becomes infinity, Theorem 2.24(d) no longer applies. So we have only $\bar{B}\_n\supset\bigcup_{i=1}^\infty\bar{A}\_i$. 
 
-Let $A_n=\{x\vert x>\frac{1}{n}\}$. Then $B=\{x\vert x>0\}$, $\bar{B}=\{x\vert x\geq0\}$, $\bar{A}_n=\{x\vert x\geq\frac{1}{n}\}$, $\bigcup_{n=1}^\infty\bar{A}_n=\{x\vert x>0\}$. So $0$ is a element of $\bar{B}_n$ but not $\bigcup_{i=1}^\infty\bar{A}_i$.
+Let $A_n=\{x\vert x>\frac{1}{n}\}$. Then $B=\{x\vert x>0\}$, $\bar{B}=\{x\vert x\geq0\}$, $\bar{A}\_n=\{x\vert x\geq\frac{1}{n}\}$, $\bigcup_{n=1}^\infty\bar{A}\_n=\{x\vert x>0\}$. So $0$ is a element of $\bar{B}\_n$ but not $\bigcup_{i=1}^\infty\bar{A}\_i$.
 
 -----
 
@@ -300,9 +300,9 @@ which means $E$ consists of two balls and a line connecting them. It is obvious 
 
 ### 21.
 
-(a) If $x\in A_0'$, so $x$ is a limit point of $A_0$, then every neighborhood $N_{r_0}(x)$ contains a point $y\neq x$ such that $y\in A_0$. Consider a neighborhood of $\V{p}(x)$ with radius $r$. Let $r_0=\frac{r}{\vert \V{a}\vert +\vert \V{b}\vert }$, then there is a $y\in A_0$ such that $\vert y-x\vert <r_0=\frac{r}{\vert \V{a}\vert +\vert \V{b}\vert }$. Then $\vert \V{p}(y)-\V{p}(x)\vert =\vert -(y-x)\V{a}+(y-x)\V{b}\vert \leq\vert y-x\vert (\vert \V{a}\vert +\vert \V{b}\vert )<r$, so $\V{p}(y)\in A$ is in the neighborhood of $P(x)$, which means $\V{p}(x)$ is a limit point of $A$. Therefore, if $x\in A_0'$, then $\V{p}(x)\in A'$. It implies that if $x\in\bar{A}_0$, then $\V{p}(x)\in\bar{A}$. Similarly, if $x\in\bar{B}_0$, then $\V{p}(x)\in\bar{B}$.
+(a) If $x\in A_0'$, so $x$ is a limit point of $A_0$, then every neighborhood $N_{r_0}(x)$ contains a point $y\neq x$ such that $y\in A_0$. Consider a neighborhood of $\V{p}(x)$ with radius $r$. Let $r_0=\frac{r}{\vert \V{a}\vert +\vert \V{b}\vert }$, then there is a $y\in A_0$ such that $\vert y-x\vert <r_0=\frac{r}{\vert \V{a}\vert +\vert \V{b}\vert }$. Then $\vert \V{p}(y)-\V{p}(x)\vert =\vert -(y-x)\V{a}+(y-x)\V{b}\vert \leq\vert y-x\vert (\vert \V{a}\vert +\vert \V{b}\vert )<r$, so $\V{p}(y)\in A$ is in the neighborhood of $P(x)$, which means $\V{p}(x)$ is a limit point of $A$. Therefore, if $x\in A_0'$, then $\V{p}(x)\in A'$. It implies that if $x\in\bar{A}\_0$, then $\V{p}(x)\in\bar{A}$. Similarly, if $x\in\bar{B}\_0$, then $\V{p}(x)\in\bar{B}$.
 
-$A$ and $B$ are separated, so $\bar{A}\cap B=A\cap\bar{B}=\phi$. If $x\in B_0$, $\V{p}(x)\in B$, then $\V{p}(x)\not\in \bar{A}$, so $x\not\in \bar{A}_0$. It implies $\bar{A}_0\cap B_0=\phi$. Similarly, $A_0\cap\bar{B}_0=\phi$. So $A_0$ and $B_0$ are separated. 
+$A$ and $B$ are separated, so $\bar{A}\cap B=A\cap\bar{B}=\phi$. If $x\in B_0$, $\V{p}(x)\in B$, then $\V{p}(x)\not\in \bar{A}$, so $x\not\in \bar{A}\_0$. It implies $\bar{A}\_0\cap B_0=\phi$. Similarly, $A_0\cap\bar{B}\_0=\phi$. So $A_0$ and $B_0$ are separated. 
 
 
 (b)
