@@ -13,7 +13,7 @@ name                     : &name "Hikari"
 description              : &description "personal description"
 url                      : https://hikarimusic2002.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "hikarimusic2002/hikarimusic2002.github.io"
+repository               : "hikarimusic/hikarimusic.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            : "hikarimusic2002@gmail.com"
+  email            : "hikarimusic@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "hikarimusic2002"
+  github           : "hikarimusic"
   google_plus      :
   keybase          :
   instagram        :
