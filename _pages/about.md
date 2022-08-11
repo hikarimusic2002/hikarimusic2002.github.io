@@ -8,24 +8,23 @@ redirect_from:
   - /about.html
 ---
 
-* やりたいこと多すぎて結局何もやりきれなかったダメ人間
-* CKCOS / IPHO silv. / IBO repr.
 * National Taiwan University College of Medicine
+* 2019 IPHO Participant (Silver)
 
 Solutions
 ------
 
 Physics
 
-  * [Mathematical Methods for Physicists](https://hikarimusic2002.github.io/solutions)
+  * [Mathematical Methods for Physicists](https://hikarimusic.github.io/solutions)
 
 Mathematics
 
-  * [Principles of Mathematical Analysis](https://hikarimusic2002.github.io/solutions)
+  * [Principles of Mathematical Analysis](https://hikarimusic.github.io/solutions)
 
 Algorithm
 
-  *  [Codeforces](https://hikarimusic2002.github.io/solutions)
+  *  [Codeforces](https://hikarimusic.github.io/solutions)
 
 
 
