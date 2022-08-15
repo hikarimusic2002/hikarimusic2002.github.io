@@ -11,23 +11,6 @@ redirect_from:
 * National Taiwan University College of Medicine
 * 2019 IPHO Participant (Silver)
 
-Solutions
-------
-
-Physics
-
-  * [Mathematical Methods for Physicists](https://hikarimusic.github.io/solutions)
-
-Mathematics
-
-  * [Principles of Mathematical Analysis](https://hikarimusic.github.io/solutions)
-
-Algorithm
-
-  *  [Codeforces](https://hikarimusic.github.io/solutions)
-
-
-
 {% capture written_label %}'None'{% endcapture %}
 
 {% for collection in site.collections reversed %}
@@ -44,3 +27,18 @@ Algorithm
   {% endunless %}
 {% endfor %}
 {% endfor %}
+
+Solutions
+------
+
+Physics
+
+  * [Mathematical Methods for Physicists](https://hikarimusic.github.io/solutions)
+
+Mathematics
+
+  * [Principles of Mathematical Analysis](https://hikarimusic.github.io/solutions)
+
+Algorithm
+
+  *  [Codeforces](https://hikarimusic.github.io/solutions)
