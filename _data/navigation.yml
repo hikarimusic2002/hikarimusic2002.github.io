@@ -4,8 +4,8 @@ main:
   - title: "Software"
     url: /software/
     
-  - title: "Solutions"
-    url: /solutions/
-    
   - title: "オリジナル"
     url: /original/
+
+  - title: "Solutions"
+    url: /solutions/
