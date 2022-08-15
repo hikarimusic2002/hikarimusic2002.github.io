@@ -193,10 +193,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _research
+  # _software
   - scope:
       path: ""
-      type: research
+      type: software
     values:
       layout: single
       author_profile: true
